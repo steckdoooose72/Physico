@@ -1,0 +1,2630 @@
+{
+"FMA12519": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Atlas (1. Halswirbel)"
+}
+]
+},
+"FMA12520": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Axis (2. Halswirbel)"
+}
+]
+},
+"FMA7487": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Brustbein",
+"latein": "Sternum"
+}
+]
+},
+"FMA32651": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · Großzehe",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA32657": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · 4. Zehe",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA23953": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · Zeigefinger",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA23959": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · kleiner Finger",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA32659": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · Kleinzehe",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA23955": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · Mittelfinger",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA23957": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · Ringfinger",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA32653": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · 2. Zehe",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA32655": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · 3. Zehe",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA23951": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · Daumen",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA32650": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · Großzehe",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA32656": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · 4. Zehe",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA24460": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · Zeigefinger",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA24463": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · kleiner Finger",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA32658": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · Kleinzehe",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA24461": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · Mittelfinger",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA24462": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · Ringfinger",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA32652": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · 2. Zehe",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA32654": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · 3. Zehe",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA24459": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Endglied · Daumen",
+"latein": "Phalanx distalis"
+}
+]
+},
+"FMA9991": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+{
+"stufe": 3,
+"name": "8. Brustwirbel",
+"latein": "Vertebra thoracica"
+}
+]
+},
+"FMA10059": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+{
+"stufe": 3,
+"name": "11. Brustwirbel",
+"latein": "Vertebra thoracica"
+}
+]
+},
+"FMA52740": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Siebbein",
+"latein": "Os ethmoidale"
+}
+]
+},
+"FMA12523": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Halswirbel",
+"latein": "Vertebra cervicalis"
+},
+{
+"stufe": 3,
+"name": "5. Halswirbel",
+"latein": "Vertebra cervicalis"
+}
+]
+},
+"FMA13076": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Lendenwirbel",
+"latein": "Vertebra lumbalis"
+},
+{
+"stufe": 3,
+"name": "5. Lendenwirbel",
+"latein": "Vertebra lumbalis"
+}
+]
+},
+"FMA9922": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+{
+"stufe": 3,
+"name": "5. Brustwirbel",
+"latein": "Vertebra thoracica"
+}
+]
+},
+"FMA13072": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Lendenwirbel",
+"latein": "Vertebra lumbalis"
+},
+{
+"stufe": 3,
+"name": "1. Lendenwirbel",
+"latein": "Vertebra lumbalis"
+}
+]
+},
+"FMA9165": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+{
+"stufe": 3,
+"name": "1. Brustwirbel",
+"latein": "Vertebra thoracica"
+}
+]
+},
+"FMA12522": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Halswirbel",
+"latein": "Vertebra cervicalis"
+},
+{
+"stufe": 3,
+"name": "4. Halswirbel",
+"latein": "Vertebra cervicalis"
+}
+]
+},
+"FMA13075": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Lendenwirbel",
+"latein": "Vertebra lumbalis"
+},
+{
+"stufe": 3,
+"name": "4. Lendenwirbel",
+"latein": "Vertebra lumbalis"
+}
+]
+},
+"FMA9248": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+{
+"stufe": 3,
+"name": "4. Brustwirbel",
+"latein": "Vertebra thoracica"
+}
+]
+},
+"FMA52734": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Stirnbein",
+"latein": "Os frontale"
+}
+]
+},
+"FMA52749": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Zungenbein",
+"latein": "Os hyoideum"
+}
+]
+},
+"FMA25058": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · Axis (2. Halswirbel)",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13505": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 8. Brustwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13508": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 11. Brustwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13898": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 5. Halswirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA16037": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 5. Lendenwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13502": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 5. Brustwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA16033": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 1. Lendenwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA10458": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 1. Brustwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13897": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 4. Halswirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA16036": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 4. Lendenwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13501": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 4. Brustwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13506": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 9. Brustwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA16034": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 2. Lendenwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13495": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 2. Brustwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13900": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 7. Halswirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13504": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 7. Brustwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13899": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 6. Halswirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13503": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 6. Brustwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13507": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 10. Brustwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13896": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 3. Halswirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA16035": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 3. Lendenwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13500": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 3. Brustwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA13509": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Bandscheibe · 12. Brustwirbel",
+"latein": "Discus intervertebralis"
+}
+]
+},
+"FMA24498": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Fersenbein",
+"latein": "Calcaneus"
+}
+]
+},
+"FMA24447": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Kopfbein",
+"latein": "Os capitatum"
+}
+]
+},
+"FMA13323": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Schlüsselbein",
+"latein": "Clavicula"
+}
+]
+},
+"FMA24529": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Würfelbein",
+"latein": "Os cuboideum"
+}
+]
+},
+"FMA8310": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "8. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA8532": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "11. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA24475": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Oberschenkelknochen",
+"latein": "Femur"
+}
+]
+},
+"FMA24481": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Wadenbein",
+"latein": "Fibula"
+}
+]
+},
+"FMA8112": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "5. Rippenknorpel",
+"latein": "Cartilago costalis"
+}
+]
+},
+"FMA24473": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "5. Mittelhandknochen",
+"latein": "Os metacarpi"
+}
+]
+},
+"FMA24516": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "5. Mittelfußknochen",
+"latein": "Os metatarsi"
+}
+]
+},
+"FMA8093": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "5. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA8005": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "1. Rippenknorpel",
+"latein": "Cartilago costalis"
+}
+]
+},
+"FMA24465": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "1. Mittelhandknochen",
+"latein": "Os metacarpi"
+}
+]
+},
+"FMA24508": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "1. Mittelfußknochen",
+"latein": "Os metatarsi"
+}
+]
+},
+"FMA7987": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "1. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA8167": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "4. Rippenknorpel",
+"latein": "Cartilago costalis"
+}
+]
+},
+"FMA24471": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "4. Mittelhandknochen",
+"latein": "Os metacarpi"
+}
+]
+},
+"FMA24514": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "4. Mittelfußknochen",
+"latein": "Os metatarsi"
+}
+]
+},
+"FMA8148": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "4. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA24449": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Hakenbein",
+"latein": "Os hamatum"
+}
+]
+},
+"FMA16587": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Hüftbein",
+"latein": "Os coxae"
+}
+]
+},
+"FMA23131": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Oberarmknochen",
+"latein": "Humerus"
+}
+]
+},
+"FMA54738": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Untere Nasenmuschel",
+"latein": "Concha nasalis inferior"
+}
+]
+},
+"FMA24524": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Mittleres Keilbein",
+"latein": "Os cuneiforme intermedium"
+}
+]
+},
+"FMA53646": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Tränenbein",
+"latein": "Os lacrimale"
+}
+]
+},
+"FMA24526": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Äußeres Keilbein",
+"latein": "Os cuneiforme laterale"
+}
+]
+},
+"FMA24438": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Mondbein",
+"latein": "Os lunatum"
+}
+]
+},
+"FMA53650": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Oberkiefer",
+"latein": "Maxilla"
+}
+]
+},
+"FMA24522": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Inneres Keilbein",
+"latein": "Os cuneiforme mediale"
+}
+]
+},
+"FMA53648": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Nasenbein",
+"latein": "Os nasale"
+}
+]
+},
+"FMA8391": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "9. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA53656": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Gaumenbein",
+"latein": "Os palatinum"
+}
+]
+},
+"FMA52789": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Scheitelbein",
+"latein": "Os parietale"
+}
+]
+},
+"FMA24487": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Kniescheibe",
+"latein": "Patella"
+}
+]
+},
+"FMA24442": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Erbsenbein",
+"latein": "Os pisiforme"
+}
+]
+},
+"FMA23465": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Speiche",
+"latein": "Radius"
+}
+]
+},
+"FMA24436": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Kahnbein",
+"latein": "Os scaphoideum"
+}
+]
+},
+"FMA13396": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Schulterblatt",
+"latein": "Scapula"
+}
+]
+},
+"FMA8031": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "2. Rippenknorpel",
+"latein": "Cartilago costalis"
+}
+]
+},
+"FMA24467": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "2. Mittelhandknochen",
+"latein": "Os metacarpi"
+}
+]
+},
+"FMA24510": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "2. Mittelfußknochen",
+"latein": "Os metatarsi"
+}
+]
+},
+"FMA8012": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "2. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA8275": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "7. Rippenknorpel",
+"latein": "Cartilago costalis"
+}
+]
+},
+"FMA8256": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "7. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA8221": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "6. Rippenknorpel",
+"latein": "Cartilago costalis"
+}
+]
+},
+"FMA8202": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "6. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA24483": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Sprungbein",
+"latein": "Talus"
+}
+]
+},
+"FMA52739": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Schläfenbein",
+"latein": "Os temporale"
+}
+]
+},
+"FMA8472": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "10. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA8058": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "3. Rippenknorpel",
+"latein": "Cartilago costalis"
+}
+]
+},
+"FMA24469": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "3. Mittelhandknochen",
+"latein": "Os metacarpi"
+}
+]
+},
+"FMA24512": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "3. Mittelfußknochen",
+"latein": "Os metatarsi"
+}
+]
+},
+"FMA8039": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "3. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA24478": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Schienbein",
+"latein": "Tibia"
+}
+]
+},
+"FMA24444": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Großes Vieleckbein",
+"latein": "Os trapezium"
+}
+]
+},
+"FMA24445": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Kleines Vieleckbein",
+"latein": "Os trapezoideum"
+}
+]
+},
+"FMA24440": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Dreiecksbein",
+"latein": "Os triquetrum"
+}
+]
+},
+"FMA8534": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "12. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA23468": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Elle",
+"latein": "Ulna"
+}
+]
+},
+"FMA52893": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Jochbein",
+"latein": "Os zygomaticum"
+}
+]
+},
+"FMA52748": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Unterkiefer",
+"latein": "Mandibula"
+}
+]
+},
+"FMA7486": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Brustbeingriff",
+"latein": "Manubrium sterni"
+}
+]
+},
+"FMA32647": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · 4. Zehe",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA23938": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · Zeigefinger",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA23944": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · kleiner Finger",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA230988": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · Kleinzehe",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA23940": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · Mittelfinger",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA23942": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · Ringfinger",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA32643": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · 2. Zehe",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA32645": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · 3. Zehe",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA32646": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · 4. Zehe",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA24455": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · Zeigefinger",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA24458": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · kleiner Finger",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA230986": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · Kleinzehe",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA24456": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · Mittelfinger",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA24457": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · Ringfinger",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA32642": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · 2. Zehe",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA32644": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Mittelglied · 3. Zehe",
+"latein": "Phalanx media"
+}
+]
+},
+"FMA24501": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Kahnbein des Fußes",
+"latein": "Os naviculare"
+}
+]
+},
+"FMA24500": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Kahnbein des Fußes",
+"latein": "Os naviculare"
+}
+]
+},
+"FMA10014": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+{
+"stufe": 3,
+"name": "9. Brustwirbel",
+"latein": "Vertebra thoracica"
+}
+]
+},
+"FMA52735": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Hinterhauptbein",
+"latein": "Os occipitale"
+}
+]
+},
+"FMA43254": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · Großzehe",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA32639": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · 4. Zehe",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA71915": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · Zeigefinger",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA66791": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · kleiner Finger",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA32641": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · Kleinzehe",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA71908": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · Mittelfinger",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA71916": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · Ringfinger",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA32635": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · 2. Zehe",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA32637": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · 3. Zehe",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA65470": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · Daumen",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA43253": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · Großzehe",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA32638": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · 4. Zehe",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA24451": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · Zeigefinger",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA24454": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · kleiner Finger",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA32640": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · Kleinzehe",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA24452": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · Mittelfinger",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA24453": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · Ringfinger",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA32634": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · 2. Zehe",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA32636": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · 3. Zehe",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA24450": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Grundglied · Daumen",
+"latein": "Phalanx proximalis"
+}
+]
+},
+"FMA24497": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Fersenbein",
+"latein": "Calcaneus"
+}
+]
+},
+"FMA24446": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Kopfbein",
+"latein": "Os capitatum"
+}
+]
+},
+"FMA13322": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Schlüsselbein",
+"latein": "Clavicula"
+}
+]
+},
+"FMA24528": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Würfelbein",
+"latein": "Os cuboideum"
+}
+]
+},
+"FMA8283": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "8. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA8531": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "11. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA24474": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Oberschenkelknochen",
+"latein": "Femur"
+}
+]
+},
+"FMA24480": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Wadenbein",
+"latein": "Fibula"
+}
+]
+},
+"FMA8070": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "5. Rippenknorpel",
+"latein": "Cartilago costalis"
+}
+]
+},
+"FMA24472": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "5. Mittelhandknochen",
+"latein": "Os metacarpi"
+}
+]
+},
+"FMA24515": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "5. Mittelfußknochen",
+"latein": "Os metatarsi"
+}
+]
+},
+"FMA8066": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "5. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA7875": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "1. Rippenknorpel",
+"latein": "Cartilago costalis"
+}
+]
+},
+"FMA24464": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "1. Mittelhandknochen",
+"latein": "Os metacarpi"
+}
+]
+},
+"FMA24507": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "1. Mittelfußknochen",
+"latein": "Os metatarsi"
+}
+]
+},
+"FMA7857": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "1. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA7976": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "4. Rippenknorpel",
+"latein": "Cartilago costalis"
+}
+]
+},
+"FMA24470": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "4. Mittelhandknochen",
+"latein": "Os metacarpi"
+}
+]
+},
+"FMA24513": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "4. Mittelfußknochen",
+"latein": "Os metatarsi"
+}
+]
+},
+"FMA7957": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "4. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA24448": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Hakenbein",
+"latein": "Os hamatum"
+}
+]
+},
+"FMA16586": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Hüftbein",
+"latein": "Os coxae"
+}
+]
+},
+"FMA23130": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Oberarmknochen",
+"latein": "Humerus"
+}
+]
+},
+"FMA54737": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Untere Nasenmuschel",
+"latein": "Concha nasalis inferior"
+}
+]
+},
+"FMA24523": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Mittleres Keilbein",
+"latein": "Os cuneiforme intermedium"
+}
+]
+},
+"FMA53645": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Tränenbein",
+"latein": "Os lacrimale"
+}
+]
+},
+"FMA24525": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Äußeres Keilbein",
+"latein": "Os cuneiforme laterale"
+}
+]
+},
+"FMA24437": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Mondbein",
+"latein": "Os lunatum"
+}
+]
+},
+"FMA53649": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Oberkiefer",
+"latein": "Maxilla"
+}
+]
+},
+"FMA24521": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Inneres Keilbein",
+"latein": "Os cuneiforme mediale"
+}
+]
+},
+"FMA53647": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Nasenbein",
+"latein": "Os nasale"
+}
+]
+},
+"FMA8364": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "9. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA53655": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Gaumenbein",
+"latein": "Os palatinum"
+}
+]
+},
+"FMA52788": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Scheitelbein",
+"latein": "Os parietale"
+}
+]
+},
+"FMA24486": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Kniescheibe",
+"latein": "Patella"
+}
+]
+},
+"FMA24441": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Erbsenbein",
+"latein": "Os pisiforme"
+}
+]
+},
+"FMA23464": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Speiche",
+"latein": "Radius"
+}
+]
+},
+"FMA24435": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Kahnbein",
+"latein": "Os scaphoideum"
+}
+]
+},
+"FMA13395": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Schulterblatt",
+"latein": "Scapula"
+}
+]
+},
+"FMA7886": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "2. Rippenknorpel",
+"latein": "Cartilago costalis"
+}
+]
+},
+"FMA24466": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "2. Mittelhandknochen",
+"latein": "Os metacarpi"
+}
+]
+},
+"FMA24509": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "2. Mittelfußknochen",
+"latein": "Os metatarsi"
+}
+]
+},
+"FMA7882": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "2. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA8248": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "7. Rippenknorpel",
+"latein": "Cartilago costalis"
+}
+]
+},
+"FMA8229": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "7. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA8194": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "6. Rippenknorpel",
+"latein": "Cartilago costalis"
+}
+]
+},
+"FMA8175": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "6. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA24482": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Sprungbein",
+"latein": "Talus"
+}
+]
+},
+"FMA52738": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Schläfenbein",
+"latein": "Os temporale"
+}
+]
+},
+"FMA8445": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "10. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA7913": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "3. Rippenknorpel",
+"latein": "Cartilago costalis"
+}
+]
+},
+"FMA24468": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "3. Mittelhandknochen",
+"latein": "Os metacarpi"
+}
+]
+},
+"FMA24511": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "3. Mittelfußknochen",
+"latein": "Os metatarsi"
+}
+]
+},
+"FMA7909": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "3. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA24477": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Schienbein",
+"latein": "Tibia"
+}
+]
+},
+"FMA24443": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Großes Vieleckbein",
+"latein": "Os trapezium"
+}
+]
+},
+"FMA23725": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Kleines Vieleckbein",
+"latein": "Os trapezoideum"
+}
+]
+},
+"FMA24439": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Dreiecksbein",
+"latein": "Os triquetrum"
+}
+]
+},
+"FMA8533": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Rippe",
+"latein": "Costa"
+},
+{
+"stufe": 3,
+"name": "12. Rippe",
+"latein": "Costa"
+}
+]
+},
+"FMA23467": {
+"region": "arm",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Elle",
+"latein": "Ulna"
+}
+]
+},
+"FMA52892": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Jochbein",
+"latein": "Os zygomaticum"
+}
+]
+},
+"FMA16202": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 1,
+"name": "Kreuzbein",
+"latein": "Os sacrum"
+}
+]
+},
+"FMA13073": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Lendenwirbel",
+"latein": "Vertebra lumbalis"
+},
+{
+"stufe": 3,
+"name": "2. Lendenwirbel",
+"latein": "Vertebra lumbalis"
+}
+]
+},
+"FMA9187": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+{
+"stufe": 3,
+"name": "2. Brustwirbel",
+"latein": "Vertebra thoracica"
+}
+]
+},
+"FMA45098": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Sesambein",
+"latein": "Os sesamoideum"
+}
+]
+},
+"FMA45097": {
+"region": "bein",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Sesambein",
+"latein": "Os sesamoideum"
+}
+]
+},
+"FMA12525": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Halswirbel",
+"latein": "Vertebra cervicalis"
+},
+{
+"stufe": 3,
+"name": "7. Halswirbel",
+"latein": "Vertebra cervicalis"
+}
+]
+},
+"FMA9968": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+{
+"stufe": 3,
+"name": "7. Brustwirbel",
+"latein": "Vertebra thoracica"
+}
+]
+},
+"FMA12524": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Halswirbel",
+"latein": "Vertebra cervicalis"
+},
+{
+"stufe": 3,
+"name": "6. Halswirbel",
+"latein": "Vertebra cervicalis"
+}
+]
+},
+"FMA9945": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+{
+"stufe": 3,
+"name": "6. Brustwirbel",
+"latein": "Vertebra thoracica"
+}
+]
+},
+"FMA52736": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Keilbein",
+"latein": "Os sphenoidale"
+}
+]
+},
+"FMA10037": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+{
+"stufe": 3,
+"name": "10. Brustwirbel",
+"latein": "Vertebra thoracica"
+}
+]
+},
+"FMA12521": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Halswirbel",
+"latein": "Vertebra cervicalis"
+},
+{
+"stufe": 3,
+"name": "3. Halswirbel",
+"latein": "Vertebra cervicalis"
+}
+]
+},
+"FMA13074": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Lendenwirbel",
+"latein": "Vertebra lumbalis"
+},
+{
+"stufe": 3,
+"name": "3. Lendenwirbel",
+"latein": "Vertebra lumbalis"
+}
+]
+},
+"FMA9209": {
+"region": "hals",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+{
+"stufe": 3,
+"name": "3. Brustwirbel",
+"latein": "Vertebra thoracica"
+}
+]
+},
+"FMA10081": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 2,
+"name": "Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+{
+"stufe": 3,
+"name": "12. Brustwirbel",
+"latein": "Vertebra thoracica"
+}
+]
+},
+"FMA9710": {
+"region": "kopf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Pflugscharbein",
+"latein": "Vomer"
+}
+]
+},
+"FMA7488": {
+"region": "rumpf",
+"einordnungen": [
+{
+"stufe": 3,
+"name": "Schwertfortsatz",
+"latein": "Processus xiphoideus"
+}
+]
+}
+}

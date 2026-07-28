@@ -1,0 +1,176 @@
+{
+  "_hinweis": "Eigene deutsche Lerninhalte. Schlüssel = ein Stück aus dem englischen Originalnamen (Kleinschreibung). Jede Struktur, deren Name diesen Text enthält, bekommt diese Angaben. Beispiel: 'biceps brachii' trifft auch 'long head of left biceps brachii'. Werkzeug: .venv/bin/python werkzeuge/namen.py",
+
+  "femur": {
+    "de": "Oberschenkelknochen",
+    "latein": "Femur",
+    "tastbar": "Großer Rollhügel (Trochanter major) seitlich an der Hüfte, Kondylen am Knie",
+    "gelenke": ["Hüftgelenk", "Kniegelenk"],
+    "notiz": "Längster und stärkster Knochen des Körpers. Der Schenkelhals steht in etwa 125° zum Schaft – größer heißt Coxa valga, kleiner Coxa vara."
+  },
+  "tibia": {
+    "de": "Schienbein",
+    "latein": "Tibia",
+    "tastbar": "Vorderkante über die ganze Länge, Innenknöchel (Malleolus medialis)",
+    "gelenke": ["Kniegelenk", "Oberes Sprunggelenk"],
+    "notiz": "Trägt praktisch das gesamte Gewicht. Die Tuberositas tibiae ist Ansatz der Patellasehne – bei Jugendlichen Ort des Morbus Osgood-Schlatter."
+  },
+  "fibula": {
+    "de": "Wadenbein",
+    "latein": "Fibula",
+    "tastbar": "Fibulaköpfchen unterhalb des Knies außen, Außenknöchel (Malleolus lateralis)",
+    "notiz": "Trägt kaum Gewicht, bildet aber den Außenknöchel. Um das Fibulaköpfchen zieht der N. fibularis communis – dort sehr druckempfindlich."
+  },
+  "patella": {
+    "de": "Kniescheibe",
+    "latein": "Patella",
+    "notiz": "Größtes Sesambein des Körpers, eingebettet in die Quadrizepssehne. Verlängert den Hebelarm des Streckapparats um etwa 30 %.",
+    "tastbar": "Bei entspanntem Bein seitlich verschiebbar – Teil jeder Knieuntersuchung"
+  },
+  "humerus": {
+    "de": "Oberarmknochen",
+    "latein": "Humerus",
+    "tastbar": "Tuberculum majus seitlich unter dem Schulterdach, Epicondylen am Ellenbogen",
+    "gelenke": ["Schultergelenk", "Ellenbogengelenk"],
+    "notiz": "Der Kopf ist deutlich größer als die Pfanne – viel Beweglichkeit, wenig knöcherne Sicherung. Stabilität kommt von Kapsel, Labrum und Rotatorenmanschette."
+  },
+  "radius": {
+    "de": "Speiche",
+    "latein": "Radius",
+    "tastbar": "Processus styloideus radii am Daumen-Handgelenk",
+    "notiz": "Liegt auf der Daumenseite und trägt die Handwurzel. Häufigste Bruchstelle beim Sturz auf die Hand (distale Radiusfraktur)."
+  },
+  "ulna": {
+    "de": "Elle",
+    "latein": "Ulna",
+    "tastbar": "Olekranon an der Ellenbogenspitze, Ellenkopf am Handgelenk",
+    "notiz": "Bleibt bei der Unterarmdrehung stehen – die Speiche dreht sich um sie herum."
+  },
+  "scapula": {
+    "de": "Schulterblatt",
+    "latein": "Scapula",
+    "tastbar": "Schulterblattgräte, unterer Winkel, Rabenschnabelfortsatz vorne",
+    "notiz": "Liegt frei beweglich auf dem Brustkorb auf. Etwa 60° der 180° Armabduktion kommen aus dem Schulterblatt (skapulohumeraler Rhythmus 2:1)."
+  },
+  "clavicle": {
+    "de": "Schlüsselbein",
+    "latein": "Clavicula",
+    "tastbar": "Auf ganzer Länge unter der Haut tastbar",
+    "notiz": "Einzige knöcherne Verbindung zwischen Arm und Rumpf, wirkt als Abstandhalter für das Schulterblatt."
+  },
+  "sternum": { "de": "Brustbein", "latein": "Sternum", "tastbar": "Angulus sterni auf Höhe der 2. Rippe – wichtiger Orientierungspunkt" },
+  "hip bone": {
+    "de": "Hüftbein",
+    "latein": "Os coxae",
+    "tastbar": "Beckenkamm, Spina iliaca anterior superior, Sitzbeinhöcker",
+    "notiz": "Verschmolzen aus Darmbein, Sitzbein und Schambein. Ansatzfläche für Bauch-, Rücken-, Gesäß- und Oberschenkelmuskeln."
+  },
+  "sacrum": { "de": "Kreuzbein", "latein": "Os sacrum", "notiz": "Überträgt das Rumpfgewicht über die Iliosakralgelenke auf die Beine." },
+  "coccyx": { "de": "Steißbein", "latein": "Os coccygis", "notiz": "Ansatz der Beckenbodenmuskulatur; nach Sturz aufs Gesäß oft schmerzhaft." },
+  "calcaneus": { "de": "Fersenbein", "latein": "Calcaneus", "notiz": "Ansatz der Achillessehne; Ursprung der Plantarfaszie – typischer Ort des Fersensporns." },
+  "talus": { "de": "Sprungbein", "latein": "Talus", "notiz": "Einziger Knochen ohne Muskelansatz – wird nur durch Bänder geführt." },
+
+  "deltoid": {
+    "de": "Deltamuskel",
+    "latein": "M. deltoideus",
+    "ursprung": "Äußeres Schlüsselbeindrittel, Akromion, Schulterblattgräte",
+    "ansatz": "Tuberositas deltoidea am Oberarmknochen",
+    "funktion": "Mittlerer Teil: Abduktion ab ca. 15°. Vorderer Teil: Anteversion und Innenrotation. Hinterer Teil: Retroversion und Außenrotation",
+    "innervation": "N. axillaris (C5–C6)",
+    "notiz": "Fällt der N. axillaris aus (z. B. nach Schulterluxation), lässt sich der Arm kaum seitlich heben."
+  },
+  "biceps brachii": {
+    "de": "Zweiköpfiger Oberarmmuskel",
+    "latein": "M. biceps brachii",
+    "ursprung": "Langer Kopf: Tuberculum supraglenoidale. Kurzer Kopf: Processus coracoideus",
+    "ansatz": "Tuberositas radii der Speiche",
+    "funktion": "Beugung im Ellenbogen, kräftige Supination, Unterstützung der Anteversion",
+    "innervation": "N. musculocutaneus (C5–C6)",
+    "notiz": "Die lange Bizepssehne läuft durch das Schultergelenk – häufige Schmerzquelle vorne an der Schulter."
+  },
+  "triceps brachii": {
+    "de": "Dreiköpfiger Oberarmmuskel",
+    "latein": "M. triceps brachii",
+    "ursprung": "Langer Kopf: Tuberculum infraglenoidale. Seitlicher und mittlerer Kopf: Rückseite des Humerus",
+    "ansatz": "Olekranon der Elle",
+    "funktion": "Streckung im Ellenbogen; langer Kopf unterstützt Retroversion und Adduktion der Schulter",
+    "innervation": "N. radialis (C6–C8)",
+    "notiz": "Wichtig für alle Stützaktivitäten – Aufstehen, Gehen an Unterarmgehstützen."
+  },
+  "pectoralis major": {
+    "de": "Großer Brustmuskel",
+    "latein": "M. pectoralis major",
+    "ursprung": "Schlüsselbein, Brustbein, Rippenknorpel 1–6",
+    "ansatz": "Crista tuberculi majoris des Humerus",
+    "funktion": "Adduktion, Innenrotation und Anteversion; Hilfsatemmuskel bei fixiertem Arm",
+    "innervation": "Nn. pectorales (C5–Th1)",
+    "notiz": "Neigt bei Rundrückenhaltung zur Verkürzung und zieht die Schultern nach vorne."
+  },
+  "latissimus dorsi": {
+    "de": "Breiter Rückenmuskel",
+    "latein": "M. latissimus dorsi",
+    "ursprung": "Dornfortsätze Th7–L5, Kreuzbein, Beckenkamm, untere Rippen",
+    "ansatz": "Crista tuberculi minoris des Humerus",
+    "funktion": "Adduktion, Innenrotation und Retroversion – der Muskel des Klimmzugs",
+    "innervation": "N. thoracodorsalis (C6–C8)",
+    "notiz": "Verbindet Arm und Becken: Verkürzung schränkt die Schulterhebung ein und verstärkt die Lendenlordose."
+  },
+  "trapezius": {
+    "de": "Kapuzenmuskel",
+    "latein": "M. trapezius",
+    "ursprung": "Hinterhauptbein, Nackenband, Dornfortsätze C7–Th12",
+    "ansatz": "Äußeres Schlüsselbeindrittel, Akromion, Schulterblattgräte",
+    "funktion": "Absteigender Teil hebt das Schulterblatt, querer zieht es zur Wirbelsäule, aufsteigender senkt es; gemeinsam drehen sie die Pfanne nach oben",
+    "innervation": "N. accessorius (XI), Äste aus C3–C4",
+    "notiz": "Der absteigende Teil ist der Klassiker unter den Verspannungen – oft ist aber der aufsteigende Teil zu schwach."
+  },
+  "gluteus maximus": {
+    "de": "Großer Gesäßmuskel",
+    "latein": "M. gluteus maximus",
+    "ursprung": "Darmbeinschaufel, Kreuzbein, Steißbein, Lig. sacrotuberale",
+    "ansatz": "Tractus iliotibialis und Tuberositas glutea",
+    "funktion": "Kräftigste Hüftstreckung, Außenrotation",
+    "innervation": "N. gluteus inferior (L5–S2)",
+    "notiz": "Der Muskel des Treppensteigens und Aufstehens."
+  },
+  "gluteus medius": {
+    "de": "Mittlerer Gesäßmuskel",
+    "latein": "M. gluteus medius",
+    "ursprung": "Außenfläche der Darmbeinschaufel",
+    "ansatz": "Trochanter major",
+    "funktion": "Abduktion; stabilisiert im Einbeinstand das Becken",
+    "innervation": "N. gluteus superior (L4–S1)",
+    "notiz": "Ist er schwach, kippt das Becken beim Gehen zur Spielbeinseite ab – Trendelenburg-Zeichen."
+  },
+  "psoas major": {
+    "de": "Großer Lendenmuskel",
+    "latein": "M. psoas major",
+    "ursprung": "Wirbelkörper und Querfortsätze Th12–L4",
+    "ansatz": "Trochanter minor (gemeinsam mit dem M. iliacus als M. iliopsoas)",
+    "funktion": "Stärkster Hüftbeuger; verstärkt die Lendenlordose",
+    "innervation": "Direkte Äste des Plexus lumbalis (L1–L3)",
+    "notiz": "Durch langes Sitzen häufig verkürzt. Test: Thomas-Handgriff."
+  },
+  "iliacus": { "de": "Darmbeinmuskel", "latein": "M. iliacus", "ursprung": "Fossa iliaca", "ansatz": "Trochanter minor", "funktion": "Hüftbeugung", "innervation": "N. femoralis (L2–L3)" },
+  "rectus femoris": { "de": "Gerader Oberschenkelmuskel", "latein": "M. rectus femoris", "ursprung": "Spina iliaca anterior inferior", "ansatz": "Über die Patellasehne an der Tuberositas tibiae", "funktion": "Kniestreckung und Hüftbeugung (zweigelenkig)", "innervation": "N. femoralis (L2–L4)" },
+  "vastus": { "ansatz": "Über die Patellasehne an der Tuberositas tibiae", "funktion": "Kniestreckung", "innervation": "N. femoralis (L2–L4)", "notiz": "Der M. vastus medialis verliert nach Knieverletzungen am schnellsten an Umfang." },
+  "biceps femoris": { "de": "Zweiköpfiger Schenkelmuskel", "latein": "M. biceps femoris", "ursprung": "Sitzbeinhöcker (langer Kopf), Linea aspera (kurzer Kopf)", "ansatz": "Fibulaköpfchen", "funktion": "Hüftstreckung, Kniebeugung, Außenrotation im gebeugten Knie", "innervation": "N. ischiadicus (L5–S2)" },
+  "semitendinosus": { "de": "Halbsehniger Muskel", "latein": "M. semitendinosus", "ursprung": "Sitzbeinhöcker", "ansatz": "Pes anserinus superficialis an der Tibia", "funktion": "Hüftstreckung, Kniebeugung, Innenrotation im gebeugten Knie", "innervation": "N. ischiadicus (L5–S2)" },
+  "semimembranosus": { "de": "Plattsehniger Muskel", "latein": "M. semimembranosus", "ursprung": "Sitzbeinhöcker", "ansatz": "Condylus medialis tibiae", "funktion": "Hüftstreckung, Kniebeugung, Innenrotation im gebeugten Knie", "innervation": "N. ischiadicus (L5–S2)" },
+  "gastrocnemius": { "de": "Zwillingswadenmuskel", "latein": "M. gastrocnemius", "ursprung": "Femurkondylen", "ansatz": "Über die Achillessehne am Fersenbein", "funktion": "Plantarflexion, unterstützt die Kniebeugung", "innervation": "N. tibialis (S1–S2)", "notiz": "Zweigelenkig: mit gestrecktem Knie dehnt man den Gastrocnemius, mit gebeugtem den Soleus." },
+  "soleus": { "de": "Schollenmuskel", "latein": "M. soleus", "ursprung": "Rückseite von Tibia und Fibula", "ansatz": "Achillessehne", "funktion": "Plantarflexion, wichtiger Haltemuskel im Stand", "innervation": "N. tibialis (S1–S2)" },
+  "tibialis anterior": { "de": "Vorderer Schienbeinmuskel", "latein": "M. tibialis anterior", "ursprung": "Außenfläche der Tibia und Membrana interossea", "ansatz": "Os cuneiforme mediale, Basis Metatarsale I", "funktion": "Dorsalextension und Supination", "innervation": "N. fibularis profundus (L4–L5)", "notiz": "Bei Ausfall entsteht der Steppergang mit hängender Fußspitze." },
+  "rectus abdominis": { "de": "Gerader Bauchmuskel", "latein": "M. rectus abdominis", "ursprung": "Schambein", "ansatz": "Rippenknorpel 5–7, Schwertfortsatz", "funktion": "Rumpfbeugung, Beckenaufrichtung nach hinten", "innervation": "Nn. intercostales (Th5–Th12)" },
+  "external oblique": { "de": "Äußerer schräger Bauchmuskel", "latein": "M. obliquus externus abdominis", "funktion": "Rumpfbeugung, Rotation zur Gegenseite, Seitneigung", "innervation": "Nn. intercostales (Th5–Th12)" },
+  "internal oblique": { "de": "Innerer schräger Bauchmuskel", "latein": "M. obliquus internus abdominis", "funktion": "Rumpfbeugung, Rotation zur gleichen Seite, Seitneigung", "innervation": "Nn. intercostales (Th8–L1)" },
+  "transversus abdominis": { "de": "Querer Bauchmuskel", "latein": "M. transversus abdominis", "funktion": "Erhöht den Bauchinnendruck, stabilisiert die Lendenwirbelsäule", "innervation": "Nn. intercostales (Th7–L1)", "notiz": "Der wichtigste Muskel der segmentalen Stabilisation – Kernstück vieler Rückenprogramme." },
+  "erector spinae": { "de": "Rückenstrecker", "latein": "M. erector spinae", "funktion": "Streckung und Aufrichtung der Wirbelsäule; einseitig Seitneigung und Rotation", "innervation": "Rr. posteriores der Spinalnerven", "notiz": "Arbeitet beim Vorbeugen exzentrisch als Bremse." },
+  "supraspinatus": { "de": "Obergrätenmuskel", "latein": "M. supraspinatus", "ursprung": "Fossa supraspinata", "ansatz": "Tuberculum majus", "funktion": "Leitet die Abduktion ein, zentriert den Humeruskopf", "innervation": "N. suprascapularis (C4–C6)", "notiz": "Teil der Rotatorenmanschette – häufigste Sehnenruptur der Schulter." },
+  "infraspinatus": { "de": "Untergrätenmuskel", "latein": "M. infraspinatus", "ursprung": "Fossa infraspinata", "ansatz": "Tuberculum majus", "funktion": "Außenrotation, zentriert den Humeruskopf", "innervation": "N. suprascapularis (C4–C6)", "notiz": "Teil der Rotatorenmanschette." },
+  "teres minor": { "de": "Kleiner Rundmuskel", "latein": "M. teres minor", "funktion": "Außenrotation und Adduktion", "innervation": "N. axillaris (C5–C6)", "notiz": "Teil der Rotatorenmanschette." },
+  "subscapularis": { "de": "Unterschulterblattmuskel", "latein": "M. subscapularis", "ursprung": "Fossa subscapularis", "ansatz": "Tuberculum minus", "funktion": "Innenrotation, zentriert den Humeruskopf", "innervation": "Nn. subscapulares (C5–C6)", "notiz": "Teil der Rotatorenmanschette." },
+  "sternocleidomastoid": { "de": "Kopfwender", "latein": "M. sternocleidomastoideus", "ursprung": "Brustbein und mediales Schlüsselbeindrittel", "ansatz": "Processus mastoideus", "funktion": "Einseitig Drehung zur Gegenseite und Seitneigung zur eigenen Seite; beidseitig HWS-Beugung", "innervation": "N. accessorius (XI), C2–C3", "notiz": "Bei Kopfvorhaltung am Bildschirm oft verkürzt." },
+  "diaphragm": { "de": "Zwerchfell", "latein": "Diaphragma", "funktion": "Wichtigster Atemmuskel: senkt sich bei der Einatmung und vergrößert den Brustraum", "innervation": "N. phrenicus (C3–C5)", "notiz": "Merksatz: C3, 4, 5 keep the diaphragm alive." },
+  "levator scapulae": { "de": "Schulterblattheber", "latein": "M. levator scapulae", "ursprung": "Querfortsätze C1–C4", "ansatz": "Oberer Schulterblattwinkel", "funktion": "Hebt das Schulterblatt, dreht die Pfanne nach unten", "innervation": "N. dorsalis scapulae (C4–C5)", "notiz": "Zweiter großer Verspannungskandidat im Nacken neben dem oberen Trapezius." },
+  "piriformis": { "de": "Birnenförmiger Muskel", "latein": "M. piriformis", "ursprung": "Vorderfläche des Kreuzbeins", "ansatz": "Trochanter major", "funktion": "Außenrotation, ab 60° Hüftbeugung Abduktion", "innervation": "Plexus sacralis (S1–S2)", "notiz": "Der N. ischiadicus zieht direkt darunter hindurch – Verspannung kann ischiasähnliche Beschwerden machen." }
+}

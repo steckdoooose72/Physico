@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Physico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/farben.css?v=2">
+  <link rel="stylesheet" href="css/start.css?v=13">
+</head>
+<body>
+
+<!--
+  Dekorative Hintergrundgrafik – rein schmückend, ohne Bedeutung.
+  Zwei fließende, organische Formen (angelehnt an weiche Gewebekonturen) plus
+  zwei dünne, geschwungene Linien (angelehnt an Nerven-/Gefäßverläufe), dazu
+  ein paar kleine Knotenpunkte für einen leisen, "technischen" Akzent.
+  Die Farben kommen als CSS-Variablen aus start.css – ändert sich dort die
+  Palette, zieht die Grafik automatisch mit.
+-->
+<svg class="hintergrund-deko" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="deko-blob-a" x1="0" y1="0" x2="1" y2="1">
+      <stop class="deko-stop-olive" offset="0%" />
+      <stop class="deko-stop-olive" offset="55%" />
+      <stop class="deko-stop-leer" offset="100%" />
+    </linearGradient>
+    <linearGradient id="deko-blob-b" x1="1" y1="0" x2="0" y2="1">
+      <stop class="deko-stop-graugruen" offset="0%" />
+      <stop class="deko-stop-graugruen" offset="55%" />
+      <stop class="deko-stop-leer" offset="100%" />
+    </linearGradient>
+    <linearGradient id="deko-blob-c" x1="0" y1="1" x2="1" y2="0">
+      <stop class="deko-stop-olive-hell" offset="0%" />
+      <stop class="deko-stop-olive-hell" offset="55%" />
+      <stop class="deko-stop-leer" offset="100%" />
+    </linearGradient>
+    <linearGradient id="deko-linie" x1="0" y1="0" x2="1" y2="0">
+      <stop class="deko-stop-leer" offset="0%" />
+      <stop class="deko-stop-linie-mitte" offset="50%" />
+      <stop class="deko-stop-leer" offset="100%" />
+    </linearGradient>
+    <filter id="deko-weich" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="38" />
+    </filter>
+  </defs>
+
+  <!-- weiche, fließende Flächen -->
+  <g filter="url(#deko-weich)">
+    <path fill="url(#deko-blob-a)" d="M1010,90 C1080,-30 1260,-60 1400,20
+      C1540,100 1580,260 1490,360 C1400,460 1220,470 1100,400
+      C980,330 940,210 1010,90 Z" />
+    <path fill="url(#deko-blob-b)" d="M-60,760 C40,650 260,690 420,800
+      C610,930 860,900 980,1010 C760,1050 440,1040 240,960
+      C70,890 -140,860 -60,760 Z" />
+    <path fill="url(#deko-blob-c)" d="M1250,760 C1330,700 1450,720 1500,810
+      C1550,900 1500,990 1400,1000 C1300,1010 1200,950 1190,860
+      C1185,820 1210,785 1250,760 Z" />
+  </g>
+
+  <!-- dünne, geschwungene Linien – wie ferne Nerven- oder Gefäßverläufe -->
+  <path fill="none" stroke="url(#deko-linie)" stroke-width="2.5" stroke-linecap="round"
+    d="M-40,340 C260,260 420,420 700,360 C980,300 1140,420 1660,300" />
+  <path fill="none" stroke="url(#deko-linie)" stroke-width="1.75" stroke-linecap="round"
+    d="M-40,880 C300,760 560,900 860,800 C1160,700 1360,820 1660,760" />
+
+  <!-- kleine Knotenpunkte auf den Linien – ein leiser, technischer Akzent -->
+  <circle class="deko-knoten" cx="700" cy="360" r="4" />
+  <circle class="deko-knoten" cx="1140" cy="420" r="3" />
+  <circle class="deko-knoten" cx="860" cy="800" r="4" />
+  <circle class="deko-knoten" cx="1360" cy="820" r="3" />
+</svg>
+
+<main class="start">
+
+  <header class="kopf">
+    <h1>Physico</h1>
+    <p class="untertitel">interactive anatomy</p>
+  </header>
+
+  <nav class="auswahl">
+
+    <!-- 1. Freies Erkunden des Modells -->
+    <a class="wahl" href="modell.html">
+      <span class="nummer">1</span>
+      <span class="wahl-titel">Modell ansehen</span>
+      <span class="wahl-text">Das 3D-Modell frei erkunden: drehen und zoomen, Systeme
+        ein- und ausblenden, Körperbereiche wählen, Weichteile durchsichtig schalten,
+        Strukturen anklicken und suchen.</span>
+    </a>
+
+    <!-- 2. Vorbereitung -->
+    <a class="wahl" href="vorbereitung.html">
+      <span class="nummer">2</span>
+      <span class="wahl-titel">Vorbereitung</span>
+      <span class="wahl-text">Gezielt nach Bereich üben: Knochen, Muskeln oder Gelenke.</span>
+    </a>
+
+    <!-- 3. Noch nicht eingerichtet -->
+    <div class="wahl bald" role="button" aria-disabled="true" tabindex="-1">
+      <span class="nummer">3</span>
+      <span class="wahl-titel">Prüfungen</span>
+      <span class="wahl-text">wird später eingerichtet</span>
+      <span class="marke">folgt</span>
+    </div>
+
+  </nav>
+
+</main>
+
+</body>
+</html>

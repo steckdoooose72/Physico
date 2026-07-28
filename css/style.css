@@ -1,0 +1,505 @@
+/* ==========================================================================
+   Physico – Erscheinungsbild
+   --------------------------------------------------------------------------
+   Wabi-Sabi-Idee wie auf der Startseite: warmes Papier statt Bildschirm-
+   Schwarz, gebranntes Olive als Akzent, gedecktes Graugrün als zweite Stimme.
+   Die 3D-Bühne selbst bleibt bewusst dunkel (wie ein Museumssockel im
+   Spotlight) – das lässt Knochen und Muskeln am besten erkennen. Die
+   Bedienleisten drumherum sind warme Papier-Karten mit weichem Schatten.
+
+   Wenn dir etwas nicht gefällt, kannst du hier gefahrlos herumprobieren –
+   am 3D-Modell selbst ändert sich dadurch nichts (das steckt in js/main.js
+   und js/materialien.js).
+   ========================================================================== */
+
+/* Farben stehen zentral in css/farben.css – dort ändern, wirkt überall.
+   Nur die Gewebefarben gehören hierher, weil sie das Modell betreffen
+   und nicht die Oberfläche. */
+:root {
+  --farbe-knochen: #e9e2cf;
+  --farbe-muskeln: #9d2f2b;
+  --farbe-gelenke: #f2c14e;
+  --farbe-nerven:  #f2e08a;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  /* Die 3D-Bühne (js/main.js) malt ihren eigenen dunklen Hintergrund –
+     dieser Creme-Ton scheint nur im allerersten Sekundenbruchteil durch. */
+  background: #24221A;
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+h1, #info-inhalt h3, .wahl-titel { font-family: "Fraunces", Georgia, serif; font-optical-sizing: auto; }
+
+/* Die 3D-Bühne füllt das ganze Fenster, die Panels liegen darüber */
+#buehne {
+  position: fixed;
+  inset: 0;
+}
+
+#buehne canvas { display: block; }
+
+/* --------------------------------------------------------------------------
+   Panels links und rechts – warme Papier-Karten mit weichem Schatten
+   -------------------------------------------------------------------------- */
+
+aside {
+  position: fixed;
+  top: 16px;
+  bottom: 16px;
+  width: 254px;
+  padding: 20px;
+  overflow-y: auto;
+  background: var(--panel);
+  border: 1px solid var(--rand);
+  border-radius: 20px 16px 18px 14px;   /* leicht unregelmäßig, von Hand geformt */
+  box-shadow: var(--schatten-fern);
+  backdrop-filter: blur(10px);
+}
+
+/* Dezenter Hintergrundfleck hinter dem Inhalt – dieselbe Idee wie auf der
+   Startseite (start.css), nur als ruhiger Fleck statt großer Grafik, damit
+   die Panels nicht ganz leer wirken. Farben sind feste Kopien der Variablen
+   oben (ein Hintergrundbild kann keine CSS-Variablen lesen) – ändert sich
+   die Palette, hier von Hand nachziehen. */
+#bedienleiste::before,
+#info-panel::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+#bedienleiste::before {
+  background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 500'>\
+<defs><linearGradient id='g' x1='0' y1='0' x2='0.7' y2='1'>\
+<stop offset='0%25' stop-color='%238C815A' stop-opacity='0.32'/>\
+<stop offset='60%25' stop-color='%238C815A' stop-opacity='0.30'/>\
+<stop offset='100%25' stop-color='%238C815A' stop-opacity='0'/></linearGradient>\
+<filter id='b'><feGaussianBlur stdDeviation='26'/></filter></defs>\
+<path filter='url(%23b)' fill='url(%23g)' d='M30,460 C-10,400 10,320 70,300 C140,275 150,200 110,140 C75,88 100,20 170,10 C230,2 260,60 250,140 C240,220 270,300 240,380 C210,455 90,500 30,460 Z'/>\
+</svg>");
+  background-position: -20px bottom;
+  background-size: 220px 420px;
+}
+
+#info-panel::before {
+  background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'>\
+<defs><linearGradient id='g2' x1='0' y1='0' x2='1' y2='1'>\
+<stop offset='0%25' stop-color='%237C8577' stop-opacity='0.30'/>\
+<stop offset='55%25' stop-color='%237C8577' stop-opacity='0.28'/>\
+<stop offset='100%25' stop-color='%237C8577' stop-opacity='0'/></linearGradient>\
+<filter id='b2'><feGaussianBlur stdDeviation='24'/></filter></defs>\
+<path filter='url(%23b2)' fill='url(%23g2)' d='M60,180 C35,120 80,55 150,48 C220,40 275,90 268,155 C260,222 195,262 130,250 C90,242 78,222 60,180 Z'/>\
+</svg>");
+  background-position: center 55%;
+  background-size: 260px 260px;
+}
+
+#bedienleiste { left: 16px; }
+
+#info-panel {
+  right: 16px;
+  width: 300px;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+/* Ohne Auswahl bleibt die Fläche komplett weg – sie poppt erst auf, sobald
+   eine Struktur angeklickt wird (siehe js/panel.js). */
+#info-panel.leer {
+  opacity: 0;
+  transform: translateY(8px) scale(0.97);
+  pointer-events: none;
+}
+
+h1 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--olive-dunkel);
+}
+
+/* Rückweg zur Startseite */
+.zurueck {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--text-leise);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.zurueck:hover { color: var(--olive-text); }
+
+.untertitel {
+  margin: 2px 0 20px;
+  color: var(--text-leise);
+  font-size: 12px;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--graugruen-dunkel);
+}
+
+.block { margin-bottom: 24px; }
+
+.hinweis {
+  margin: 8px 0 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--text-leise);
+}
+
+.hilfe {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--text-leise);
+}
+
+.hilfe b { color: var(--text); font-weight: 600; }
+
+/* --------------------------------------------------------------------------
+   Ebenen-Schalter
+   -------------------------------------------------------------------------- */
+
+.ebene-zeile {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 8px;
+  margin-bottom: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s;
+}
+
+.ebene-zeile:hover { background: rgba(107, 97, 66, 0.08); }
+
+/* Kleiner Kippschalter – wie ein kleiner glatter Kieselstein */
+.mini-schalter { position: relative; flex-shrink: 0; width: 30px; height: 17px; }
+
+.mini-schalter input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.mini-schieber {
+  position: absolute;
+  inset: 0;
+  background: #CFC2A2;
+  border-radius: 999px;
+  transition: background 0.18s;
+  pointer-events: none;
+  box-shadow: inset 0 1px 2px rgba(58, 48, 28, 0.18);
+}
+
+.mini-schieber::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 13px;
+  height: 13px;
+  background: var(--papier-hell, #FFFCF5);
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(58, 48, 28, 0.3);
+  transition: transform 0.18s;
+}
+
+.mini-schalter input:checked + .mini-schieber { background: var(--olive); }
+.mini-schalter input:checked + .mini-schieber::before { transform: translateX(13px); }
+
+.ebene-punkt {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: inset 0 0 0 1px rgba(58, 48, 28, 0.15);
+}
+
+.ebene-zeile span.name { font-size: 13px; }
+
+.ebene-zeile .anzahl {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--text-leise);
+}
+
+/* Ausgeschaltete Ebene wird blasser dargestellt */
+.ebene-zeile.aus .name,
+.ebene-zeile.aus .ebene-punkt { opacity: 0.45; }
+
+input[type="range"] {
+  width: 100%;
+  accent-color: var(--olive);
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------
+   Info-Panel
+   -------------------------------------------------------------------------- */
+
+.info-etikett {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2A2620;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+#info-inhalt h3 {
+  margin: 0 0 2px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--olive-dunkel);
+}
+
+#info-inhalt .latein {
+  margin: 0 0 18px;
+  font-family: "Fraunces", Georgia, serif;
+  font-style: italic;
+  color: var(--olive-text);
+  font-size: 14.5px;
+}
+
+.info-feld {
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--rand);
+}
+
+.info-feld:last-child { border-bottom: none; }
+
+.info-feld .titel {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--graugruen-dunkel);
+  margin-bottom: 4px;
+}
+
+.info-feld .wert {
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.info-feld ul {
+  margin: 4px 0 0;
+  padding-left: 17px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   Suchfeld und Trefferliste
+   -------------------------------------------------------------------------- */
+
+#suchfeld {
+  width: 100%;
+  padding: 9px 11px;
+  background: var(--papier-hell, #FFFCF5);
+  border: 1px solid var(--rand);
+  border-radius: 10px;
+  color: var(--text);
+  font-size: 13px;
+  font-family: inherit;
+}
+
+#suchfeld::placeholder { color: var(--text-leise); opacity: 0.8; }
+
+#suchfeld:focus {
+  outline: none;
+  border-color: var(--olive);
+  box-shadow: 0 0 0 3px rgba(107, 97, 66, 0.15);
+}
+
+#suchergebnisse {
+  display: none;
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 4px;
+  max-height: 260px;
+  overflow-y: auto;
+  background: var(--panel-hell);
+  border: 1px solid var(--rand);
+  border-radius: 12px;
+  box-shadow: var(--schatten-fern);
+}
+
+#suchergebnisse.offen { display: block; }
+
+#suchergebnisse li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 8px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  line-height: 1.35;
+  cursor: pointer;
+}
+
+#suchergebnisse li:hover { background: rgba(107, 97, 66, 0.1); }
+#suchergebnisse li.leer { color: var(--text-leise); cursor: default; }
+
+/* --------------------------------------------------------------------------
+   Körperbereich-Chips
+   -------------------------------------------------------------------------- */
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.chip {
+  padding: 5px 11px;
+  background: rgba(107, 97, 66, 0.07);
+  border: 1px solid var(--rand);
+  border-radius: 999px;
+  color: var(--text-leise);
+  font-size: 11.5px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.chip:hover { background: rgba(107, 97, 66, 0.14); color: var(--text); }
+
+.chip.aktiv {
+  background: var(--olive);
+  border-color: var(--olive);
+  color: var(--papier-hell, #FFFCF5);
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   Info-Panel: Originalname, Marken, Quellenangabe
+   -------------------------------------------------------------------------- */
+
+#info-inhalt .original {
+  margin: 0 0 10px;
+  font-size: 12px;
+  color: var(--text-leise);
+}
+
+.marken { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 16px; }
+
+.marke {
+  padding: 3px 9px;
+  background: rgba(124, 133, 119, 0.16);
+  border: 1px solid rgba(124, 133, 119, 0.28);
+  border-radius: 999px;
+  font-size: 11px;
+  color: var(--graugruen-dunkel);
+}
+
+.info-feld code {
+  padding: 1px 5px;
+  background: rgba(107, 97, 66, 0.1);
+  border-radius: 4px;
+  font-size: 11.5px;
+}
+
+.info-feld.quelle .wert, .info-feld.hinweis-feld .wert {
+  font-size: 11.5px;
+  color: var(--text-leise);
+  line-height: 1.6;
+}
+
+.quelle-fuss {
+  margin: 26px 0 0;
+  font-size: 10.5px;
+  line-height: 1.5;
+  color: var(--text-leise);
+  opacity: 0.85;
+}
+
+h2 span { color: var(--olive-text); text-transform: none; letter-spacing: 0; }
+
+/* --------------------------------------------------------------------------
+   Schwebender Name unter der Maus + Ladehinweis
+   -------------------------------------------------------------------------- */
+
+#schwebe-name {
+  position: fixed;
+  padding: 5px 10px;
+  background: var(--panel-hell);
+  border: 1px solid var(--rand);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 12px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s;
+  white-space: nowrap;
+  box-shadow: var(--schatten-nah);
+  z-index: 10;
+}
+
+#schwebe-name.sichtbar { opacity: 1; }
+
+#ladehinweis {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 14px 22px;
+  background: var(--panel);
+  border: 1px solid var(--rand);
+  border-radius: 16px;
+  box-shadow: var(--schatten-fern);
+  font-size: 13px;
+  color: var(--text-leise);
+  text-align: center;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+#ladehinweis.weg { display: none; }
+#ladehinweis.fehler { color: #9c3b2a; border-color: #b5735f; background: #F6E6DE; }
+
+/* Auf schmalen Bildschirmen die Panels kleiner machen, damit das Modell sichtbar bleibt */
+@media (max-width: 900px) {
+  aside { width: 200px; padding: 14px; }
+  #info-panel { width: 220px; }
+}
+
+@media (max-width: 700px) {
+  aside {
+    top: auto;
+    bottom: 10px;
+    width: calc(50% - 15px);
+    max-height: 45vh;
+    padding: 12px;
+    font-size: 12px;
+  }
+  #bedienleiste { left: 10px; }
+  #info-panel { right: 10px; width: calc(50% - 15px); }
+  h1 { font-size: 17px; }
+  .untertitel { margin-bottom: 12px; }
+  #bedienleiste .block:last-child { display: none; }   /* Steuerungs-Hilfe ausblenden */
+}

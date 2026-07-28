@@ -1,0 +1,1785 @@
+{
+ "strukturen": [
+  {
+   "id": "PT-G-schulter-links",
+   "name": "Schultergelenk (links)",
+   "latein": "Articulatio glenohumeralis",
+   "system": "gelenkpunkte",
+   "region": "arm",
+   "seite": "links",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.036
+   },
+   "position": [
+    0.1827,
+    1.3485,
+    -0.0295
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Kugelgelenk (drei Freiheitsgrade)",
+   "beteiligt": [
+    "Oberarmknochen (Humerus)",
+    "Schulterblatt (Cavitas glenoidalis)"
+   ],
+   "bewegungen": [
+    "Anteversion/Retroversion",
+    "Abduktion/Adduktion",
+    "Innen-/Außenrotation"
+   ],
+   "normwerte": "Ante-/Retroversion 170–0–40°, Ab-/Adduktion 180–0–40°, Außen-/Innenrotation 60–0–95°",
+   "notiz": "Beweglichstes Gelenk des Körpers, wenig knöcherne Führung. Volle Abduktion nur im Zusammenspiel mit dem Schulterblatt (skapulohumeraler Rhythmus 2:1).",
+   "achsen": [
+    {
+     "name": "Flexion/Extension",
+     "richtung": [
+      1,
+      0,
+      0
+     ],
+     "farbe": "#ff8a5b"
+    },
+    {
+     "name": "Ab-/Adduktion",
+     "richtung": [
+      0,
+      0,
+      1
+     ],
+     "farbe": "#6bb8ff"
+    },
+    {
+     "name": "Rotation",
+     "richtung": [
+      0,
+      1,
+      0
+     ],
+     "farbe": "#b58bff"
+    }
+   ]
+  },
+  {
+   "id": "PT-G-ac-links",
+   "name": "Schultereckgelenk (links)",
+   "latein": "Articulatio acromioclavicularis",
+   "system": "gelenkpunkte",
+   "region": "arm",
+   "seite": "links",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.016
+   },
+   "position": [
+    0.1424,
+    1.3675,
+    -0.0033
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Straffes Gelenk (Amphiarthrose)",
+   "beteiligt": [
+    "Schlüsselbein (Clavicula)",
+    "Schulterdach (Acromion)"
+   ],
+   "bewegungen": [
+    "Kleine Dreh- und Kippbewegungen des Schulterblatts"
+   ],
+   "notiz": "Bei Sturz auf die Schulter kann die Bandverbindung reißen – dann steht das Schlüsselbein hoch (Klaviertastenphänomen)."
+  },
+  {
+   "id": "PT-G-ellenbogen-links",
+   "name": "Ellenbogengelenk (links)",
+   "latein": "Articulatio cubiti",
+   "system": "gelenkpunkte",
+   "region": "arm",
+   "seite": "links",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.03
+   },
+   "position": [
+    0.1927,
+    1.059,
+    -0.0295
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Zusammengesetztes Gelenk aus drei Teilgelenken",
+   "beteiligt": [
+    "Humerus",
+    "Ulna",
+    "Radius"
+   ],
+   "bewegungen": [
+    "Flexion/Extension",
+    "Pronation/Supination über die Radioulnargelenke"
+   ],
+   "normwerte": "Flexion/Extension 150–0–5°, Pro-/Supination 90–0–90°",
+   "notiz": "Der Ellenbogen positioniert die Hand im Raum. Streckdefizite fallen im Alltag früh auf.",
+   "achsen": [
+    {
+     "name": "Flexion/Extension",
+     "richtung": [
+      1,
+      0,
+      0
+     ],
+     "farbe": "#ff8a5b"
+    },
+    {
+     "name": "Pro-/Supination",
+     "richtung": [
+      0.06,
+      1,
+      0
+     ],
+     "farbe": "#b58bff"
+    }
+   ]
+  },
+  {
+   "id": "PT-G-handgelenk-links",
+   "name": "Handgelenk (links)",
+   "latein": "Articulatio radiocarpalis",
+   "system": "gelenkpunkte",
+   "region": "arm",
+   "seite": "links",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.024
+   },
+   "position": [
+    0.2427,
+    0.8356,
+    -0.0119
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Eigelenk plus verzahntes Gelenk",
+   "beteiligt": [
+    "Radius",
+    "Handwurzelknochen",
+    "Discus ulnocarpalis"
+   ],
+   "bewegungen": [
+    "Palmarflexion/Dorsalextension",
+    "Radial-/Ulnarabduktion"
+   ],
+   "normwerte": "Dorsalextension/Palmarflexion 60–0–60°, Radial-/Ulnarabduktion 20–0–40°",
+   "notiz": "Die Elle hat keinen direkten Kontakt zur Handwurzel – dazwischen liegt der Discus. Deshalb bricht bei Stürzen fast immer die Speiche.",
+   "achsen": [
+    {
+     "name": "Flexion/Extension",
+     "richtung": [
+      1,
+      0,
+      0
+     ],
+     "farbe": "#ff8a5b"
+    },
+    {
+     "name": "Ab-/Adduktion",
+     "richtung": [
+      0,
+      0,
+      1
+     ],
+     "farbe": "#6bb8ff"
+    }
+   ]
+  },
+  {
+   "id": "PT-G-isg-links",
+   "name": "Iliosakralgelenk (ISG) (links)",
+   "latein": "Articulatio sacroiliaca",
+   "system": "gelenkpunkte",
+   "region": "becken",
+   "seite": "links",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.022
+   },
+   "position": [
+    0.032,
+    0.9315,
+    -0.056
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Straffes Gelenk mit sehr kräftigem Bandapparat",
+   "beteiligt": [
+    "Kreuzbein (Os sacrum)",
+    "Darmbein (Os ilium)"
+   ],
+   "bewegungen": [
+    "Nutation",
+    "Gegennutation"
+   ],
+   "normwerte": "Bewegungsausmaß nur wenige Grad bzw. Millimeter",
+   "notiz": "Überträgt die gesamte Rumpflast auf die Beine. Häufige Quelle tiefsitzender Kreuzschmerzen; in der Schwangerschaft hormonell gelockert."
+  },
+  {
+   "id": "PT-G-huefte-links",
+   "name": "Hüftgelenk (links)",
+   "latein": "Articulatio coxae",
+   "system": "gelenkpunkte",
+   "region": "becken",
+   "seite": "links",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.036
+   },
+   "position": [
+    0.0636,
+    0.8346,
+    -0.0127
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Nussgelenk (Kugelgelenk mit tiefer Pfanne)",
+   "beteiligt": [
+    "Femur",
+    "Hüftbein (Acetabulum)"
+   ],
+   "bewegungen": [
+    "Flexion/Extension",
+    "Abduktion/Adduktion",
+    "Innen-/Außenrotation"
+   ],
+   "normwerte": "Flexion/Extension 130–0–10°, Ab-/Adduktion 45–0–30°, Außen-/Innenrotation 45–0–40°",
+   "notiz": "Beim Gehen wirkt bis zum Vierfachen des Körpergewichts – deshalb ist die Kräftigung der Abduktoren nach Hüft-TEP so wichtig.",
+   "achsen": [
+    {
+     "name": "Flexion/Extension",
+     "richtung": [
+      1,
+      0,
+      0
+     ],
+     "farbe": "#ff8a5b"
+    },
+    {
+     "name": "Ab-/Adduktion",
+     "richtung": [
+      0,
+      0,
+      1
+     ],
+     "farbe": "#6bb8ff"
+    },
+    {
+     "name": "Rotation",
+     "richtung": [
+      0,
+      1,
+      0
+     ],
+     "farbe": "#b58bff"
+    }
+   ]
+  },
+  {
+   "id": "PT-G-knie-links",
+   "name": "Kniegelenk (links)",
+   "latein": "Articulatio genus",
+   "system": "gelenkpunkte",
+   "region": "bein",
+   "seite": "links",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.036
+   },
+   "position": [
+    0.0749,
+    0.4181,
+    -0.0305
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Dreh-Scharnier-Gelenk (Trochoginglymus) mit Menisken",
+   "beteiligt": [
+    "Femur",
+    "Tibia",
+    "Patella"
+   ],
+   "bewegungen": [
+    "Flexion/Extension",
+    "Rotation nur in Beugestellung"
+   ],
+   "normwerte": "Flexion/Extension 140–0–5°, Rotation in 90° Beugung ca. 30° außen / 10° innen",
+   "notiz": "Beim Strecken dreht das Schienbein leicht nach außen (Schlussrotation) und verriegelt das Gelenk. Die Menisken vergrößern die Kontaktfläche und dämpfen Stöße.",
+   "achsen": [
+    {
+     "name": "Flexion/Extension",
+     "richtung": [
+      1,
+      0,
+      0
+     ],
+     "farbe": "#ff8a5b"
+    },
+    {
+     "name": "Rotation (nur gebeugt)",
+     "richtung": [
+      0,
+      1,
+      0
+     ],
+     "farbe": "#b58bff"
+    }
+   ]
+  },
+  {
+   "id": "PT-G-osg-links",
+   "name": "Oberes Sprunggelenk (OSG) (links)",
+   "latein": "Articulatio talocruralis",
+   "system": "gelenkpunkte",
+   "region": "bein",
+   "seite": "links",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.026
+   },
+   "position": [
+    0.0789,
+    0.0831,
+    -0.0402
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Scharniergelenk in der Malleolengabel",
+   "beteiligt": [
+    "Tibia",
+    "Fibula",
+    "Talus"
+   ],
+   "bewegungen": [
+    "Dorsalextension/Plantarflexion"
+   ],
+   "normwerte": "Dorsalextension/Plantarflexion 20–0–50°",
+   "notiz": "Die Achse verläuft schräg durch beide Knöchel. In Dorsalextension ist das Gelenk am stabilsten – Umknickverletzungen passieren meist in Plantarflexion.",
+   "achsen": [
+    {
+     "name": "Dorsalextension/Plantarflexion",
+     "richtung": [
+      1,
+      -0.08,
+      -0.2
+     ],
+     "farbe": "#ff8a5b"
+    }
+   ]
+  },
+  {
+   "id": "PT-G-usg-links",
+   "name": "Unteres Sprunggelenk (USG) (links)",
+   "latein": "Articulatio subtalaris",
+   "system": "gelenkpunkte",
+   "region": "bein",
+   "seite": "links",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.022
+   },
+   "position": [
+    0.0721,
+    0.0569,
+    -0.0324
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Zapfengelenk mit schräger Achse",
+   "beteiligt": [
+    "Talus",
+    "Calcaneus",
+    "Os naviculare"
+   ],
+   "bewegungen": [
+    "Supination (Inversion)",
+    "Pronation (Eversion)"
+   ],
+   "normwerte": "Supination/Pronation ca. 60–0–30°",
+   "notiz": "Hier passieren die klassischen Supinationstraumen mit Riss des Lig. fibulotalare anterius. Das USG passt den Fuß an unebenen Boden an.",
+   "achsen": [
+    {
+     "name": "Supination/Pronation",
+     "richtung": [
+      0.16,
+      0.42,
+      0.89
+     ],
+     "farbe": "#6bb8ff"
+    }
+   ]
+  },
+  {
+   "id": "PT-G-kiefer-links",
+   "name": "Kiefergelenk (links)",
+   "latein": "Articulatio temporomandibularis",
+   "system": "gelenkpunkte",
+   "region": "kopf",
+   "seite": "links",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.013
+   },
+   "position": [
+    0.049,
+    1.525,
+    -0.0082
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Kombiniertes Dreh-Gleit-Gelenk mit Diskus",
+   "beteiligt": [
+    "Schläfenbein",
+    "Unterkiefer"
+   ],
+   "bewegungen": [
+    "Mundöffnung (Drehung, dann Gleiten)",
+    "Vor- und Rückschub",
+    "Mahlbewegung"
+   ],
+   "normwerte": "Mundöffnung ca. 40–50 mm Schneidekantenabstand",
+   "notiz": "Beide Kiefergelenke arbeiten immer gemeinsam. Beschwerden hängen oft mit Nacken- und Kopfhaltung zusammen (CMD).",
+   "achsen": [
+    {
+     "name": "Öffnen/Schließen",
+     "richtung": [
+      1,
+      0,
+      0
+     ],
+     "farbe": "#ff8a5b"
+    }
+   ]
+  },
+  {
+   "id": "PT-N-plexus-brachialis-links",
+   "name": "Armgeflecht (links)",
+   "latein": "Plexus brachialis",
+   "system": "nervenbahnen",
+   "region": "hals",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.006,
+    "punkte": [
+     [
+      0.015,
+      1.4364,
+      -0.0144
+     ],
+     [
+      0.1077,
+      1.3835,
+      -0.0095
+     ],
+     [
+      0.1477,
+      1.3605,
+      -0.0075
+     ],
+     [
+      0.1747,
+      1.3335,
+      -0.0115
+     ]
+    ]
+   },
+   "segmente": "C5–Th1",
+   "versorgt": [
+    "Schultergürtel- und Armmuskulatur über seine Endäste"
+   ],
+   "notiz": "Zieht zwischen den Skalenusmuskeln und unter dem Schlüsselbein hindurch zur Achselhöhle. Engstellen dort können bei Überkopfarbeit Kribbeln auslösen (Thoracic-Outlet-Syndrom)."
+  },
+  {
+   "id": "PT-N-axillaris-links",
+   "name": "Achselnerv (links)",
+   "latein": "N. axillaris",
+   "system": "nervenbahnen",
+   "region": "arm",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      0.1627,
+      1.3385,
+      -0.0245
+     ],
+     [
+      0.1877,
+      1.3205,
+      -0.0595
+     ],
+     [
+      0.2007,
+      1.2935,
+      -0.0415
+     ]
+    ]
+   },
+   "segmente": "C5–C6",
+   "versorgt": [
+    "M. deltoideus",
+    "M. teres minor"
+   ],
+   "sensibel": "Haut über der seitlichen Schulter",
+   "notiz": "Läuft eng um den Oberarmhals. Nach Schulterluxation oder Oberarmkopfbruch immer die Sensibilität über der seitlichen Schulter prüfen."
+  },
+  {
+   "id": "PT-N-medianus-links",
+   "name": "Mittelnerv (links)",
+   "latein": "N. medianus",
+   "system": "nervenbahnen",
+   "region": "arm",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      0.1527,
+      1.3285,
+      -0.0075
+     ],
+     [
+      0.1747,
+      1.2327,
+      -0.0075
+     ],
+     [
+      0.1827,
+      1.079,
+      -0.0015
+     ],
+     [
+      0.2293,
+      0.9809,
+      0.0033
+     ],
+     [
+      0.2447,
+      0.8506,
+      0.0101
+     ],
+     [
+      0.2467,
+      0.8156,
+      0.0061
+     ]
+    ]
+   },
+   "segmente": "C6–Th1",
+   "versorgt": [
+    "Die meisten Unterarmbeuger",
+    "Daumenballenmuskulatur"
+   ],
+   "sensibel": "Handfläche Daumen bis halber Ringfinger",
+   "notiz": "Läuft durch den Karpaltunnel. Wird er dort eingeengt, kribbeln nachts die ersten drei Finger – das häufigste Nervenengpasssyndrom überhaupt."
+  },
+  {
+   "id": "PT-N-ulnaris-links",
+   "name": "Ellennerv (links)",
+   "latein": "N. ulnaris",
+   "system": "nervenbahnen",
+   "region": "arm",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      0.1487,
+      1.3265,
+      -0.0215
+     ],
+     [
+      0.1667,
+      1.2127,
+      -0.0285
+     ],
+     [
+      0.1707,
+      1.071,
+      -0.0515
+     ],
+     [
+      0.2133,
+      0.9809,
+      -0.0317
+     ],
+     [
+      0.2247,
+      0.8476,
+      0.0001
+     ],
+     [
+      0.2227,
+      0.8136,
+      0.0001
+     ]
+    ]
+   },
+   "segmente": "C8–Th1",
+   "versorgt": [
+    "Kleine Handmuskeln",
+    "M. flexor carpi ulnaris"
+   ],
+   "sensibel": "Kleinfinger und halber Ringfinger",
+   "notiz": "Zieht offen durch den Sulcus hinter dem inneren Ellenbogenhöcker – der „Musikantenknochen\". Dauerdruck schwächt die Feinmotorik der Hand."
+  },
+  {
+   "id": "PT-N-radialis-links",
+   "name": "Speichennerv (links)",
+   "latein": "N. radialis",
+   "system": "nervenbahnen",
+   "region": "arm",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      0.1527,
+      1.3185,
+      -0.0475
+     ],
+     [
+      0.1827,
+      1.2327,
+      -0.0635
+     ],
+     [
+      0.2007,
+      1.1827,
+      -0.0555
+     ],
+     [
+      0.2147,
+      1.074,
+      -0.0155
+     ],
+     [
+      0.2607,
+      0.9588,
+      -0.0259
+     ],
+     [
+      0.2587,
+      0.8506,
+      -0.0239
+     ]
+    ]
+   },
+   "segmente": "C5–Th1",
+   "versorgt": [
+    "M. triceps brachii",
+    "Handgelenks- und Fingerstrecker",
+    "M. brachioradialis"
+   ],
+   "sensibel": "Handrücken auf der Daumenseite",
+   "notiz": "Windet sich in der Radialisrinne direkt um den Oberarmknochen. Druck dort (z. B. Arm über der Stuhllehne) führt zur „Fallhand\"."
+  },
+  {
+   "id": "PT-N-femoralis-links",
+   "name": "Oberschenkelnerv (links)",
+   "latein": "N. femoralis",
+   "system": "nervenbahnen",
+   "region": "becken",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      0.03,
+      0.9754,
+      -0.0063
+     ],
+     [
+      0.0416,
+      0.8896,
+      0.0323
+     ],
+     [
+      0.0596,
+      0.8466,
+      0.0393
+     ],
+     [
+      0.082,
+      0.7199,
+      0.0233
+     ],
+     [
+      0.086,
+      0.6549,
+      0.0173
+     ]
+    ]
+   },
+   "segmente": "L2–L4",
+   "versorgt": [
+    "M. quadriceps femoris",
+    "M. iliopsoas",
+    "M. sartorius"
+   ],
+   "sensibel": "Vorderseite des Oberschenkels, über den N. saphenus die Unterschenkelinnenseite",
+   "notiz": "Bei Ausfall ist die Kniestreckung nicht möglich und der Patellarsehnenreflex fehlt – Treppensteigen wird unmöglich."
+  },
+  {
+   "id": "PT-N-ischiadicus-links",
+   "name": "Ischiasnerv (links)",
+   "latein": "N. ischiadicus",
+   "system": "nervenbahnen",
+   "region": "becken",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0065,
+    "punkte": [
+     [
+      0.03,
+      0.9019,
+      -0.065
+     ],
+     [
+      0.0756,
+      0.8246,
+      -0.0677
+     ],
+     [
+      0.09,
+      0.7099,
+      -0.0767
+     ],
+     [
+      0.086,
+      0.6149,
+      -0.0747
+     ],
+     [
+      0.0789,
+      0.4731,
+      -0.0785
+     ]
+    ]
+   },
+   "segmente": "L4–S3",
+   "versorgt": [
+    "Ischiocrurale Muskulatur",
+    "über die Endäste die gesamte Unterschenkel- und Fußmuskulatur"
+   ],
+   "notiz": "Dickster Nerv des Körpers. Er tritt unter dem M. piriformis aus dem Becken – ist dieser verspannt, kann das ischiasähnliche Beschwerden machen (Piriformis-Syndrom)."
+  },
+  {
+   "id": "PT-N-tibialis-links",
+   "name": "Schienbeinnerv (links)",
+   "latein": "N. tibialis",
+   "system": "nervenbahnen",
+   "region": "bein",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      0.0789,
+      0.4631,
+      -0.0765
+     ],
+     [
+      0.0749,
+      0.3981,
+      -0.0745
+     ],
+     [
+      0.0709,
+      0.3162,
+      -0.0782
+     ],
+     [
+      0.0689,
+      0.2262,
+      -0.0662
+     ],
+     [
+      0.0629,
+      0.0951,
+      -0.0602
+     ],
+     [
+      0.0741,
+      0.0447,
+      -0.0328
+     ]
+    ]
+   },
+   "segmente": "L4–S3",
+   "versorgt": [
+    "Wadenmuskulatur",
+    "Zehenbeuger",
+    "kurze Fußmuskeln"
+   ],
+   "sensibel": "Fußsohle",
+   "notiz": "Endast des Ischiasnervs für die Rückseite. Fällt er aus, ist der Zehenstand nicht mehr möglich."
+  },
+  {
+   "id": "PT-N-fibularis-communis-links",
+   "name": "Gemeinsamer Wadenbeinnerv (links)",
+   "latein": "N. fibularis (peroneus) communis",
+   "system": "nervenbahnen",
+   "region": "bein",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      0.0909,
+      0.4601,
+      -0.0765
+     ],
+     [
+      0.1142,
+      0.4109,
+      -0.0674
+     ],
+     [
+      0.1162,
+      0.3749,
+      -0.0434
+     ],
+     [
+      0.0949,
+      0.3062,
+      -0.0222
+     ],
+     [
+      0.0889,
+      0.1131,
+      -0.0222
+     ]
+    ]
+   },
+   "segmente": "L4–S2",
+   "versorgt": [
+    "M. tibialis anterior",
+    "Zehenstrecker",
+    "Mm. fibulares"
+   ],
+   "sensibel": "Fußrücken und Außenseite des Unterschenkels",
+   "notiz": "Läuft ungeschützt um das Fibulaköpfchen. Druck durch Gips, Lagerung oder übereinandergeschlagene Beine kann eine Fallfuß-Parese auslösen."
+  },
+  {
+   "id": "PT-G-schulter-rechts",
+   "name": "Schultergelenk (rechts)",
+   "latein": "Articulatio glenohumeralis",
+   "system": "gelenkpunkte",
+   "region": "arm",
+   "seite": "rechts",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.036
+   },
+   "position": [
+    -0.183,
+    1.3485,
+    -0.0291
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Kugelgelenk (drei Freiheitsgrade)",
+   "beteiligt": [
+    "Oberarmknochen (Humerus)",
+    "Schulterblatt (Cavitas glenoidalis)"
+   ],
+   "bewegungen": [
+    "Anteversion/Retroversion",
+    "Abduktion/Adduktion",
+    "Innen-/Außenrotation"
+   ],
+   "normwerte": "Ante-/Retroversion 170–0–40°, Ab-/Adduktion 180–0–40°, Außen-/Innenrotation 60–0–95°",
+   "notiz": "Beweglichstes Gelenk des Körpers, wenig knöcherne Führung. Volle Abduktion nur im Zusammenspiel mit dem Schulterblatt (skapulohumeraler Rhythmus 2:1).",
+   "achsen": [
+    {
+     "name": "Flexion/Extension",
+     "richtung": [
+      1,
+      0,
+      0
+     ],
+     "farbe": "#ff8a5b"
+    },
+    {
+     "name": "Ab-/Adduktion",
+     "richtung": [
+      0,
+      0,
+      1
+     ],
+     "farbe": "#6bb8ff"
+    },
+    {
+     "name": "Rotation",
+     "richtung": [
+      0,
+      1,
+      0
+     ],
+     "farbe": "#b58bff"
+    }
+   ]
+  },
+  {
+   "id": "PT-G-ac-rechts",
+   "name": "Schultereckgelenk (rechts)",
+   "latein": "Articulatio acromioclavicularis",
+   "system": "gelenkpunkte",
+   "region": "arm",
+   "seite": "rechts",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.016
+   },
+   "position": [
+    -0.1443,
+    1.3678,
+    -0.0046
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Straffes Gelenk (Amphiarthrose)",
+   "beteiligt": [
+    "Schlüsselbein (Clavicula)",
+    "Schulterdach (Acromion)"
+   ],
+   "bewegungen": [
+    "Kleine Dreh- und Kippbewegungen des Schulterblatts"
+   ],
+   "notiz": "Bei Sturz auf die Schulter kann die Bandverbindung reißen – dann steht das Schlüsselbein hoch (Klaviertastenphänomen)."
+  },
+  {
+   "id": "PT-G-ellenbogen-rechts",
+   "name": "Ellenbogengelenk (rechts)",
+   "latein": "Articulatio cubiti",
+   "system": "gelenkpunkte",
+   "region": "arm",
+   "seite": "rechts",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.03
+   },
+   "position": [
+    -0.193,
+    1.059,
+    -0.0291
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Zusammengesetztes Gelenk aus drei Teilgelenken",
+   "beteiligt": [
+    "Humerus",
+    "Ulna",
+    "Radius"
+   ],
+   "bewegungen": [
+    "Flexion/Extension",
+    "Pronation/Supination über die Radioulnargelenke"
+   ],
+   "normwerte": "Flexion/Extension 150–0–5°, Pro-/Supination 90–0–90°",
+   "notiz": "Der Ellenbogen positioniert die Hand im Raum. Streckdefizite fallen im Alltag früh auf.",
+   "achsen": [
+    {
+     "name": "Flexion/Extension",
+     "richtung": [
+      1,
+      0,
+      0
+     ],
+     "farbe": "#ff8a5b"
+    },
+    {
+     "name": "Pro-/Supination",
+     "richtung": [
+      0.06,
+      1,
+      0
+     ],
+     "farbe": "#b58bff"
+    }
+   ]
+  },
+  {
+   "id": "PT-G-handgelenk-rechts",
+   "name": "Handgelenk (rechts)",
+   "latein": "Articulatio radiocarpalis",
+   "system": "gelenkpunkte",
+   "region": "arm",
+   "seite": "rechts",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.024
+   },
+   "position": [
+    -0.2448,
+    0.8356,
+    -0.012
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Eigelenk plus verzahntes Gelenk",
+   "beteiligt": [
+    "Radius",
+    "Handwurzelknochen",
+    "Discus ulnocarpalis"
+   ],
+   "bewegungen": [
+    "Palmarflexion/Dorsalextension",
+    "Radial-/Ulnarabduktion"
+   ],
+   "normwerte": "Dorsalextension/Palmarflexion 60–0–60°, Radial-/Ulnarabduktion 20–0–40°",
+   "notiz": "Die Elle hat keinen direkten Kontakt zur Handwurzel – dazwischen liegt der Discus. Deshalb bricht bei Stürzen fast immer die Speiche.",
+   "achsen": [
+    {
+     "name": "Flexion/Extension",
+     "richtung": [
+      1,
+      0,
+      0
+     ],
+     "farbe": "#ff8a5b"
+    },
+    {
+     "name": "Ab-/Adduktion",
+     "richtung": [
+      0,
+      0,
+      1
+     ],
+     "farbe": "#6bb8ff"
+    }
+   ]
+  },
+  {
+   "id": "PT-G-isg-rechts",
+   "name": "Iliosakralgelenk (ISG) (rechts)",
+   "latein": "Articulatio sacroiliaca",
+   "system": "gelenkpunkte",
+   "region": "becken",
+   "seite": "rechts",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.022
+   },
+   "position": [
+    -0.032,
+    0.9315,
+    -0.056
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Straffes Gelenk mit sehr kräftigem Bandapparat",
+   "beteiligt": [
+    "Kreuzbein (Os sacrum)",
+    "Darmbein (Os ilium)"
+   ],
+   "bewegungen": [
+    "Nutation",
+    "Gegennutation"
+   ],
+   "normwerte": "Bewegungsausmaß nur wenige Grad bzw. Millimeter",
+   "notiz": "Überträgt die gesamte Rumpflast auf die Beine. Häufige Quelle tiefsitzender Kreuzschmerzen; in der Schwangerschaft hormonell gelockert."
+  },
+  {
+   "id": "PT-G-huefte-rechts",
+   "name": "Hüftgelenk (rechts)",
+   "latein": "Articulatio coxae",
+   "system": "gelenkpunkte",
+   "region": "becken",
+   "seite": "rechts",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.036
+   },
+   "position": [
+    -0.0648,
+    0.8346,
+    -0.0123
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Nussgelenk (Kugelgelenk mit tiefer Pfanne)",
+   "beteiligt": [
+    "Femur",
+    "Hüftbein (Acetabulum)"
+   ],
+   "bewegungen": [
+    "Flexion/Extension",
+    "Abduktion/Adduktion",
+    "Innen-/Außenrotation"
+   ],
+   "normwerte": "Flexion/Extension 130–0–10°, Ab-/Adduktion 45–0–30°, Außen-/Innenrotation 45–0–40°",
+   "notiz": "Beim Gehen wirkt bis zum Vierfachen des Körpergewichts – deshalb ist die Kräftigung der Abduktoren nach Hüft-TEP so wichtig.",
+   "achsen": [
+    {
+     "name": "Flexion/Extension",
+     "richtung": [
+      1,
+      0,
+      0
+     ],
+     "farbe": "#ff8a5b"
+    },
+    {
+     "name": "Ab-/Adduktion",
+     "richtung": [
+      0,
+      0,
+      1
+     ],
+     "farbe": "#6bb8ff"
+    },
+    {
+     "name": "Rotation",
+     "richtung": [
+      0,
+      1,
+      0
+     ],
+     "farbe": "#b58bff"
+    }
+   ]
+  },
+  {
+   "id": "PT-G-knie-rechts",
+   "name": "Kniegelenk (rechts)",
+   "latein": "Articulatio genus",
+   "system": "gelenkpunkte",
+   "region": "bein",
+   "seite": "rechts",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.036
+   },
+   "position": [
+    -0.0767,
+    0.4181,
+    -0.0299
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Dreh-Scharnier-Gelenk (Trochoginglymus) mit Menisken",
+   "beteiligt": [
+    "Femur",
+    "Tibia",
+    "Patella"
+   ],
+   "bewegungen": [
+    "Flexion/Extension",
+    "Rotation nur in Beugestellung"
+   ],
+   "normwerte": "Flexion/Extension 140–0–5°, Rotation in 90° Beugung ca. 30° außen / 10° innen",
+   "notiz": "Beim Strecken dreht das Schienbein leicht nach außen (Schlussrotation) und verriegelt das Gelenk. Die Menisken vergrößern die Kontaktfläche und dämpfen Stöße.",
+   "achsen": [
+    {
+     "name": "Flexion/Extension",
+     "richtung": [
+      1,
+      0,
+      0
+     ],
+     "farbe": "#ff8a5b"
+    },
+    {
+     "name": "Rotation (nur gebeugt)",
+     "richtung": [
+      0,
+      1,
+      0
+     ],
+     "farbe": "#b58bff"
+    }
+   ]
+  },
+  {
+   "id": "PT-G-osg-rechts",
+   "name": "Oberes Sprunggelenk (OSG) (rechts)",
+   "latein": "Articulatio talocruralis",
+   "system": "gelenkpunkte",
+   "region": "bein",
+   "seite": "rechts",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.026
+   },
+   "position": [
+    -0.0807,
+    0.083,
+    -0.0396
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Scharniergelenk in der Malleolengabel",
+   "beteiligt": [
+    "Tibia",
+    "Fibula",
+    "Talus"
+   ],
+   "bewegungen": [
+    "Dorsalextension/Plantarflexion"
+   ],
+   "normwerte": "Dorsalextension/Plantarflexion 20–0–50°",
+   "notiz": "Die Achse verläuft schräg durch beide Knöchel. In Dorsalextension ist das Gelenk am stabilsten – Umknickverletzungen passieren meist in Plantarflexion.",
+   "achsen": [
+    {
+     "name": "Dorsalextension/Plantarflexion",
+     "richtung": [
+      1,
+      -0.08,
+      -0.2
+     ],
+     "farbe": "#ff8a5b"
+    }
+   ]
+  },
+  {
+   "id": "PT-G-usg-rechts",
+   "name": "Unteres Sprunggelenk (USG) (rechts)",
+   "latein": "Articulatio subtalaris",
+   "system": "gelenkpunkte",
+   "region": "bein",
+   "seite": "rechts",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.022
+   },
+   "position": [
+    -0.074,
+    0.0568,
+    -0.0312
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Zapfengelenk mit schräger Achse",
+   "beteiligt": [
+    "Talus",
+    "Calcaneus",
+    "Os naviculare"
+   ],
+   "bewegungen": [
+    "Supination (Inversion)",
+    "Pronation (Eversion)"
+   ],
+   "normwerte": "Supination/Pronation ca. 60–0–30°",
+   "notiz": "Hier passieren die klassischen Supinationstraumen mit Riss des Lig. fibulotalare anterius. Das USG passt den Fuß an unebenen Boden an.",
+   "achsen": [
+    {
+     "name": "Supination/Pronation",
+     "richtung": [
+      0.16,
+      0.42,
+      0.89
+     ],
+     "farbe": "#6bb8ff"
+    }
+   ]
+  },
+  {
+   "id": "PT-G-kiefer-rechts",
+   "name": "Kiefergelenk (rechts)",
+   "latein": "Articulatio temporomandibularis",
+   "system": "gelenkpunkte",
+   "region": "kopf",
+   "seite": "rechts",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.013
+   },
+   "position": [
+    -0.049,
+    1.525,
+    -0.0082
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Kombiniertes Dreh-Gleit-Gelenk mit Diskus",
+   "beteiligt": [
+    "Schläfenbein",
+    "Unterkiefer"
+   ],
+   "bewegungen": [
+    "Mundöffnung (Drehung, dann Gleiten)",
+    "Vor- und Rückschub",
+    "Mahlbewegung"
+   ],
+   "normwerte": "Mundöffnung ca. 40–50 mm Schneidekantenabstand",
+   "notiz": "Beide Kiefergelenke arbeiten immer gemeinsam. Beschwerden hängen oft mit Nacken- und Kopfhaltung zusammen (CMD).",
+   "achsen": [
+    {
+     "name": "Öffnen/Schließen",
+     "richtung": [
+      1,
+      0,
+      0
+     ],
+     "farbe": "#ff8a5b"
+    }
+   ]
+  },
+  {
+   "id": "PT-N-plexus-brachialis-rechts",
+   "name": "Armgeflecht (rechts)",
+   "latein": "Plexus brachialis",
+   "system": "nervenbahnen",
+   "region": "hals",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.006,
+    "punkte": [
+     [
+      -0.015,
+      1.4364,
+      -0.0144
+     ],
+     [
+      -0.108,
+      1.3835,
+      -0.0091
+     ],
+     [
+      -0.148,
+      1.3605,
+      -0.0071
+     ],
+     [
+      -0.175,
+      1.3335,
+      -0.0111
+     ]
+    ]
+   },
+   "segmente": "C5–Th1",
+   "versorgt": [
+    "Schultergürtel- und Armmuskulatur über seine Endäste"
+   ],
+   "notiz": "Zieht zwischen den Skalenusmuskeln und unter dem Schlüsselbein hindurch zur Achselhöhle. Engstellen dort können bei Überkopfarbeit Kribbeln auslösen (Thoracic-Outlet-Syndrom)."
+  },
+  {
+   "id": "PT-N-axillaris-rechts",
+   "name": "Achselnerv (rechts)",
+   "latein": "N. axillaris",
+   "system": "nervenbahnen",
+   "region": "arm",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      -0.163,
+      1.3385,
+      -0.0241
+     ],
+     [
+      -0.188,
+      1.3205,
+      -0.0591
+     ],
+     [
+      -0.201,
+      1.2935,
+      -0.0411
+     ]
+    ]
+   },
+   "segmente": "C5–C6",
+   "versorgt": [
+    "M. deltoideus",
+    "M. teres minor"
+   ],
+   "sensibel": "Haut über der seitlichen Schulter",
+   "notiz": "Läuft eng um den Oberarmhals. Nach Schulterluxation oder Oberarmkopfbruch immer die Sensibilität über der seitlichen Schulter prüfen."
+  },
+  {
+   "id": "PT-N-medianus-rechts",
+   "name": "Mittelnerv (rechts)",
+   "latein": "N. medianus",
+   "system": "nervenbahnen",
+   "region": "arm",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      -0.153,
+      1.3285,
+      -0.0071
+     ],
+     [
+      -0.175,
+      1.2391,
+      -0.0071
+     ],
+     [
+      -0.183,
+      1.079,
+      -0.0011
+     ],
+     [
+      -0.2311,
+      0.9791,
+      0.0039
+     ],
+     [
+      -0.2468,
+      0.8506,
+      0.01
+     ],
+     [
+      -0.2488,
+      0.8156,
+      0.006
+     ]
+    ]
+   },
+   "segmente": "C6–Th1",
+   "versorgt": [
+    "Die meisten Unterarmbeuger",
+    "Daumenballenmuskulatur"
+   ],
+   "sensibel": "Handfläche Daumen bis halber Ringfinger",
+   "notiz": "Läuft durch den Karpaltunnel. Wird er dort eingeengt, kribbeln nachts die ersten drei Finger – das häufigste Nervenengpasssyndrom überhaupt."
+  },
+  {
+   "id": "PT-N-ulnaris-rechts",
+   "name": "Ellennerv (rechts)",
+   "latein": "N. ulnaris",
+   "system": "nervenbahnen",
+   "region": "arm",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      -0.149,
+      1.3265,
+      -0.0211
+     ],
+     [
+      -0.167,
+      1.2191,
+      -0.0281
+     ],
+     [
+      -0.171,
+      1.071,
+      -0.0511
+     ],
+     [
+      -0.2151,
+      0.9791,
+      -0.0311
+     ],
+     [
+      -0.2268,
+      0.8476,
+      0.0
+     ],
+     [
+      -0.2248,
+      0.8136,
+      0.0
+     ]
+    ]
+   },
+   "segmente": "C8–Th1",
+   "versorgt": [
+    "Kleine Handmuskeln",
+    "M. flexor carpi ulnaris"
+   ],
+   "sensibel": "Kleinfinger und halber Ringfinger",
+   "notiz": "Zieht offen durch den Sulcus hinter dem inneren Ellenbogenhöcker – der „Musikantenknochen\". Dauerdruck schwächt die Feinmotorik der Hand."
+  },
+  {
+   "id": "PT-N-radialis-rechts",
+   "name": "Speichennerv (rechts)",
+   "latein": "N. radialis",
+   "system": "nervenbahnen",
+   "region": "arm",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      -0.153,
+      1.3185,
+      -0.0471
+     ],
+     [
+      -0.183,
+      1.2391,
+      -0.0631
+     ],
+     [
+      -0.201,
+      1.1891,
+      -0.0551
+     ],
+     [
+      -0.215,
+      1.074,
+      -0.0151
+     ],
+     [
+      -0.2628,
+      0.9592,
+      -0.026
+     ],
+     [
+      -0.2608,
+      0.8506,
+      -0.024
+     ]
+    ]
+   },
+   "segmente": "C5–Th1",
+   "versorgt": [
+    "M. triceps brachii",
+    "Handgelenks- und Fingerstrecker",
+    "M. brachioradialis"
+   ],
+   "sensibel": "Handrücken auf der Daumenseite",
+   "notiz": "Windet sich in der Radialisrinne direkt um den Oberarmknochen. Druck dort (z. B. Arm über der Stuhllehne) führt zur „Fallhand\"."
+  },
+  {
+   "id": "PT-N-femoralis-rechts",
+   "name": "Oberschenkelnerv (rechts)",
+   "latein": "N. femoralis",
+   "system": "nervenbahnen",
+   "region": "becken",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      -0.03,
+      0.9754,
+      -0.0063
+     ],
+     [
+      -0.0428,
+      0.8896,
+      0.0327
+     ],
+     [
+      -0.0608,
+      0.8466,
+      0.0397
+     ],
+     [
+      -0.0835,
+      0.7173,
+      0.0237
+     ],
+     [
+      -0.0875,
+      0.6523,
+      0.0177
+     ]
+    ]
+   },
+   "segmente": "L2–L4",
+   "versorgt": [
+    "M. quadriceps femoris",
+    "M. iliopsoas",
+    "M. sartorius"
+   ],
+   "sensibel": "Vorderseite des Oberschenkels, über den N. saphenus die Unterschenkelinnenseite",
+   "notiz": "Bei Ausfall ist die Kniestreckung nicht möglich und der Patellarsehnenreflex fehlt – Treppensteigen wird unmöglich."
+  },
+  {
+   "id": "PT-N-ischiadicus-rechts",
+   "name": "Ischiasnerv (rechts)",
+   "latein": "N. ischiadicus",
+   "system": "nervenbahnen",
+   "region": "becken",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0065,
+    "punkte": [
+     [
+      -0.03,
+      0.9019,
+      -0.065
+     ],
+     [
+      -0.0768,
+      0.8246,
+      -0.0673
+     ],
+     [
+      -0.0915,
+      0.7073,
+      -0.0763
+     ],
+     [
+      -0.0875,
+      0.6123,
+      -0.0743
+     ],
+     [
+      -0.0807,
+      0.4731,
+      -0.0779
+     ]
+    ]
+   },
+   "segmente": "L4–S3",
+   "versorgt": [
+    "Ischiocrurale Muskulatur",
+    "über die Endäste die gesamte Unterschenkel- und Fußmuskulatur"
+   ],
+   "notiz": "Dickster Nerv des Körpers. Er tritt unter dem M. piriformis aus dem Becken – ist dieser verspannt, kann das ischiasähnliche Beschwerden machen (Piriformis-Syndrom)."
+  },
+  {
+   "id": "PT-N-tibialis-rechts",
+   "name": "Schienbeinnerv (rechts)",
+   "latein": "N. tibialis",
+   "system": "nervenbahnen",
+   "region": "bein",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      -0.0807,
+      0.4631,
+      -0.0759
+     ],
+     [
+      -0.0767,
+      0.3981,
+      -0.0739
+     ],
+     [
+      -0.0727,
+      0.326,
+      -0.0776
+     ],
+     [
+      -0.0707,
+      0.236,
+      -0.0656
+     ],
+     [
+      -0.0647,
+      0.095,
+      -0.0596
+     ],
+     [
+      -0.0764,
+      0.0444,
+      -0.0328
+     ]
+    ]
+   },
+   "segmente": "L4–S3",
+   "versorgt": [
+    "Wadenmuskulatur",
+    "Zehenbeuger",
+    "kurze Fußmuskeln"
+   ],
+   "sensibel": "Fußsohle",
+   "notiz": "Endast des Ischiasnervs für die Rückseite. Fällt er aus, ist der Zehenstand nicht mehr möglich."
+  },
+  {
+   "id": "PT-N-fibularis-communis-rechts",
+   "name": "Gemeinsamer Wadenbeinnerv (rechts)",
+   "latein": "N. fibularis (peroneus) communis",
+   "system": "nervenbahnen",
+   "region": "bein",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      -0.0927,
+      0.4601,
+      -0.0759
+     ],
+     [
+      -0.1159,
+      0.4109,
+      -0.0673
+     ],
+     [
+      -0.1179,
+      0.3749,
+      -0.0433
+     ],
+     [
+      -0.0967,
+      0.316,
+      -0.0216
+     ],
+     [
+      -0.0907,
+      0.113,
+      -0.0216
+     ]
+    ]
+   },
+   "segmente": "L4–S2",
+   "versorgt": [
+    "M. tibialis anterior",
+    "Zehenstrecker",
+    "Mm. fibulares"
+   ],
+   "sensibel": "Fußrücken und Außenseite des Unterschenkels",
+   "notiz": "Läuft ungeschützt um das Fibulaköpfchen. Druck durch Gips, Lagerung oder übereinandergeschlagene Beine kann eine Fallfuß-Parese auslösen."
+  },
+  {
+   "id": "PT-G-kopfgelenk",
+   "name": "Oberes Kopfgelenk",
+   "latein": "Articulatio atlantooccipitalis",
+   "system": "gelenkpunkte",
+   "region": "kopf",
+   "seite": "mitte",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.024
+   },
+   "position": [
+    0.0,
+    1.5121,
+    -0.0215
+   ],
+   "deckkraft": 0.45,
+   "gelenktyp": "Eigelenk (zwei Freiheitsgrade)",
+   "beteiligt": [
+    "Hinterhauptbein",
+    "Atlas (C1)"
+   ],
+   "bewegungen": [
+    "Nicken: Flexion/Extension ca. 20°",
+    "Seitneigung ca. 5°"
+   ],
+   "normwerte": "Rotation findet fast ausschließlich zwischen C1 und C2 statt: ca. 40° pro Seite",
+   "notiz": "Die Kopfgelenke sind sehr rezeptorreich und melden dem Gleichgewichtssystem ständig die Kopfstellung.",
+   "achsen": [
+    {
+     "name": "Flexion/Extension",
+     "richtung": [
+      1,
+      0,
+      0
+     ],
+     "farbe": "#ff8a5b"
+    },
+    {
+     "name": "Seitneigung",
+     "richtung": [
+      0,
+      0,
+      1
+     ],
+     "farbe": "#6bb8ff"
+    }
+   ]
+  }
+ ]
+}

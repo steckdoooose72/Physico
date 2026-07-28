@@ -1,0 +1,4249 @@
+{
+"PT-N-axillaris-links": {
+"latein": "N. axillaris",
+"segmente": "C5–C6",
+"versorgt": [
+"M. deltoideus",
+"M. teres minor"
+],
+"sensibel": "Haut über der seitlichen Schulter",
+"notiz": "Läuft eng um den Oberarmhals. Nach Schulterluxation oder Oberarmkopfbruch immer die Sensibilität über der seitlichen Schulter prüfen.",
+"de": "Achselnerv (links)"
+},
+"PT-N-axillaris-rechts": {
+"latein": "N. axillaris",
+"segmente": "C5–C6",
+"versorgt": [
+"M. deltoideus",
+"M. teres minor"
+],
+"sensibel": "Haut über der seitlichen Schulter",
+"notiz": "Läuft eng um den Oberarmhals. Nach Schulterluxation oder Oberarmkopfbruch immer die Sensibilität über der seitlichen Schulter prüfen.",
+"de": "Achselnerv (rechts)"
+},
+"PT-N-plexus-brachialis-links": {
+"latein": "Plexus brachialis",
+"segmente": "C5–Th1",
+"versorgt": [
+"Schultergürtel- und Armmuskulatur über seine Endäste"
+],
+"notiz": "Zieht zwischen den Skalenusmuskeln und unter dem Schlüsselbein hindurch zur Achselhöhle. Engstellen dort können bei Überkopfarbeit Kribbeln auslösen (Thoracic-Outlet-Syndrom).",
+"de": "Armgeflecht (links)"
+},
+"PT-N-plexus-brachialis-rechts": {
+"latein": "Plexus brachialis",
+"segmente": "C5–Th1",
+"versorgt": [
+"Schultergürtel- und Armmuskulatur über seine Endäste"
+],
+"notiz": "Zieht zwischen den Skalenusmuskeln und unter dem Schlüsselbein hindurch zur Achselhöhle. Engstellen dort können bei Überkopfarbeit Kribbeln auslösen (Thoracic-Outlet-Syndrom).",
+"de": "Armgeflecht (rechts)"
+},
+"PT-G-ellenbogen-links": {
+"latein": "Articulatio cubiti",
+"gelenktyp": "Zusammengesetztes Gelenk aus drei Teilgelenken",
+"beteiligt": [
+"Humerus",
+"Ulna",
+"Radius"
+],
+"bewegungen": [
+"Flexion/Extension",
+"Pronation/Supination über die Radioulnargelenke"
+],
+"normwerte": "Flexion/Extension 150–0–5°, Pro-/Supination 90–0–90°",
+"notiz": "Der Ellenbogen positioniert die Hand im Raum. Streckdefizite fallen im Alltag früh auf.",
+"de": "Ellenbogengelenk (links)"
+},
+"PT-G-ellenbogen-rechts": {
+"latein": "Articulatio cubiti",
+"gelenktyp": "Zusammengesetztes Gelenk aus drei Teilgelenken",
+"beteiligt": [
+"Humerus",
+"Ulna",
+"Radius"
+],
+"bewegungen": [
+"Flexion/Extension",
+"Pronation/Supination über die Radioulnargelenke"
+],
+"normwerte": "Flexion/Extension 150–0–5°, Pro-/Supination 90–0–90°",
+"notiz": "Der Ellenbogen positioniert die Hand im Raum. Streckdefizite fallen im Alltag früh auf.",
+"de": "Ellenbogengelenk (rechts)"
+},
+"PT-N-ulnaris-links": {
+"latein": "N. ulnaris",
+"segmente": "C8–Th1",
+"versorgt": [
+"Kleine Handmuskeln",
+"M. flexor carpi ulnaris"
+],
+"sensibel": "Kleinfinger und halber Ringfinger",
+"notiz": "Zieht offen durch den Sulcus hinter dem inneren Ellenbogenhöcker – der „Musikantenknochen\". Dauerdruck schwächt die Feinmotorik der Hand.",
+"de": "Ellennerv (links)"
+},
+"PT-N-ulnaris-rechts": {
+"latein": "N. ulnaris",
+"segmente": "C8–Th1",
+"versorgt": [
+"Kleine Handmuskeln",
+"M. flexor carpi ulnaris"
+],
+"sensibel": "Kleinfinger und halber Ringfinger",
+"notiz": "Zieht offen durch den Sulcus hinter dem inneren Ellenbogenhöcker – der „Musikantenknochen\". Dauerdruck schwächt die Feinmotorik der Hand.",
+"de": "Ellennerv (rechts)"
+},
+"PT-N-fibularis-communis-links": {
+"latein": "N. fibularis (peroneus) communis",
+"segmente": "L4–S2",
+"versorgt": [
+"M. tibialis anterior",
+"Zehenstrecker",
+"Mm. fibulares"
+],
+"sensibel": "Fußrücken und Außenseite des Unterschenkels",
+"notiz": "Läuft ungeschützt um das Fibulaköpfchen. Druck durch Gips, Lagerung oder übereinandergeschlagene Beine kann eine Fallfuß-Parese auslösen.",
+"de": "Gemeinsamer Wadenbeinnerv (links)"
+},
+"PT-N-fibularis-communis-rechts": {
+"latein": "N. fibularis (peroneus) communis",
+"segmente": "L4–S2",
+"versorgt": [
+"M. tibialis anterior",
+"Zehenstrecker",
+"Mm. fibulares"
+],
+"sensibel": "Fußrücken und Außenseite des Unterschenkels",
+"notiz": "Läuft ungeschützt um das Fibulaköpfchen. Druck durch Gips, Lagerung oder übereinandergeschlagene Beine kann eine Fallfuß-Parese auslösen.",
+"de": "Gemeinsamer Wadenbeinnerv (rechts)"
+},
+"PT-G-handgelenk-links": {
+"latein": "Articulatio radiocarpalis",
+"gelenktyp": "Eigelenk plus verzahntes Gelenk",
+"beteiligt": [
+"Radius",
+"Handwurzelknochen",
+"Discus ulnocarpalis"
+],
+"bewegungen": [
+"Palmarflexion/Dorsalextension",
+"Radial-/Ulnarabduktion"
+],
+"normwerte": "Dorsalextension/Palmarflexion 60–0–60°, Radial-/Ulnarabduktion 20–0–40°",
+"notiz": "Die Elle hat keinen direkten Kontakt zur Handwurzel – dazwischen liegt der Discus. Deshalb bricht bei Stürzen fast immer die Speiche.",
+"de": "Handgelenk (links)"
+},
+"PT-G-handgelenk-rechts": {
+"latein": "Articulatio radiocarpalis",
+"gelenktyp": "Eigelenk plus verzahntes Gelenk",
+"beteiligt": [
+"Radius",
+"Handwurzelknochen",
+"Discus ulnocarpalis"
+],
+"bewegungen": [
+"Palmarflexion/Dorsalextension",
+"Radial-/Ulnarabduktion"
+],
+"normwerte": "Dorsalextension/Palmarflexion 60–0–60°, Radial-/Ulnarabduktion 20–0–40°",
+"notiz": "Die Elle hat keinen direkten Kontakt zur Handwurzel – dazwischen liegt der Discus. Deshalb bricht bei Stürzen fast immer die Speiche.",
+"de": "Handgelenk (rechts)"
+},
+"PT-G-huefte-links": {
+"latein": "Articulatio coxae",
+"gelenktyp": "Nussgelenk (Kugelgelenk mit tiefer Pfanne)",
+"beteiligt": [
+"Femur",
+"Hüftbein (Acetabulum)"
+],
+"bewegungen": [
+"Flexion/Extension",
+"Abduktion/Adduktion",
+"Innen-/Außenrotation"
+],
+"normwerte": "Flexion/Extension 130–0–10°, Ab-/Adduktion 45–0–30°, Außen-/Innenrotation 45–0–40°",
+"notiz": "Beim Gehen wirkt bis zum Vierfachen des Körpergewichts – deshalb ist die Kräftigung der Abduktoren nach Hüft-TEP so wichtig.",
+"de": "Hüftgelenk (links)"
+},
+"PT-G-huefte-rechts": {
+"latein": "Articulatio coxae",
+"gelenktyp": "Nussgelenk (Kugelgelenk mit tiefer Pfanne)",
+"beteiligt": [
+"Femur",
+"Hüftbein (Acetabulum)"
+],
+"bewegungen": [
+"Flexion/Extension",
+"Abduktion/Adduktion",
+"Innen-/Außenrotation"
+],
+"normwerte": "Flexion/Extension 130–0–10°, Ab-/Adduktion 45–0–30°, Außen-/Innenrotation 45–0–40°",
+"notiz": "Beim Gehen wirkt bis zum Vierfachen des Körpergewichts – deshalb ist die Kräftigung der Abduktoren nach Hüft-TEP so wichtig.",
+"de": "Hüftgelenk (rechts)"
+},
+"PT-G-isg-links": {
+"latein": "Articulatio sacroiliaca",
+"gelenktyp": "Straffes Gelenk mit sehr kräftigem Bandapparat",
+"beteiligt": [
+"Kreuzbein (Os sacrum)",
+"Darmbein (Os ilium)"
+],
+"bewegungen": [
+"Nutation",
+"Gegennutation"
+],
+"normwerte": "Bewegungsausmaß nur wenige Grad bzw. Millimeter",
+"notiz": "Überträgt die gesamte Rumpflast auf die Beine. Häufige Quelle tiefsitzender Kreuzschmerzen; in der Schwangerschaft hormonell gelockert.",
+"de": "Iliosakralgelenk (ISG) (links)"
+},
+"PT-G-isg-rechts": {
+"latein": "Articulatio sacroiliaca",
+"gelenktyp": "Straffes Gelenk mit sehr kräftigem Bandapparat",
+"beteiligt": [
+"Kreuzbein (Os sacrum)",
+"Darmbein (Os ilium)"
+],
+"bewegungen": [
+"Nutation",
+"Gegennutation"
+],
+"normwerte": "Bewegungsausmaß nur wenige Grad bzw. Millimeter",
+"notiz": "Überträgt die gesamte Rumpflast auf die Beine. Häufige Quelle tiefsitzender Kreuzschmerzen; in der Schwangerschaft hormonell gelockert.",
+"de": "Iliosakralgelenk (ISG) (rechts)"
+},
+"PT-N-ischiadicus-links": {
+"latein": "N. ischiadicus",
+"segmente": "L4–S3",
+"versorgt": [
+"Ischiocrurale Muskulatur",
+"über die Endäste die gesamte Unterschenkel- und Fußmuskulatur"
+],
+"notiz": "Dickster Nerv des Körpers. Er tritt unter dem M. piriformis aus dem Becken – ist dieser verspannt, kann das ischiasähnliche Beschwerden machen (Piriformis-Syndrom).",
+"de": "Ischiasnerv (links)"
+},
+"PT-N-ischiadicus-rechts": {
+"latein": "N. ischiadicus",
+"segmente": "L4–S3",
+"versorgt": [
+"Ischiocrurale Muskulatur",
+"über die Endäste die gesamte Unterschenkel- und Fußmuskulatur"
+],
+"notiz": "Dickster Nerv des Körpers. Er tritt unter dem M. piriformis aus dem Becken – ist dieser verspannt, kann das ischiasähnliche Beschwerden machen (Piriformis-Syndrom).",
+"de": "Ischiasnerv (rechts)"
+},
+"PT-G-kiefer-links": {
+"latein": "Articulatio temporomandibularis",
+"gelenktyp": "Kombiniertes Dreh-Gleit-Gelenk mit Diskus",
+"beteiligt": [
+"Schläfenbein",
+"Unterkiefer"
+],
+"bewegungen": [
+"Mundöffnung (Drehung, dann Gleiten)",
+"Vor- und Rückschub",
+"Mahlbewegung"
+],
+"normwerte": "Mundöffnung ca. 40–50 mm Schneidekantenabstand",
+"notiz": "Beide Kiefergelenke arbeiten immer gemeinsam. Beschwerden hängen oft mit Nacken- und Kopfhaltung zusammen (CMD).",
+"de": "Kiefergelenk (links)"
+},
+"PT-G-kiefer-rechts": {
+"latein": "Articulatio temporomandibularis",
+"gelenktyp": "Kombiniertes Dreh-Gleit-Gelenk mit Diskus",
+"beteiligt": [
+"Schläfenbein",
+"Unterkiefer"
+],
+"bewegungen": [
+"Mundöffnung (Drehung, dann Gleiten)",
+"Vor- und Rückschub",
+"Mahlbewegung"
+],
+"normwerte": "Mundöffnung ca. 40–50 mm Schneidekantenabstand",
+"notiz": "Beide Kiefergelenke arbeiten immer gemeinsam. Beschwerden hängen oft mit Nacken- und Kopfhaltung zusammen (CMD).",
+"de": "Kiefergelenk (rechts)"
+},
+"PT-G-knie-links": {
+"latein": "Articulatio genus",
+"gelenktyp": "Dreh-Scharnier-Gelenk (Trochoginglymus) mit Menisken",
+"beteiligt": [
+"Femur",
+"Tibia",
+"Patella"
+],
+"bewegungen": [
+"Flexion/Extension",
+"Rotation nur in Beugestellung"
+],
+"normwerte": "Flexion/Extension 140–0–5°, Rotation in 90° Beugung ca. 30° außen / 10° innen",
+"notiz": "Beim Strecken dreht das Schienbein leicht nach außen (Schlussrotation) und verriegelt das Gelenk. Die Menisken vergrößern die Kontaktfläche und dämpfen Stöße.",
+"de": "Kniegelenk (links)"
+},
+"PT-G-knie-rechts": {
+"latein": "Articulatio genus",
+"gelenktyp": "Dreh-Scharnier-Gelenk (Trochoginglymus) mit Menisken",
+"beteiligt": [
+"Femur",
+"Tibia",
+"Patella"
+],
+"bewegungen": [
+"Flexion/Extension",
+"Rotation nur in Beugestellung"
+],
+"normwerte": "Flexion/Extension 140–0–5°, Rotation in 90° Beugung ca. 30° außen / 10° innen",
+"notiz": "Beim Strecken dreht das Schienbein leicht nach außen (Schlussrotation) und verriegelt das Gelenk. Die Menisken vergrößern die Kontaktfläche und dämpfen Stöße.",
+"de": "Kniegelenk (rechts)"
+},
+"PT-N-medianus-links": {
+"latein": "N. medianus",
+"segmente": "C6–Th1",
+"versorgt": [
+"Die meisten Unterarmbeuger",
+"Daumenballenmuskulatur"
+],
+"sensibel": "Handfläche Daumen bis halber Ringfinger",
+"notiz": "Läuft durch den Karpaltunnel. Wird er dort eingeengt, kribbeln nachts die ersten drei Finger – das häufigste Nervenengpasssyndrom überhaupt.",
+"de": "Mittelnerv (links)"
+},
+"PT-N-medianus-rechts": {
+"latein": "N. medianus",
+"segmente": "C6–Th1",
+"versorgt": [
+"Die meisten Unterarmbeuger",
+"Daumenballenmuskulatur"
+],
+"sensibel": "Handfläche Daumen bis halber Ringfinger",
+"notiz": "Läuft durch den Karpaltunnel. Wird er dort eingeengt, kribbeln nachts die ersten drei Finger – das häufigste Nervenengpasssyndrom überhaupt.",
+"de": "Mittelnerv (rechts)"
+},
+"PT-G-kopfgelenk": {
+"latein": "Articulatio atlantooccipitalis",
+"gelenktyp": "Eigelenk (zwei Freiheitsgrade)",
+"beteiligt": [
+"Hinterhauptbein",
+"Atlas (C1)"
+],
+"bewegungen": [
+"Nicken: Flexion/Extension ca. 20°",
+"Seitneigung ca. 5°"
+],
+"normwerte": "Rotation findet fast ausschließlich zwischen C1 und C2 statt: ca. 40° pro Seite",
+"notiz": "Die Kopfgelenke sind sehr rezeptorreich und melden dem Gleichgewichtssystem ständig die Kopfstellung.",
+"de": "Oberes Kopfgelenk"
+},
+"PT-G-osg-links": {
+"latein": "Articulatio talocruralis",
+"gelenktyp": "Scharniergelenk in der Malleolengabel",
+"beteiligt": [
+"Tibia",
+"Fibula",
+"Talus"
+],
+"bewegungen": [
+"Dorsalextension/Plantarflexion"
+],
+"normwerte": "Dorsalextension/Plantarflexion 20–0–50°",
+"notiz": "Die Achse verläuft schräg durch beide Knöchel. In Dorsalextension ist das Gelenk am stabilsten – Umknickverletzungen passieren meist in Plantarflexion.",
+"de": "Oberes Sprunggelenk (OSG) (links)"
+},
+"PT-G-osg-rechts": {
+"latein": "Articulatio talocruralis",
+"gelenktyp": "Scharniergelenk in der Malleolengabel",
+"beteiligt": [
+"Tibia",
+"Fibula",
+"Talus"
+],
+"bewegungen": [
+"Dorsalextension/Plantarflexion"
+],
+"normwerte": "Dorsalextension/Plantarflexion 20–0–50°",
+"notiz": "Die Achse verläuft schräg durch beide Knöchel. In Dorsalextension ist das Gelenk am stabilsten – Umknickverletzungen passieren meist in Plantarflexion.",
+"de": "Oberes Sprunggelenk (OSG) (rechts)"
+},
+"PT-N-femoralis-links": {
+"latein": "N. femoralis",
+"segmente": "L2–L4",
+"versorgt": [
+"M. quadriceps femoris",
+"M. iliopsoas",
+"M. sartorius"
+],
+"sensibel": "Vorderseite des Oberschenkels, über den N. saphenus die Unterschenkelinnenseite",
+"notiz": "Bei Ausfall ist die Kniestreckung nicht möglich und der Patellarsehnenreflex fehlt – Treppensteigen wird unmöglich.",
+"de": "Oberschenkelnerv (links)"
+},
+"PT-N-femoralis-rechts": {
+"latein": "N. femoralis",
+"segmente": "L2–L4",
+"versorgt": [
+"M. quadriceps femoris",
+"M. iliopsoas",
+"M. sartorius"
+],
+"sensibel": "Vorderseite des Oberschenkels, über den N. saphenus die Unterschenkelinnenseite",
+"notiz": "Bei Ausfall ist die Kniestreckung nicht möglich und der Patellarsehnenreflex fehlt – Treppensteigen wird unmöglich.",
+"de": "Oberschenkelnerv (rechts)"
+},
+"PT-N-tibialis-links": {
+"latein": "N. tibialis",
+"segmente": "L4–S3",
+"versorgt": [
+"Wadenmuskulatur",
+"Zehenbeuger",
+"kurze Fußmuskeln"
+],
+"sensibel": "Fußsohle",
+"notiz": "Endast des Ischiasnervs für die Rückseite. Fällt er aus, ist der Zehenstand nicht mehr möglich.",
+"de": "Schienbeinnerv (links)"
+},
+"PT-N-tibialis-rechts": {
+"latein": "N. tibialis",
+"segmente": "L4–S3",
+"versorgt": [
+"Wadenmuskulatur",
+"Zehenbeuger",
+"kurze Fußmuskeln"
+],
+"sensibel": "Fußsohle",
+"notiz": "Endast des Ischiasnervs für die Rückseite. Fällt er aus, ist der Zehenstand nicht mehr möglich.",
+"de": "Schienbeinnerv (rechts)"
+},
+"PT-G-ac-links": {
+"latein": "Articulatio acromioclavicularis",
+"gelenktyp": "Straffes Gelenk (Amphiarthrose)",
+"beteiligt": [
+"Schlüsselbein (Clavicula)",
+"Schulterdach (Acromion)"
+],
+"bewegungen": [
+"Kleine Dreh- und Kippbewegungen des Schulterblatts"
+],
+"notiz": "Bei Sturz auf die Schulter kann die Bandverbindung reißen – dann steht das Schlüsselbein hoch (Klaviertastenphänomen).",
+"de": "Schultereckgelenk (links)"
+},
+"PT-G-ac-rechts": {
+"latein": "Articulatio acromioclavicularis",
+"gelenktyp": "Straffes Gelenk (Amphiarthrose)",
+"beteiligt": [
+"Schlüsselbein (Clavicula)",
+"Schulterdach (Acromion)"
+],
+"bewegungen": [
+"Kleine Dreh- und Kippbewegungen des Schulterblatts"
+],
+"notiz": "Bei Sturz auf die Schulter kann die Bandverbindung reißen – dann steht das Schlüsselbein hoch (Klaviertastenphänomen).",
+"de": "Schultereckgelenk (rechts)"
+},
+"PT-G-schulter-links": {
+"latein": "Articulatio glenohumeralis",
+"gelenktyp": "Kugelgelenk (drei Freiheitsgrade)",
+"beteiligt": [
+"Oberarmknochen (Humerus)",
+"Schulterblatt (Cavitas glenoidalis)"
+],
+"bewegungen": [
+"Anteversion/Retroversion",
+"Abduktion/Adduktion",
+"Innen-/Außenrotation"
+],
+"normwerte": "Ante-/Retroversion 170–0–40°, Ab-/Adduktion 180–0–40°, Außen-/Innenrotation 60–0–95°",
+"notiz": "Beweglichstes Gelenk des Körpers, wenig knöcherne Führung. Volle Abduktion nur im Zusammenspiel mit dem Schulterblatt (skapulohumeraler Rhythmus 2:1).",
+"de": "Schultergelenk (links)"
+},
+"PT-G-schulter-rechts": {
+"latein": "Articulatio glenohumeralis",
+"gelenktyp": "Kugelgelenk (drei Freiheitsgrade)",
+"beteiligt": [
+"Oberarmknochen (Humerus)",
+"Schulterblatt (Cavitas glenoidalis)"
+],
+"bewegungen": [
+"Anteversion/Retroversion",
+"Abduktion/Adduktion",
+"Innen-/Außenrotation"
+],
+"normwerte": "Ante-/Retroversion 170–0–40°, Ab-/Adduktion 180–0–40°, Außen-/Innenrotation 60–0–95°",
+"notiz": "Beweglichstes Gelenk des Körpers, wenig knöcherne Führung. Volle Abduktion nur im Zusammenspiel mit dem Schulterblatt (skapulohumeraler Rhythmus 2:1).",
+"de": "Schultergelenk (rechts)"
+},
+"PT-N-radialis-links": {
+"latein": "N. radialis",
+"segmente": "C5–Th1",
+"versorgt": [
+"M. triceps brachii",
+"Handgelenks- und Fingerstrecker",
+"M. brachioradialis"
+],
+"sensibel": "Handrücken auf der Daumenseite",
+"notiz": "Windet sich in der Radialisrinne direkt um den Oberarmknochen. Druck dort (z. B. Arm über der Stuhllehne) führt zur „Fallhand\".",
+"de": "Speichennerv (links)"
+},
+"PT-N-radialis-rechts": {
+"latein": "N. radialis",
+"segmente": "C5–Th1",
+"versorgt": [
+"M. triceps brachii",
+"Handgelenks- und Fingerstrecker",
+"M. brachioradialis"
+],
+"sensibel": "Handrücken auf der Daumenseite",
+"notiz": "Windet sich in der Radialisrinne direkt um den Oberarmknochen. Druck dort (z. B. Arm über der Stuhllehne) führt zur „Fallhand\".",
+"de": "Speichennerv (rechts)"
+},
+"PT-G-usg-links": {
+"latein": "Articulatio subtalaris",
+"gelenktyp": "Zapfengelenk mit schräger Achse",
+"beteiligt": [
+"Talus",
+"Calcaneus",
+"Os naviculare"
+],
+"bewegungen": [
+"Supination (Inversion)",
+"Pronation (Eversion)"
+],
+"normwerte": "Supination/Pronation ca. 60–0–30°",
+"notiz": "Hier passieren die klassischen Supinationstraumen mit Riss des Lig. fibulotalare anterius. Das USG passt den Fuß an unebenen Boden an.",
+"de": "Unteres Sprunggelenk (USG) (links)"
+},
+"PT-G-usg-rechts": {
+"latein": "Articulatio subtalaris",
+"gelenktyp": "Zapfengelenk mit schräger Achse",
+"beteiligt": [
+"Talus",
+"Calcaneus",
+"Os naviculare"
+],
+"bewegungen": [
+"Supination (Inversion)",
+"Pronation (Eversion)"
+],
+"normwerte": "Supination/Pronation ca. 60–0–30°",
+"notiz": "Hier passieren die klassischen Supinationstraumen mit Riss des Lig. fibulotalare anterius. Das USG passt den Fuß an unebenen Boden an.",
+"de": "Unteres Sprunggelenk (USG) (rechts)"
+},
+"FMA45875": {
+"de": "Großer Brustmuskel, Pars abdominalis (links)",
+"latein": "M. pectoralis major",
+"ursprung": "Schlüsselbein, Brustbein, Rippenknorpel 1–6",
+"ansatz": "Crista tuberculi majoris des Humerus",
+"funktion": "Adduktion, Innenrotation und Anteversion; Hilfsatemmuskel bei fixiertem Arm",
+"innervation": "Nn. pectorales (C5–Th1)",
+"notiz": "Neigt bei Rundrückenhaltung zur Verkürzung und zieht die Schultern nach vorne."
+},
+"FMA45874": {
+"de": "Großer Brustmuskel, Pars abdominalis (rechts)",
+"latein": "M. pectoralis major",
+"ursprung": "Schlüsselbein, Brustbein, Rippenknorpel 1–6",
+"ansatz": "Crista tuberculi majoris des Humerus",
+"funktion": "Adduktion, Innenrotation und Anteversion; Hilfsatemmuskel bei fixiertem Arm",
+"innervation": "Nn. pectorales (C5–Th1)",
+"notiz": "Neigt bei Rundrückenhaltung zur Verkürzung und zieht die Schultern nach vorne."
+},
+"FMA37464": {
+"de": "M. abductor digiti minimi (linker Fuß)",
+"latein": "M. abductor digiti minimi"
+},
+"FMA37397": {
+"de": "M. abductor digiti minimi (linke Hand)",
+"latein": "M. abductor digiti minimi"
+},
+"FMA37463": {
+"de": "M. abductor digiti minimi (rechter Fuß)",
+"latein": "M. abductor digiti minimi"
+},
+"FMA37396": {
+"de": "M. abductor digiti minimi (rechte Hand)",
+"latein": "M. abductor digiti minimi"
+},
+"FMA34683": {
+"de": "Deltamuskel, Pars acromialis (links)",
+"latein": "M. deltoideus",
+"ursprung": "Äußeres Schlüsselbeindrittel, Akromion, Schulterblattgräte",
+"ansatz": "Tuberositas deltoidea am Oberarmknochen",
+"funktion": "Mittlerer Teil: Abduktion ab ca. 15°. Vorderer Teil: Anteversion und Innenrotation. Hinterer Teil: Retroversion und Außenrotation",
+"innervation": "N. axillaris (C5–C6)",
+"notiz": "Fällt der N. axillaris aus (z. B. nach Schulterluxation), lässt sich der Arm kaum seitlich heben."
+},
+"FMA34682": {
+"de": "Deltamuskel, Pars acromialis (rechts)",
+"latein": "M. deltoideus",
+"ursprung": "Äußeres Schlüsselbeindrittel, Akromion, Schulterblattgräte",
+"ansatz": "Tuberositas deltoidea am Oberarmknochen",
+"funktion": "Mittlerer Teil: Abduktion ab ca. 15°. Vorderer Teil: Anteversion und Innenrotation. Hinterer Teil: Retroversion und Außenrotation",
+"innervation": "N. axillaris (C5–C6)",
+"notiz": "Fällt der N. axillaris aus (z. B. nach Schulterluxation), lässt sich der Arm kaum seitlich heben."
+},
+"FMA46305": {
+"de": "M. digastric (links), vorderer Bauch",
+"latein": "M. digastric"
+},
+"FMA46304": {
+"de": "M. digastric (rechts), vorderer Bauch",
+"latein": "M. digastric"
+},
+"FMA61961": {
+"de": "Anterior commissure"
+},
+"FMA3862nsn": {
+"de": "Anterior interventricular branch of left coronary artery, nsn"
+},
+"FMA72909": {
+"de": "Anterior limb of left internal capsule"
+},
+"FMA72908": {
+"de": "Anterior limb of right internal capsule"
+},
+"FMA7260": {
+"de": "Anterior papillary muscle of right ventricle"
+},
+"FMA72801": {
+"de": "Anterior part of left superior temporal gyrus"
+},
+"FMA72800": {
+"de": "Anterior part of right superior temporal gyrus"
+},
+"FMA46768": {
+"de": "M. aponeurosis of epicranius",
+"latein": "M. aponeurosis of epicranius"
+},
+"FMA3768": {
+"de": "Hauptschlagader (arch of)",
+"latein": "Aorta"
+},
+"FMA3736": {
+"de": "Hauptschlagader (ascending)",
+"latein": "Aorta"
+},
+"FMA33583": {
+"de": "Kapuzenmuskel, Pars ascendens (links)",
+"latein": "M. trapezius",
+"ursprung": "Hinterhauptbein, Nackenband, Dornfortsätze C7–Th12",
+"ansatz": "Äußeres Schlüsselbeindrittel, Akromion, Schulterblattgräte",
+"funktion": "Absteigender Teil hebt das Schulterblatt, querer zieht es zur Wirbelsäule, aufsteigender senkt es; gemeinsam drehen sie die Pfanne nach oben",
+"innervation": "N. accessorius (XI), Äste aus C3–C4",
+"notiz": "Der absteigende Teil ist der Klassiker unter den Verspannungen – oft ist aber der aufsteigende Teil zu schwach."
+},
+"FMA33581": {
+"de": "Kapuzenmuskel, Pars ascendens (rechts)",
+"latein": "M. trapezius",
+"ursprung": "Hinterhauptbein, Nackenband, Dornfortsätze C7–Th12",
+"ansatz": "Äußeres Schlüsselbeindrittel, Akromion, Schulterblattgräte",
+"funktion": "Absteigender Teil hebt das Schulterblatt, querer zieht es zur Wirbelsäule, aufsteigender senkt es; gemeinsam drehen sie die Pfanne nach oben",
+"innervation": "N. accessorius (XI), Äste aus C3–C4",
+"notiz": "Der absteigende Teil ist der Klassiker unter den Verspannungen – oft ist aber der aufsteigende Teil zu schwach."
+},
+"FMA12519": {
+"de": "Atlas (1. Halswirbel)",
+"latein": "Atlas"
+},
+"FMA12520": {
+"de": "Axis (2. Halswirbel)",
+"latein": "Axis"
+},
+"FMA7487": {
+"de": "Brustbein",
+"latein": "Sternum",
+"tastbar": "Angulus sterni auf Höhe der 2. Rippe – wichtiger Orientierungspunkt"
+},
+"FMA3932nsn": {
+"de": "Brachiocephalic artery, nsn"
+},
+"FMA73464": {
+"de": "Brachium of left inferior colliculus"
+},
+"FMA73462": {
+"de": "Brachium of left superior colliculus"
+},
+"FMA73463": {
+"de": "Brachium of right inferior colliculus"
+},
+"FMA73461": {
+"de": "Brachium of right superior colliculus"
+},
+"FMA7409": {
+"de": "Bronchus"
+},
+"FMA50737": {
+"de": "Celiac artery"
+},
+"FMA78497": {
+"de": "Rückenmark (central canal of)",
+"latein": "Medulla spinalis"
+},
+"FMA67944": {
+"de": "Kleinhirn",
+"latein": "Cerebellum"
+},
+"FMA78467": {
+"de": "Cerebral aqueduct"
+},
+"FMA274029": {
+"de": "Choroid plexus of left cerebral hemisphere"
+},
+"FMA274027": {
+"de": "Choroid plexus of right cerebral hemisphere"
+},
+"FMA3895": {
+"de": "Circumflex branch of left coronary artery"
+},
+"FMA34681": {
+"de": "Deltamuskel, Pars clavicularis (links)",
+"latein": "M. deltoideus",
+"ursprung": "Äußeres Schlüsselbeindrittel, Akromion, Schulterblattgräte",
+"ansatz": "Tuberositas deltoidea am Oberarmknochen",
+"funktion": "Mittlerer Teil: Abduktion ab ca. 15°. Vorderer Teil: Anteversion und Innenrotation. Hinterer Teil: Retroversion und Außenrotation",
+"innervation": "N. axillaris (C5–C6)",
+"notiz": "Fällt der N. axillaris aus (z. B. nach Schulterluxation), lässt sich der Arm kaum seitlich heben."
+},
+"FMA34691": {
+"de": "Großer Brustmuskel, Pars clavicularis (links)",
+"latein": "M. pectoralis major",
+"ursprung": "Schlüsselbein, Brustbein, Rippenknorpel 1–6",
+"ansatz": "Crista tuberculi majoris des Humerus",
+"funktion": "Adduktion, Innenrotation und Anteversion; Hilfsatemmuskel bei fixiertem Arm",
+"innervation": "Nn. pectorales (C5–Th1)",
+"notiz": "Neigt bei Rundrückenhaltung zur Verkürzung und zieht die Schultern nach vorne."
+},
+"FMA34680": {
+"de": "Deltamuskel, Pars clavicularis (rechts)",
+"latein": "M. deltoideus",
+"ursprung": "Äußeres Schlüsselbeindrittel, Akromion, Schulterblattgräte",
+"ansatz": "Tuberositas deltoidea am Oberarmknochen",
+"funktion": "Mittlerer Teil: Abduktion ab ca. 15°. Vorderer Teil: Anteversion und Innenrotation. Hinterer Teil: Retroversion und Außenrotation",
+"innervation": "N. axillaris (C5–C6)",
+"notiz": "Fällt der N. axillaris aus (z. B. nach Schulterluxation), lässt sich der Arm kaum seitlich heben."
+},
+"FMA34690": {
+"de": "Großer Brustmuskel, Pars clavicularis (rechts)",
+"latein": "M. pectoralis major",
+"ursprung": "Schlüsselbein, Brustbein, Rippenknorpel 1–6",
+"ansatz": "Crista tuberculi majoris des Humerus",
+"funktion": "Adduktion, Innenrotation und Anteversion; Hilfsatemmuskel bei fixiertem Arm",
+"innervation": "Nn. pectorales (C5–Th1)",
+"notiz": "Neigt bei Rundrückenhaltung zur Verkürzung und zieht die Schultern nach vorne."
+},
+"FMA61970": {
+"de": "Commissure of fornix of forebrain"
+},
+"FMA14771": {
+"de": "Common hepatic artery"
+},
+"FMA4706": {
+"de": "Coronary sinus"
+},
+"FMA86464": {
+"de": "Corpus callosum"
+},
+"FMA46111": {
+"de": "M. flexor pollicis brevis (links), tiefer Kopf",
+"latein": "M. flexor pollicis brevis"
+},
+"FMA46110": {
+"de": "M. flexor pollicis brevis (rechts), tiefer Kopf",
+"latein": "M. flexor pollicis brevis"
+},
+"FMA49005": {
+"de": "M. masseter (links), tiefer Anteil",
+"latein": "M. masseter"
+},
+"FMA49004": {
+"de": "M. masseter (rechts), tiefer Anteil",
+"latein": "M. masseter"
+},
+"FMA3784": {
+"de": "Hauptschlagader (descending)",
+"latein": "Aorta"
+},
+"FMA33587": {
+"de": "Kapuzenmuskel, Pars descendens (links)",
+"latein": "M. trapezius",
+"ursprung": "Hinterhauptbein, Nackenband, Dornfortsätze C7–Th12",
+"ansatz": "Äußeres Schlüsselbeindrittel, Akromion, Schulterblattgräte",
+"funktion": "Absteigender Teil hebt das Schulterblatt, querer zieht es zur Wirbelsäule, aufsteigender senkt es; gemeinsam drehen sie die Pfanne nach oben",
+"innervation": "N. accessorius (XI), Äste aus C3–C4",
+"notiz": "Der absteigende Teil ist der Klassiker unter den Verspannungen – oft ist aber der aufsteigende Teil zu schwach."
+},
+"FMA33586": {
+"de": "Kapuzenmuskel, Pars descendens (rechts)",
+"latein": "M. trapezius",
+"ursprung": "Hinterhauptbein, Nackenband, Dornfortsätze C7–Th12",
+"ansatz": "Äußeres Schlüsselbeindrittel, Akromion, Schulterblattgräte",
+"funktion": "Absteigender Teil hebt das Schulterblatt, querer zieht es zur Wirbelsäule, aufsteigender senkt es; gemeinsam drehen sie die Pfanne nach oben",
+"innervation": "N. accessorius (XI), Äste aus C3–C4",
+"notiz": "Der absteigende Teil ist der Klassiker unter den Verspannungen – oft ist aber der aufsteigende Teil zu schwach."
+},
+"FMA13295": {
+"de": "Zwerchfell",
+"latein": "Diaphragma",
+"funktion": "Wichtigster Atemmuskel: senkt sich bei der Einatmung und vergrößert den Brustraum",
+"innervation": "N. phrenicus (C3–C5)",
+"notiz": "Merksatz: C3, 4, 5 keep the diaphragm alive."
+},
+"FMA32651": {
+"de": "Endglied · Großzehe (links)",
+"latein": "Phalanx distalis"
+},
+"FMA32657": {
+"de": "Endglied · 4. Zehe (links)",
+"latein": "Phalanx distalis"
+},
+"FMA23953": {
+"de": "Endglied · Zeigefinger (links)",
+"latein": "Phalanx distalis"
+},
+"FMA23959": {
+"de": "Endglied · kleiner Finger (links)",
+"latein": "Phalanx distalis"
+},
+"FMA32659": {
+"de": "Endglied · Kleinzehe (links)",
+"latein": "Phalanx distalis"
+},
+"FMA23955": {
+"de": "Endglied · Mittelfinger (links)",
+"latein": "Phalanx distalis"
+},
+"FMA23957": {
+"de": "Endglied · Ringfinger (links)",
+"latein": "Phalanx distalis"
+},
+"FMA32653": {
+"de": "Endglied · 2. Zehe (links)",
+"latein": "Phalanx distalis"
+},
+"FMA32655": {
+"de": "Endglied · 3. Zehe (links)",
+"latein": "Phalanx distalis"
+},
+"FMA23951": {
+"de": "Endglied · Daumen (links)",
+"latein": "Phalanx distalis"
+},
+"FMA32650": {
+"de": "Endglied · Großzehe (rechts)",
+"latein": "Phalanx distalis"
+},
+"FMA32656": {
+"de": "Endglied · 4. Zehe (rechts)",
+"latein": "Phalanx distalis"
+},
+"FMA24460": {
+"de": "Endglied · Zeigefinger (rechts)",
+"latein": "Phalanx distalis"
+},
+"FMA24463": {
+"de": "Endglied · kleiner Finger (rechts)",
+"latein": "Phalanx distalis"
+},
+"FMA32658": {
+"de": "Endglied · Kleinzehe (rechts)",
+"latein": "Phalanx distalis"
+},
+"FMA24461": {
+"de": "Endglied · Mittelfinger (rechts)",
+"latein": "Phalanx distalis"
+},
+"FMA24462": {
+"de": "Endglied · Ringfinger (rechts)",
+"latein": "Phalanx distalis"
+},
+"FMA32652": {
+"de": "Endglied · 2. Zehe (rechts)",
+"latein": "Phalanx distalis"
+},
+"FMA32654": {
+"de": "Endglied · 3. Zehe (rechts)",
+"latein": "Phalanx distalis"
+},
+"FMA24459": {
+"de": "Endglied · Daumen (rechts)",
+"latein": "Phalanx distalis"
+},
+"FMA9991": {
+"de": "8. Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+"FMA10059": {
+"de": "11. Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+"FMA52740": {
+"de": "Siebbein",
+"latein": "Os ethmoidale"
+},
+"FMA21930": {
+"de": "M. external anal sphincter",
+"latein": "M. external anal sphincter"
+},
+"FMA9756": {
+"de": "M. external intercostal muscle",
+"latein": "M. external intercostal muscle"
+},
+"FMA12513": {
+"de": "Eyeball"
+},
+"FMA12523": {
+"de": "5. Halswirbel",
+"latein": "Vertebra cervicalis"
+},
+"FMA13076": {
+"de": "5. Lendenwirbel",
+"latein": "Vertebra lumbalis"
+},
+"FMA9922": {
+"de": "5. Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+"FMA13072": {
+"de": "1. Lendenwirbel",
+"latein": "Vertebra lumbalis"
+},
+"FMA37718": {
+"de": "1. M. lumbrical (linker Fuß)",
+"latein": "M. lumbrical"
+},
+"FMA37717": {
+"de": "1. M. lumbrical (rechter Fuß)",
+"latein": "M. lumbrical"
+},
+"FMA37746": {
+"de": "1. M. plantar interosseous (linker Fuß)",
+"latein": "M. plantar interosseous"
+},
+"FMA37745": {
+"de": "1. M. plantar interosseous (rechter Fuß)",
+"latein": "M. plantar interosseous"
+},
+"FMA9165": {
+"de": "1. Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+"FMA37472": {
+"de": "M. flexor digiti minimi brevis (linker Fuß)",
+"latein": "M. flexor digiti minimi brevis"
+},
+"FMA37399": {
+"de": "M. flexor digiti minimi brevis (linke Hand)",
+"latein": "M. flexor digiti minimi brevis"
+},
+"FMA37471": {
+"de": "M. flexor digiti minimi brevis (rechter Fuß)",
+"latein": "M. flexor digiti minimi brevis"
+},
+"FMA37398": {
+"de": "M. flexor digiti minimi brevis (rechte Hand)",
+"latein": "M. flexor digiti minimi brevis"
+},
+"FMA40121": {
+"de": "M. flexor retinaculum of left wrist",
+"latein": "M. flexor retinaculum of left wrist"
+},
+"FMA40120": {
+"de": "M. flexor retinaculum of right wrist",
+"latein": "M. flexor retinaculum of right wrist"
+},
+"FMA12522": {
+"de": "4. Halswirbel",
+"latein": "Vertebra cervicalis"
+},
+"FMA13075": {
+"de": "4. Lendenwirbel",
+"latein": "Vertebra lumbalis"
+},
+"FMA37484": {
+"de": "4. M. lumbrical (linker Fuß)",
+"latein": "M. lumbrical"
+},
+"FMA37483": {
+"de": "4. M. lumbrical (rechter Fuß)",
+"latein": "M. lumbrical"
+},
+"FMA9248": {
+"de": "4. Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+"FMA78469": {
+"de": "4. Ventricle"
+},
+"FMA52734": {
+"de": "Stirnbein",
+"latein": "Os frontale"
+},
+"FMA4707": {
+"de": "Great cardiac vein"
+},
+"FMA62032": {
+"de": "Habenula"
+},
+"BP44": {
+"de": "M. humeral head of left extensor carpi ulnaris",
+"latein": "M. humeral head of left extensor carpi ulnaris"
+},
+"FMA38618": {
+"de": "M. humeral head of left flexor carpi ulnaris",
+"latein": "M. humeral head of left flexor carpi ulnaris"
+},
+"FMA38561": {
+"de": "M. humeral head of left pronator teres",
+"latein": "M. humeral head of left pronator teres"
+},
+"BP45": {
+"de": "M. humeral head of right extensor carpi ulnaris",
+"latein": "M. humeral head of right extensor carpi ulnaris"
+},
+"FMA38617": {
+"de": "M. humeral head of right flexor carpi ulnaris",
+"latein": "M. humeral head of right flexor carpi ulnaris"
+},
+"FMA38560": {
+"de": "M. humeral head of right pronator teres",
+"latein": "M. humeral head of right pronator teres"
+},
+"FMA38639": {
+"de": "M. humeroulnar head of left flexor digitorum superficialis",
+"latein": "M. humeroulnar head of left flexor digitorum superficialis"
+},
+"FMA38638": {
+"de": "M. humeroulnar head of right flexor digitorum superficialis",
+"latein": "M. humeroulnar head of right flexor digitorum superficialis"
+},
+"FMA52749": {
+"de": "Zungenbein",
+"latein": "Os hyoideum"
+},
+"FMA62008nsn": {
+"de": "Hypothalamus, nsn"
+},
+"FMA14750": {
+"de": "Inferior mesenteric artery"
+},
+"FMA46288": {
+"de": "M. inferior oblique part of left longus colli",
+"latein": "M. inferior oblique part of left longus colli"
+},
+"FMA46287": {
+"de": "M. inferior oblique part of right longus colli",
+"latein": "M. inferior oblique part of right longus colli"
+},
+"FMA10951": {
+"de": "Inferior vena cava"
+},
+"FMA9758": {
+"de": "M. innermost intercostal muscle",
+"latein": "M. innermost intercostal muscle"
+},
+"FMA9757": {
+"de": "M. internal intercostal muscle",
+"latein": "M. internal intercostal muscle"
+},
+"FMA23708": {
+"de": "Zwischenknochenmembran (linker Unterarm)",
+"latein": "Membrana interossea"
+},
+"FMA35193": {
+"de": "Zwischenknochenmembran (linker Unterschenkel)",
+"latein": "Membrana interossea"
+},
+"FMA23707": {
+"de": "Zwischenknochenmembran (rechter Unterarm)",
+"latein": "Membrana interossea"
+},
+"FMA35192": {
+"de": "Zwischenknochenmembran (rechter Unterschenkel)",
+"latein": "Membrana interossea"
+},
+"FMA83740": {
+"de": "Interpeduncular fossa"
+},
+"FMA75351": {
+"de": "Interventricular foramen"
+},
+"FMA25058": {
+"de": "Bandscheibe · Axis (2. Halswirbel)",
+"latein": "Discus intervertebralis"
+},
+"FMA13505": {
+"de": "Bandscheibe · 8. Brustwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA13508": {
+"de": "Bandscheibe · 11. Brustwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA13898": {
+"de": "Bandscheibe · 5. Halswirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA16037": {
+"de": "Bandscheibe · 5. Lendenwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA13502": {
+"de": "Bandscheibe · 5. Brustwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA16033": {
+"de": "Bandscheibe · 1. Lendenwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA10458": {
+"de": "Bandscheibe · 1. Brustwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA13897": {
+"de": "Bandscheibe · 4. Halswirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA16036": {
+"de": "Bandscheibe · 4. Lendenwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA13501": {
+"de": "Bandscheibe · 4. Brustwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA13506": {
+"de": "Bandscheibe · 9. Brustwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA16034": {
+"de": "Bandscheibe · 2. Lendenwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA13495": {
+"de": "Bandscheibe · 2. Brustwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA13900": {
+"de": "Bandscheibe · 7. Halswirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA13504": {
+"de": "Bandscheibe · 7. Brustwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA13899": {
+"de": "Bandscheibe · 6. Halswirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA13503": {
+"de": "Bandscheibe · 6. Brustwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA13507": {
+"de": "Bandscheibe · 10. Brustwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA13896": {
+"de": "Bandscheibe · 3. Halswirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA16035": {
+"de": "Bandscheibe · 3. Lendenwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA13500": {
+"de": "Bandscheibe · 3. Brustwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA13509": {
+"de": "Bandscheibe · 12. Brustwirbel",
+"latein": "Discus intervertebralis"
+},
+"FMA61975": {
+"de": "Lamina terminalis"
+},
+"FMA45974": {
+"de": "M. flexor hallucis brevis (links), lateraler Kopf",
+"latein": "M. flexor hallucis brevis"
+},
+"FMA45961": {
+"de": "Zwillingswadenmuskel, lateraler Kopf (links)",
+"latein": "M. gastrocnemius",
+"ursprung": "Femurkondylen",
+"ansatz": "Über die Achillessehne am Fersenbein",
+"funktion": "Plantarflexion, unterstützt die Kniebeugung",
+"innervation": "N. tibialis (S1–S2)",
+"notiz": "Zweigelenkig: mit gestrecktem Knie dehnt man den Gastrocnemius, mit gebeugtem den Soleus."
+},
+"FMA37698": {
+"de": "Dreiköpfiger Oberarmmuskel, lateraler Kopf (links)",
+"latein": "M. triceps brachii",
+"ursprung": "Langer Kopf: Tuberculum infraglenoidale. Seitlicher und mittlerer Kopf: Rückseite des Humerus",
+"ansatz": "Olekranon der Elle",
+"funktion": "Streckung im Ellenbogen; langer Kopf unterstützt Retroversion und Adduktion der Schulter",
+"innervation": "N. radialis (C6–C8)",
+"notiz": "Wichtig für alle Stützaktivitäten – Aufstehen, Gehen an Unterarmgehstützen."
+},
+"FMA45973": {
+"de": "M. flexor hallucis brevis (rechts), lateraler Kopf",
+"latein": "M. flexor hallucis brevis"
+},
+"FMA45960": {
+"de": "Zwillingswadenmuskel, lateraler Kopf (rechts)",
+"latein": "M. gastrocnemius",
+"ursprung": "Femurkondylen",
+"ansatz": "Über die Achillessehne am Fersenbein",
+"funktion": "Plantarflexion, unterstützt die Kniebeugung",
+"innervation": "N. tibialis (S1–S2)",
+"notiz": "Zweigelenkig: mit gestrecktem Knie dehnt man den Gastrocnemius, mit gebeugtem den Soleus."
+},
+"FMA37697": {
+"de": "Dreiköpfiger Oberarmmuskel, lateraler Kopf (rechts)",
+"latein": "M. triceps brachii",
+"ursprung": "Langer Kopf: Tuberculum infraglenoidale. Seitlicher und mittlerer Kopf: Rückseite des Humerus",
+"ansatz": "Olekranon der Elle",
+"funktion": "Streckung im Ellenbogen; langer Kopf unterstützt Retroversion und Adduktion der Schulter",
+"innervation": "N. radialis (C6–C8)",
+"notiz": "Wichtig für alle Stützaktivitäten – Aufstehen, Gehen an Unterarmgehstützen."
+},
+"FMA37460": {
+"de": "M. abductor hallucis (links)",
+"latein": "M. abductor hallucis"
+},
+"FMA37387": {
+"de": "M. abductor pollicis brevis (links)",
+"latein": "M. abductor pollicis brevis"
+},
+"FMA38517": {
+"de": "M. abductor pollicis longus (links)",
+"latein": "M. abductor pollicis longus"
+},
+"FMA72702": {
+"de": "Accessory short gyrus (links)"
+},
+"FMA22454": {
+"de": "M. adductor brevis (links)",
+"latein": "M. adductor brevis"
+},
+"FMA22457": {
+"de": "M. adductor longus (links)",
+"latein": "M. adductor longus"
+},
+"FMA22460": {
+"de": "M. adductor magnus (links)",
+"latein": "M. adductor magnus"
+},
+"FMA43887": {
+"de": "M. adductor minimus (links)",
+"latein": "M. adductor minimus"
+},
+"FMA72833": {
+"de": "Amygdala (links)"
+},
+"FMA37706": {
+"de": "M. anconeus (links)",
+"latein": "M. anconeus"
+},
+"FMA72670": {
+"de": "Angular gyrus (links)"
+},
+"FMA37669": {
+"de": "M. brachialis (links)",
+"latein": "M. brachialis"
+},
+"FMA4761": {
+"de": "Brachiocephalic vein (links)"
+},
+"FMA38487": {
+"de": "M. brachioradialis (links)",
+"latein": "M. brachioradialis"
+},
+"FMA46836": {
+"de": "M. buccinator (links)",
+"latein": "M. buccinator"
+},
+"FMA264844": {
+"de": "M. calcaneal tendon (links)",
+"latein": "M. calcaneal tendon"
+},
+"FMA24498": {
+"de": "Fersenbein (links)",
+"latein": "Calcaneus",
+"notiz": "Ansatz der Achillessehne; Ursprung der Plantarfaszie – typischer Ort des Fersensporns."
+},
+"FMA24447": {
+"de": "Kopfbein (links)",
+"latein": "Os capitatum"
+},
+"FMA72827": {
+"de": "Caudate nucleus (links)"
+},
+"FMA81753": {
+"de": "M. cervical rotator (links)",
+"latein": "M. cervical rotator"
+},
+"FMA72718": {
+"de": "Cingulate gyrus (links)"
+},
+"FMA13323": {
+"de": "Schlüsselbein (links)",
+"latein": "Clavicula",
+"tastbar": "Auf ganzer Länge unter der Haut tastbar",
+"notiz": "Einzige knöcherne Verbindung zwischen Arm und Rumpf, wirkt als Abstandhalter für das Schulterblatt."
+},
+"FMA46444": {
+"de": "M. coccygeus (links)",
+"latein": "M. coccygeus"
+},
+"FMA4058": {
+"de": "Common carotid artery (links)"
+},
+"FMA14766": {
+"de": "Common iliac artery (links)"
+},
+"FMA21388": {
+"de": "Common iliac vein (links)"
+},
+"FMA37666": {
+"de": "M. coracobrachialis (links)",
+"latein": "M. coracobrachialis"
+},
+"FMA46797": {
+"de": "M. corrugator supercilii (links)",
+"latein": "M. corrugator supercilii"
+},
+"BP24": {
+"de": "Rippenknorpel (links)",
+"latein": "Cartilago costalis"
+},
+"FMA24529": {
+"de": "Würfelbein (links)",
+"latein": "Os cuboideum"
+},
+"FMA46830": {
+"de": "M. depressor anguli oris (links)",
+"latein": "M. depressor anguli oris"
+},
+"FMA46818": {
+"de": "M. depressor labii inferioris (links)",
+"latein": "M. depressor labii inferioris"
+},
+"FMA55609": {
+"de": "M. depressor septi nasi (links)",
+"latein": "M. depressor septi nasi"
+},
+"FMA8310": {
+"de": "8. Rippe (links)",
+"latein": "Costa"
+},
+"FMA8532": {
+"de": "11. Rippe (links)",
+"latein": "Costa"
+},
+"FMA38499": {
+"de": "M. extensor carpi radialis brevis (links)",
+"latein": "M. extensor carpi radialis brevis"
+},
+"FMA38496": {
+"de": "M. extensor carpi radialis longus (links)",
+"latein": "M. extensor carpi radialis longus"
+},
+"FMA38505": {
+"de": "M. extensor digiti minimi (links)",
+"latein": "M. extensor digiti minimi"
+},
+"FMA38502": {
+"de": "M. extensor digitorum (links)",
+"latein": "M. extensor digitorum"
+},
+"FMA51143": {
+"de": "M. extensor digitorum brevis (links)",
+"latein": "M. extensor digitorum brevis"
+},
+"FMA22549": {
+"de": "M. extensor digitorum longus (links)",
+"latein": "M. extensor digitorum longus"
+},
+"FMA51145": {
+"de": "M. extensor hallucis brevis (links)",
+"latein": "M. extensor hallucis brevis"
+},
+"FMA22547": {
+"de": "M. extensor hallucis longus (links)",
+"latein": "M. extensor hallucis longus"
+},
+"FMA38526": {
+"de": "M. extensor indicis (links)",
+"latein": "M. extensor indicis"
+},
+"FMA38520": {
+"de": "M. extensor pollicis brevis (links)",
+"latein": "M. extensor pollicis brevis"
+},
+"FMA38523": {
+"de": "M. extensor pollicis longus (links)",
+"latein": "M. extensor pollicis longus"
+},
+"FMA18807": {
+"de": "External iliac artery (links)"
+},
+"FMA18886": {
+"de": "External iliac vein (links)"
+},
+"FMA13337": {
+"de": "Äußerer schräger Bauchmuskel (links)",
+"latein": "M. obliquus externus abdominis",
+"funktion": "Rumpfbeugung, Rotation zur Gegenseite, Seitneigung",
+"innervation": "Nn. intercostales (Th5–Th12)"
+},
+"FMA24475": {
+"de": "Oberschenkelknochen (links)",
+"latein": "Femur",
+"tastbar": "Großer Rollhügel (Trochanter major) seitlich an der Hüfte, Kondylen am Knie",
+"gelenke": [
+"Hüftgelenk",
+"Kniegelenk"
+],
+"notiz": "Längster und stärkster Knochen des Körpers. Der Schenkelhals steht in etwa 125° zum Schaft – größer heißt Coxa valga, kleiner Coxa vara."
+},
+"FMA24481": {
+"de": "Wadenbein (links)",
+"latein": "Fibula",
+"tastbar": "Fibulaköpfchen unterhalb des Knies außen, Außenknöchel (Malleolus lateralis)",
+"notiz": "Trägt kaum Gewicht, bildet aber den Außenknöchel. Um das Fibulaköpfchen zieht der N. fibularis communis – dort sehr druckempfindlich."
+},
+"FMA22555": {
+"de": "M. fibularis brevis (links)",
+"latein": "M. fibularis brevis"
+},
+"FMA22553": {
+"de": "M. fibularis longus (links)",
+"latein": "M. fibularis longus"
+},
+"FMA22551": {
+"de": "M. fibularis tertius (links)",
+"latein": "M. fibularis tertius"
+},
+"FMA8112": {
+"de": "5. Rippenknorpel (links)",
+"latein": "Cartilago costalis"
+},
+"FMA24473": {
+"de": "5. Mittelhandknochen (links)",
+"latein": "Os metacarpi"
+},
+"FMA24516": {
+"de": "5. Mittelfußknochen (links)",
+"latein": "Os metatarsi"
+},
+"FMA8093": {
+"de": "5. Rippe (links)",
+"latein": "Costa"
+},
+"FMA8005": {
+"de": "1. Rippenknorpel (links)",
+"latein": "Cartilago costalis"
+},
+"FMA24465": {
+"de": "1. Mittelhandknochen (links)",
+"latein": "Os metacarpi"
+},
+"FMA24508": {
+"de": "1. Mittelfußknochen (links)",
+"latein": "Os metatarsi"
+},
+"FMA7987": {
+"de": "1. Rippe (links)",
+"latein": "Costa"
+},
+"FMA37466": {
+"de": "M. flexor accessorius (links)",
+"latein": "M. flexor accessorius"
+},
+"FMA38461": {
+"de": "M. flexor carpi radialis (links)",
+"latein": "M. flexor carpi radialis"
+},
+"FMA37462": {
+"de": "M. flexor digitorum brevis (links)",
+"latein": "M. flexor digitorum brevis"
+},
+"FMA65017": {
+"de": "M. flexor digitorum longus (links)",
+"latein": "M. flexor digitorum longus"
+},
+"FMA38480": {
+"de": "M. flexor digitorum profundus (links)",
+"latein": "M. flexor digitorum profundus"
+},
+"FMA65015": {
+"de": "M. flexor hallucis longus (links)",
+"latein": "M. flexor hallucis longus"
+},
+"FMA38484": {
+"de": "M. flexor pollicis longus (links)",
+"latein": "M. flexor pollicis longus"
+},
+"FMA72925": {
+"de": "Fornix of forebrain (links)"
+},
+"FMA8167": {
+"de": "4. Rippenknorpel (links)",
+"latein": "Cartilago costalis"
+},
+"FMA24471": {
+"de": "4. Mittelhandknochen (links)",
+"latein": "Os metacarpi"
+},
+"FMA24514": {
+"de": "4. Mittelfußknochen (links)",
+"latein": "Os metatarsi"
+},
+"FMA8148": {
+"de": "4. Rippe (links)",
+"latein": "Costa"
+},
+"FMA46760": {
+"de": "M. frontalis (links)",
+"latein": "M. frontalis"
+},
+"FMA72690": {
+"de": "Fusiform gyrus (links)"
+},
+"FMA14768": {
+"de": "Gastric artery (links)"
+},
+"FMA22337": {
+"de": "M. gemellus inferior (links)",
+"latein": "M. gemellus inferior"
+},
+"FMA22335": {
+"de": "M. gemellus superior (links)",
+"latein": "M. gemellus superior"
+},
+"FMA46327": {
+"de": "M. geniohyoid (links)",
+"latein": "M. geniohyoid"
+},
+"FMA72831": {
+"de": "Globus pallidus (links)"
+},
+"FMA22329": {
+"de": "Großer Gesäßmuskel (links)",
+"latein": "M. gluteus maximus",
+"ursprung": "Darmbeinschaufel, Kreuzbein, Steißbein, Lig. sacrotuberale",
+"ansatz": "Tractus iliotibialis und Tuberositas glutea",
+"funktion": "Kräftigste Hüftstreckung, Außenrotation",
+"innervation": "N. gluteus inferior (L5–S2)",
+"notiz": "Der Muskel des Treppensteigens und Aufstehens."
+},
+"FMA22331": {
+"de": "Mittlerer Gesäßmuskel (links)",
+"latein": "M. gluteus medius",
+"ursprung": "Außenfläche der Darmbeinschaufel",
+"ansatz": "Trochanter major",
+"funktion": "Abduktion; stabilisiert im Einbeinstand das Becken",
+"innervation": "N. gluteus superior (L4–S1)",
+"notiz": "Ist er schwach, kippt das Becken beim Gehen zur Spielbeinseite ab – Trendelenburg-Zeichen."
+},
+"FMA22333": {
+"de": "M. gluteus minimus (links)",
+"latein": "M. gluteus minimus"
+},
+"FMA43884": {
+"de": "M. gracilis (links)",
+"latein": "M. gracilis"
+},
+"FMA24449": {
+"de": "Hakenbein (links)",
+"latein": "Os hamatum"
+},
+"FMA16587": {
+"de": "Hüftbein (links)",
+"latein": "Os coxae",
+"tastbar": "Beckenkamm, Spina iliaca anterior superior, Sitzbeinhöcker",
+"notiz": "Verschmolzen aus Darmbein, Sitzbein und Schambein. Ansatzfläche für Bauch-, Rücken-, Gesäß- und Oberschenkelmuskeln."
+},
+"FMA72714": {
+"de": "Hippocampus (links)"
+},
+"FMA23131": {
+"de": "Oberarmknochen (links)",
+"latein": "Humerus",
+"tastbar": "Tuberculum majus seitlich unter dem Schulterdach, Epicondylen am Ellenbogen",
+"gelenke": [
+"Schultergelenk",
+"Ellenbogengelenk"
+],
+"notiz": "Der Kopf ist deutlich größer als die Pfanne – viel Beweglichkeit, wenig knöcherne Sicherung. Stabilität kommt von Kapsel, Labrum und Rotatorenmanschette."
+},
+"FMA22323": {
+"de": "Darmbeinmuskel (links)",
+"latein": "M. iliacus",
+"ursprung": "Fossa iliaca",
+"ansatz": "Trochanter minor",
+"funktion": "Hüftbeugung",
+"innervation": "N. femoralis (L2–L3)"
+},
+"FMA45859": {
+"de": "M. iliococcygeus (links)",
+"latein": "M. iliococcygeus"
+},
+"FMA22745": {
+"de": "M. iliocostalis cervicis (links)",
+"latein": "M. iliocostalis cervicis"
+},
+"FMA22741": {
+"de": "M. iliocostalis lumborum (links)",
+"latein": "M. iliocostalis lumborum"
+},
+"FMA22743": {
+"de": "M. iliocostalis thoracis (links)",
+"latein": "M. iliocostalis thoracis"
+},
+"FMA58777": {
+"de": "M. iliotibial tract (links)",
+"latein": "M. iliotibial tract"
+},
+"FMA73435": {
+"de": "Inferior colliculus (links)"
+},
+"FMA54738": {
+"de": "Untere Nasenmuschel (links)",
+"latein": "Concha nasalis inferior"
+},
+"FMA72688": {
+"de": "Inferior temporal gyrus (links)"
+},
+"FMA32548": {
+"de": "Untergrätenmuskel (links)",
+"latein": "M. infraspinatus",
+"ursprung": "Fossa infraspinata",
+"ansatz": "Tuberculum majus",
+"funktion": "Außenrotation, zentriert den Humeruskopf",
+"innervation": "N. suprascapularis (C4–C6)",
+"notiz": "Teil der Rotatorenmanschette."
+},
+"FMA21965": {
+"de": "M. inguinal ligament (links)",
+"latein": "M. inguinal ligament"
+},
+"FMA72978": {
+"de": "Insula (links)"
+},
+"FMA24524": {
+"de": "Mittleres Keilbein (links)",
+"latein": "Os cuneiforme intermedium"
+},
+"FMA264840": {
+"de": "M. intermediate tendon (links)",
+"latein": "M. intermediate tendon"
+},
+"FMA18810": {
+"de": "Internal iliac artery (links)"
+},
+"FMA18888": {
+"de": "Internal iliac vein (links)"
+},
+"FMA4762": {
+"de": "Internal jugular vein (links)"
+},
+"FMA13893": {
+"de": "Innerer schräger Bauchmuskel (links)",
+"latein": "M. obliquus internus abdominis",
+"funktion": "Rumpfbeugung, Rotation zur gleichen Seite, Seitneigung",
+"innervation": "Nn. intercostales (Th8–L1)"
+},
+"FMA53646": {
+"de": "Tränenbein (links)",
+"latein": "Os lacrimale"
+},
+"FMA24526": {
+"de": "Äußeres Keilbein (links)",
+"latein": "Os cuneiforme laterale"
+},
+"FMA73304": {
+"de": "Lateral geniculate body (links)"
+},
+"FMA78450": {
+"de": "Lateral ventricle (links)"
+},
+"FMA13359": {
+"de": "Breiter Rückenmuskel (links)",
+"latein": "M. latissimus dorsi",
+"ursprung": "Dornfortsätze Th7–L5, Kreuzbein, Beckenkamm, untere Rippen",
+"ansatz": "Crista tuberculi minoris des Humerus",
+"funktion": "Adduktion, Innenrotation und Retroversion – der Muskel des Klimmzugs",
+"innervation": "N. thoracodorsalis (C6–C8)",
+"notiz": "Verbindet Arm und Becken: Verkürzung schränkt die Schulterhebung ein und verstärkt die Lendenlordose."
+},
+"FMA46824": {
+"de": "M. levator anguli oris (links)",
+"latein": "M. levator anguli oris"
+},
+"FMA46807": {
+"de": "M. levator labii superioris (links)",
+"latein": "M. levator labii superioris"
+},
+"FMA46804": {
+"de": "M. levator labii superioris alaeque nasi (links)",
+"latein": "M. levator labii superioris alaeque nasi"
+},
+"FMA32541": {
+"de": "Schulterblattheber (links)",
+"latein": "M. levator scapulae",
+"ursprung": "Querfortsätze C1–C4",
+"ansatz": "Oberer Schulterblattwinkel",
+"funktion": "Hebt das Schulterblatt, dreht die Pfanne nach unten",
+"innervation": "N. dorsalis scapulae (C4–C5)",
+"notiz": "Zweiter großer Verspannungskandidat im Nacken neben dem oberen Trapezius."
+},
+"FMA44250": {
+"de": "Langes Sohlenband (links)",
+"latein": "Lig. plantare longum"
+},
+"FMA22756": {
+"de": "M. longissimus capitis (links)",
+"latein": "M. longissimus capitis"
+},
+"FMA22758": {
+"de": "M. longissimus cervicis (links)",
+"latein": "M. longissimus cervicis"
+},
+"FMA22753": {
+"de": "M. longissimus thoracis (links)",
+"latein": "M. longissimus thoracis"
+},
+"FMA46310": {
+"de": "M. longus capitis (links)",
+"latein": "M. longus capitis"
+},
+"FMA23090": {
+"de": "M. lumbar rotator (links)",
+"latein": "M. lumbar rotator"
+},
+"FMA24438": {
+"de": "Mondbein (links)",
+"latein": "Os lunatum"
+},
+"FMA53650": {
+"de": "Oberkiefer (links)",
+"latein": "Maxilla"
+},
+"FMA24522": {
+"de": "Inneres Keilbein (links)",
+"latein": "Os cuneiforme mediale"
+},
+"FMA73310": {
+"de": "Medial geniculate body (links)"
+},
+"FMA49013": {
+"de": "M. medial pterygoid (links)",
+"latein": "M. medial pterygoid"
+},
+"FMA46827": {
+"de": "M. mentalis (links)",
+"latein": "M. mentalis"
+},
+"FMA72656": {
+"de": "Middle frontal gyrus (links)"
+},
+"FMA72686": {
+"de": "Middle temporal gyrus (links)"
+},
+"FMA22879": {
+"de": "M. multifidus (links)",
+"latein": "M. multifidus"
+},
+"FMA46322": {
+"de": "M. mylohyoid (links)",
+"latein": "M. mylohyoid"
+},
+"FMA53648": {
+"de": "Nasenbein (links)",
+"latein": "Os nasale"
+},
+"FMA55607": {
+"de": "M. nasalis (links)",
+"latein": "M. nasalis"
+},
+"FMA8391": {
+"de": "9. Rippe (links)",
+"latein": "Costa"
+},
+"FMA32537": {
+"de": "M. obliquus capitis inferior (links)",
+"latein": "M. obliquus capitis inferior"
+},
+"FMA32535": {
+"de": "M. obliquus capitis superior (links)",
+"latein": "M. obliquus capitis superior"
+},
+"FMA22327": {
+"de": "M. obturator externus (links)",
+"latein": "M. obturator externus"
+},
+"FMA22325": {
+"de": "M. obturator internus (links)",
+"latein": "M. obturator internus"
+},
+"FMA72976": {
+"de": "Occipital lobe (links)"
+},
+"FMA46762": {
+"de": "M. occipitalis (links)",
+"latein": "M. occipitalis"
+},
+"FMA13349": {
+"de": "M. omohyoid (links)",
+"latein": "M. omohyoid"
+},
+"FMA37391": {
+"de": "M. opponens pollicis (links)",
+"latein": "M. opponens pollicis"
+},
+"FMA50878": {
+"de": "Optic nerve (links)"
+},
+"FMA67936": {
+"de": "Optic tract (links)"
+},
+"FMA53656": {
+"de": "Gaumenbein (links)",
+"latein": "Os palatinum"
+},
+"FMA38464": {
+"de": "M. palmaris longus (links)",
+"latein": "M. palmaris longus"
+},
+"FMA72706": {
+"de": "Parahippocampal gyrus (links)"
+},
+"FMA52789": {
+"de": "Scheitelbein (links)",
+"latein": "Os parietale"
+},
+"FMA24487": {
+"de": "Kniescheibe (links)",
+"latein": "Patella",
+"notiz": "Größtes Sesambein des Körpers, eingebettet in die Quadrizepssehne. Verlängert den Hebelarm des Streckapparats um etwa 30 %.",
+"tastbar": "Bei entspanntem Bein seitlich verschiebbar – Teil jeder Knieuntersuchung"
+},
+"FMA22451": {
+"de": "M. pectineus (links)",
+"latein": "M. pectineus"
+},
+"FMA13376": {
+"de": "M. pectoralis minor (links)",
+"latein": "M. pectoralis minor"
+},
+"FMA22341": {
+"de": "Birnenförmiger Muskel (links)",
+"latein": "M. piriformis",
+"ursprung": "Vorderfläche des Kreuzbeins",
+"ansatz": "Trochanter major",
+"funktion": "Außenrotation, ab 60° Hüftbeugung Abduktion",
+"innervation": "Plexus sacralis (S1–S2)",
+"notiz": "Der N. ischiadicus zieht direkt darunter hindurch – Verspannung kann ischiasähnliche Beschwerden machen."
+},
+"FMA24442": {
+"de": "Erbsenbein (links)",
+"latein": "Os pisiforme"
+},
+"FMA22561": {
+"de": "M. plantaris (links)",
+"latein": "M. plantaris"
+},
+"FMA45740": {
+"de": "M. platysma (links)",
+"latein": "M. platysma"
+},
+"FMA22592": {
+"de": "M. popliteus (links)",
+"latein": "M. popliteus"
+},
+"FMA72666": {
+"de": "Postcentral gyrus (links)"
+},
+"FMA72662": {
+"de": "Precentral gyrus (links)"
+},
+"FMA55611": {
+"de": "M. procerus (links)",
+"latein": "M. procerus"
+},
+"FMA38455": {
+"de": "M. pronator quadratus (links)",
+"latein": "M. pronator quadratus"
+},
+"FMA22343": {
+"de": "Großer Lendenmuskel (links)",
+"latein": "M. psoas major",
+"ursprung": "Wirbelkörper und Querfortsätze Th12–L4",
+"ansatz": "Trochanter minor (gemeinsam mit dem M. iliacus als M. iliopsoas)",
+"funktion": "Stärkster Hüftbeuger; verstärkt die Lendenlordose",
+"innervation": "Direkte Äste des Plexus lumbalis (L1–L3)",
+"notiz": "Durch langes Sitzen häufig verkürzt. Test: Thomas-Handgriff."
+},
+"FMA45855": {
+"de": "M. pubococcygeus (links)",
+"latein": "M. pubococcygeus"
+},
+"FMA45857": {
+"de": "M. puborectalis (links)",
+"latein": "M. puborectalis"
+},
+"FMA72829": {
+"de": "Putamen (links)"
+},
+"FMA22347": {
+"de": "M. pyramidalis (links)",
+"latein": "M. pyramidalis"
+},
+"FMA22339": {
+"de": "M. quadratus femoris (links)",
+"latein": "M. quadratus femoris"
+},
+"FMA22349": {
+"de": "M. quadratus lumborum (links)",
+"latein": "M. quadratus lumborum"
+},
+"FMA23465": {
+"de": "Speiche (links)",
+"latein": "Radius",
+"tastbar": "Processus styloideus radii am Daumen-Handgelenk",
+"notiz": "Liegt auf der Daumenseite und trägt die Handwurzel. Häufigste Bruchstelle beim Sturz auf die Hand (distale Radiusfraktur)."
+},
+"FMA13378": {
+"de": "Gerader Bauchmuskel (links)",
+"latein": "M. rectus abdominis",
+"ursprung": "Schambein",
+"ansatz": "Rippenknorpel 5–7, Schwertfortsatz",
+"funktion": "Rumpfbeugung, Beckenaufrichtung nach hinten",
+"innervation": "Nn. intercostales (Th5–Th12)"
+},
+"FMA46314": {
+"de": "M. rectus capitis anterior (links)",
+"latein": "M. rectus capitis anterior"
+},
+"FMA46318": {
+"de": "M. rectus capitis lateralis (links)",
+"latein": "M. rectus capitis lateralis"
+},
+"FMA32531": {
+"de": "M. rectus capitis posterior major (links)",
+"latein": "M. rectus capitis posterior major"
+},
+"FMA32533": {
+"de": "M. rectus capitis posterior minor (links)",
+"latein": "M. rectus capitis posterior minor"
+},
+"FMA38929": {
+"de": "Gerader Oberschenkelmuskel (links)",
+"latein": "M. rectus femoris",
+"ursprung": "Spina iliaca anterior inferior",
+"ansatz": "Über die Patellasehne an der Tuberositas tibiae",
+"funktion": "Kniestreckung und Hüftbeugung (zweigelenkig)",
+"innervation": "N. femoralis (L2–L4)"
+},
+"FMA14753": {
+"de": "Renal artery (links)"
+},
+"FMA14336": {
+"de": "Renal vein (links)"
+},
+"FMA13382": {
+"de": "M. rhomboid major (links)",
+"latein": "M. rhomboid major"
+},
+"FMA13384": {
+"de": "M. rhomboid minor (links)",
+"latein": "M. rhomboid minor"
+},
+"FMA46840": {
+"de": "M. risorius (links)",
+"latein": "M. risorius"
+},
+"FMA22355": {
+"de": "M. sartorius (links)",
+"latein": "M. sartorius"
+},
+"FMA13393": {
+"de": "M. scalenus anterior (links)",
+"latein": "M. scalenus anterior"
+},
+"FMA13391": {
+"de": "M. scalenus medius (links)",
+"latein": "M. scalenus medius"
+},
+"FMA13389": {
+"de": "M. scalenus posterior (links)",
+"latein": "M. scalenus posterior"
+},
+"FMA24436": {
+"de": "Kahnbein (links)",
+"latein": "Os scaphoideum"
+},
+"FMA13396": {
+"de": "Schulterblatt (links)",
+"latein": "Scapula",
+"tastbar": "Schulterblattgräte, unterer Winkel, Rabenschnabelfortsatz vorne",
+"notiz": "Liegt frei beweglich auf dem Brustkorb auf. Etwa 60° der 180° Armabduktion kommen aus dem Schulterblatt (skapulohumeraler Rhythmus 2:1)."
+},
+"FMA8031": {
+"de": "2. Rippenknorpel (links)",
+"latein": "Cartilago costalis"
+},
+"FMA24467": {
+"de": "2. Mittelhandknochen (links)",
+"latein": "Os metacarpi"
+},
+"FMA24510": {
+"de": "2. Mittelfußknochen (links)",
+"latein": "Os metatarsi"
+},
+"FMA8012": {
+"de": "2. Rippe (links)",
+"latein": "Costa"
+},
+"FMA22449": {
+"de": "Plattsehniger Muskel (links)",
+"latein": "M. semimembranosus",
+"ursprung": "Sitzbeinhöcker",
+"ansatz": "Condylus medialis tibiae",
+"funktion": "Hüftstreckung, Kniebeugung, Innenrotation im gebeugten Knie",
+"innervation": "N. ischiadicus (L5–S2)"
+},
+"FMA22877": {
+"de": "M. semispinalis capitis (links)",
+"latein": "M. semispinalis capitis"
+},
+"FMA22875": {
+"de": "M. semispinalis cervicis (links)",
+"latein": "M. semispinalis cervicis"
+},
+"FMA22873": {
+"de": "M. semispinalis thoracis (links)",
+"latein": "M. semispinalis thoracis"
+},
+"FMA22359": {
+"de": "Halbsehniger Muskel (links)",
+"latein": "M. semitendinosus",
+"ursprung": "Sitzbeinhöcker",
+"ansatz": "Pes anserinus superficialis an der Tibia",
+"funktion": "Hüftstreckung, Kniebeugung, Innenrotation im gebeugten Knie",
+"innervation": "N. ischiadicus (L5–S2)"
+},
+"FMA13399": {
+"de": "M. serratus anterior (links)",
+"latein": "M. serratus anterior"
+},
+"FMA13406": {
+"de": "M. serratus posterior inferior (links)",
+"latein": "M. serratus posterior inferior"
+},
+"FMA13404": {
+"de": "M. serratus posterior superior (links)",
+"latein": "M. serratus posterior superior"
+},
+"FMA8275": {
+"de": "7. Rippenknorpel (links)",
+"latein": "Cartilago costalis"
+},
+"FMA8256": {
+"de": "7. Rippe (links)",
+"latein": "Costa"
+},
+"FMA8221": {
+"de": "6. Rippenknorpel (links)",
+"latein": "Cartilago costalis"
+},
+"FMA8202": {
+"de": "6. Rippe (links)",
+"latein": "Costa"
+},
+"FMA22559": {
+"de": "Schollenmuskel (links)",
+"latein": "M. soleus",
+"ursprung": "Rückseite von Tibia und Fibula",
+"ansatz": "Achillessehne",
+"funktion": "Plantarflexion, wichtiger Haltemuskel im Stand",
+"innervation": "N. tibialis (S1–S2)"
+},
+"FMA22782": {
+"de": "M. spinalis cervicis (links)",
+"latein": "M. spinalis cervicis"
+},
+"FMA22780": {
+"de": "M. spinalis thoracis (links)",
+"latein": "M. spinalis thoracis"
+},
+"FMA22729": {
+"de": "M. splenius capitis (links)",
+"latein": "M. splenius capitis"
+},
+"FMA22727": {
+"de": "M. splenius cervicis (links)",
+"latein": "M. splenius cervicis"
+},
+"FMA13409": {
+"de": "Kopfwender (links)",
+"latein": "M. sternocleidomastoideus",
+"ursprung": "Brustbein und mediales Schlüsselbeindrittel",
+"ansatz": "Processus mastoideus",
+"funktion": "Einseitig Drehung zur Gegenseite und Seitneigung zur eigenen Seite; beidseitig HWS-Beugung",
+"innervation": "N. accessorius (XI), C2–C3",
+"notiz": "Bei Kopfvorhaltung am Bildschirm oft verkürzt."
+},
+"FMA13347": {
+"de": "M. sternohyoid (links)",
+"latein": "M. sternohyoid"
+},
+"FMA13351": {
+"de": "M. sternothyroid (links)",
+"latein": "M. sternothyroid"
+},
+"FMA73414": {
+"de": "Stria medullaris of thalamus (links)"
+},
+"FMA72940": {
+"de": "Stria terminalis (links)"
+},
+"FMA45827": {
+"de": "M. stylohyoid (links)",
+"latein": "M. stylohyoid"
+},
+"FMA4694": {
+"de": "Subclavian artery (links)"
+},
+"FMA4763": {
+"de": "Subclavian vein (links)"
+},
+"FMA13411": {
+"de": "M. subclavius (links)",
+"latein": "M. subclavius"
+},
+"FMA13415": {
+"de": "Unterschulterblattmuskel (links)",
+"latein": "M. subscapularis",
+"ursprung": "Fossa subscapularis",
+"ansatz": "Tuberculum minus",
+"funktion": "Innenrotation, zentriert den Humeruskopf",
+"innervation": "Nn. subscapulares (C5–C6)",
+"notiz": "Teil der Rotatorenmanschette."
+},
+"FMA73423": {
+"de": "Superior colliculus (links)"
+},
+"FMA72654": {
+"de": "Superior frontal gyrus (links)"
+},
+"BP49": {
+"de": "Superior parietal lobule precuneus (links)"
+},
+"FMA38514": {
+"de": "M. supinator (links)",
+"latein": "M. supinator"
+},
+"FMA72668": {
+"de": "Supramarginal gyrus (links)"
+},
+"FMA32545": {
+"de": "Obergrätenmuskel (links)",
+"latein": "M. supraspinatus",
+"ursprung": "Fossa supraspinata",
+"ansatz": "Tuberculum majus",
+"funktion": "Leitet die Abduktion ein, zentriert den Humeruskopf",
+"innervation": "N. suprascapularis (C4–C6)",
+"notiz": "Teil der Rotatorenmanschette – häufigste Sehnenruptur der Schulter."
+},
+"FMA24483": {
+"de": "Sprungbein (links)",
+"latein": "Talus",
+"notiz": "Einziger Knochen ohne Muskelansatz – wird nur durch Bänder geführt."
+},
+"FMA52739": {
+"de": "Schläfenbein (links)",
+"latein": "Os temporale"
+},
+"FMA49008": {
+"de": "M. temporalis (links)",
+"latein": "M. temporalis"
+},
+"FMA46764": {
+"de": "M. temporoparietalis (links)",
+"latein": "M. temporoparietalis"
+},
+"FMA22426": {
+"de": "M. tensor fasciae latae (links)",
+"latein": "M. tensor fasciae latae"
+},
+"FMA8472": {
+"de": "10. Rippe (links)",
+"latein": "Costa"
+},
+"FMA32552": {
+"de": "M. teres major (links)",
+"latein": "M. teres major"
+},
+"FMA32554": {
+"de": "Kleiner Rundmuskel (links)",
+"latein": "M. teres minor",
+"funktion": "Außenrotation und Adduktion",
+"innervation": "N. axillaris (C5–C6)",
+"notiz": "Teil der Rotatorenmanschette."
+},
+"FMA258716": {
+"de": "Thalamus (links)"
+},
+"FMA8058": {
+"de": "3. Rippenknorpel (links)",
+"latein": "Cartilago costalis"
+},
+"FMA24469": {
+"de": "3. Mittelhandknochen (links)",
+"latein": "Os metacarpi"
+},
+"FMA24512": {
+"de": "3. Mittelfußknochen (links)",
+"latein": "Os metatarsi"
+},
+"FMA8039": {
+"de": "3. Rippe (links)",
+"latein": "Costa"
+},
+"FMA13353": {
+"de": "M. thyrohyoid (links)",
+"latein": "M. thyrohyoid"
+},
+"FMA24478": {
+"de": "Schienbein (links)",
+"latein": "Tibia",
+"tastbar": "Vorderkante über die ganze Länge, Innenknöchel (Malleolus medialis)",
+"gelenke": [
+"Kniegelenk",
+"Oberes Sprunggelenk"
+],
+"notiz": "Trägt praktisch das gesamte Gewicht. Die Tuberositas tibiae ist Ansatz der Patellasehne – bei Jugendlichen Ort des Morbus Osgood-Schlatter."
+},
+"FMA22545": {
+"de": "Vorderer Schienbeinmuskel (links)",
+"latein": "M. tibialis anterior",
+"ursprung": "Außenfläche der Tibia und Membrana interossea",
+"ansatz": "Os cuneiforme mediale, Basis Metatarsale I",
+"funktion": "Dorsalextension und Supination",
+"innervation": "N. fibularis profundus (L4–L5)",
+"notiz": "Bei Ausfall entsteht der Steppergang mit hängender Fußspitze."
+},
+"FMA65019": {
+"de": "M. tibialis posterior (links)",
+"latein": "M. tibialis posterior"
+},
+"FMA22345": {
+"de": "Querer Bauchmuskel (links)",
+"latein": "M. transversus abdominis",
+"funktion": "Erhöht den Bauchinnendruck, stabilisiert die Lendenwirbelsäule",
+"innervation": "Nn. intercostales (Th7–L1)",
+"notiz": "Der wichtigste Muskel der segmentalen Stabilisation – Kernstück vieler Rückenprogramme."
+},
+"FMA9762": {
+"de": "M. transversus thoracis (links)",
+"latein": "M. transversus thoracis"
+},
+"FMA24444": {
+"de": "Großes Vieleckbein (links)",
+"latein": "Os trapezium"
+},
+"FMA24445": {
+"de": "Kleines Vieleckbein (links)",
+"latein": "Os trapezoideum"
+},
+"FMA24440": {
+"de": "Dreiecksbein (links)",
+"latein": "Os triquetrum"
+},
+"FMA8534": {
+"de": "12. Rippe (links)",
+"latein": "Costa"
+},
+"FMA23468": {
+"de": "Elle (links)",
+"latein": "Ulna",
+"tastbar": "Olekranon an der Ellenbogenspitze, Ellenkopf am Handgelenk",
+"notiz": "Bleibt bei der Unterarmdrehung stehen – die Speiche dreht sich um sie herum."
+},
+"FMA38935": {
+"de": "M. vastus intermedius (links)",
+"latein": "M. vastus intermedius",
+"ansatz": "Über die Patellasehne an der Tuberositas tibiae",
+"funktion": "Kniestreckung",
+"innervation": "N. femoralis (L2–L4)",
+"notiz": "Der M. vastus medialis verliert nach Knieverletzungen am schnellsten an Umfang."
+},
+"FMA38931": {
+"de": "M. vastus lateralis (links)",
+"latein": "M. vastus lateralis",
+"ansatz": "Über die Patellasehne an der Tuberositas tibiae",
+"funktion": "Kniestreckung",
+"innervation": "N. femoralis (L2–L4)",
+"notiz": "Der M. vastus medialis verliert nach Knieverletzungen am schnellsten an Umfang."
+},
+"FMA38933": {
+"de": "M. vastus medialis (links)",
+"latein": "M. vastus medialis",
+"ansatz": "Über die Patellasehne an der Tuberositas tibiae",
+"funktion": "Kniestreckung",
+"innervation": "N. femoralis (L2–L4)",
+"notiz": "Der M. vastus medialis verliert nach Knieverletzungen am schnellsten an Umfang."
+},
+"FMA52893": {
+"de": "Jochbein (links)",
+"latein": "Os zygomaticum"
+},
+"FMA46813": {
+"de": "M. zygomaticus major (links)",
+"latein": "M. zygomaticus major"
+},
+"FMA46815": {
+"de": "M. zygomaticus minor (links)",
+"latein": "M. zygomaticus minor"
+},
+"FMA11336": {
+"de": "M. linea alba",
+"latein": "M. linea alba"
+},
+"FMA37687": {
+"de": "Zweiköpfiger Oberarmmuskel, langer Kopf (links)",
+"latein": "M. biceps brachii",
+"ursprung": "Langer Kopf: Tuberculum supraglenoidale. Kurzer Kopf: Processus coracoideus",
+"ansatz": "Tuberositas radii der Speiche",
+"funktion": "Beugung im Ellenbogen, kräftige Supination, Unterstützung der Anteversion",
+"innervation": "N. musculocutaneus (C5–C6)",
+"notiz": "Die lange Bizepssehne läuft durch das Schultergelenk – häufige Schmerzquelle vorne an der Schulter."
+},
+"FMA45889": {
+"de": "Zweiköpfiger Schenkelmuskel, langer Kopf (links)",
+"latein": "M. biceps femoris",
+"ursprung": "Sitzbeinhöcker (langer Kopf), Linea aspera (kurzer Kopf)",
+"ansatz": "Fibulaköpfchen",
+"funktion": "Hüftstreckung, Kniebeugung, Außenrotation im gebeugten Knie",
+"innervation": "N. ischiadicus (L5–S2)"
+},
+"FMA37700": {
+"de": "Dreiköpfiger Oberarmmuskel, langer Kopf (links)",
+"latein": "M. triceps brachii",
+"ursprung": "Langer Kopf: Tuberculum infraglenoidale. Seitlicher und mittlerer Kopf: Rückseite des Humerus",
+"ansatz": "Olekranon der Elle",
+"funktion": "Streckung im Ellenbogen; langer Kopf unterstützt Retroversion und Adduktion der Schulter",
+"innervation": "N. radialis (C6–C8)",
+"notiz": "Wichtig für alle Stützaktivitäten – Aufstehen, Gehen an Unterarmgehstützen."
+},
+"FMA37686": {
+"de": "Zweiköpfiger Oberarmmuskel, langer Kopf (rechts)",
+"latein": "M. biceps brachii",
+"ursprung": "Langer Kopf: Tuberculum supraglenoidale. Kurzer Kopf: Processus coracoideus",
+"ansatz": "Tuberositas radii der Speiche",
+"funktion": "Beugung im Ellenbogen, kräftige Supination, Unterstützung der Anteversion",
+"innervation": "N. musculocutaneus (C5–C6)",
+"notiz": "Die lange Bizepssehne läuft durch das Schultergelenk – häufige Schmerzquelle vorne an der Schulter."
+},
+"FMA45888": {
+"de": "Zweiköpfiger Schenkelmuskel, langer Kopf (rechts)",
+"latein": "M. biceps femoris",
+"ursprung": "Sitzbeinhöcker (langer Kopf), Linea aspera (kurzer Kopf)",
+"ansatz": "Fibulaköpfchen",
+"funktion": "Hüftstreckung, Kniebeugung, Außenrotation im gebeugten Knie",
+"innervation": "N. ischiadicus (L5–S2)"
+},
+"FMA37699": {
+"de": "Dreiköpfiger Oberarmmuskel, langer Kopf (rechts)",
+"latein": "M. triceps brachii",
+"ursprung": "Langer Kopf: Tuberculum infraglenoidale. Seitlicher und mittlerer Kopf: Rückseite des Humerus",
+"ansatz": "Olekranon der Elle",
+"funktion": "Streckung im Ellenbogen; langer Kopf unterstützt Retroversion und Adduktion der Schulter",
+"innervation": "N. radialis (C6–C8)",
+"notiz": "Wichtig für alle Stützaktivitäten – Aufstehen, Gehen an Unterarmgehstützen."
+},
+"FMA49023": {
+"de": "M. lower head of left lateral pterygoid",
+"latein": "M. lower head of left lateral pterygoid"
+},
+"FMA49022": {
+"de": "M. lower head of right lateral pterygoid",
+"latein": "M. lower head of right lateral pterygoid"
+},
+"FMA7371": {
+"de": "Lunge (lower lobe of left)",
+"latein": "Pulmo"
+},
+"FMA7337": {
+"de": "Lunge (lower lobe of right)",
+"latein": "Pulmo"
+},
+"FMA74877": {
+"de": "Mammillary body"
+},
+"FMA52748": {
+"de": "Unterkiefer",
+"latein": "Mandibula"
+},
+"FMA7486": {
+"de": "Brustbeingriff",
+"latein": "Manubrium sterni"
+},
+"FMA3818": {
+"de": "Marginal branch of right coronary artery"
+},
+"FMA45972": {
+"de": "M. flexor hallucis brevis (links), medialer Kopf",
+"latein": "M. flexor hallucis brevis"
+},
+"FMA45958": {
+"de": "Zwillingswadenmuskel, medialer Kopf (links)",
+"latein": "M. gastrocnemius",
+"ursprung": "Femurkondylen",
+"ansatz": "Über die Achillessehne am Fersenbein",
+"funktion": "Plantarflexion, unterstützt die Kniebeugung",
+"innervation": "N. tibialis (S1–S2)",
+"notiz": "Zweigelenkig: mit gestrecktem Knie dehnt man den Gastrocnemius, mit gebeugtem den Soleus."
+},
+"FMA37696": {
+"de": "Dreiköpfiger Oberarmmuskel, medialer Kopf (links)",
+"latein": "M. triceps brachii",
+"ursprung": "Langer Kopf: Tuberculum infraglenoidale. Seitlicher und mittlerer Kopf: Rückseite des Humerus",
+"ansatz": "Olekranon der Elle",
+"funktion": "Streckung im Ellenbogen; langer Kopf unterstützt Retroversion und Adduktion der Schulter",
+"innervation": "N. radialis (C6–C8)",
+"notiz": "Wichtig für alle Stützaktivitäten – Aufstehen, Gehen an Unterarmgehstützen."
+},
+"FMA45971": {
+"de": "M. flexor hallucis brevis (rechts), medialer Kopf",
+"latein": "M. flexor hallucis brevis"
+},
+"FMA45957": {
+"de": "Zwillingswadenmuskel, medialer Kopf (rechts)",
+"latein": "M. gastrocnemius",
+"ursprung": "Femurkondylen",
+"ansatz": "Über die Achillessehne am Fersenbein",
+"funktion": "Plantarflexion, unterstützt die Kniebeugung",
+"innervation": "N. tibialis (S1–S2)",
+"notiz": "Zweigelenkig: mit gestrecktem Knie dehnt man den Gastrocnemius, mit gebeugtem den Soleus."
+},
+"FMA37695": {
+"de": "Dreiköpfiger Oberarmmuskel, medialer Kopf (rechts)",
+"latein": "M. triceps brachii",
+"ursprung": "Langer Kopf: Tuberculum infraglenoidale. Seitlicher und mittlerer Kopf: Rückseite des Humerus",
+"ansatz": "Olekranon der Elle",
+"funktion": "Streckung im Ellenbogen; langer Kopf unterstützt Retroversion und Adduktion der Schulter",
+"innervation": "N. radialis (C6–C8)",
+"notiz": "Wichtig für alle Stützaktivitäten – Aufstehen, Gehen an Unterarmgehstützen."
+},
+"FMA62004": {
+"de": "Medulla oblongata"
+},
+"FMA61993nsn": {
+"de": "Midbrain, nsn"
+},
+"FMA4713": {
+"de": "Middle cardiac vein"
+},
+"FMA7383": {
+"de": "Lunge (middle lobe of)",
+"latein": "Pulmo"
+},
+"FMA32647": {
+"de": "Mittelglied · 4. Zehe (links)",
+"latein": "Phalanx media"
+},
+"FMA23938": {
+"de": "Mittelglied · Zeigefinger (links)",
+"latein": "Phalanx media"
+},
+"FMA23944": {
+"de": "Mittelglied · kleiner Finger (links)",
+"latein": "Phalanx media"
+},
+"FMA230988": {
+"de": "Mittelglied · Kleinzehe (links)",
+"latein": "Phalanx media"
+},
+"FMA23940": {
+"de": "Mittelglied · Mittelfinger (links)",
+"latein": "Phalanx media"
+},
+"FMA23942": {
+"de": "Mittelglied · Ringfinger (links)",
+"latein": "Phalanx media"
+},
+"FMA32643": {
+"de": "Mittelglied · 2. Zehe (links)",
+"latein": "Phalanx media"
+},
+"FMA32645": {
+"de": "Mittelglied · 3. Zehe (links)",
+"latein": "Phalanx media"
+},
+"FMA32646": {
+"de": "Mittelglied · 4. Zehe (rechts)",
+"latein": "Phalanx media"
+},
+"FMA24455": {
+"de": "Mittelglied · Zeigefinger (rechts)",
+"latein": "Phalanx media"
+},
+"FMA24458": {
+"de": "Mittelglied · kleiner Finger (rechts)",
+"latein": "Phalanx media"
+},
+"FMA230986": {
+"de": "Mittelglied · Kleinzehe (rechts)",
+"latein": "Phalanx media"
+},
+"FMA24456": {
+"de": "Mittelglied · Mittelfinger (rechts)",
+"latein": "Phalanx media"
+},
+"FMA24457": {
+"de": "Mittelglied · Ringfinger (rechts)",
+"latein": "Phalanx media"
+},
+"FMA32642": {
+"de": "Mittelglied · 2. Zehe (rechts)",
+"latein": "Phalanx media"
+},
+"FMA32644": {
+"de": "Mittelglied · 3. Zehe (rechts)",
+"latein": "Phalanx media"
+},
+"FMA7235": {
+"de": "Mitral valve"
+},
+"FMA24501": {
+"de": "Kahnbein des Fußes (linker Fuß)",
+"latein": "Os naviculare"
+},
+"FMA24500": {
+"de": "Kahnbein des Fußes (rechter Fuß)",
+"latein": "Os naviculare"
+},
+"FMA10014": {
+"de": "9. Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+"FMA46019": {
+"de": "M. oblique head of left adductor hallucis",
+"latein": "M. oblique head of left adductor hallucis"
+},
+"FMA46122": {
+"de": "M. oblique head of left adductor pollicis",
+"latein": "M. oblique head of left adductor pollicis"
+},
+"FMA46018": {
+"de": "M. oblique head of right adductor hallucis",
+"latein": "M. oblique head of right adductor hallucis"
+},
+"FMA46121": {
+"de": "M. oblique head of right adductor pollicis",
+"latein": "M. oblique head of right adductor pollicis"
+},
+"FMA52735": {
+"de": "Hinterhauptbein",
+"latein": "Os occipitale"
+},
+"FMA86035": {
+"de": "M. opponens digiti minimi (linker Fuß)",
+"latein": "M. opponens digiti minimi"
+},
+"FMA37401": {
+"de": "M. opponens digiti minimi (linke Hand)",
+"latein": "M. opponens digiti minimi"
+},
+"FMA86034": {
+"de": "M. opponens digiti minimi (rechter Fuß)",
+"latein": "M. opponens digiti minimi"
+},
+"FMA37400": {
+"de": "M. opponens digiti minimi (rechte Hand)",
+"latein": "M. opponens digiti minimi"
+},
+"FMA62045": {
+"de": "Optic chiasm"
+},
+"FMA46841": {
+"de": "M. orbicularis oris",
+"latein": "M. orbicularis oris"
+},
+"BP51": {
+"de": "Orbital gyri straight gyrus"
+},
+"FMA46783": {
+"de": "M. orbital part of left orbicularis oculi",
+"latein": "M. orbital part of left orbicularis oculi"
+},
+"FMA46782": {
+"de": "M. orbital part of right orbicularis oculi",
+"latein": "M. orbital part of right orbicularis oculi"
+},
+"FMA46786": {
+"de": "M. palpebral part of left orbicularis oculi",
+"latein": "M. palpebral part of left orbicularis oculi"
+},
+"FMA46785": {
+"de": "M. palpebral part of right orbicularis oculi",
+"latein": "M. palpebral part of right orbicularis oculi"
+},
+"FMA9352nsn": {
+"de": "Papillary muscle of left ventricle, nsn"
+},
+"FMA62394": {
+"de": "Peduncle of midbrain"
+},
+"FMA62033": {
+"de": "Pineal body"
+},
+"FMA67943": {
+"de": "Pons"
+},
+"FMA46307": {
+"de": "M. digastric (links), hinterer Bauch",
+"latein": "M. digastric"
+},
+"FMA46306": {
+"de": "M. digastric (rechts), hinterer Bauch",
+"latein": "M. digastric"
+},
+"FMA62072": {
+"de": "Posterior commissure"
+},
+"FMA3840nsn": {
+"de": "Posterior interventricular branch of right coronary artery, nsn"
+},
+"FMA7266": {
+"de": "Posterior papillary muscle of left ventricle"
+},
+"FMA7261": {
+"de": "Posterior papillary muscle of right ventricle"
+},
+"FMA72805": {
+"de": "Posterior part of left superior temporal gyrus"
+},
+"FMA72804": {
+"de": "Posterior part of right superior temporal gyrus"
+},
+"FMA43254": {
+"de": "Grundglied · Großzehe (links)",
+"latein": "Phalanx proximalis"
+},
+"FMA32639": {
+"de": "Grundglied · 4. Zehe (links)",
+"latein": "Phalanx proximalis"
+},
+"FMA71915": {
+"de": "Grundglied · Zeigefinger (links)",
+"latein": "Phalanx proximalis"
+},
+"FMA66791": {
+"de": "Grundglied · kleiner Finger (links)",
+"latein": "Phalanx proximalis"
+},
+"FMA32641": {
+"de": "Grundglied · Kleinzehe (links)",
+"latein": "Phalanx proximalis"
+},
+"FMA71908": {
+"de": "Grundglied · Mittelfinger (links)",
+"latein": "Phalanx proximalis"
+},
+"FMA71916": {
+"de": "Grundglied · Ringfinger (links)",
+"latein": "Phalanx proximalis"
+},
+"FMA32635": {
+"de": "Grundglied · 2. Zehe (links)",
+"latein": "Phalanx proximalis"
+},
+"FMA32637": {
+"de": "Grundglied · 3. Zehe (links)",
+"latein": "Phalanx proximalis"
+},
+"FMA65470": {
+"de": "Grundglied · Daumen (links)",
+"latein": "Phalanx proximalis"
+},
+"FMA43253": {
+"de": "Grundglied · Großzehe (rechts)",
+"latein": "Phalanx proximalis"
+},
+"FMA32638": {
+"de": "Grundglied · 4. Zehe (rechts)",
+"latein": "Phalanx proximalis"
+},
+"FMA24451": {
+"de": "Grundglied · Zeigefinger (rechts)",
+"latein": "Phalanx proximalis"
+},
+"FMA24454": {
+"de": "Grundglied · kleiner Finger (rechts)",
+"latein": "Phalanx proximalis"
+},
+"FMA32640": {
+"de": "Grundglied · Kleinzehe (rechts)",
+"latein": "Phalanx proximalis"
+},
+"FMA24452": {
+"de": "Grundglied · Mittelfinger (rechts)",
+"latein": "Phalanx proximalis"
+},
+"FMA24453": {
+"de": "Grundglied · Ringfinger (rechts)",
+"latein": "Phalanx proximalis"
+},
+"FMA32634": {
+"de": "Grundglied · 2. Zehe (rechts)",
+"latein": "Phalanx proximalis"
+},
+"FMA32636": {
+"de": "Grundglied · 3. Zehe (rechts)",
+"latein": "Phalanx proximalis"
+},
+"FMA24450": {
+"de": "Grundglied · Daumen (rechts)",
+"latein": "Phalanx proximalis"
+},
+"FMA66326": {
+"de": "Pulmonary artery"
+},
+"FMA7246": {
+"de": "Pulmonary valve"
+},
+"FMA66643": {
+"de": "Pulmonary vein"
+},
+"FMA38641": {
+"de": "M. radial head of left flexor digitorum superficialis",
+"latein": "M. radial head of left flexor digitorum superficialis"
+},
+"FMA38640": {
+"de": "M. radial head of right flexor digitorum superficialis",
+"latein": "M. radial head of right flexor digitorum superficialis"
+},
+"FMA37459": {
+"de": "M. abductor hallucis (rechts)",
+"latein": "M. abductor hallucis"
+},
+"FMA37386": {
+"de": "M. abductor pollicis brevis (rechts)",
+"latein": "M. abductor pollicis brevis"
+},
+"FMA38516": {
+"de": "M. abductor pollicis longus (rechts)",
+"latein": "M. abductor pollicis longus"
+},
+"FMA72701": {
+"de": "Accessory short gyrus (rechts)"
+},
+"FMA22452": {
+"de": "M. adductor brevis (rechts)",
+"latein": "M. adductor brevis"
+},
+"FMA22456": {
+"de": "M. adductor longus (rechts)",
+"latein": "M. adductor longus"
+},
+"FMA22459": {
+"de": "M. adductor magnus (rechts)",
+"latein": "M. adductor magnus"
+},
+"FMA43886": {
+"de": "M. adductor minimus (rechts)",
+"latein": "M. adductor minimus"
+},
+"FMA72832": {
+"de": "Amygdala (rechts)"
+},
+"FMA37705": {
+"de": "M. anconeus (rechts)",
+"latein": "M. anconeus"
+},
+"FMA72669": {
+"de": "Angular gyrus (rechts)"
+},
+"FMA37668": {
+"de": "M. brachialis (rechts)",
+"latein": "M. brachialis"
+},
+"FMA4751": {
+"de": "Brachiocephalic vein (rechts)"
+},
+"FMA38486": {
+"de": "M. brachioradialis (rechts)",
+"latein": "M. brachioradialis"
+},
+"FMA46835": {
+"de": "M. buccinator (rechts)",
+"latein": "M. buccinator"
+},
+"FMA258847": {
+"de": "M. calcaneal tendon (rechts)",
+"latein": "M. calcaneal tendon"
+},
+"FMA24497": {
+"de": "Fersenbein (rechts)",
+"latein": "Calcaneus",
+"notiz": "Ansatz der Achillessehne; Ursprung der Plantarfaszie – typischer Ort des Fersensporns."
+},
+"FMA24446": {
+"de": "Kopfbein (rechts)",
+"latein": "Os capitatum"
+},
+"FMA72826": {
+"de": "Caudate nucleus (rechts)"
+},
+"FMA81752": {
+"de": "M. cervical rotator (rechts)",
+"latein": "M. cervical rotator"
+},
+"FMA72717": {
+"de": "Cingulate gyrus (rechts)"
+},
+"FMA13322": {
+"de": "Schlüsselbein (rechts)",
+"latein": "Clavicula",
+"tastbar": "Auf ganzer Länge unter der Haut tastbar",
+"notiz": "Einzige knöcherne Verbindung zwischen Arm und Rumpf, wirkt als Abstandhalter für das Schulterblatt."
+},
+"FMA46443": {
+"de": "M. coccygeus (rechts)",
+"latein": "M. coccygeus"
+},
+"FMA3941": {
+"de": "Common carotid artery (rechts)"
+},
+"FMA14765": {
+"de": "Common iliac artery (rechts)"
+},
+"FMA21387": {
+"de": "Common iliac vein (rechts)"
+},
+"FMA37665": {
+"de": "M. coracobrachialis (rechts)",
+"latein": "M. coracobrachialis"
+},
+"FMA46796": {
+"de": "M. corrugator supercilii (rechts)",
+"latein": "M. corrugator supercilii"
+},
+"BP28": {
+"de": "Rippenknorpel (rechts)",
+"latein": "Cartilago costalis"
+},
+"FMA24528": {
+"de": "Würfelbein (rechts)",
+"latein": "Os cuboideum"
+},
+"FMA46829": {
+"de": "M. depressor anguli oris (rechts)",
+"latein": "M. depressor anguli oris"
+},
+"FMA46817": {
+"de": "M. depressor labii inferioris (rechts)",
+"latein": "M. depressor labii inferioris"
+},
+"FMA55608": {
+"de": "M. depressor septi nasi (rechts)",
+"latein": "M. depressor septi nasi"
+},
+"FMA8283": {
+"de": "8. Rippe (rechts)",
+"latein": "Costa"
+},
+"FMA8531": {
+"de": "11. Rippe (rechts)",
+"latein": "Costa"
+},
+"FMA38498": {
+"de": "M. extensor carpi radialis brevis (rechts)",
+"latein": "M. extensor carpi radialis brevis"
+},
+"FMA38495": {
+"de": "M. extensor carpi radialis longus (rechts)",
+"latein": "M. extensor carpi radialis longus"
+},
+"FMA38504": {
+"de": "M. extensor digiti minimi (rechts)",
+"latein": "M. extensor digiti minimi"
+},
+"FMA38501": {
+"de": "M. extensor digitorum (rechts)",
+"latein": "M. extensor digitorum"
+},
+"FMA51142": {
+"de": "M. extensor digitorum brevis (rechts)",
+"latein": "M. extensor digitorum brevis"
+},
+"FMA22548": {
+"de": "M. extensor digitorum longus (rechts)",
+"latein": "M. extensor digitorum longus"
+},
+"FMA51144": {
+"de": "M. extensor hallucis brevis (rechts)",
+"latein": "M. extensor hallucis brevis"
+},
+"FMA22546": {
+"de": "M. extensor hallucis longus (rechts)",
+"latein": "M. extensor hallucis longus"
+},
+"FMA38525": {
+"de": "M. extensor indicis (rechts)",
+"latein": "M. extensor indicis"
+},
+"FMA38519": {
+"de": "M. extensor pollicis brevis (rechts)",
+"latein": "M. extensor pollicis brevis"
+},
+"FMA38522": {
+"de": "M. extensor pollicis longus (rechts)",
+"latein": "M. extensor pollicis longus"
+},
+"FMA18806": {
+"de": "External iliac artery (rechts)"
+},
+"FMA18885": {
+"de": "External iliac vein (rechts)"
+},
+"FMA13336": {
+"de": "Äußerer schräger Bauchmuskel (rechts)",
+"latein": "M. obliquus externus abdominis",
+"funktion": "Rumpfbeugung, Rotation zur Gegenseite, Seitneigung",
+"innervation": "Nn. intercostales (Th5–Th12)"
+},
+"FMA24474": {
+"de": "Oberschenkelknochen (rechts)",
+"latein": "Femur",
+"tastbar": "Großer Rollhügel (Trochanter major) seitlich an der Hüfte, Kondylen am Knie",
+"gelenke": [
+"Hüftgelenk",
+"Kniegelenk"
+],
+"notiz": "Längster und stärkster Knochen des Körpers. Der Schenkelhals steht in etwa 125° zum Schaft – größer heißt Coxa valga, kleiner Coxa vara."
+},
+"FMA24480": {
+"de": "Wadenbein (rechts)",
+"latein": "Fibula",
+"tastbar": "Fibulaköpfchen unterhalb des Knies außen, Außenknöchel (Malleolus lateralis)",
+"notiz": "Trägt kaum Gewicht, bildet aber den Außenknöchel. Um das Fibulaköpfchen zieht der N. fibularis communis – dort sehr druckempfindlich."
+},
+"FMA22554": {
+"de": "M. fibularis brevis (rechts)",
+"latein": "M. fibularis brevis"
+},
+"FMA22552": {
+"de": "M. fibularis longus (rechts)",
+"latein": "M. fibularis longus"
+},
+"FMA22550": {
+"de": "M. fibularis tertius (rechts)",
+"latein": "M. fibularis tertius"
+},
+"FMA8070": {
+"de": "5. Rippenknorpel (rechts)",
+"latein": "Cartilago costalis"
+},
+"FMA24472": {
+"de": "5. Mittelhandknochen (rechts)",
+"latein": "Os metacarpi"
+},
+"FMA24515": {
+"de": "5. Mittelfußknochen (rechts)",
+"latein": "Os metatarsi"
+},
+"FMA8066": {
+"de": "5. Rippe (rechts)",
+"latein": "Costa"
+},
+"FMA7875": {
+"de": "1. Rippenknorpel (rechts)",
+"latein": "Cartilago costalis"
+},
+"FMA24464": {
+"de": "1. Mittelhandknochen (rechts)",
+"latein": "Os metacarpi"
+},
+"FMA24507": {
+"de": "1. Mittelfußknochen (rechts)",
+"latein": "Os metatarsi"
+},
+"FMA7857": {
+"de": "1. Rippe (rechts)",
+"latein": "Costa"
+},
+"FMA37465": {
+"de": "M. flexor accessorius (rechts)",
+"latein": "M. flexor accessorius"
+},
+"FMA38460": {
+"de": "M. flexor carpi radialis (rechts)",
+"latein": "M. flexor carpi radialis"
+},
+"FMA37461": {
+"de": "M. flexor digitorum brevis (rechts)",
+"latein": "M. flexor digitorum brevis"
+},
+"FMA65016": {
+"de": "M. flexor digitorum longus (rechts)",
+"latein": "M. flexor digitorum longus"
+},
+"FMA38479": {
+"de": "M. flexor digitorum profundus (rechts)",
+"latein": "M. flexor digitorum profundus"
+},
+"FMA65014": {
+"de": "M. flexor hallucis longus (rechts)",
+"latein": "M. flexor hallucis longus"
+},
+"FMA38482": {
+"de": "M. flexor pollicis longus (rechts)",
+"latein": "M. flexor pollicis longus"
+},
+"FMA72924": {
+"de": "Fornix of forebrain (rechts)"
+},
+"FMA7976": {
+"de": "4. Rippenknorpel (rechts)",
+"latein": "Cartilago costalis"
+},
+"FMA24470": {
+"de": "4. Mittelhandknochen (rechts)",
+"latein": "Os metacarpi"
+},
+"FMA24513": {
+"de": "4. Mittelfußknochen (rechts)",
+"latein": "Os metatarsi"
+},
+"FMA7957": {
+"de": "4. Rippe (rechts)",
+"latein": "Costa"
+},
+"FMA46759": {
+"de": "M. frontalis (rechts)",
+"latein": "M. frontalis"
+},
+"FMA72689": {
+"de": "Fusiform gyrus (rechts)"
+},
+"FMA22336": {
+"de": "M. gemellus inferior (rechts)",
+"latein": "M. gemellus inferior"
+},
+"FMA22334": {
+"de": "M. gemellus superior (rechts)",
+"latein": "M. gemellus superior"
+},
+"FMA46326": {
+"de": "M. geniohyoid (rechts)",
+"latein": "M. geniohyoid"
+},
+"FMA72830": {
+"de": "Globus pallidus (rechts)"
+},
+"FMA22328": {
+"de": "Großer Gesäßmuskel (rechts)",
+"latein": "M. gluteus maximus",
+"ursprung": "Darmbeinschaufel, Kreuzbein, Steißbein, Lig. sacrotuberale",
+"ansatz": "Tractus iliotibialis und Tuberositas glutea",
+"funktion": "Kräftigste Hüftstreckung, Außenrotation",
+"innervation": "N. gluteus inferior (L5–S2)",
+"notiz": "Der Muskel des Treppensteigens und Aufstehens."
+},
+"FMA22330": {
+"de": "Mittlerer Gesäßmuskel (rechts)",
+"latein": "M. gluteus medius",
+"ursprung": "Außenfläche der Darmbeinschaufel",
+"ansatz": "Trochanter major",
+"funktion": "Abduktion; stabilisiert im Einbeinstand das Becken",
+"innervation": "N. gluteus superior (L4–S1)",
+"notiz": "Ist er schwach, kippt das Becken beim Gehen zur Spielbeinseite ab – Trendelenburg-Zeichen."
+},
+"FMA22332": {
+"de": "M. gluteus minimus (rechts)",
+"latein": "M. gluteus minimus"
+},
+"FMA43883": {
+"de": "M. gracilis (rechts)",
+"latein": "M. gracilis"
+},
+"FMA24448": {
+"de": "Hakenbein (rechts)",
+"latein": "Os hamatum"
+},
+"FMA16586": {
+"de": "Hüftbein (rechts)",
+"latein": "Os coxae",
+"tastbar": "Beckenkamm, Spina iliaca anterior superior, Sitzbeinhöcker",
+"notiz": "Verschmolzen aus Darmbein, Sitzbein und Schambein. Ansatzfläche für Bauch-, Rücken-, Gesäß- und Oberschenkelmuskeln."
+},
+"FMA72713": {
+"de": "Hippocampus (rechts)"
+},
+"FMA23130": {
+"de": "Oberarmknochen (rechts)",
+"latein": "Humerus",
+"tastbar": "Tuberculum majus seitlich unter dem Schulterdach, Epicondylen am Ellenbogen",
+"gelenke": [
+"Schultergelenk",
+"Ellenbogengelenk"
+],
+"notiz": "Der Kopf ist deutlich größer als die Pfanne – viel Beweglichkeit, wenig knöcherne Sicherung. Stabilität kommt von Kapsel, Labrum und Rotatorenmanschette."
+},
+"FMA22322": {
+"de": "Darmbeinmuskel (rechts)",
+"latein": "M. iliacus",
+"ursprung": "Fossa iliaca",
+"ansatz": "Trochanter minor",
+"funktion": "Hüftbeugung",
+"innervation": "N. femoralis (L2–L3)"
+},
+"FMA45858": {
+"de": "M. iliococcygeus (rechts)",
+"latein": "M. iliococcygeus"
+},
+"FMA22744": {
+"de": "M. iliocostalis cervicis (rechts)",
+"latein": "M. iliocostalis cervicis"
+},
+"FMA22740": {
+"de": "M. iliocostalis lumborum (rechts)",
+"latein": "M. iliocostalis lumborum"
+},
+"FMA22742": {
+"de": "M. iliocostalis thoracis (rechts)",
+"latein": "M. iliocostalis thoracis"
+},
+"FMA58776": {
+"de": "M. iliotibial tract (rechts)",
+"latein": "M. iliotibial tract"
+},
+"FMA73434": {
+"de": "Inferior colliculus (rechts)"
+},
+"FMA54737": {
+"de": "Untere Nasenmuschel (rechts)",
+"latein": "Concha nasalis inferior"
+},
+"FMA72687": {
+"de": "Inferior temporal gyrus (rechts)"
+},
+"FMA32547": {
+"de": "Untergrätenmuskel (rechts)",
+"latein": "M. infraspinatus",
+"ursprung": "Fossa infraspinata",
+"ansatz": "Tuberculum majus",
+"funktion": "Außenrotation, zentriert den Humeruskopf",
+"innervation": "N. suprascapularis (C4–C6)",
+"notiz": "Teil der Rotatorenmanschette."
+},
+"FMA21964": {
+"de": "M. inguinal ligament (rechts)",
+"latein": "M. inguinal ligament"
+},
+"FMA72977": {
+"de": "Insula (rechts)"
+},
+"FMA24523": {
+"de": "Mittleres Keilbein (rechts)",
+"latein": "Os cuneiforme intermedium"
+},
+"FMA258850": {
+"de": "M. intermediate tendon (rechts)",
+"latein": "M. intermediate tendon"
+},
+"FMA18809": {
+"de": "Internal iliac artery (rechts)"
+},
+"FMA18887": {
+"de": "Internal iliac vein (rechts)"
+},
+"FMA4754": {
+"de": "Internal jugular vein (rechts)"
+},
+"FMA13892": {
+"de": "Innerer schräger Bauchmuskel (rechts)",
+"latein": "M. obliquus internus abdominis",
+"funktion": "Rumpfbeugung, Rotation zur gleichen Seite, Seitneigung",
+"innervation": "Nn. intercostales (Th8–L1)"
+},
+"FMA53645": {
+"de": "Tränenbein (rechts)",
+"latein": "Os lacrimale"
+},
+"FMA24525": {
+"de": "Äußeres Keilbein (rechts)",
+"latein": "Os cuneiforme laterale"
+},
+"FMA73303": {
+"de": "Lateral geniculate body (rechts)"
+},
+"FMA78449": {
+"de": "Lateral ventricle (rechts)"
+},
+"FMA13358": {
+"de": "Breiter Rückenmuskel (rechts)",
+"latein": "M. latissimus dorsi",
+"ursprung": "Dornfortsätze Th7–L5, Kreuzbein, Beckenkamm, untere Rippen",
+"ansatz": "Crista tuberculi minoris des Humerus",
+"funktion": "Adduktion, Innenrotation und Retroversion – der Muskel des Klimmzugs",
+"innervation": "N. thoracodorsalis (C6–C8)",
+"notiz": "Verbindet Arm und Becken: Verkürzung schränkt die Schulterhebung ein und verstärkt die Lendenlordose."
+},
+"FMA46823": {
+"de": "M. levator anguli oris (rechts)",
+"latein": "M. levator anguli oris"
+},
+"FMA46806": {
+"de": "M. levator labii superioris (rechts)",
+"latein": "M. levator labii superioris"
+},
+"FMA46803": {
+"de": "M. levator labii superioris alaeque nasi (rechts)",
+"latein": "M. levator labii superioris alaeque nasi"
+},
+"FMA32540": {
+"de": "Schulterblattheber (rechts)",
+"latein": "M. levator scapulae",
+"ursprung": "Querfortsätze C1–C4",
+"ansatz": "Oberer Schulterblattwinkel",
+"funktion": "Hebt das Schulterblatt, dreht die Pfanne nach unten",
+"innervation": "N. dorsalis scapulae (C4–C5)",
+"notiz": "Zweiter großer Verspannungskandidat im Nacken neben dem oberen Trapezius."
+},
+"FMA44249": {
+"de": "Langes Sohlenband (rechts)",
+"latein": "Lig. plantare longum"
+},
+"FMA22754": {
+"de": "M. longissimus capitis (rechts)",
+"latein": "M. longissimus capitis"
+},
+"FMA22757": {
+"de": "M. longissimus cervicis (rechts)",
+"latein": "M. longissimus cervicis"
+},
+"FMA22751": {
+"de": "M. longissimus thoracis (rechts)",
+"latein": "M. longissimus thoracis"
+},
+"FMA46309": {
+"de": "M. longus capitis (rechts)",
+"latein": "M. longus capitis"
+},
+"FMA23089": {
+"de": "M. lumbar rotator (rechts)",
+"latein": "M. lumbar rotator"
+},
+"FMA24437": {
+"de": "Mondbein (rechts)",
+"latein": "Os lunatum"
+},
+"FMA53649": {
+"de": "Oberkiefer (rechts)",
+"latein": "Maxilla"
+},
+"FMA24521": {
+"de": "Inneres Keilbein (rechts)",
+"latein": "Os cuneiforme mediale"
+},
+"FMA73309": {
+"de": "Medial geniculate body (rechts)"
+},
+"FMA49012": {
+"de": "M. medial pterygoid (rechts)",
+"latein": "M. medial pterygoid"
+},
+"FMA46826": {
+"de": "M. mentalis (rechts)",
+"latein": "M. mentalis"
+},
+"FMA72655": {
+"de": "Middle frontal gyrus (rechts)"
+},
+"FMA72685": {
+"de": "Middle temporal gyrus (rechts)"
+},
+"FMA22878": {
+"de": "M. multifidus (rechts)",
+"latein": "M. multifidus"
+},
+"FMA46321": {
+"de": "M. mylohyoid (rechts)",
+"latein": "M. mylohyoid"
+},
+"FMA53647": {
+"de": "Nasenbein (rechts)",
+"latein": "Os nasale"
+},
+"FMA55606": {
+"de": "M. nasalis (rechts)",
+"latein": "M. nasalis"
+},
+"FMA8364": {
+"de": "9. Rippe (rechts)",
+"latein": "Costa"
+},
+"FMA32536": {
+"de": "M. obliquus capitis inferior (rechts)",
+"latein": "M. obliquus capitis inferior"
+},
+"FMA32534": {
+"de": "M. obliquus capitis superior (rechts)",
+"latein": "M. obliquus capitis superior"
+},
+"FMA22326": {
+"de": "M. obturator externus (rechts)",
+"latein": "M. obturator externus"
+},
+"FMA22324": {
+"de": "M. obturator internus (rechts)",
+"latein": "M. obturator internus"
+},
+"FMA72975": {
+"de": "Occipital lobe (rechts)"
+},
+"FMA46761": {
+"de": "M. occipitalis (rechts)",
+"latein": "M. occipitalis"
+},
+"FMA13348": {
+"de": "M. omohyoid (rechts)",
+"latein": "M. omohyoid"
+},
+"FMA37390": {
+"de": "M. opponens pollicis (rechts)",
+"latein": "M. opponens pollicis"
+},
+"FMA50875": {
+"de": "Optic nerve (rechts)"
+},
+"FMA62382": {
+"de": "Optic tract (rechts)"
+},
+"FMA53655": {
+"de": "Gaumenbein (rechts)",
+"latein": "Os palatinum"
+},
+"FMA38463": {
+"de": "M. palmaris longus (rechts)",
+"latein": "M. palmaris longus"
+},
+"FMA72705": {
+"de": "Parahippocampal gyrus (rechts)"
+},
+"FMA52788": {
+"de": "Scheitelbein (rechts)",
+"latein": "Os parietale"
+},
+"FMA24486": {
+"de": "Kniescheibe (rechts)",
+"latein": "Patella",
+"notiz": "Größtes Sesambein des Körpers, eingebettet in die Quadrizepssehne. Verlängert den Hebelarm des Streckapparats um etwa 30 %.",
+"tastbar": "Bei entspanntem Bein seitlich verschiebbar – Teil jeder Knieuntersuchung"
+},
+"FMA22450": {
+"de": "M. pectineus (rechts)",
+"latein": "M. pectineus"
+},
+"FMA13375": {
+"de": "M. pectoralis minor (rechts)",
+"latein": "M. pectoralis minor"
+},
+"FMA22340": {
+"de": "Birnenförmiger Muskel (rechts)",
+"latein": "M. piriformis",
+"ursprung": "Vorderfläche des Kreuzbeins",
+"ansatz": "Trochanter major",
+"funktion": "Außenrotation, ab 60° Hüftbeugung Abduktion",
+"innervation": "Plexus sacralis (S1–S2)",
+"notiz": "Der N. ischiadicus zieht direkt darunter hindurch – Verspannung kann ischiasähnliche Beschwerden machen."
+},
+"FMA24441": {
+"de": "Erbsenbein (rechts)",
+"latein": "Os pisiforme"
+},
+"FMA22560": {
+"de": "M. plantaris (rechts)",
+"latein": "M. plantaris"
+},
+"FMA45739": {
+"de": "M. platysma (rechts)",
+"latein": "M. platysma"
+},
+"FMA22591": {
+"de": "M. popliteus (rechts)",
+"latein": "M. popliteus"
+},
+"FMA72665": {
+"de": "Postcentral gyrus (rechts)"
+},
+"FMA76994": {
+"de": "Posterolateral branch of right coronary artery (rechts)"
+},
+"FMA72661": {
+"de": "Precentral gyrus (rechts)"
+},
+"FMA55610": {
+"de": "M. procerus (rechts)",
+"latein": "M. procerus"
+},
+"FMA38454": {
+"de": "M. pronator quadratus (rechts)",
+"latein": "M. pronator quadratus"
+},
+"FMA22342": {
+"de": "Großer Lendenmuskel (rechts)",
+"latein": "M. psoas major",
+"ursprung": "Wirbelkörper und Querfortsätze Th12–L4",
+"ansatz": "Trochanter minor (gemeinsam mit dem M. iliacus als M. iliopsoas)",
+"funktion": "Stärkster Hüftbeuger; verstärkt die Lendenlordose",
+"innervation": "Direkte Äste des Plexus lumbalis (L1–L3)",
+"notiz": "Durch langes Sitzen häufig verkürzt. Test: Thomas-Handgriff."
+},
+"FMA45854": {
+"de": "M. pubococcygeus (rechts)",
+"latein": "M. pubococcygeus"
+},
+"FMA45856": {
+"de": "M. puborectalis (rechts)",
+"latein": "M. puborectalis"
+},
+"FMA72828": {
+"de": "Putamen (rechts)"
+},
+"FMA22346": {
+"de": "M. pyramidalis (rechts)",
+"latein": "M. pyramidalis"
+},
+"FMA22338": {
+"de": "M. quadratus femoris (rechts)",
+"latein": "M. quadratus femoris"
+},
+"FMA22348": {
+"de": "M. quadratus lumborum (rechts)",
+"latein": "M. quadratus lumborum"
+},
+"FMA23464": {
+"de": "Speiche (rechts)",
+"latein": "Radius",
+"tastbar": "Processus styloideus radii am Daumen-Handgelenk",
+"notiz": "Liegt auf der Daumenseite und trägt die Handwurzel. Häufigste Bruchstelle beim Sturz auf die Hand (distale Radiusfraktur)."
+},
+"FMA13377": {
+"de": "Gerader Bauchmuskel (rechts)",
+"latein": "M. rectus abdominis",
+"ursprung": "Schambein",
+"ansatz": "Rippenknorpel 5–7, Schwertfortsatz",
+"funktion": "Rumpfbeugung, Beckenaufrichtung nach hinten",
+"innervation": "Nn. intercostales (Th5–Th12)"
+},
+"FMA46313": {
+"de": "M. rectus capitis anterior (rechts)",
+"latein": "M. rectus capitis anterior"
+},
+"FMA46317": {
+"de": "M. rectus capitis lateralis (rechts)",
+"latein": "M. rectus capitis lateralis"
+},
+"FMA32530": {
+"de": "M. rectus capitis posterior major (rechts)",
+"latein": "M. rectus capitis posterior major"
+},
+"FMA32532": {
+"de": "M. rectus capitis posterior minor (rechts)",
+"latein": "M. rectus capitis posterior minor"
+},
+"FMA38928": {
+"de": "Gerader Oberschenkelmuskel (rechts)",
+"latein": "M. rectus femoris",
+"ursprung": "Spina iliaca anterior inferior",
+"ansatz": "Über die Patellasehne an der Tuberositas tibiae",
+"funktion": "Kniestreckung und Hüftbeugung (zweigelenkig)",
+"innervation": "N. femoralis (L2–L4)"
+},
+"FMA14752": {
+"de": "Renal artery (rechts)"
+},
+"FMA14335": {
+"de": "Renal vein (rechts)"
+},
+"FMA13381": {
+"de": "M. rhomboid major (rechts)",
+"latein": "M. rhomboid major"
+},
+"FMA13383": {
+"de": "M. rhomboid minor (rechts)",
+"latein": "M. rhomboid minor"
+},
+"FMA46839": {
+"de": "M. risorius (rechts)",
+"latein": "M. risorius"
+},
+"FMA22354": {
+"de": "M. sartorius (rechts)",
+"latein": "M. sartorius"
+},
+"FMA13392": {
+"de": "M. scalenus anterior (rechts)",
+"latein": "M. scalenus anterior"
+},
+"FMA13390": {
+"de": "M. scalenus medius (rechts)",
+"latein": "M. scalenus medius"
+},
+"FMA13388": {
+"de": "M. scalenus posterior (rechts)",
+"latein": "M. scalenus posterior"
+},
+"FMA24435": {
+"de": "Kahnbein (rechts)",
+"latein": "Os scaphoideum"
+},
+"FMA13395": {
+"de": "Schulterblatt (rechts)",
+"latein": "Scapula",
+"tastbar": "Schulterblattgräte, unterer Winkel, Rabenschnabelfortsatz vorne",
+"notiz": "Liegt frei beweglich auf dem Brustkorb auf. Etwa 60° der 180° Armabduktion kommen aus dem Schulterblatt (skapulohumeraler Rhythmus 2:1)."
+},
+"FMA7886": {
+"de": "2. Rippenknorpel (rechts)",
+"latein": "Cartilago costalis"
+},
+"FMA24466": {
+"de": "2. Mittelhandknochen (rechts)",
+"latein": "Os metacarpi"
+},
+"FMA24509": {
+"de": "2. Mittelfußknochen (rechts)",
+"latein": "Os metatarsi"
+},
+"FMA7882": {
+"de": "2. Rippe (rechts)",
+"latein": "Costa"
+},
+"FMA22448": {
+"de": "Plattsehniger Muskel (rechts)",
+"latein": "M. semimembranosus",
+"ursprung": "Sitzbeinhöcker",
+"ansatz": "Condylus medialis tibiae",
+"funktion": "Hüftstreckung, Kniebeugung, Innenrotation im gebeugten Knie",
+"innervation": "N. ischiadicus (L5–S2)"
+},
+"FMA22876": {
+"de": "M. semispinalis capitis (rechts)",
+"latein": "M. semispinalis capitis"
+},
+"FMA22874": {
+"de": "M. semispinalis cervicis (rechts)",
+"latein": "M. semispinalis cervicis"
+},
+"FMA22872": {
+"de": "M. semispinalis thoracis (rechts)",
+"latein": "M. semispinalis thoracis"
+},
+"FMA22358": {
+"de": "Halbsehniger Muskel (rechts)",
+"latein": "M. semitendinosus",
+"ursprung": "Sitzbeinhöcker",
+"ansatz": "Pes anserinus superficialis an der Tibia",
+"funktion": "Hüftstreckung, Kniebeugung, Innenrotation im gebeugten Knie",
+"innervation": "N. ischiadicus (L5–S2)"
+},
+"FMA13398": {
+"de": "M. serratus anterior (rechts)",
+"latein": "M. serratus anterior"
+},
+"FMA13405": {
+"de": "M. serratus posterior inferior (rechts)",
+"latein": "M. serratus posterior inferior"
+},
+"FMA13403": {
+"de": "M. serratus posterior superior (rechts)",
+"latein": "M. serratus posterior superior"
+},
+"FMA8248": {
+"de": "7. Rippenknorpel (rechts)",
+"latein": "Cartilago costalis"
+},
+"FMA8229": {
+"de": "7. Rippe (rechts)",
+"latein": "Costa"
+},
+"FMA8194": {
+"de": "6. Rippenknorpel (rechts)",
+"latein": "Cartilago costalis"
+},
+"FMA8175": {
+"de": "6. Rippe (rechts)",
+"latein": "Costa"
+},
+"FMA22558": {
+"de": "Schollenmuskel (rechts)",
+"latein": "M. soleus",
+"ursprung": "Rückseite von Tibia und Fibula",
+"ansatz": "Achillessehne",
+"funktion": "Plantarflexion, wichtiger Haltemuskel im Stand",
+"innervation": "N. tibialis (S1–S2)"
+},
+"FMA22781": {
+"de": "M. spinalis cervicis (rechts)",
+"latein": "M. spinalis cervicis"
+},
+"FMA22779": {
+"de": "M. spinalis thoracis (rechts)",
+"latein": "M. spinalis thoracis"
+},
+"FMA22728": {
+"de": "M. splenius capitis (rechts)",
+"latein": "M. splenius capitis"
+},
+"FMA22726": {
+"de": "M. splenius cervicis (rechts)",
+"latein": "M. splenius cervicis"
+},
+"FMA13408": {
+"de": "Kopfwender (rechts)",
+"latein": "M. sternocleidomastoideus",
+"ursprung": "Brustbein und mediales Schlüsselbeindrittel",
+"ansatz": "Processus mastoideus",
+"funktion": "Einseitig Drehung zur Gegenseite und Seitneigung zur eigenen Seite; beidseitig HWS-Beugung",
+"innervation": "N. accessorius (XI), C2–C3",
+"notiz": "Bei Kopfvorhaltung am Bildschirm oft verkürzt."
+},
+"FMA13346": {
+"de": "M. sternohyoid (rechts)",
+"latein": "M. sternohyoid"
+},
+"FMA13350": {
+"de": "M. sternothyroid (rechts)",
+"latein": "M. sternothyroid"
+},
+"FMA73413": {
+"de": "Stria medullaris of thalamus (rechts)"
+},
+"FMA72939": {
+"de": "Stria terminalis (rechts)"
+},
+"FMA45826": {
+"de": "M. stylohyoid (rechts)",
+"latein": "M. stylohyoid"
+},
+"FMA3953": {
+"de": "Subclavian artery (rechts)"
+},
+"FMA4755": {
+"de": "Subclavian vein (rechts)"
+},
+"FMA13412": {
+"de": "M. subclavius (rechts)",
+"latein": "M. subclavius"
+},
+"FMA13414": {
+"de": "Unterschulterblattmuskel (rechts)",
+"latein": "M. subscapularis",
+"ursprung": "Fossa subscapularis",
+"ansatz": "Tuberculum minus",
+"funktion": "Innenrotation, zentriert den Humeruskopf",
+"innervation": "Nn. subscapulares (C5–C6)",
+"notiz": "Teil der Rotatorenmanschette."
+},
+"FMA73422": {
+"de": "Superior colliculus (rechts)"
+},
+"FMA72653": {
+"de": "Superior frontal gyrus (rechts)"
+},
+"BP50": {
+"de": "Superior parietal lobule precuneus (rechts)"
+},
+"FMA38513": {
+"de": "M. supinator (rechts)",
+"latein": "M. supinator"
+},
+"FMA72667": {
+"de": "Supramarginal gyrus (rechts)"
+},
+"FMA32544": {
+"de": "Obergrätenmuskel (rechts)",
+"latein": "M. supraspinatus",
+"ursprung": "Fossa supraspinata",
+"ansatz": "Tuberculum majus",
+"funktion": "Leitet die Abduktion ein, zentriert den Humeruskopf",
+"innervation": "N. suprascapularis (C4–C6)",
+"notiz": "Teil der Rotatorenmanschette – häufigste Sehnenruptur der Schulter."
+},
+"FMA24482": {
+"de": "Sprungbein (rechts)",
+"latein": "Talus",
+"notiz": "Einziger Knochen ohne Muskelansatz – wird nur durch Bänder geführt."
+},
+"FMA52738": {
+"de": "Schläfenbein (rechts)",
+"latein": "Os temporale"
+},
+"FMA49007": {
+"de": "M. temporalis (rechts)",
+"latein": "M. temporalis"
+},
+"FMA46763": {
+"de": "M. temporoparietalis (rechts)",
+"latein": "M. temporoparietalis"
+},
+"FMA22425": {
+"de": "M. tensor fasciae latae (rechts)",
+"latein": "M. tensor fasciae latae"
+},
+"FMA8445": {
+"de": "10. Rippe (rechts)",
+"latein": "Costa"
+},
+"FMA32551": {
+"de": "M. teres major (rechts)",
+"latein": "M. teres major"
+},
+"FMA32553": {
+"de": "Kleiner Rundmuskel (rechts)",
+"latein": "M. teres minor",
+"funktion": "Außenrotation und Adduktion",
+"innervation": "N. axillaris (C5–C6)",
+"notiz": "Teil der Rotatorenmanschette."
+},
+"FMA258714": {
+"de": "Thalamus (rechts)"
+},
+"FMA7913": {
+"de": "3. Rippenknorpel (rechts)",
+"latein": "Cartilago costalis"
+},
+"FMA24468": {
+"de": "3. Mittelhandknochen (rechts)",
+"latein": "Os metacarpi"
+},
+"FMA24511": {
+"de": "3. Mittelfußknochen (rechts)",
+"latein": "Os metatarsi"
+},
+"FMA7909": {
+"de": "3. Rippe (rechts)",
+"latein": "Costa"
+},
+"FMA13352": {
+"de": "M. thyrohyoid (rechts)",
+"latein": "M. thyrohyoid"
+},
+"FMA24477": {
+"de": "Schienbein (rechts)",
+"latein": "Tibia",
+"tastbar": "Vorderkante über die ganze Länge, Innenknöchel (Malleolus medialis)",
+"gelenke": [
+"Kniegelenk",
+"Oberes Sprunggelenk"
+],
+"notiz": "Trägt praktisch das gesamte Gewicht. Die Tuberositas tibiae ist Ansatz der Patellasehne – bei Jugendlichen Ort des Morbus Osgood-Schlatter."
+},
+"FMA22544": {
+"de": "Vorderer Schienbeinmuskel (rechts)",
+"latein": "M. tibialis anterior",
+"ursprung": "Außenfläche der Tibia und Membrana interossea",
+"ansatz": "Os cuneiforme mediale, Basis Metatarsale I",
+"funktion": "Dorsalextension und Supination",
+"innervation": "N. fibularis profundus (L4–L5)",
+"notiz": "Bei Ausfall entsteht der Steppergang mit hängender Fußspitze."
+},
+"FMA65018": {
+"de": "M. tibialis posterior (rechts)",
+"latein": "M. tibialis posterior"
+},
+"FMA22344": {
+"de": "Querer Bauchmuskel (rechts)",
+"latein": "M. transversus abdominis",
+"funktion": "Erhöht den Bauchinnendruck, stabilisiert die Lendenwirbelsäule",
+"innervation": "Nn. intercostales (Th7–L1)",
+"notiz": "Der wichtigste Muskel der segmentalen Stabilisation – Kernstück vieler Rückenprogramme."
+},
+"FMA9761": {
+"de": "M. transversus thoracis (rechts)",
+"latein": "M. transversus thoracis"
+},
+"FMA24443": {
+"de": "Großes Vieleckbein (rechts)",
+"latein": "Os trapezium"
+},
+"FMA23725": {
+"de": "Kleines Vieleckbein (rechts)",
+"latein": "Os trapezoideum"
+},
+"FMA24439": {
+"de": "Dreiecksbein (rechts)",
+"latein": "Os triquetrum"
+},
+"FMA8533": {
+"de": "12. Rippe (rechts)",
+"latein": "Costa"
+},
+"FMA23467": {
+"de": "Elle (rechts)",
+"latein": "Ulna",
+"tastbar": "Olekranon an der Ellenbogenspitze, Ellenkopf am Handgelenk",
+"notiz": "Bleibt bei der Unterarmdrehung stehen – die Speiche dreht sich um sie herum."
+},
+"FMA38934": {
+"de": "M. vastus intermedius (rechts)",
+"latein": "M. vastus intermedius",
+"ansatz": "Über die Patellasehne an der Tuberositas tibiae",
+"funktion": "Kniestreckung",
+"innervation": "N. femoralis (L2–L4)",
+"notiz": "Der M. vastus medialis verliert nach Knieverletzungen am schnellsten an Umfang."
+},
+"FMA38930": {
+"de": "M. vastus lateralis (rechts)",
+"latein": "M. vastus lateralis",
+"ansatz": "Über die Patellasehne an der Tuberositas tibiae",
+"funktion": "Kniestreckung",
+"innervation": "N. femoralis (L2–L4)",
+"notiz": "Der M. vastus medialis verliert nach Knieverletzungen am schnellsten an Umfang."
+},
+"FMA38932": {
+"de": "M. vastus medialis (rechts)",
+"latein": "M. vastus medialis",
+"ansatz": "Über die Patellasehne an der Tuberositas tibiae",
+"funktion": "Kniestreckung",
+"innervation": "N. femoralis (L2–L4)",
+"notiz": "Der M. vastus medialis verliert nach Knieverletzungen am schnellsten an Umfang."
+},
+"FMA52892": {
+"de": "Jochbein (rechts)",
+"latein": "Os zygomaticum"
+},
+"FMA46812": {
+"de": "M. zygomaticus major (rechts)",
+"latein": "M. zygomaticus major"
+},
+"FMA46814": {
+"de": "M. zygomaticus minor (rechts)",
+"latein": "M. zygomaticus minor"
+},
+"FMA16202": {
+"de": "Kreuzbein",
+"latein": "Os sacrum",
+"notiz": "Überträgt das Rumpfgewicht über die Iliosakralgelenke auf die Beine."
+},
+"FMA13073": {
+"de": "2. Lendenwirbel",
+"latein": "Vertebra lumbalis"
+},
+"FMA37720": {
+"de": "2. M. lumbrical (linker Fuß)",
+"latein": "M. lumbrical"
+},
+"FMA37719": {
+"de": "2. M. lumbrical (rechter Fuß)",
+"latein": "M. lumbrical"
+},
+"FMA37744": {
+"de": "2. M. plantar interosseous (linker Fuß)",
+"latein": "M. plantar interosseous"
+},
+"FMA37743": {
+"de": "2. M. plantar interosseous (rechter Fuß)",
+"latein": "M. plantar interosseous"
+},
+"FMA9187": {
+"de": "2. Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+"FMA7262": {
+"de": "Septal papillary muscle of right ventricle"
+},
+"FMA61844": {
+"de": "Septum pellucidum"
+},
+"FMA45098": {
+"de": "Sesambein (linker Fuß)",
+"latein": "Os sesamoideum"
+},
+"FMA45097": {
+"de": "Sesambein (rechter Fuß)",
+"latein": "Os sesamoideum"
+},
+"FMA71567": {
+"de": "Set of anterior cardiac veins"
+},
+"FMA71442": {
+"de": "M. set of anterior cervical intertransversarii",
+"latein": "M. set of anterior cervical intertransversarii"
+},
+"FMA74141": {
+"de": "M. set of dorsal interossei (linker Fuß)",
+"latein": "M. set of dorsal interossei"
+},
+"FMA42405": {
+"de": "M. set of dorsal interossei (linke Hand)",
+"latein": "M. set of dorsal interossei"
+},
+"FMA74140": {
+"de": "M. set of dorsal interossei (rechter Fuß)",
+"latein": "M. set of dorsal interossei"
+},
+"FMA42404": {
+"de": "M. set of dorsal interossei (rechte Hand)",
+"latein": "M. set of dorsal interossei"
+},
+"FMA71309": {
+"de": "M. set of interspinales cervicis",
+"latein": "M. set of interspinales cervicis"
+},
+"FMA71307": {
+"de": "M. set of interspinales lumborum",
+"latein": "M. set of interspinales lumborum"
+},
+"FMA71308": {
+"de": "M. set of interspinales thoracis",
+"latein": "M. set of interspinales thoracis"
+},
+"FMA71670": {
+"de": "Set of interventricular septal branches of left coronary artery"
+},
+"FMA71669": {
+"de": "Set of interventricular septal branches of right coronary artery"
+},
+"FMA71444": {
+"de": "M. set of lateral lumbar intertransversarius muscles",
+"latein": "M. set of lateral lumbar intertransversarius muscles"
+},
+"FMA74078": {
+"de": "M. set of left levatores costarum breves",
+"latein": "M. set of left levatores costarum breves"
+},
+"FMA74076": {
+"de": "M. set of left levatores costarum longi",
+"latein": "M. set of left levatores costarum longi"
+},
+"FMA42399": {
+"de": "M. set of lumbricals (linke Hand)",
+"latein": "M. set of lumbricals"
+},
+"FMA42398": {
+"de": "M. set of lumbricals (rechte Hand)",
+"latein": "M. set of lumbricals"
+},
+"FMA76775": {
+"de": "M. set of medial lumbar intertransversarius muscles",
+"latein": "M. set of medial lumbar intertransversarius muscles"
+},
+"FMA42403": {
+"de": "M. set of palmar interossei (linke Hand)",
+"latein": "M. set of palmar interossei"
+},
+"FMA42402": {
+"de": "M. set of palmar interossei (rechte Hand)",
+"latein": "M. set of palmar interossei"
+},
+"FMA71443": {
+"de": "M. set of posterior cervical intertransversarii",
+"latein": "M. set of posterior cervical intertransversarii"
+},
+"FMA76751": {
+"de": "Set of posterior veins of left ventricle"
+},
+"FMA74077": {
+"de": "M. set of right levatores costarum breves",
+"latein": "M. set of right levatores costarum breves"
+},
+"FMA74075": {
+"de": "M. set of right levatores costarum longi",
+"latein": "M. set of right levatores costarum longi"
+},
+"FMA12525": {
+"de": "7. Halswirbel",
+"latein": "Vertebra cervicalis"
+},
+"FMA9968": {
+"de": "7. Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+"FMA37685": {
+"de": "Zweiköpfiger Oberarmmuskel, kurzer Kopf (links)",
+"latein": "M. biceps brachii",
+"ursprung": "Langer Kopf: Tuberculum supraglenoidale. Kurzer Kopf: Processus coracoideus",
+"ansatz": "Tuberositas radii der Speiche",
+"funktion": "Beugung im Ellenbogen, kräftige Supination, Unterstützung der Anteversion",
+"innervation": "N. musculocutaneus (C5–C6)",
+"notiz": "Die lange Bizepssehne läuft durch das Schultergelenk – häufige Schmerzquelle vorne an der Schulter."
+},
+"FMA45892": {
+"de": "Zweiköpfiger Schenkelmuskel, kurzer Kopf (links)",
+"latein": "M. biceps femoris",
+"ursprung": "Sitzbeinhöcker (langer Kopf), Linea aspera (kurzer Kopf)",
+"ansatz": "Fibulaköpfchen",
+"funktion": "Hüftstreckung, Kniebeugung, Außenrotation im gebeugten Knie",
+"innervation": "N. ischiadicus (L5–S2)"
+},
+"FMA37684": {
+"de": "Zweiköpfiger Oberarmmuskel, kurzer Kopf (rechts)",
+"latein": "M. biceps brachii",
+"ursprung": "Langer Kopf: Tuberculum supraglenoidale. Kurzer Kopf: Processus coracoideus",
+"ansatz": "Tuberositas radii der Speiche",
+"funktion": "Beugung im Ellenbogen, kräftige Supination, Unterstützung der Anteversion",
+"innervation": "N. musculocutaneus (C5–C6)",
+"notiz": "Die lange Bizepssehne läuft durch das Schultergelenk – häufige Schmerzquelle vorne an der Schulter."
+},
+"FMA45891": {
+"de": "Zweiköpfiger Schenkelmuskel, kurzer Kopf (rechts)",
+"latein": "M. biceps femoris",
+"ursprung": "Sitzbeinhöcker (langer Kopf), Linea aspera (kurzer Kopf)",
+"ansatz": "Fibulaköpfchen",
+"funktion": "Hüftstreckung, Kniebeugung, Außenrotation im gebeugten Knie",
+"innervation": "N. ischiadicus (L5–S2)"
+},
+"FMA12524": {
+"de": "6. Halswirbel",
+"latein": "Vertebra cervicalis"
+},
+"FMA9945": {
+"de": "6. Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+"FMA52736": {
+"de": "Keilbein",
+"latein": "Os sphenoidale"
+},
+"FMA34685": {
+"de": "Deltamuskel, Pars spinalis (links)",
+"latein": "M. deltoideus",
+"ursprung": "Äußeres Schlüsselbeindrittel, Akromion, Schulterblattgräte",
+"ansatz": "Tuberositas deltoidea am Oberarmknochen",
+"funktion": "Mittlerer Teil: Abduktion ab ca. 15°. Vorderer Teil: Anteversion und Innenrotation. Hinterer Teil: Retroversion und Außenrotation",
+"innervation": "N. axillaris (C5–C6)",
+"notiz": "Fällt der N. axillaris aus (z. B. nach Schulterluxation), lässt sich der Arm kaum seitlich heben."
+},
+"FMA34684": {
+"de": "Deltamuskel, Pars spinalis (rechts)",
+"latein": "M. deltoideus",
+"ursprung": "Äußeres Schlüsselbeindrittel, Akromion, Schulterblattgräte",
+"ansatz": "Tuberositas deltoidea am Oberarmknochen",
+"funktion": "Mittlerer Teil: Abduktion ab ca. 15°. Vorderer Teil: Anteversion und Innenrotation. Hinterer Teil: Retroversion und Außenrotation",
+"innervation": "N. axillaris (C5–C6)",
+"notiz": "Fällt der N. axillaris aus (z. B. nach Schulterluxation), lässt sich der Arm kaum seitlich heben."
+},
+"FMA14773": {
+"de": "Splenic artery"
+},
+"FMA14331": {
+"de": "Splenic vein"
+},
+"FMA4685": {
+"de": "Stem of left coronary artery"
+},
+"FMA79980": {
+"de": "Großer Brustmuskel, Pars sternocostalis (links)",
+"latein": "M. pectoralis major",
+"ursprung": "Schlüsselbein, Brustbein, Rippenknorpel 1–6",
+"ansatz": "Crista tuberculi majoris des Humerus",
+"funktion": "Adduktion, Innenrotation und Anteversion; Hilfsatemmuskel bei fixiertem Arm",
+"innervation": "Nn. pectorales (C5–Th1)",
+"notiz": "Neigt bei Rundrückenhaltung zur Verkürzung und zieht die Schultern nach vorne."
+},
+"FMA79979": {
+"de": "Großer Brustmuskel, Pars sternocostalis (rechts)",
+"latein": "M. pectoralis major",
+"ursprung": "Schlüsselbein, Brustbein, Rippenknorpel 1–6",
+"ansatz": "Crista tuberculi majoris des Humerus",
+"funktion": "Adduktion, Innenrotation und Anteversion; Hilfsatemmuskel bei fixiertem Arm",
+"innervation": "Nn. pectorales (C5–Th1)",
+"notiz": "Neigt bei Rundrückenhaltung zur Verkürzung und zieht die Schultern nach vorne."
+},
+"FMA65199": {
+"de": "M. flexor pollicis brevis (links), oberflächlicher Kopf",
+"latein": "M. flexor pollicis brevis"
+},
+"FMA65198": {
+"de": "M. flexor pollicis brevis (rechts), oberflächlicher Kopf",
+"latein": "M. flexor pollicis brevis"
+},
+"FMA49002": {
+"de": "M. masseter (links), oberflächlicher Anteil",
+"latein": "M. masseter"
+},
+"FMA49001": {
+"de": "M. masseter (rechts), oberflächlicher Anteil",
+"latein": "M. masseter"
+},
+"FMA14749": {
+"de": "Superior mesenteric artery"
+},
+"FMA14332": {
+"de": "Superior mesenteric vein"
+},
+"FMA46284": {
+"de": "M. superior oblique part of left longus colli",
+"latein": "M. superior oblique part of left longus colli"
+},
+"FMA46283": {
+"de": "M. superior oblique part of right longus colli",
+"latein": "M. superior oblique part of right longus colli"
+},
+"FMA4720": {
+"de": "Superior vena cava"
+},
+"FMA46442": {
+"de": "M. tendinous arch of levator ani",
+"latein": "M. tendinous arch of levator ani"
+},
+"FMA10037": {
+"de": "10. Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+"FMA12521": {
+"de": "3. Halswirbel",
+"latein": "Vertebra cervicalis"
+},
+"FMA13074": {
+"de": "3. Lendenwirbel",
+"latein": "Vertebra lumbalis"
+},
+"FMA37486": {
+"de": "3. M. lumbrical (linker Fuß)",
+"latein": "M. lumbrical"
+},
+"FMA37485": {
+"de": "3. M. lumbrical (rechter Fuß)",
+"latein": "M. lumbrical"
+},
+"FMA37742": {
+"de": "3. M. plantar interosseous (linker Fuß)",
+"latein": "M. plantar interosseous"
+},
+"FMA37741": {
+"de": "3. M. plantar interosseous (rechter Fuß)",
+"latein": "M. plantar interosseous"
+},
+"FMA9209": {
+"de": "3. Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+"FMA78454": {
+"de": "3. Ventricle"
+},
+"FMA23083": {
+"de": "M. thoracic rotator",
+"latein": "M. thoracic rotator"
+},
+"FMA55099": {
+"de": "Thyroid cartilage"
+},
+"FMA7394": {
+"de": "Luftröhre",
+"latein": "Trachea"
+},
+"FMA46021": {
+"de": "M. transverse head of left adductor hallucis",
+"latein": "M. transverse head of left adductor hallucis"
+},
+"FMA46124": {
+"de": "M. transverse head of left adductor pollicis",
+"latein": "M. transverse head of left adductor pollicis"
+},
+"FMA46020": {
+"de": "M. transverse head of right adductor hallucis",
+"latein": "M. transverse head of right adductor hallucis"
+},
+"FMA46123": {
+"de": "M. transverse head of right adductor pollicis",
+"latein": "M. transverse head of right adductor pollicis"
+},
+"FMA33585": {
+"de": "Kapuzenmuskel, Pars transversa (links)",
+"latein": "M. trapezius",
+"ursprung": "Hinterhauptbein, Nackenband, Dornfortsätze C7–Th12",
+"ansatz": "Äußeres Schlüsselbeindrittel, Akromion, Schulterblattgräte",
+"funktion": "Absteigender Teil hebt das Schulterblatt, querer zieht es zur Wirbelsäule, aufsteigender senkt es; gemeinsam drehen sie die Pfanne nach oben",
+"innervation": "N. accessorius (XI), Äste aus C3–C4",
+"notiz": "Der absteigende Teil ist der Klassiker unter den Verspannungen – oft ist aber der aufsteigende Teil zu schwach."
+},
+"FMA33584": {
+"de": "Kapuzenmuskel, Pars transversa (rechts)",
+"latein": "M. trapezius",
+"ursprung": "Hinterhauptbein, Nackenband, Dornfortsätze C7–Th12",
+"ansatz": "Äußeres Schlüsselbeindrittel, Akromion, Schulterblattgräte",
+"funktion": "Absteigender Teil hebt das Schulterblatt, querer zieht es zur Wirbelsäule, aufsteigender senkt es; gemeinsam drehen sie die Pfanne nach oben",
+"innervation": "N. accessorius (XI), Äste aus C3–C4",
+"notiz": "Der absteigende Teil ist der Klassiker unter den Verspannungen – oft ist aber der aufsteigende Teil zu schwach."
+},
+"FMA7234": {
+"de": "Tricuspid valve"
+},
+"FMA3802": {
+"de": "Trunk of right coronary artery"
+},
+"FMA62327": {
+"de": "Tuber cinereum"
+},
+"FMA10081": {
+"de": "12. Brustwirbel",
+"latein": "Vertebra thoracica"
+},
+"BP46": {
+"de": "M. ulnar head of left extensor carpi ulnaris",
+"latein": "M. ulnar head of left extensor carpi ulnaris"
+},
+"FMA38620": {
+"de": "M. ulnar head of left flexor carpi ulnaris",
+"latein": "M. ulnar head of left flexor carpi ulnaris"
+},
+"FMA38563": {
+"de": "M. ulnar head of left pronator teres",
+"latein": "M. ulnar head of left pronator teres"
+},
+"BP47": {
+"de": "M. ulnar head of right extensor carpi ulnaris",
+"latein": "M. ulnar head of right extensor carpi ulnaris"
+},
+"FMA38619": {
+"de": "M. ulnar head of right flexor carpi ulnaris",
+"latein": "M. ulnar head of right flexor carpi ulnaris"
+},
+"FMA38562": {
+"de": "M. ulnar head of right pronator teres",
+"latein": "M. ulnar head of right pronator teres"
+},
+"FMA49025": {
+"de": "M. lateral pterygoid (links), oberer Kopf",
+"latein": "M. lateral pterygoid"
+},
+"FMA49024": {
+"de": "M. lateral pterygoid (rechts), oberer Kopf",
+"latein": "M. lateral pterygoid"
+},
+"FMA7370": {
+"de": "Lunge (upper lobe of left)",
+"latein": "Pulmo"
+},
+"FMA7333": {
+"de": "Lunge (upper lobe of right)",
+"latein": "Pulmo"
+},
+"FMA46286": {
+"de": "M. vertical intermediate part of left longus colli",
+"latein": "M. vertical intermediate part of left longus colli"
+},
+"FMA46285": {
+"de": "M. vertical intermediate part of right longus colli",
+"latein": "M. vertical intermediate part of right longus colli"
+},
+"FMA9710": {
+"de": "Pflugscharbein",
+"latein": "Vomer"
+},
+"FMA7274": {
+"de": "Herz (wall of)",
+"latein": "Cor"
+},
+"FMA61822": {
+"de": "White matter structure of cerebral hemisphere"
+},
+"FMA7488": {
+"de": "Schwertfortsatz",
+"latein": "Processus xiphoideus"
+}
+}

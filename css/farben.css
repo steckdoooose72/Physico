@@ -1,0 +1,62 @@
+/* ==========================================================================
+   farben.css – die Farbpalette des ganzen Projekts, an einer Stelle
+   --------------------------------------------------------------------------
+   Wabi-Sabi-Anmutung: warmes Papier statt Bildschirm-Schwarz, gebranntes
+   Olive als Akzent, ein gedecktes Graugrün als zweite Stimme.
+
+   Jede Seite lädt diese Datei zusätzlich zu ihrem eigenen Stylesheet:
+
+       <link rel="stylesheet" href="css/farben.css">
+       <link rel="stylesheet" href="css/start.css">
+
+   Früher standen dieselben Werte doppelt in start.css und style.css – wer
+   eine Farbe änderte, musste daran denken, es an beiden Stellen zu tun.
+   Jetzt reicht diese Datei.
+   ========================================================================== */
+
+:root {
+  /* Grundton: warmes Papier */
+  --creme:         #F1E7D5;
+  --creme-rand:    #E6D9BF;
+  --papier:        #FAF4E8;
+  --papier-hell:   #FFFCF5;
+  --papier-hover:  #F3ECDB;
+
+  /* Text */
+  --text:          #3A3527;
+  --text-leise:    #585B4C;   /* dunkles Graugrün – zugleich Fließtext-Nebenfarbe */
+
+  /* Gebranntes Olive – der Hauptakzent */
+  --olive:         #6B6142;
+  --olive-text:    #5A4F34;
+  --olive-hell:    #8C815A;
+  --olive-dunkel:  #4A4329;
+
+  /* Graugrün – die zweite Stimme, für Abzeichen und Nebensächliches */
+  --graugruen:        #7C8577;
+  --graugruen-dunkel: #545A4C;
+
+  --rand:          #DCCDA9;
+
+  --schatten-nah:  0 1px 2px rgba(58, 48, 28, 0.09);
+  --schatten-fern: 0 18px 34px -16px rgba(58, 48, 28, 0.28);
+
+  /* Halbdurchsichtige Papierflächen über der dunklen 3D-Bühne */
+  --panel:         rgba(250, 244, 232, 0.92);
+  --panel-hell:    rgba(255, 252, 245, 0.96);
+
+  /* Übungsstufen: hell und zurückhaltend für die Grundlagen,
+     zunehmend satter für anspruchsvollere Stufen */
+  --stufe-1: #DAD3BC;   /* Basis */
+  --stufe-2: #AB9E71;   /* Praxis */
+  --stufe-3: #6B6142;   /* Extra (entspricht --olive) */
+
+  /* Neutrale Markierung der angeklickten Antwort (verrät nichts) */
+  --olive-flaeche: rgba(107, 97, 66, 0.13);
+
+  /* Auswertung im Quiz – bewusst gedeckt, kein Ampel-Rot/Grün */
+  --richtig:       #5E7350;
+  --richtig-flaeche: rgba(94, 115, 80, 0.14);
+  --falsch:        #9C5B45;
+  --falsch-flaeche: rgba(156, 91, 69, 0.13);
+}

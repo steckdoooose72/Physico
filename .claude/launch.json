@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "physico",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["werkzeuge/server.py", "8000"],
+      "port": 8000
+    }
+  ]
+}

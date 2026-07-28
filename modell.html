@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Physico – 3D-Modell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/farben.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=8">
+
+  <!--
+    Die Import-Map sagt dem Browser, wo er die 3D-Bibliothek "three.js" findet.
+    Dadurch brauchen wir kein npm und keine Installation.
+  -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.169.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.169.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Hier hinein zeichnet three.js das 3D-Bild -->
+  <div id="buehne"></div>
+
+  <!-- Linke Bedienleiste -->
+  <aside id="bedienleiste">
+    <a class="zurueck" href="index.html">← Startseite</a>
+    <h1>Physico</h1>
+    <p class="untertitel">Interaktive Anatomie</p>
+
+    <section class="block">
+      <input type="search" id="suchfeld" placeholder="Struktur suchen (z. B. Femur, deltoid)" autocomplete="off">
+      <ul id="suchergebnisse"></ul>
+    </section>
+
+    <section class="block">
+      <h2>Körperbereich</h2>
+      <div id="region-schalter" class="chips"></div>
+      <p class="hinweis" id="stufe-anzeige"></p>
+    </section>
+
+    <section class="block">
+      <h2>Systeme</h2>
+      <div id="system-schalter"></div>
+      <p class="hinweis" id="strukturzahl"></p>
+    </section>
+
+    <section class="block">
+      <h2>Weichteile durchsichtig <span id="transparenz-wert">aus</span></h2>
+      <input type="range" id="regler-transparenz" min="0" max="100" value="0">
+      <p class="hinweis">Alles außer dem Skelett wird durchsichtig – so schaust du von außen nach innen.</p>
+    </section>
+
+    <section class="block">
+      <h2>Steuerung</h2>
+      <ul class="hilfe">
+        <li><b>Linke Maustaste ziehen</b> – drehen</li>
+        <li><b>Scrollen / Pinch</b> – zoomen</li>
+        <li><b>Rechte Maustaste ziehen</b> – verschieben</li>
+        <li><b>Klick auf Struktur</b> – Infos anzeigen</li>
+        <li><b>Taste R</b> – Ansicht zurücksetzen</li>
+      </ul>
+    </section>
+
+    <p class="quelle-fuss">
+      Modelldaten: BodyParts3D, © The Database Center for Life Science,
+      lizenziert unter CC Attribution-Share Alike 2.1 Japan.
+    </p>
+  </aside>
+
+  <!-- Rechtes Info-Panel: erscheint erst, wenn eine Struktur angeklickt wurde (js/panel.js) -->
+  <aside id="info-panel" class="leer" aria-hidden="true">
+    <div id="info-inhalt"></div>
+  </aside>
+
+  <div id="schwebe-name"></div>
+  <div id="ladehinweis">Physico startet …</div>
+
+  <script type="module" src="js/main.js?v=9"></script>
+</body>
+</html>

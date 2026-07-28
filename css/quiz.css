@@ -1,0 +1,324 @@
+/* ==========================================================================
+   quiz.css – Aussehen der Übungsseiten (bone-prep.html)
+   --------------------------------------------------------------------------
+   Gleiche Idee wie im Modell-Viewer: dunkle 3D-Bühne, darüber helle
+   Papierflächen. Die Farben kommen aus css/farben.css.
+   ========================================================================== */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #24221A;          /* scheint nur kurz durch, bis die Bühne da ist */
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+h2, .kopf-titel, .antwort-knopf { font-family: "Fraunces", Georgia, serif; font-optical-sizing: auto; }
+
+#buehne { position: fixed; inset: 0; }
+#buehne canvas { display: block; }
+
+/* --------------------------------------------------------------------------
+   Kopfzeile
+   -------------------------------------------------------------------------- */
+
+#quiz-kopf {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 20px;
+  background: var(--panel);
+  border: 1px solid var(--rand);
+  border-radius: 16px 14px 16px 12px;
+  box-shadow: var(--schatten-fern);
+  backdrop-filter: blur(10px);
+}
+
+.zurueck {
+  flex-shrink: 0;
+  color: var(--text-leise);
+  font-size: 12.5px;
+  text-decoration: none;
+}
+.zurueck:hover { color: var(--olive-text); }
+
+.kopf-mitte {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.25;
+}
+
+.kopf-titel { font-size: 19px; font-weight: 600; color: var(--olive-dunkel); }
+
+.kopf-untertitel {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  color: var(--graugruen-dunkel);
+}
+
+.fortschritt {
+  flex-shrink: 0;
+  width: 120px;
+  text-align: right;
+  font-size: 11.5px;
+  color: var(--text-leise);
+}
+
+.fortschritt-balken {
+  margin-top: 5px;
+  height: 5px;
+  background: rgba(107, 97, 66, 0.16);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+#fortschritt-fuell {
+  height: 100%;
+  width: 0;
+  background: var(--olive);
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+/* --------------------------------------------------------------------------
+   Frage und Antworten – unten, damit der Knochen frei sichtbar bleibt
+   -------------------------------------------------------------------------- */
+
+#frage-bereich {
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  width: min(680px, calc(100% - 32px));
+  padding: 18px 20px 20px;
+  background: var(--panel);
+  border: 1px solid var(--rand);
+  border-radius: 18px 14px 16px 14px;
+  box-shadow: var(--schatten-fern);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+#frage-bereich[hidden], #ergebnis[hidden] { display: none; }
+
+.frage-text {
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: var(--text-leise);
+}
+
+.antworten {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.antwort-knopf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 13px 16px;
+  background: var(--papier-hell);
+  border: 1px solid var(--rand);
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--olive-dunkel);
+  cursor: pointer;
+  transition: transform 0.12s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+/* Zuerst steht nur der medizinische Name da – italic, wie in der Fachliteratur */
+.antwort-primaer {
+  font-style: italic;
+}
+
+/* Der umgangssprachliche Name ist die Herausforderung: verdeckt, bis man
+   antwortet. Verschwommen statt unsichtbar, damit klar ist, dass dort etwas
+   steht – kein leeres Versprechen. */
+.antwort-verdeckt {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 12.5px;
+  font-weight: 400;
+  color: var(--text-leise);
+  white-space: nowrap;
+  filter: blur(5px);
+  user-select: none;
+  transition: filter 0.25s ease;
+}
+
+.antwort-knopf.aufgedeckt .antwort-verdeckt {
+  filter: blur(0);
+}
+
+.antwort-knopf:hover:not(:disabled) {
+  transform: translateY(-2px);
+  border-color: var(--olive);
+}
+
+.antwort-knopf:focus-visible { outline: 2px solid var(--olive); outline-offset: 2px; }
+.antwort-knopf:disabled { cursor: default; }
+
+/* Nach dem Klick nur eine neutrale Markierung – ob die Antwort stimmt,
+   verrät erst die Auswertung. Deshalb hier bewusst kein Grün und kein Rot. */
+.antwort-knopf.gewaehlt {
+  background: var(--olive-flaeche);
+  border-color: var(--olive);
+}
+
+.antwort-knopf.blass { opacity: 0.4; }
+
+.weiter-knopf {
+  margin-top: 14px;
+  padding: 11px 26px;
+  background: var(--olive);
+  border: none;
+  border-radius: 11px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--papier-hell);
+  cursor: pointer;
+}
+.weiter-knopf:hover { background: var(--olive-dunkel); }
+.weiter-knopf:focus-visible { outline: 2px solid var(--olive-dunkel); outline-offset: 3px; }
+.weiter-knopf[hidden] { display: none; }
+
+/* --------------------------------------------------------------------------
+   Auswertung
+   -------------------------------------------------------------------------- */
+
+#ergebnis {
+  position: fixed;
+  z-index: 3;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(520px, calc(100% - 32px));
+  max-height: calc(100% - 140px);
+  overflow-y: auto;
+  padding: 30px 32px;
+  background: var(--panel-hell);
+  border: 1px solid var(--rand);
+  border-radius: 22px 18px 20px 16px;
+  box-shadow: var(--schatten-fern);
+  text-align: center;
+}
+
+#ergebnis h2 {
+  margin: 0 0 6px;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--olive-dunkel);
+}
+
+.ergebnis-zahl {
+  margin: 0 0 20px;
+  font-size: 15px;
+  color: var(--text-leise);
+}
+
+#ergebnis-fehler {
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+#ergebnis-fehler h3 {
+  margin: 0 0 8px;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  color: var(--graugruen-dunkel);
+  font-family: inherit;
+}
+
+#ergebnis-fehler ul { margin: 0; padding: 0; list-style: none; }
+
+#ergebnis-fehler li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--rand);
+  font-size: 14px;
+}
+#ergebnis-fehler li:last-child { border-bottom: none; }
+#ergebnis-fehler li b { color: var(--richtig); font-weight: 600; }
+
+.fehler-wahl { color: var(--falsch); font-size: 12.5px; text-align: right; }
+
+.ergebnis-knoepfe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+}
+
+.ergebnis-knoepfe .weiter-knopf { margin-top: 0; }
+.ergebnis-knoepfe .weiter-knopf[hidden] { display: none; }
+
+#fehler-knopf {
+  background: var(--papier-hell);
+  border: 1px solid var(--olive);
+  color: var(--olive-text);
+}
+#fehler-knopf:hover { background: var(--papier-hover); }
+
+.text-knopf {
+  color: var(--text-leise);
+  font-size: 13px;
+  text-decoration: none;
+}
+.text-knopf:hover { color: var(--olive-text); }
+
+/* --------------------------------------------------------------------------
+   Ladehinweis
+   -------------------------------------------------------------------------- */
+
+#ladehinweis {
+  position: fixed;
+  z-index: 4;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 14px 22px;
+  background: var(--panel);
+  border: 1px solid var(--rand);
+  border-radius: 16px;
+  box-shadow: var(--schatten-fern);
+  font-size: 13px;
+  color: var(--text-leise);
+  text-align: center;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+#ladehinweis.weg { display: none; }
+#ladehinweis.fehler { color: #9c3b2a; border-color: #b5735f; background: #F6E6DE; }
+
+/* --- Schmale Fenster ------------------------------------------------------ */
+
+@media (max-width: 640px) {
+  #quiz-kopf { padding: 10px 14px; gap: 10px; }
+  .kopf-titel { font-size: 16px; }
+  .fortschritt { width: 82px; }
+  .antworten { grid-template-columns: 1fr; }
+  .antwort-knopf { padding: 11px 14px; font-size: 14px; }
+}

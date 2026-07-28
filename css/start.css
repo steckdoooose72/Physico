@@ -1,0 +1,404 @@
+/* ==========================================================================
+   start.css – Aussehen der Startseite (index.html)
+   --------------------------------------------------------------------------
+   Gestaltungsidee: Wabi-Sabi – warmes Papier statt Bildschirm-Schwarz, leise
+   Unregelmäßigkeit statt gerader Hochglanz-Kanten. Creme/Beige als Grundton,
+   gebranntes Olive als Akzent, ein gedecktes Graugrün als zweite Stimme.
+   Ein feines Korn im Hintergrund und weiche, warme Schatten geben den Karten
+   spürbare Tiefe ("3D-Optik"), ohne laut zu werden.
+   ========================================================================== */
+
+/* Farben stehen zentral in css/farben.css – dort ändern, wirkt überall. */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  background: var(--creme);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Titel und Kartentitel bekommen eine warme, leicht unregelmäßige Serife –
+   das editorielle, handgesetzte Gegenstück zur glatten Systemschrift. */
+h1, .wahl-titel {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-optical-sizing: auto;
+}
+
+/* --------------------------------------------------------------------------
+   Hintergrund: ein sehr feines Papierkorn statt einer glatten Fläche.
+   Reine Wabi-Sabi-Signatur – die Unregelmäßigkeit ist gewollt.
+   -------------------------------------------------------------------------- */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'>\
+<filter id='k'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/>\
+<feColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0'/></filter>\
+<rect width='100%25' height='100%25' filter='url(%23k)'/></svg>");
+}
+
+/* Zwei leise, unregelmäßige Lichtflecken – wie Licht, das schräg auf Papier fällt */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(60% 46% at 82% -6%, rgba(140, 129, 90, 0.16), transparent 65%),
+    radial-gradient(46% 40% at 6% 108%, rgba(124, 133, 119, 0.14), transparent 65%);
+}
+
+/* --------------------------------------------------------------------------
+   Dekorative Hintergrundgrafik (siehe index.html) – fließende Flächen in
+   Olive/Graugrün auf dem cremefarbenen Grund. Die Farbstopps sind eigene
+   Klassen statt Inline-Werten, damit sie dieselben Variablen wie der Rest
+   der Seite benutzen – ändert sich die Palette oben, zieht die Grafik mit.
+   -------------------------------------------------------------------------- */
+
+.hintergrund-deko {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.deko-stop-olive       { stop-color: var(--olive-hell); stop-opacity: 0.40; }
+.deko-stop-olive-hell  { stop-color: var(--olive);       stop-opacity: 0.28; }
+.deko-stop-graugruen   { stop-color: var(--graugruen);   stop-opacity: 0.38; }
+.deko-stop-leer        { stop-color: var(--olive-hell);  stop-opacity: 0; }
+.deko-stop-linie-mitte { stop-color: var(--olive-text);  stop-opacity: 0.32; }
+
+.deko-knoten { fill: var(--graugruen-dunkel); opacity: 0.4; }
+
+.start {
+  position: relative;
+  z-index: 1;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 64px 24px 72px;
+}
+
+/* Rückweg zu einer übergeordneten Seite (z. B. von vorbereitung.html zur Startseite) */
+.zurueck {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin-bottom: 16px;
+  color: var(--text-leise);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.zurueck:hover { color: var(--olive-text); }
+
+/* --- Titel (mittig) ------------------------------------------------------- */
+
+.kopf {
+  text-align: center;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--rand);
+}
+
+h1 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: var(--olive-dunkel);
+}
+
+.untertitel {
+  margin: 6px 0 0;
+  color: var(--text-leise);
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: lowercase;
+}
+
+/* --- Die drei Einstiege --------------------------------------------------- */
+
+.auswahl {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* Auf der Vorbereitung-Seite stehen die Einträge untereinander statt
+   nebeneinander – dort ist pro Karte mehr los (Text plus Regler). */
+body.vorbereitung-seite .auswahl {
+  grid-template-columns: 1fr;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.wahl {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 26px;
+  background: var(--papier);
+  border: 1px solid var(--rand);
+  /* Leicht unregelmäßige Ecken – von Hand geformt statt am Reißbrett */
+  border-radius: 22px 18px 20px 16px;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: var(--schatten-nah);
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+}
+
+/* Der erste Eintrag ist der Haupteinstieg – warmes Streiflicht statt Neon-Glow */
+a.wahl {
+  background:
+    linear-gradient(135deg, rgba(107, 97, 66, 0.13), rgba(107, 97, 66, 0.02) 55%),
+    var(--papier-hell);
+  border-color: var(--olive-hell);
+}
+
+a.wahl:hover {
+  transform: translateY(-3px);
+  border-color: var(--olive);
+  box-shadow: var(--schatten-fern);
+  background:
+    linear-gradient(135deg, rgba(107, 97, 66, 0.18), rgba(107, 97, 66, 0.03) 55%),
+    var(--papier-hell);
+}
+
+a.wahl:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 3px;
+}
+
+.nummer {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: var(--graugruen-dunkel);
+}
+
+.wahl-titel {
+  display: block;
+  margin-top: 4px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--olive-dunkel);
+}
+
+.wahl-text {
+  display: block;
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--text-leise);
+}
+
+/* --- Noch nicht eingerichtet ---------------------------------------------- */
+
+.wahl.bald {
+  border-style: dashed;
+  border-color: var(--rand);
+  box-shadow: none;
+  cursor: default;
+}
+
+.wahl.bald .wahl-titel { color: var(--text); opacity: 0.65; }
+.wahl.bald .wahl-text { opacity: 0.75; }
+
+.marke {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  padding: 3px 10px;
+  background: rgba(124, 133, 119, 0.18);
+  border: 1px solid rgba(124, 133, 119, 0.3);
+  border-radius: 999px;
+  font-size: 11px;
+  color: var(--graugruen-dunkel);
+}
+
+/* --------------------------------------------------------------------------
+   Einstellungen je Prep (vorbereitung.html) – Schwierigkeitsgrad und Modus
+   sitzen als zwei Klappmenüs untereinander auf derselben Kartenfläche wie
+   Titel und Text. Die Karte selbst wird dafür zur Reihe: links der Text,
+   rechts die Einstellungen.
+   Noch ohne Wirkung auf Inhalte – die gibt es erst, wenn die Aufgaben stehen.
+   -------------------------------------------------------------------------- */
+
+.wahl.vorbereitung-eintrag {
+  flex-direction: row;
+  align-items: flex-start;   /* der Knopf muss nicht die ganze Kartenhöhe ausfüllen */
+  gap: 20px;
+}
+
+.vorbereitung-info {
+  position: relative;   /* eigener Bezugsrahmen fürs "folgt"-Abzeichen, s.u. */
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;   /* lässt den Text notfalls umbrechen statt die Karte zu sprengen */
+}
+
+/* Der Titel einer fertigen Prep ist der Link zur Übung. Bewusst nur der Titel
+   und nicht die ganze Karte – sonst wäre kein Klick auf die Menüs mehr möglich,
+   ohne die Übung zu starten. */
+.prep-link {
+  align-self: flex-start;
+  text-decoration: none;
+  color: var(--olive-dunkel);
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.prep-link:hover { border-bottom-color: var(--olive-hell); }
+.prep-link:focus-visible { outline: 2px solid var(--olive); outline-offset: 3px; }
+
+/* Das "folgt"-Abzeichen soll in der Textspalte bleiben, statt mit dem
+   Regler zusammenzustoßen – deshalb hier neu relativ zu .vorbereitung-info
+   statt zur ganzen (jetzt auch den Regler enthaltenden) Karte verortet. */
+.vorbereitung-eintrag .marke {
+  top: 0;
+  right: 0;
+}
+
+/* Die rechte Spalte der Karte: Stufe oben, Modus darunter */
+.vorbereitung-einstellungen {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* Ein Klappmenü (Knopf + Liste). Wird für Stufe und Modus gleichermaßen
+   benutzt – wie der Modellwechsel bei Claude. */
+.klapp {
+  position: relative;
+  z-index: 2;
+}
+
+/* Das offene Menü muss über der darunterliegenden Zeile und über den
+   Nachbarkarten liegen. */
+.klapp.offen { z-index: 5; }
+
+.klapp-label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  color: var(--graugruen-dunkel);
+}
+
+.klapp-knopf {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  padding: 8px 12px;
+  background: var(--papier-hell);
+  border: 1px solid var(--rand);
+  border-radius: 10px;
+  box-shadow: var(--schatten-nah);
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--olive-dunkel);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.klapp-knopf:hover { border-color: var(--olive-hell); }
+.klapp-knopf:focus-visible { outline: 2px solid var(--olive); outline-offset: 2px; }
+
+.klapp-knopf[aria-expanded="true"] {
+  border-color: var(--olive);
+  background: var(--papier);
+}
+
+.klapp-knopf-text { margin-right: auto; }
+
+.klapp-knopf-pfeil {
+  font-size: 9px;
+  color: var(--text-leise);
+  transition: transform 0.15s ease;
+}
+
+.klapp-knopf[aria-expanded="true"] .klapp-knopf-pfeil { transform: rotate(180deg); }
+
+/* Das Menü – dieselbe Papier-Optik wie die Suchergebnisse im Modell-Viewer */
+.klapp-menu {
+  position: absolute;
+  z-index: 3;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 100%;
+  margin: 0;
+  padding: 5px;
+  list-style: none;
+  background: var(--papier-hell);
+  border: 1px solid var(--rand);
+  border-radius: 12px;
+  box-shadow: var(--schatten-fern);
+  white-space: nowrap;
+}
+
+.klapp-menu[hidden] { display: none; }
+
+.klapp-option {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 9px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.klapp-option:hover,
+.klapp-option:focus-visible { background: rgba(107, 97, 66, 0.1); outline: none; }
+
+.klapp-option[aria-selected="true"] { font-weight: 700; color: var(--olive-dunkel); }
+
+.klapp-option-haken {
+  margin-left: auto;
+  padding-left: 10px;
+  color: var(--olive);
+  font-size: 12px;
+  visibility: hidden;
+}
+.klapp-option[aria-selected="true"] .klapp-option-haken { visibility: visible; }
+
+/* Farbpunkt nur beim Schwierigkeitsgrad: hell für Basis, kräftig für Extra */
+.stufe-punkt {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--stufe-1);
+}
+[data-wert="2"] > .stufe-punkt { background: var(--stufe-2); }
+[data-wert="3"] > .stufe-punkt { background: var(--stufe-3); }
+
+/* --- Schmale Fenster ------------------------------------------------------ */
+
+@media (max-width: 820px) {
+  .start { padding: 40px 18px 52px; }
+  h1 { font-size: 38px; }
+  .auswahl { grid-template-columns: 1fr; }
+}

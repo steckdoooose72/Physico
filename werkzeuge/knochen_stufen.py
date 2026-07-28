@@ -1,0 +1,194 @@
+#!/usr/bin/env python3
+"""
+knochen_stufen.py – teilt die Knochen in die drei Übungsstufen ein.
+
+Erzeugt daten/knochen_stufen.json für Bone-Prep:
+
+    { "FMA24474": { "region": "bein", "einordnungen": [
+        { "stufe": 1, "name": "Oberschenkelknochen", "latein": "Femur" }
+    ] } }
+
+Pro Knochen steht eine **Liste** von Einordnungen, meist mit genau einem Eintrag.
+Wirbel und Rippen bekommen zwei: generisch in Praxis ("Rippe"), mit genauer Zahl
+in Extra ("6. Rippe") – derselbe physische Knochen taucht so in zwei Stufen mit
+zwei verschiedenen Namen auf. "name" ist immer ohne Seitenangabe – links und
+rechts sind im Quiz dieselbe Antwort, mehrere Kennungen tragen deshalb denselben
+Namen. "latein" ist der medizinische Name aus daten/namen_de.json; er fehlt, wo
+das Wörterbuch in werkzeuge/namen.py keinen hinterlegt hat (dann zeigt das Quiz
+nur den deutschen Namen – lieber nichts als etwas Erfundenes).
+
+Die Stufen:
+  1 Basis  – die großen Leitknochen, die immer sitzen müssen
+  2 Praxis – alltagsrelevant, aber generisch: Wirbeltyp, Rippe, Hand-/Fußwurzel
+  3 Extra  – die genaue Nummer von Wirbeln/Rippen, einzelne Schädelknochen,
+             Finger-/Zehenglieder, Mittelhand/Mittelfuß, Rippenknorpel, Bandscheiben
+
+Willst du etwas verschieben, änderst du die Listen unten und lässt das Skript
+erneut laufen:
+
+    .venv/bin/python werkzeuge/knochen_stufen.py
+"""
+
+import json
+import os
+import re
+
+BASIS = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+VERZEICHNIS = os.path.join(BASIS, 'daten', 'strukturen.json')
+NAMEN = os.path.join(BASIS, 'daten', 'namen_de.json')
+ZIEL = os.path.join(BASIS, 'daten', 'knochen_stufen.json')
+
+# --- Stufe 1: Basis ---------------------------------------------------------
+# Die großen Leitknochen plus die einzeln benannten (nicht nummerierten)
+# Kopf-/Halsknochen. Bewusst eng gehalten: das ist der Einstieg.
+BASIS_STUFE = [
+    'femur', 'tibia', 'fibula', 'patella',
+    'humerus', 'radius', 'ulna',
+    'scapula', 'clavicle',
+    'hip bone', 'sacrum', 'sternum',
+    'mandible', 'atlas', 'axis',
+    # Absichtlich KEIN 'skull': BodyParts3D hat keinen Schädel als eine
+    # Struktur, nur die Einzelknochen (Stirnbein, Scheitelbein, …) – die
+    # bleiben in Extra. Ein 'skull'-Eintrag hier würde nie greifen.
+]
+
+# --- Stufe 2: Praxis --------------------------------------------------------
+PRAXIS_STUFE = [
+    'coccyx', 'calcaneus', 'talus',
+    # Handwurzel
+    'scaphoid', 'lunate', 'triquetral', 'pisiform',
+    'trapezium', 'trapezoid', 'capitate', 'hamate',
+    # Fußwurzel
+    'navicular', 'cuboid', 'cuneiform',
+]
+
+# Wirbel und Rippen: nicht einfach "Praxis" – sie bekommen zwei Einordnungen
+# (siehe ohne_nummer() und die Hauptschleife unten).
+NUMERIERTE_GRUPPEN = [
+    'cervical vertebra', 'thoracic vertebra', 'lumbar vertebra', 'rib',
+]
+
+# --- Stufe 3: Extra ---------------------------------------------------------
+# Alles Übrige landet automatisch hier – diese Liste dient nur der Dokumentation
+# und dazu, Treffer aus Stufe 2 gezielt wieder herauszunehmen. Muss vor
+# NUMERIERTE_GRUPPEN geprüft werden: eine Bandscheibe wie "intervertebral disk
+# of first lumbar vertebra" enthält sonst fälschlich "lumbar vertebra".
+EXTRA_VORRANG = [
+    'costal cartilage',          # Rippenknorpel: nicht als "Rippe" zählen
+    'intervertebral disk',       # Bandscheiben: kein Knochen im engeren Sinn
+]
+
+# Strukturen, die gar nicht abgefragt werden sollen.
+AUSSCHLUSS = [
+    'eyeball',                   # in BodyParts3D fälschlich unter Skelett einsortiert
+    'set of',                    # Sammelbegriffe ("set of …") sind keine Einzelknochen
+    # Bänder und Membranen liegen zwar im Skelett-System, sind aber keine Knochen –
+    # sie gehören zu Joint-Prep. Bandscheiben und Rippenknorpel bleiben dagegen
+    # bewusst in Stufe 3 (siehe EXTRA_VORRANG): beides ist im Alltag ständig Thema.
+    'ligament',
+    'membrane',
+]
+
+# Ganze Namen, die genau so ausgeschlossen werden (nicht als Wortsuche).
+# „left costal cartilage" ist der Rippenknorpel als Sammelstück – als Antwort
+# wäre er neben „3. Rippenknorpel" nicht eindeutig, beides wäre richtig.
+AUSSCHLUSS_GENAU = [
+    'left costal cartilage',
+    'right costal cartilage',
+]
+
+
+def enthaelt(name, begriffe):
+    """Prüft auf ganze Wörter – sonst träfe 'rib' auch 'cribriform'."""
+    return any(re.search(rf'\b{re.escape(b)}\b', name) for b in begriffe)
+
+
+def ohne_seite(name):
+    """'Oberschenkelknochen (links)' -> 'Oberschenkelknochen'."""
+    name = re.sub(r'\s*\((links|rechts|linker|rechter|linke)[^)]*\)\s*$', '', name)
+    return name.strip()
+
+
+def ohne_nummer(name):
+    """'6. Rippe' -> 'Rippe' – die generische Antwort für Praxis."""
+    return re.sub(r'^\d+\.\s+', '', name)
+
+
+def main():
+    with open(VERZEICHNIS, encoding='utf-8') as f:
+        verzeichnis = json.load(f)
+    with open(NAMEN, encoding='utf-8') as f:
+        namen_de = json.load(f)
+
+    ergebnis = {}
+    uebersprungen = []
+
+    for eintrag in verzeichnis['strukturen']:
+        if eintrag['system'] != 'skelett':
+            continue
+
+        englisch = eintrag['name'].lower()
+        if englisch in AUSSCHLUSS_GENAU or enthaelt(englisch, AUSSCHLUSS):
+            uebersprungen.append(eintrag['name'])
+            continue
+
+        namen = namen_de.get(eintrag['id'], {})
+        anzeige = ohne_seite(namen.get('de', eintrag['name']))
+
+        # Nur übernehmen, wenn wirklich einer hinterlegt ist – und nicht, wenn er
+        # ohnehin schon im deutschen Namen steht ("Atlas (1. Halswirbel)").
+        latein = namen.get('latein')
+        if latein and latein.lower() in anzeige.lower():
+            latein = None
+
+        def einordnung(stufe, name):
+            wert = {'stufe': stufe, 'name': name}
+            if latein:
+                wert['latein'] = latein
+            return wert
+
+        if enthaelt(englisch, EXTRA_VORRANG):
+            einordnungen = [einordnung(3, anzeige)]
+        elif enthaelt(englisch, NUMERIERTE_GRUPPEN):
+            # Praxis fragt nur den Typ ab, Extra die genaue Nummer.
+            einordnungen = [einordnung(2, ohne_nummer(anzeige)), einordnung(3, anzeige)]
+        elif enthaelt(englisch, BASIS_STUFE):
+            einordnungen = [einordnung(1, anzeige)]
+        elif enthaelt(englisch, PRAXIS_STUFE):
+            einordnungen = [einordnung(2, anzeige)]
+        else:
+            einordnungen = [einordnung(3, anzeige)]
+
+        ergebnis[eintrag['id']] = {
+            'region': eintrag['region'],
+            'einordnungen': einordnungen,
+        }
+
+    with open(ZIEL, 'w', encoding='utf-8') as f:
+        json.dump(ergebnis, f, ensure_ascii=False, indent=0)
+
+    # --- Kurzbericht, damit Fehleinordnungen sofort auffallen ---------------
+    print(f'{len(ergebnis)} Knochen eingeteilt, {len(uebersprungen)} übersprungen '
+          f'({", ".join(uebersprungen) if uebersprungen else "keine"})\n')
+
+    for stufe, titel in [(1, 'Basis'), (2, 'Praxis'), (3, 'Extra')]:
+        antworten = sorted({
+            e['name'] + (f' ({e["latein"]})' if e.get('latein') else '')
+            for w in ergebnis.values() for e in w['einordnungen'] if e['stufe'] == stufe
+        })
+        print(f'--- {titel}: {len(antworten)} verschiedene Antworten')
+        print('    ' + '; '.join(antworten[:24]))
+        if len(antworten) > 24:
+            print(f'    … und {len(antworten) - 24} weitere')
+        print()
+
+    ohne_latein = sorted({
+        e['name'] for w in ergebnis.values() for e in w['einordnungen'] if not e.get('latein')
+    })
+    print(f'--- ohne medizinischen Namen: {len(ohne_latein)}')
+    if ohne_latein:
+        print('    ' + '; '.join(ohne_latein))
+
+
+if __name__ == '__main__':
+    main()

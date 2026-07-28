@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Physico – Vorbereitung</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/farben.css?v=2">
+  <link rel="stylesheet" href="css/start.css?v=13">
+</head>
+<body class="vorbereitung-seite">
+
+<!-- Dekorative Hintergrundgrafik – siehe index.html für die Erklärung -->
+<svg class="hintergrund-deko" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="deko-blob-a" x1="0" y1="0" x2="1" y2="1">
+      <stop class="deko-stop-olive" offset="0%" />
+      <stop class="deko-stop-olive" offset="55%" />
+      <stop class="deko-stop-leer" offset="100%" />
+    </linearGradient>
+    <linearGradient id="deko-blob-b" x1="1" y1="0" x2="0" y2="1">
+      <stop class="deko-stop-graugruen" offset="0%" />
+      <stop class="deko-stop-graugruen" offset="55%" />
+      <stop class="deko-stop-leer" offset="100%" />
+    </linearGradient>
+    <linearGradient id="deko-blob-c" x1="0" y1="1" x2="1" y2="0">
+      <stop class="deko-stop-olive-hell" offset="0%" />
+      <stop class="deko-stop-olive-hell" offset="55%" />
+      <stop class="deko-stop-leer" offset="100%" />
+    </linearGradient>
+    <linearGradient id="deko-linie" x1="0" y1="0" x2="1" y2="0">
+      <stop class="deko-stop-leer" offset="0%" />
+      <stop class="deko-stop-linie-mitte" offset="50%" />
+      <stop class="deko-stop-leer" offset="100%" />
+    </linearGradient>
+    <filter id="deko-weich" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="38" />
+    </filter>
+  </defs>
+
+  <g filter="url(#deko-weich)">
+    <path fill="url(#deko-blob-a)" d="M1010,90 C1080,-30 1260,-60 1400,20
+      C1540,100 1580,260 1490,360 C1400,460 1220,470 1100,400
+      C980,330 940,210 1010,90 Z" />
+    <path fill="url(#deko-blob-b)" d="M-60,760 C40,650 260,690 420,800
+      C610,930 860,900 980,1010 C760,1050 440,1040 240,960
+      C70,890 -140,860 -60,760 Z" />
+    <path fill="url(#deko-blob-c)" d="M1250,760 C1330,700 1450,720 1500,810
+      C1550,900 1500,990 1400,1000 C1300,1010 1200,950 1190,860
+      C1185,820 1210,785 1250,760 Z" />
+  </g>
+
+  <path fill="none" stroke="url(#deko-linie)" stroke-width="2.5" stroke-linecap="round"
+    d="M-40,340 C260,260 420,420 700,360 C980,300 1140,420 1660,300" />
+  <path fill="none" stroke="url(#deko-linie)" stroke-width="1.75" stroke-linecap="round"
+    d="M-40,880 C300,760 560,900 860,800 C1160,700 1360,820 1660,760" />
+
+  <circle class="deko-knoten" cx="700" cy="360" r="4" />
+  <circle class="deko-knoten" cx="1140" cy="420" r="3" />
+  <circle class="deko-knoten" cx="860" cy="800" r="4" />
+  <circle class="deko-knoten" cx="1360" cy="820" r="3" />
+</svg>
+
+<main class="start">
+
+  <a class="zurueck" href="index.html">← Startseite</a>
+
+  <header class="kopf">
+    <h1>Vorbereitung</h1>
+    <p class="untertitel">gezielt nach bereich üben</p>
+  </header>
+
+  <nav class="auswahl">
+
+    <!-- Die drei Karten stehen auf dieser Seite untereinander (siehe
+         body.vorbereitung-seite .auswahl in start.css). Stufe und Modus sitzen
+         als zwei Klappmenüs rechts auf derselben Kartenfläche. Jeder Modus
+         lässt sich mit jeder Stufe kombinieren. -->
+    <div class="wahl vorbereitung-eintrag" data-prep="bone">
+      <div class="vorbereitung-info">
+        <span class="nummer">1</span>
+        <a class="wahl-titel prep-link" href="bone-prep.html?stufe=1&amp;modus=erkennen">Bone-Prep</a>
+        <span class="wahl-text">Knochen erkennen und benennen</span>
+      </div>
+
+      <div class="vorbereitung-einstellungen">
+        <div class="klapp" data-feld="stufe">
+          <span class="klapp-label" id="stufe-label-bone">Stufe</span>
+          <button type="button" class="klapp-knopf" data-wert="1" aria-haspopup="listbox" aria-expanded="false"
+            aria-labelledby="stufe-label-bone" aria-label="Stufe für Bone-Prep, aktuell Basis">
+            <span class="stufe-punkt"></span>
+            <span class="klapp-knopf-text">Basis</span>
+            <span class="klapp-knopf-pfeil" aria-hidden="true">▾</span>
+          </button>
+          <ul class="klapp-menu" role="listbox" aria-label="Stufe für Bone-Prep" hidden>
+            <li class="klapp-option" role="option" data-wert="1" aria-selected="true" tabindex="-1">
+              <span class="stufe-punkt"></span><span>Basis</span><span class="klapp-option-haken">✓</span>
+            </li>
+            <li class="klapp-option" role="option" data-wert="2" aria-selected="false" tabindex="-1">
+              <span class="stufe-punkt"></span><span>Praxis</span><span class="klapp-option-haken">✓</span>
+            </li>
+            <li class="klapp-option" role="option" data-wert="3" aria-selected="false" tabindex="-1">
+              <span class="stufe-punkt"></span><span>Extra</span><span class="klapp-option-haken">✓</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="klapp" data-feld="modus">
+          <span class="klapp-label" id="modus-label-bone">Modus</span>
+          <button type="button" class="klapp-knopf" data-wert="erkennen" aria-haspopup="listbox" aria-expanded="false"
+            aria-labelledby="modus-label-bone" aria-label="Modus für Bone-Prep, aktuell Erkennen">
+            <span class="klapp-knopf-text">Erkennen</span>
+            <span class="klapp-knopf-pfeil" aria-hidden="true">▾</span>
+          </button>
+          <ul class="klapp-menu" role="listbox" aria-label="Modus für Bone-Prep" hidden>
+            <li class="klapp-option" role="option" data-wert="erkennen" aria-selected="true" tabindex="-1">
+              <span>Erkennen</span><span class="klapp-option-haken">✓</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Muscle-Prep und Joint-Prep bekommen ihre Stufen- und Modus-Menüs,
+         sobald ihre Aufgaben feststehen. -->
+    <div class="wahl bald vorbereitung-eintrag" role="button" aria-disabled="true" tabindex="-1">
+      <div class="vorbereitung-info">
+        <span class="nummer">2</span>
+        <span class="wahl-titel">Muscle-Prep</span>
+        <span class="wahl-text">wird später eingerichtet</span>
+        <span class="marke">folgt</span>
+      </div>
+    </div>
+
+    <div class="wahl bald vorbereitung-eintrag" role="button" aria-disabled="true" tabindex="-1">
+      <div class="vorbereitung-info">
+        <span class="nummer">3</span>
+        <span class="wahl-titel">Joint-Prep</span>
+        <span class="wahl-text">wird später eingerichtet</span>
+        <span class="marke">folgt</span>
+      </div>
+    </div>
+
+  </nav>
+
+</main>
+
+<script>
+  // Klappmenüs für Stufe und Modus – wie der Wechsel zwischen Claude-Modellen:
+  // Der Knopf zeigt die aktuelle Auswahl, ein Klick öffnet die Liste darunter.
+  // Die Auswahl wird gemerkt und an die Übungsseite weitergereicht.
+
+  const SPEICHER = 'physico:vorbereitung';
+
+  // Gemerkte Auswahl laden (falls vorhanden)
+  let gemerkt = {};
+  try {
+    gemerkt = JSON.parse(localStorage.getItem(SPEICHER) ?? '{}');
+  } catch {
+    gemerkt = {};   // beschädigter Eintrag ist kein Grund, die Seite lahmzulegen
+  }
+
+  const alleFelder = [];
+
+  document.querySelectorAll('.vorbereitung-eintrag[data-prep]').forEach((karte) => {
+    const prep = karte.dataset.prep;
+    const link = karte.querySelector('.prep-link');
+    const felder = {};
+
+    /** Baut die Adresse der Übungsseite aus den aktuell gewählten Werten. */
+    const linkAktualisieren = () => {
+      if (!link) return;
+      const ziel = new URL(link.getAttribute('href'), location.href);
+      Object.entries(felder).forEach(([name, wert]) => ziel.searchParams.set(name, wert));
+      link.setAttribute('href', ziel.pathname.split('/').pop() + ziel.search);
+    };
+
+    karte.querySelectorAll('.klapp').forEach((feld) => {
+      const name = feld.dataset.feld;                    // "stufe" oder "modus"
+      const knopf = feld.querySelector('.klapp-knopf');
+      const knopfText = knopf.querySelector('.klapp-knopf-text');
+      const menu = feld.querySelector('.klapp-menu');
+      const optionen = [...menu.querySelectorAll('.klapp-option')];
+      const bezeichnung = knopf.getAttribute('aria-label').split(',')[0];
+
+      const schliessen = () => {
+        menu.hidden = true;
+        feld.classList.remove('offen');
+        knopf.setAttribute('aria-expanded', 'false');
+      };
+
+      const oeffnen = () => {
+        alleFelder.forEach((f) => f.feld !== feld && f.schliessen());   // nur eines gleichzeitig
+        menu.hidden = false;
+        feld.classList.add('offen');
+        knopf.setAttribute('aria-expanded', 'true');
+        optionen.find((o) => o.getAttribute('aria-selected') === 'true')?.focus();
+      };
+
+      const setzeWert = (wert, fokusZurueck = false) => {
+        wert = String(wert);
+        const option = optionen.find((o) => o.dataset.wert === wert);
+        if (!option) return;                              // unbekannter Wert: Auswahl unverändert
+
+        knopf.dataset.wert = wert;
+        knopfText.textContent = option.querySelector('span:not([class])').textContent;
+        knopf.setAttribute('aria-label', `${bezeichnung}, aktuell ${knopfText.textContent}`);
+        optionen.forEach((o) => o.setAttribute('aria-selected', String(o === option)));
+
+        felder[name] = wert;
+        linkAktualisieren();
+        try {
+          localStorage.setItem(SPEICHER, JSON.stringify({ ...gemerkt, [`${prep}:${name}`]: wert }));
+          gemerkt[`${prep}:${name}`] = wert;
+        } catch {
+          // ohne Speicher läuft die Seite trotzdem, nur ohne Gedächtnis
+        }
+
+        schliessen();
+        if (fokusZurueck) knopf.focus();
+      };
+
+      knopf.addEventListener('click', () => {
+        if (menu.hidden) oeffnen(); else schliessen();
+      });
+
+      optionen.forEach((option) => {
+        option.addEventListener('click', () => setzeWert(option.dataset.wert, true));
+        option.addEventListener('keydown', (e) => {
+          const index = optionen.indexOf(option);
+          if (e.key === 'ArrowDown') { optionen[(index + 1) % optionen.length].focus(); e.preventDefault(); }
+          else if (e.key === 'ArrowUp') { optionen[(index - 1 + optionen.length) % optionen.length].focus(); e.preventDefault(); }
+          else if (e.key === 'Enter' || e.key === ' ') { setzeWert(option.dataset.wert, true); e.preventDefault(); }
+          else if (e.key === 'Escape') { schliessen(); knopf.focus(); }
+          else if (e.key === 'Tab') { schliessen(); }
+        });
+      });
+
+      alleFelder.push({ feld, schliessen });
+      setzeWert(gemerkt[`${prep}:${name}`] ?? knopf.dataset.wert);   // gemerkte Auswahl anwenden
+    });
+  });
+
+  // Klick außerhalb eines Menüs schließt es
+  document.addEventListener('click', (e) => {
+    alleFelder.forEach(({ feld, schliessen }) => {
+      if (!feld.contains(e.target)) schliessen();
+    });
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') alleFelder.forEach(({ schliessen }) => schliessen());
+  });
+</script>
+
+</body>
+</html>
