@@ -2,3 +2,4 @@ modelle/
 modelle_grob/
 quelldaten/
 .DS_Store
+.venv/
