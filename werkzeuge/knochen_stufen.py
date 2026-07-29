@@ -9,9 +9,10 @@ Erzeugt daten/knochen_stufen.json für Bone-Prep:
     ] } }
 
 Pro Knochen steht eine **Liste** von Einordnungen, meist mit genau einem Eintrag.
-Wirbel und Rippen bekommen zwei: generisch in Praxis ("Rippe"), mit genauer Zahl
-in Extra ("6. Rippe") – derselbe physische Knochen taucht so in zwei Stufen mit
-zwei verschiedenen Namen auf. "name" ist immer ohne Seitenangabe – links und
+Durchnummerierte und gleichartig aufgebaute Gruppen bekommen zwei: generisch in
+Praxis ("Rippe", "Grundglied"), genau in Extra ("6. Rippe", "Grundglied · Daumen")
+– derselbe physische Knochen taucht so in zwei Stufen mit zwei verschiedenen
+Namen auf. "name" ist immer ohne Seitenangabe – links und
 rechts sind im Quiz dieselbe Antwort, mehrere Kennungen tragen deshalb denselben
 Namen. "latein" ist der medizinische Name aus daten/namen_de.json; er fehlt, wo
 das Wörterbuch in werkzeuge/namen.py keinen hinterlegt hat (dann zeigt das Quiz
@@ -20,12 +21,14 @@ nur den deutschen Namen – lieber nichts als etwas Erfundenes).
 Die Stufen:
   1 Basis  – die großen Leitknochen, die immer sitzen müssen
   2 Praxis – alltagsrelevant und klar unterscheidbar: Wirbeltyp, Rippe,
-             Fersenbein, Sprungbein
-  3 Extra  – die genaue Nummer von Wirbeln/Rippen, Hand- und Fußwurzelknochen
-             (die kleinen, ähnlich benannten – „Keilbein" ×3, „Vieleckbein" ×2 …
-             sind selbst im Lehrbuch die am schwersten zu unterscheidende
-             Gruppe, gehören deshalb nicht zu „alltagsrelevant"), einzelne
-             Schädelknochen, Finger-/Zehenglieder, Mittelhand/Mittelfuß,
+             Fersenbein, Sprungbein, Mittelhand-/Mittelfußknochen und die
+             Gliedtypen (Grund-, Mittel-, Endglied) – jeweils nur die Gruppe,
+             ohne genaue Nummer bzw. ohne Finger/Zehe
+  3 Extra  – die genaue Nummer bzw. der genaue Finger/die genaue Zehe dieser
+             Gruppen, dazu die Hand- und Fußwurzelknochen (die kleinen, ähnlich
+             benannten – „Keilbein" ×3, „Vieleckbein" ×2 … sind selbst im
+             Lehrbuch die am schwersten zu unterscheidende Gruppe, gehören
+             deshalb nicht zu „alltagsrelevant"), einzelne Schädelknochen,
              Rippenknorpel, Bandscheiben
 
 Willst du etwas verschieben, änderst du die Listen unten und lässt das Skript
@@ -68,10 +71,20 @@ PRAXIS_STUFE = [
     'calcaneus', 'talus',
 ]
 
-# Wirbel und Rippen: nicht einfach "Praxis" – sie bekommen zwei Einordnungen
-# (siehe ohne_nummer() und die Hauptschleife unten).
+# Gruppen, die nicht einfach in eine Stufe fallen, sondern zwei Einordnungen
+# bekommen: die Gruppe generisch in Praxis, das einzelne Stück genau in Extra.
+# Weil die deutschen Namen unterschiedlich aufgebaut sind, bringt jede Liste
+# ihre eigene Kürzung mit (siehe ZWEI_STUFEN_GRUPPEN unter den Funktionen).
+
+# Durchnummeriert: "6. Rippe", "3. Mittelhandknochen" -> ohne_nummer()
 NUMERIERTE_GRUPPEN = [
     'cervical vertebra', 'thoracic vertebra', 'lumbar vertebra', 'rib',
+    'metacarpal bone', 'metatarsal bone',
+]
+
+# Gliedtyp und Finger/Zehe: "Grundglied · Daumen" -> ohne_finger_zehe()
+GLIED_GRUPPEN = [
+    'proximal phalanx', 'middle phalanx', 'distal phalanx',
 ]
 
 # --- Stufe 3: Extra ---------------------------------------------------------
@@ -120,6 +133,19 @@ def ohne_nummer(name):
     return re.sub(r'^\d+\.\s+', '', name)
 
 
+def ohne_finger_zehe(name):
+    """'Grundglied · Daumen' -> 'Grundglied' – die generische Antwort für Praxis."""
+    return name.split(' · ')[0].strip()
+
+
+# Welche Gruppe wird womit gekürzt. Der Reihe nach geprüft; die Listen
+# überschneiden sich nicht, die Reihenfolge ist also unkritisch.
+ZWEI_STUFEN_GRUPPEN = [
+    (NUMERIERTE_GRUPPEN, ohne_nummer),
+    (GLIED_GRUPPEN, ohne_finger_zehe),
+]
+
+
 def main():
     with open(VERZEICHNIS, encoding='utf-8') as f:
         verzeichnis = json.load(f)
@@ -153,11 +179,18 @@ def main():
                 wert['latein'] = latein
             return wert
 
+        # Gehört der Knochen zu einer Gruppe mit zwei Einordnungen? Dann steht
+        # hier die passende Kürzung, sonst None.
+        kuerzen = next(
+            (k for begriffe, k in ZWEI_STUFEN_GRUPPEN if enthaelt(englisch, begriffe)),
+            None,
+        )
+
         if enthaelt(englisch, EXTRA_VORRANG):
             einordnungen = [einordnung(3, anzeige)]
-        elif enthaelt(englisch, NUMERIERTE_GRUPPEN):
-            # Praxis fragt nur den Typ ab, Extra die genaue Nummer.
-            einordnungen = [einordnung(2, ohne_nummer(anzeige)), einordnung(3, anzeige)]
+        elif kuerzen:
+            # Praxis fragt nur die Gruppe ab, Extra das genaue Stück.
+            einordnungen = [einordnung(2, kuerzen(anzeige)), einordnung(3, anzeige)]
         elif enthaelt(englisch, BASIS_STUFE):
             einordnungen = [einordnung(1, anzeige)]
         elif enthaelt(englisch, PRAXIS_STUFE):

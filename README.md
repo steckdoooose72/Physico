@@ -81,8 +81,8 @@ die Lage im Körper gehört mit zum Erkennen.
 | Stufe | Antworten | Was drankommt |
 |---|---|---|
 | Basis | 15 | die großen Leitknochen plus Unterkiefer/Atlas/Axis |
-| Praxis | 6 | Wirbeltyp und Rippe **generisch** („Rippe", nicht „6. Rippe"), Fersenbein, Sprungbein |
-| Extra | 132 | dieselben Wirbel/Rippen jetzt mit **genauer Nummer**, Hand- und Fußwurzelknochen, einzelne Schädelknochen, Finger-/Zehenglieder, Rippenknorpel, Bandscheiben |
+| Praxis | 11 | nur die **Gruppe**, ohne genaue Nummer: „Rippe" statt „6. Rippe", „Mittelhandknochen" statt „3. Mittelhandknochen", „Grundglied" statt „Grundglied · Daumen"; dazu Wirbeltypen, Fersenbein, Sprungbein |
+| Extra | 132 | dieselben Gruppen jetzt **genau**: „6. Rippe", „3. Mittelhandknochen", „Grundglied · Daumen"; dazu Hand- und Fußwurzelknochen, einzelne Schädelknochen, Rippenknorpel, Bandscheiben |
 
 Die Handwurzel- und Fußwurzelknochen (Kahnbein, Mondbein, die drei Keilbeine …) stehen
 bewusst in Extra statt Praxis: kleine, sehr ähnlich benannte Knochen, die selbst im

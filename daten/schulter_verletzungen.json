@@ -1,0 +1,59 @@
+[
+  {
+    "schwierigkeit": "klar",
+    "situation": "Direkter Sturz auf die Schulter, z. B. beim Fahrradsturz.",
+    "richtig": ["AC-Gelenk"],
+    "ablenker": ["Glenohumeralgelenk", "Clavicula", "Humeruskopf"]
+  },
+  {
+    "schwierigkeit": "klar",
+    "situation": "Sturz auf den nach hinten ausgestreckten, abgespreizten und nach außen gedrehten Arm – z. B. beim Abfangen eines Sturzes oder Handballwurf.",
+    "richtig": ["Glenohumeralgelenk"],
+    "ablenker": ["AC-Gelenk", "Clavicula", "Rotatorenmanschette"]
+  },
+  {
+    "schwierigkeit": "klar",
+    "situation": "Sturz auf den ausgestreckten Arm, ohne dass die Schulter selbst den Boden berührt.",
+    "richtig": ["Clavicula"],
+    "ablenker": ["Humeruskopf", "AC-Gelenk", "Glenohumeralgelenk"]
+  },
+  {
+    "schwierigkeit": "klar",
+    "situation": "Wiederholte Überkopfbewegungen über Monate, z. B. beim Schwimmtraining, ohne einzelnes Sturzereignis.",
+    "richtig": ["Rotatorenmanschette"],
+    "ablenker": ["AC-Gelenk", "Clavicula", "Glenohumeralgelenk"]
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Sturz auf den ausgestreckten Arm – die Person konnte sich dabei noch kurz mit dem Arm abstützen, bevor sie fiel.",
+    "richtig": ["Rotatorenmanschette"],
+    "ablenker": ["Glenohumeralgelenk", "AC-Gelenk"]
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Sturz auf den nach oben über den Kopf gestreckten Arm.",
+    "richtig": ["Glenohumeralgelenk"],
+    "ablenker": ["Clavicula", "AC-Gelenk"],
+    "hinweis": "seltene untere Luxation (Luxatio erecta)"
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Ein 22-jähriger Handballer erleidet eine vordere Luxation. Welche Begleitstruktur ist am ehesten mitverletzt?",
+    "richtig": ["Labrum glenoidale"],
+    "ablenker": ["Rotatorenmanschette", "AC-Gelenk"],
+    "hinweis": "Labrum existiert nicht als 3D-Struktur – diese Frage rein textbasiert auswerten, ohne Hervorhebung"
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Eine 68-Jährige stürzt beim Stolpern und erleidet eine vordere Luxation. Welche Struktur ist zusätzlich am ehesten betroffen?",
+    "richtig": ["Rotatorenmanschette"],
+    "ablenker": ["Labrum glenoidale", "AC-Gelenk"]
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Epileptischer Anfall, danach Schulterschmerz und Bewegungseinschränkung.",
+    "richtig": ["Glenohumeralgelenk"],
+    "ablenker": ["AC-Gelenk"],
+    "hinweis": "seltene hintere Luxation"
+  }
+]

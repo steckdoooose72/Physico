@@ -115,12 +115,18 @@ die zugehörige alte `.glb`-Datei danach von Hand löschen.
 `daten/knochen_stufen.json` – die Einteilung der Knochen in die drei Übungsstufen von
 Bone-Prep. **Pro Knochen steht dort eine Liste von Einordnungen**, nicht ein einzelnes
 `stufe`-Feld: `{ FMA-Kennung: { region, einordnungen: [{ stufe, name, latein }, …] } }`,
-Name **ohne** Seitenangabe. Meist genau ein Eintrag – **Wirbel und Rippen bekommen zwei**:
-generisch bei Praxis („Rippe"), mit genauer Nummer bei Extra („6. Rippe"). Derselbe
-physische Knochen taucht so unter zwei verschiedenen Namen in zwei Stufen auf; die
-Antwort-Gruppierung in `js/bone-prep.js` (`ladeKnochen()`) iteriert entsprechend über
-`einordnungen`, nicht über ein einzelnes Feld.
-Stand heute 240 Knochen: **Basis 15 / Praxis 6 / Extra 132 verschiedene Antworten**.
+Name **ohne** Seitenangabe. Meist genau ein Eintrag – **gleichartig aufgebaute Gruppen
+bekommen zwei**: generisch bei Praxis, genau bei Extra. Derselbe physische Knochen taucht so
+unter zwei verschiedenen Namen in zwei Stufen auf; die Antwort-Gruppierung in
+`js/bone-prep.js` (`ladeKnochen()`) iteriert entsprechend über `einordnungen`, nicht über ein
+einzelnes Feld. Welche Gruppe wie gekürzt wird, steht in `ZWEI_STUFEN_GRUPPEN` – jede
+Gruppenliste bringt ihre eigene Kürzungsfunktion mit, weil die deutschen Namen verschieden
+aufgebaut sind: `NUMERIERTE_GRUPPEN` (Wirbel, Rippen, Mittelhand-/Mittelfußknochen) →
+`ohne_nummer()` schneidet „6. " ab, `GLIED_GRUPPEN` (Finger-/Zehenglieder) →
+`ohne_finger_zehe()` schneidet alles ab „ · " ab („Grundglied · Daumen" → „Grundglied").
+`EXTRA_VORRANG` wird **vor** beiden geprüft, sonst würden Bandscheiben („Bandscheibe · 3.
+Lendenwirbel") fälschlich gekürzt und in Praxis auftauchen.
+Stand heute 240 Knochen: **Basis 15 / Praxis 11 / Extra 132 verschiedene Antworten**.
 Die Zuordnung steckt in den Stichwortlisten oben in der Datei; nach jedem Lauf von
 `namen.py` erneut laufen lassen, sonst passen deutsche Namen und Stufen nicht zusammen.
 Bänder und Membranen sind ausgeschlossen (sind keine Knochen), Bandscheiben und

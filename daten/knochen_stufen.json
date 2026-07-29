@@ -31,6 +31,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
+{
 "stufe": 3,
 "name": "Endglied · Großzehe",
 "latein": "Phalanx distalis"
@@ -40,6 +45,11 @@
 "FMA32657": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
 {
 "stufe": 3,
 "name": "Endglied · 4. Zehe",
@@ -51,6 +61,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
+{
 "stufe": 3,
 "name": "Endglied · Zeigefinger",
 "latein": "Phalanx distalis"
@@ -60,6 +75,11 @@
 "FMA23959": {
 "region": "arm",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
 {
 "stufe": 3,
 "name": "Endglied · kleiner Finger",
@@ -71,6 +91,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
+{
 "stufe": 3,
 "name": "Endglied · Kleinzehe",
 "latein": "Phalanx distalis"
@@ -80,6 +105,11 @@
 "FMA23955": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
 {
 "stufe": 3,
 "name": "Endglied · Mittelfinger",
@@ -91,6 +121,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
+{
 "stufe": 3,
 "name": "Endglied · Ringfinger",
 "latein": "Phalanx distalis"
@@ -100,6 +135,11 @@
 "FMA32653": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
 {
 "stufe": 3,
 "name": "Endglied · 2. Zehe",
@@ -111,6 +151,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
+{
 "stufe": 3,
 "name": "Endglied · 3. Zehe",
 "latein": "Phalanx distalis"
@@ -120,6 +165,11 @@
 "FMA23951": {
 "region": "arm",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
 {
 "stufe": 3,
 "name": "Endglied · Daumen",
@@ -131,6 +181,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
+{
 "stufe": 3,
 "name": "Endglied · Großzehe",
 "latein": "Phalanx distalis"
@@ -140,6 +195,11 @@
 "FMA32656": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
 {
 "stufe": 3,
 "name": "Endglied · 4. Zehe",
@@ -151,6 +211,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
+{
 "stufe": 3,
 "name": "Endglied · Zeigefinger",
 "latein": "Phalanx distalis"
@@ -160,6 +225,11 @@
 "FMA24463": {
 "region": "arm",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
 {
 "stufe": 3,
 "name": "Endglied · kleiner Finger",
@@ -171,6 +241,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
+{
 "stufe": 3,
 "name": "Endglied · Kleinzehe",
 "latein": "Phalanx distalis"
@@ -180,6 +255,11 @@
 "FMA24461": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
 {
 "stufe": 3,
 "name": "Endglied · Mittelfinger",
@@ -191,6 +271,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
+{
 "stufe": 3,
 "name": "Endglied · Ringfinger",
 "latein": "Phalanx distalis"
@@ -200,6 +285,11 @@
 "FMA32652": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
 {
 "stufe": 3,
 "name": "Endglied · 2. Zehe",
@@ -211,6 +301,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
+{
 "stufe": 3,
 "name": "Endglied · 3. Zehe",
 "latein": "Phalanx distalis"
@@ -220,6 +315,11 @@
 "FMA24459": {
 "region": "arm",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Endglied",
+"latein": "Phalanx distalis"
+},
 {
 "stufe": 3,
 "name": "Endglied · Daumen",
@@ -741,6 +841,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelhandknochen",
+"latein": "Os metacarpi"
+},
+{
 "stufe": 3,
 "name": "5. Mittelhandknochen",
 "latein": "Os metacarpi"
@@ -750,6 +855,11 @@
 "FMA24516": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelfußknochen",
+"latein": "Os metatarsi"
+},
 {
 "stufe": 3,
 "name": "5. Mittelfußknochen",
@@ -786,6 +896,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelhandknochen",
+"latein": "Os metacarpi"
+},
+{
 "stufe": 3,
 "name": "1. Mittelhandknochen",
 "latein": "Os metacarpi"
@@ -795,6 +910,11 @@
 "FMA24508": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelfußknochen",
+"latein": "Os metatarsi"
+},
 {
 "stufe": 3,
 "name": "1. Mittelfußknochen",
@@ -831,6 +951,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelhandknochen",
+"latein": "Os metacarpi"
+},
+{
 "stufe": 3,
 "name": "4. Mittelhandknochen",
 "latein": "Os metacarpi"
@@ -840,6 +965,11 @@
 "FMA24514": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelfußknochen",
+"latein": "Os metatarsi"
+},
 {
 "stufe": 3,
 "name": "4. Mittelfußknochen",
@@ -1071,6 +1201,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelhandknochen",
+"latein": "Os metacarpi"
+},
+{
 "stufe": 3,
 "name": "2. Mittelhandknochen",
 "latein": "Os metacarpi"
@@ -1080,6 +1215,11 @@
 "FMA24510": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelfußknochen",
+"latein": "Os metatarsi"
+},
 {
 "stufe": 3,
 "name": "2. Mittelfußknochen",
@@ -1201,6 +1341,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelhandknochen",
+"latein": "Os metacarpi"
+},
+{
 "stufe": 3,
 "name": "3. Mittelhandknochen",
 "latein": "Os metacarpi"
@@ -1210,6 +1355,11 @@
 "FMA24512": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelfußknochen",
+"latein": "Os metatarsi"
+},
 {
 "stufe": 3,
 "name": "3. Mittelfußknochen",
@@ -1331,6 +1481,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
+{
 "stufe": 3,
 "name": "Mittelglied · 4. Zehe",
 "latein": "Phalanx media"
@@ -1340,6 +1495,11 @@
 "FMA23938": {
 "region": "arm",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
 {
 "stufe": 3,
 "name": "Mittelglied · Zeigefinger",
@@ -1351,6 +1511,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
+{
 "stufe": 3,
 "name": "Mittelglied · kleiner Finger",
 "latein": "Phalanx media"
@@ -1360,6 +1525,11 @@
 "FMA230988": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
 {
 "stufe": 3,
 "name": "Mittelglied · Kleinzehe",
@@ -1371,6 +1541,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
+{
 "stufe": 3,
 "name": "Mittelglied · Mittelfinger",
 "latein": "Phalanx media"
@@ -1380,6 +1555,11 @@
 "FMA23942": {
 "region": "arm",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
 {
 "stufe": 3,
 "name": "Mittelglied · Ringfinger",
@@ -1391,6 +1571,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
+{
 "stufe": 3,
 "name": "Mittelglied · 2. Zehe",
 "latein": "Phalanx media"
@@ -1400,6 +1585,11 @@
 "FMA32645": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
 {
 "stufe": 3,
 "name": "Mittelglied · 3. Zehe",
@@ -1411,6 +1601,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
+{
 "stufe": 3,
 "name": "Mittelglied · 4. Zehe",
 "latein": "Phalanx media"
@@ -1420,6 +1615,11 @@
 "FMA24455": {
 "region": "arm",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
 {
 "stufe": 3,
 "name": "Mittelglied · Zeigefinger",
@@ -1431,6 +1631,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
+{
 "stufe": 3,
 "name": "Mittelglied · kleiner Finger",
 "latein": "Phalanx media"
@@ -1440,6 +1645,11 @@
 "FMA230986": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
 {
 "stufe": 3,
 "name": "Mittelglied · Kleinzehe",
@@ -1451,6 +1661,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
+{
 "stufe": 3,
 "name": "Mittelglied · Mittelfinger",
 "latein": "Phalanx media"
@@ -1460,6 +1675,11 @@
 "FMA24457": {
 "region": "arm",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
 {
 "stufe": 3,
 "name": "Mittelglied · Ringfinger",
@@ -1471,6 +1691,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
+{
 "stufe": 3,
 "name": "Mittelglied · 2. Zehe",
 "latein": "Phalanx media"
@@ -1480,6 +1705,11 @@
 "FMA32644": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelglied",
+"latein": "Phalanx media"
+},
 {
 "stufe": 3,
 "name": "Mittelglied · 3. Zehe",
@@ -1536,6 +1766,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
+{
 "stufe": 3,
 "name": "Grundglied · Großzehe",
 "latein": "Phalanx proximalis"
@@ -1545,6 +1780,11 @@
 "FMA32639": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
 {
 "stufe": 3,
 "name": "Grundglied · 4. Zehe",
@@ -1556,6 +1796,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
+{
 "stufe": 3,
 "name": "Grundglied · Zeigefinger",
 "latein": "Phalanx proximalis"
@@ -1565,6 +1810,11 @@
 "FMA66791": {
 "region": "arm",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
 {
 "stufe": 3,
 "name": "Grundglied · kleiner Finger",
@@ -1576,6 +1826,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
+{
 "stufe": 3,
 "name": "Grundglied · Kleinzehe",
 "latein": "Phalanx proximalis"
@@ -1585,6 +1840,11 @@
 "FMA71908": {
 "region": "arm",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
 {
 "stufe": 3,
 "name": "Grundglied · Mittelfinger",
@@ -1596,6 +1856,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
+{
 "stufe": 3,
 "name": "Grundglied · Ringfinger",
 "latein": "Phalanx proximalis"
@@ -1605,6 +1870,11 @@
 "FMA32635": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
 {
 "stufe": 3,
 "name": "Grundglied · 2. Zehe",
@@ -1616,6 +1886,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
+{
 "stufe": 3,
 "name": "Grundglied · 3. Zehe",
 "latein": "Phalanx proximalis"
@@ -1625,6 +1900,11 @@
 "FMA65470": {
 "region": "arm",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
 {
 "stufe": 3,
 "name": "Grundglied · Daumen",
@@ -1636,6 +1916,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
+{
 "stufe": 3,
 "name": "Grundglied · Großzehe",
 "latein": "Phalanx proximalis"
@@ -1645,6 +1930,11 @@
 "FMA32638": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
 {
 "stufe": 3,
 "name": "Grundglied · 4. Zehe",
@@ -1656,6 +1946,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
+{
 "stufe": 3,
 "name": "Grundglied · Zeigefinger",
 "latein": "Phalanx proximalis"
@@ -1665,6 +1960,11 @@
 "FMA24454": {
 "region": "arm",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
 {
 "stufe": 3,
 "name": "Grundglied · kleiner Finger",
@@ -1676,6 +1976,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
+{
 "stufe": 3,
 "name": "Grundglied · Kleinzehe",
 "latein": "Phalanx proximalis"
@@ -1685,6 +1990,11 @@
 "FMA24452": {
 "region": "arm",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
 {
 "stufe": 3,
 "name": "Grundglied · Mittelfinger",
@@ -1696,6 +2006,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
+{
 "stufe": 3,
 "name": "Grundglied · Ringfinger",
 "latein": "Phalanx proximalis"
@@ -1705,6 +2020,11 @@
 "FMA32634": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
 {
 "stufe": 3,
 "name": "Grundglied · 2. Zehe",
@@ -1716,6 +2036,11 @@
 "region": "bein",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
+{
 "stufe": 3,
 "name": "Grundglied · 3. Zehe",
 "latein": "Phalanx proximalis"
@@ -1725,6 +2050,11 @@
 "FMA24450": {
 "region": "arm",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Grundglied",
+"latein": "Phalanx proximalis"
+},
 {
 "stufe": 3,
 "name": "Grundglied · Daumen",
@@ -1836,6 +2166,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelhandknochen",
+"latein": "Os metacarpi"
+},
+{
 "stufe": 3,
 "name": "5. Mittelhandknochen",
 "latein": "Os metacarpi"
@@ -1845,6 +2180,11 @@
 "FMA24515": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelfußknochen",
+"latein": "Os metatarsi"
+},
 {
 "stufe": 3,
 "name": "5. Mittelfußknochen",
@@ -1881,6 +2221,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelhandknochen",
+"latein": "Os metacarpi"
+},
+{
 "stufe": 3,
 "name": "1. Mittelhandknochen",
 "latein": "Os metacarpi"
@@ -1890,6 +2235,11 @@
 "FMA24507": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelfußknochen",
+"latein": "Os metatarsi"
+},
 {
 "stufe": 3,
 "name": "1. Mittelfußknochen",
@@ -1926,6 +2276,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelhandknochen",
+"latein": "Os metacarpi"
+},
+{
 "stufe": 3,
 "name": "4. Mittelhandknochen",
 "latein": "Os metacarpi"
@@ -1935,6 +2290,11 @@
 "FMA24513": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelfußknochen",
+"latein": "Os metatarsi"
+},
 {
 "stufe": 3,
 "name": "4. Mittelfußknochen",
@@ -2166,6 +2526,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelhandknochen",
+"latein": "Os metacarpi"
+},
+{
 "stufe": 3,
 "name": "2. Mittelhandknochen",
 "latein": "Os metacarpi"
@@ -2175,6 +2540,11 @@
 "FMA24509": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelfußknochen",
+"latein": "Os metatarsi"
+},
 {
 "stufe": 3,
 "name": "2. Mittelfußknochen",
@@ -2296,6 +2666,11 @@
 "region": "arm",
 "einordnungen": [
 {
+"stufe": 2,
+"name": "Mittelhandknochen",
+"latein": "Os metacarpi"
+},
+{
 "stufe": 3,
 "name": "3. Mittelhandknochen",
 "latein": "Os metacarpi"
@@ -2305,6 +2680,11 @@
 "FMA24511": {
 "region": "bein",
 "einordnungen": [
+{
+"stufe": 2,
+"name": "Mittelfußknochen",
+"latein": "Os metatarsi"
+},
 {
 "stufe": 3,
 "name": "3. Mittelfußknochen",
