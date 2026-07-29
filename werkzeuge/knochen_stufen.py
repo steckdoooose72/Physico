@@ -19,9 +19,14 @@ nur den deutschen Namen – lieber nichts als etwas Erfundenes).
 
 Die Stufen:
   1 Basis  – die großen Leitknochen, die immer sitzen müssen
-  2 Praxis – alltagsrelevant, aber generisch: Wirbeltyp, Rippe, Hand-/Fußwurzel
-  3 Extra  – die genaue Nummer von Wirbeln/Rippen, einzelne Schädelknochen,
-             Finger-/Zehenglieder, Mittelhand/Mittelfuß, Rippenknorpel, Bandscheiben
+  2 Praxis – alltagsrelevant und klar unterscheidbar: Wirbeltyp, Rippe,
+             Fersenbein, Sprungbein
+  3 Extra  – die genaue Nummer von Wirbeln/Rippen, Hand- und Fußwurzelknochen
+             (die kleinen, ähnlich benannten – „Keilbein" ×3, „Vieleckbein" ×2 …
+             sind selbst im Lehrbuch die am schwersten zu unterscheidende
+             Gruppe, gehören deshalb nicht zu „alltagsrelevant"), einzelne
+             Schädelknochen, Finger-/Zehenglieder, Mittelhand/Mittelfuß,
+             Rippenknorpel, Bandscheiben
 
 Willst du etwas verschieben, änderst du die Listen unten und lässt das Skript
 erneut laufen:
@@ -53,13 +58,14 @@ BASIS_STUFE = [
 ]
 
 # --- Stufe 2: Praxis --------------------------------------------------------
+# Bewusst eng: nur Knochen, die groß und eindeutig genug sind, um sie nicht mit
+# Nachbarn zu verwechseln. Die kleinen Handwurzel-/Fußwurzelknochen (Kahnbein,
+# Mondbein, die drei Keilbeine, …) stehen deshalb NICHT hier, sondern fallen
+# unten automatisch nach Extra durch – dort sind feine Unterscheidungen richtig
+# aufgehoben. Absichtlich auch KEIN 'coccyx': wie 'skull' hat BodyParts3D kein
+# Steißbein als eigene Struktur, das Stichwort würde nie greifen.
 PRAXIS_STUFE = [
-    'coccyx', 'calcaneus', 'talus',
-    # Handwurzel
-    'scaphoid', 'lunate', 'triquetral', 'pisiform',
-    'trapezium', 'trapezoid', 'capitate', 'hamate',
-    # Fußwurzel
-    'navicular', 'cuboid', 'cuneiform',
+    'calcaneus', 'talus',
 ]
 
 # Wirbel und Rippen: nicht einfach "Praxis" – sie bekommen zwei Einordnungen

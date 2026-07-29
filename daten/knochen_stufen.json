@@ -651,7 +651,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Kopfbein",
 "latein": "Os capitatum"
 }
@@ -671,7 +671,7 @@
 "region": "bein",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Würfelbein",
 "latein": "Os cuboideum"
 }
@@ -866,7 +866,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Hakenbein",
 "latein": "Os hamatum"
 }
@@ -906,7 +906,7 @@
 "region": "bein",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Mittleres Keilbein",
 "latein": "Os cuneiforme intermedium"
 }
@@ -926,7 +926,7 @@
 "region": "bein",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Äußeres Keilbein",
 "latein": "Os cuneiforme laterale"
 }
@@ -936,7 +936,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Mondbein",
 "latein": "Os lunatum"
 }
@@ -956,7 +956,7 @@
 "region": "bein",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Inneres Keilbein",
 "latein": "Os cuneiforme mediale"
 }
@@ -1021,7 +1021,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Erbsenbein",
 "latein": "Os pisiforme"
 }
@@ -1041,7 +1041,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Kahnbein",
 "latein": "Os scaphoideum"
 }
@@ -1246,7 +1246,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Großes Vieleckbein",
 "latein": "Os trapezium"
 }
@@ -1256,7 +1256,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Kleines Vieleckbein",
 "latein": "Os trapezoideum"
 }
@@ -1266,7 +1266,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Dreiecksbein",
 "latein": "Os triquetrum"
 }
@@ -1491,7 +1491,7 @@
 "region": "bein",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Kahnbein des Fußes",
 "latein": "Os naviculare"
 }
@@ -1501,7 +1501,7 @@
 "region": "bein",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Kahnbein des Fußes",
 "latein": "Os naviculare"
 }
@@ -1746,7 +1746,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Kopfbein",
 "latein": "Os capitatum"
 }
@@ -1766,7 +1766,7 @@
 "region": "bein",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Würfelbein",
 "latein": "Os cuboideum"
 }
@@ -1961,7 +1961,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Hakenbein",
 "latein": "Os hamatum"
 }
@@ -2001,7 +2001,7 @@
 "region": "bein",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Mittleres Keilbein",
 "latein": "Os cuneiforme intermedium"
 }
@@ -2021,7 +2021,7 @@
 "region": "bein",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Äußeres Keilbein",
 "latein": "Os cuneiforme laterale"
 }
@@ -2031,7 +2031,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Mondbein",
 "latein": "Os lunatum"
 }
@@ -2051,7 +2051,7 @@
 "region": "bein",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Inneres Keilbein",
 "latein": "Os cuneiforme mediale"
 }
@@ -2116,7 +2116,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Erbsenbein",
 "latein": "Os pisiforme"
 }
@@ -2136,7 +2136,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Kahnbein",
 "latein": "Os scaphoideum"
 }
@@ -2341,7 +2341,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Großes Vieleckbein",
 "latein": "Os trapezium"
 }
@@ -2351,7 +2351,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Kleines Vieleckbein",
 "latein": "Os trapezoideum"
 }
@@ -2361,7 +2361,7 @@
 "region": "arm",
 "einordnungen": [
 {
-"stufe": 2,
+"stufe": 3,
 "name": "Dreiecksbein",
 "latein": "Os triquetrum"
 }

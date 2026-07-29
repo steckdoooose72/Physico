@@ -120,12 +120,17 @@ generisch bei Praxis („Rippe"), mit genauer Nummer bei Extra („6. Rippe"). D
 physische Knochen taucht so unter zwei verschiedenen Namen in zwei Stufen auf; die
 Antwort-Gruppierung in `js/bone-prep.js` (`ladeKnochen()`) iteriert entsprechend über
 `einordnungen`, nicht über ein einzelnes Feld.
-Stand heute 240 Knochen: **Basis 15 / Praxis 19 / Extra 119 verschiedene Antworten**.
+Stand heute 240 Knochen: **Basis 15 / Praxis 6 / Extra 132 verschiedene Antworten**.
 Die Zuordnung steckt in den Stichwortlisten oben in der Datei; nach jedem Lauf von
 `namen.py` erneut laufen lassen, sonst passen deutsche Namen und Stufen nicht zusammen.
 Bänder und Membranen sind ausgeschlossen (sind keine Knochen), Bandscheiben und
-Rippenknorpel bleiben dagegen bewusst in Stufe 3. Kein `'skull'`-Stichwort: BodyParts3D
-hat keinen Schädel als eine Struktur, nur die Einzelknochen (die bleiben in Extra).
+Rippenknorpel bleiben dagegen bewusst in Stufe 3. Kein `'skull'`- und kein `'coccyx'`-
+Stichwort: BodyParts3D hat weder Schädel noch Steißbein als eigene Struktur, nur die
+Einzelknochen bzw. gar nichts – diese Stichwörter würden nie greifen. **Praxis ist bewusst
+eng gehalten** (nur `calcaneus`, `talus` plus die generischen Wirbel/Rippen-Gruppen): die
+kleinen Handwurzel-/Fußwurzelknochen (Kahnbein, Mondbein, die drei Keilbeine, …) sind selbst
+im Lehrbuch die am schwersten zu unterscheidende Gruppe und fallen deshalb automatisch nach
+Extra durch, statt als eigenes Stichwort in `PRAXIS_STUFE` zu stehen.
 
 ## Architektur (JavaScript)
 
@@ -199,10 +204,23 @@ in der Seite; das Skript unten in der Datei bedient jedes davon automatisch.
 
 Regeln für die Übungen selbst (Nutzerwunsch, gilt für alle kommenden Modi):
 
+- **Kein fester Fragenzähler.** Ein Durchlauf fragt **alle** Knochen der gewählten Stufe ab,
+  bei jedem Durchlauf neu gemischt (`baueLauf()` in `js/bone-prep.js`). Kommt man ohne
+  „Beenden" bis zum Schluss, werden alle dabei falsch beantworteten Knochen automatisch in
+  einem neuen, wieder gemischten Lauf noch einmal gefragt (`naechsterLaufOderEnde()`) – so
+  lange, bis ein Lauf ganz ohne Fehler durchlief. Erst dann erscheint die Auswertung
+  („Alles gelernt.", mit Trefferquote des ersten Versuchs je Knochen). Der Fortschritt zeigt
+  bei diesen Wiederholungsläufen zusätzlich „Wiederholung · " vor der Fragennummer.
+- **„Beenden"-Knopf jederzeit** (`#beenden-knopf` im Kopf) bricht sofort ab. Die Auswertung
+  zeigt dann **nur** die aktuell noch offenen Fehler, ohne Trefferquote – die Runde wurde ja
+  nicht zu Ende gespielt. Aktueller Stand je Knochen steckt in der Map `stand` (Name →
+  `{ loesung, gewaehlt, richtig }`, überschreibt sich bei jedem neuen Versuch); `jeFalsch`
+  merkt sich zusätzlich, welche Knochen *irgendwann* falsch waren, für die Statistik am Ende.
+  „Fehler üben" auf der Auswertung startet einen neuen, kompletten Mini-Durchlauf mit genau
+  den noch offenen Knochen (ruft `startLauf()` erneut auf).
 - **Während der Runde keine Rückmeldung.** Nach dem Klick wird die gewählte Antwort nur
   neutral markiert (`.gewaehlt`, olive – kein Grün, kein Rot), dann kommt sofort die nächste
-  Frage. Ob es stimmte, steht **erst in der Auswertung**. Von dort führt „Fehler üben" eine
-  kurze Runde mit genau den verpassten Strukturen.
+  Frage. Ob es stimmte, steht **erst in der jeweiligen Auswertung**.
 - **Antworten zeigen zuerst nur den medizinischen Namen** (kursiv, „Femur"). Der
   umgangssprachliche Name („Oberschenkelknochen") steht darunter, aber verschwommen
   (`.antwort-verdeckt`, CSS `filter: blur()`) – das ist die eigentliche Herausforderung.
@@ -215,8 +233,12 @@ Regeln für die Übungen selbst (Nutzerwunsch, gilt für alle kommenden Modi):
   tragen), entfällt die Verdeckung und ein einziger Klick wählt direkt.
 - Links und rechts sind **dieselbe Antwort**; gefragt wird nach dem Namen, nicht nach der Seite.
 - Ablenker kommen aus derselben Stufe, bevorzugt aus derselben Körperregion.
-- Basis zeigt den Knochen **im Skelett** (die Lage hilft mit, Kamera bewusst weiter weg),
-  Praxis und Extra zeigen ihn **allein und drehbar**.
+- **Alle drei Stufen zeigen den Knochen im ganzen Skelett**, nie isoliert – die Lage im
+  Körper gehört zum Erkennen dazu. Deshalb lädt `bone-prep.js` beim Start einmalig alle
+  Skelett-Bündel in grober Auflösung (wie zuvor nur die Basis-Stufe) und schaltet je Frage
+  nur Material/Hervorhebung um (`zeigeKnochen()`), statt pro Frage einzelne Bündel nach- und
+  wieder abzuladen. `fliegeZu()` rahmt dabei nur den gesuchten Knochen samt etwas Umgebung
+  ein (`rand: 2.2` in `freiesBildfeld()`), nicht das ganze Skelett.
 
 ## Leistung (auf 8 GB RAM / M2 geprüft)
 

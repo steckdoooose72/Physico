@@ -75,16 +75,27 @@ orange = Flexion/Extension, blau = Ab-/Adduktion, violett = Rotation.
 **Stufe** und **Modus**; beides lässt sich frei kombinieren und wird für das nächste Mal
 gemerkt.
 
+In allen drei Stufen leuchtet der gesuchte Knochen im ganzen Skelett auf – nie isoliert,
+die Lage im Körper gehört mit zum Erkennen.
+
 | Stufe | Antworten | Was drankommt |
 |---|---|---|
-| Basis | 15 | die großen Leitknochen plus Unterkiefer/Atlas/Axis – leuchtet im ganzen Skelett auf |
-| Praxis | 19 | Wirbeltyp und Rippe **generisch** („Rippe", nicht „6. Rippe"), Hand- und Fußwurzel – schwebt allein, drehbar |
-| Extra | 119 | dieselben Wirbel/Rippen jetzt mit **genauer Nummer**, einzelne Schädelknochen, Finger-/Zehenglieder, Rippenknorpel, Bandscheiben |
+| Basis | 15 | die großen Leitknochen plus Unterkiefer/Atlas/Axis |
+| Praxis | 6 | Wirbeltyp und Rippe **generisch** („Rippe", nicht „6. Rippe"), Fersenbein, Sprungbein |
+| Extra | 132 | dieselben Wirbel/Rippen jetzt mit **genauer Nummer**, Hand- und Fußwurzelknochen, einzelne Schädelknochen, Finger-/Zehenglieder, Rippenknorpel, Bandscheiben |
 
-Eine Runde sind 10 Fragen. **Während der Runde erfährst du nicht, ob eine Antwort
-stimmte** – erst am Ende kommt die Auswertung mit der Trefferzahl und der Liste dessen,
-was noch nicht saß. Von dort führt „Fehler üben" direkt eine kurze Runde mit genau diesen
-Knochen. Links und rechts zählen als dieselbe Antwort.
+Die Handwurzel- und Fußwurzelknochen (Kahnbein, Mondbein, die drei Keilbeine …) stehen
+bewusst in Extra statt Praxis: kleine, sehr ähnlich benannte Knochen, die selbst im
+Lehrbuch die am schwersten zu unterscheidende Gruppe sind.
+
+**Kein fester Fragenzähler**: Ein Durchlauf fragt alle Knochen der gewählten Stufe ab, bei
+jedem Durchlauf neu gemischt. Klickst du dich bis zum Ende durch, kommen alle dabei falsch
+beantworteten Knochen automatisch noch einmal dran – so lange, bis jeder einzelne richtig
+saß. Erst dann zeigt die Auswertung die Trefferquote des ersten Versuchs. Brichst du mit dem
+**„Beenden"**-Knopf oben vorzeitig ab, zeigt die Auswertung stattdessen nur die gerade noch
+offenen Fehler, ohne Trefferquote. Von dort führt „Fehler üben" direkt einen Mini-Durchlauf
+mit genau diesen Knochen. **Während der Runde erfährst du nicht, ob eine Antwort stimmte** –
+das steht erst in der jeweiligen Auswertung. Links und rechts zählen als dieselbe Antwort.
 
 Jede Antwort zeigt zuerst nur den **medizinischen Namen** („Femur"); der umgangssprachliche
 Name darunter ist verschwommen. Ein Klick deckt ihn auf („Oberschenkelknochen") – du darfst

@@ -92,6 +92,21 @@ h2, .kopf-titel, .antwort-knopf { font-family: "Fraunces", Georgia, serif; font-
   transition: width 0.25s ease;
 }
 
+.beenden-knopf {
+  flex-shrink: 0;
+  padding: 7px 14px;
+  background: transparent;
+  border: 1px solid var(--rand);
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-leise);
+  cursor: pointer;
+}
+.beenden-knopf:hover { color: var(--falsch); border-color: var(--falsch); }
+.beenden-knopf:focus-visible { outline: 2px solid var(--olive); outline-offset: 2px; }
+
 /* --------------------------------------------------------------------------
    Frage und Antworten – unten, damit der Knochen frei sichtbar bleibt
    -------------------------------------------------------------------------- */
@@ -262,6 +277,13 @@ h2, .kopf-titel, .antwort-knopf { font-family: "Fraunces", Georgia, serif; font-
 #ergebnis-fehler li b { color: var(--richtig); font-weight: 600; }
 
 .fehler-wahl { color: var(--falsch); font-size: 12.5px; text-align: right; }
+
+.ergebnis-leer {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-leise);
+  text-align: center;
+}
 
 .ergebnis-knoepfe {
   display: flex;
