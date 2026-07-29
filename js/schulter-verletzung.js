@@ -62,10 +62,11 @@ const GRUND_BUENDEL = ['skelett_hals', 'skelett_rumpf', 'skelett_arm'];
 
 // --- Elemente -------------------------------------------------------------
 const ladehinweis = document.getElementById('ladehinweis');
+const startBereich = document.getElementById('start-bereich');
 const frageBereich = document.getElementById('frage-bereich');
 const situationText = document.getElementById('situation-text');
-const situationMarke = document.getElementById('situation-marke');
 const antwortenFeld = document.getElementById('antworten');
+const kopfUmfang = document.getElementById('kopf-umfang');
 const ergebnisFeld = document.getElementById('ergebnis');
 const ansichtLeiste = document.getElementById('ansicht-leiste');
 const ansichtName = document.getElementById('ansicht-name');
@@ -112,6 +113,7 @@ function status(text, istFehler = false) {
 
 // --- Zustand einer Runde --------------------------------------------------
 let faelle = [];             // alle Fälle aus der Datendatei
+let poolAktuell = [];        // die Fälle des gewählten Umfangs
 let frageListe = [];         // Fragen des aktuellen Laufs
 let position = 0;            // welche Frage im Lauf gerade dran ist
 let phase = 1;               // 1 = erster Durchlauf, ab 2 = Wiederholung
@@ -240,11 +242,12 @@ async function zeigeFrage() {
   const frage = frageListe[position];
   if (!frage) return naechsterLaufOderEnde();
 
+  startBereich.hidden = true;
   ergebnisFeld.hidden = true;
   frageBereich.hidden = false;
 
-  situationMarke.textContent =
-    frage.fall.schwierigkeit === 'fein' ? 'Situation · fein' : 'Situation';
+  // Keine Schwierigkeits-Kennzeichnung mehr an der einzelnen Frage – die
+  // Trennung passiert über die Umfangswahl am Anfang (siehe starteUmfang()).
   situationText.textContent = frage.fall.situation;
 
   antwortenFeld.innerHTML = '';
@@ -430,10 +433,46 @@ document.getElementById('ansicht-zurueck').addEventListener('click', () => {
   rahmeSchulter();
 });
 
+/**
+ * Startet den gewählten Umfang. „einstieg" nimmt nur die eindeutigen Fälle
+ * (schwierigkeit „klar" in daten/schulter_verletzungen.json), „vertiefung"
+ * alle. Das Feld dient damit nur noch zum Filtern, nicht mehr als Etikett an
+ * der einzelnen Frage – ein unerklärtes „fein" hatte beim Testen verwirrt.
+ */
+async function starteUmfang(umfang) {
+  poolAktuell = umfang === 'einstieg'
+    ? faelle.filter((f) => f.schwierigkeit === 'klar')
+    : faelle;
+
+  kopfUmfang.textContent =
+    umfang === 'einstieg' ? 'Schulter · Einstieg' : 'Schulter · Vertiefung';
+
+  ansichtLeiste.hidden = true;
+  startLauf(poolAktuell);
+  await zeigeFrage();
+}
+
+document.getElementById('einstieg-knopf')
+  .addEventListener('click', () => starteUmfang('einstieg'));
+document.getElementById('vertiefung-knopf')
+  .addEventListener('click', () => starteUmfang('vertiefung'));
+
 document.getElementById('nochmal-knopf').addEventListener('click', async () => {
   ansichtLeiste.hidden = true;
-  startLauf(faelle);
+  startLauf(poolAktuell);
   await zeigeFrage();
+});
+
+document.getElementById('umfang-knopf').addEventListener('click', () => {
+  beendet = true;
+  ansichtLeiste.hidden = true;
+  ergebnisFeld.hidden = true;
+  frageBereich.hidden = true;
+  startBereich.hidden = false;
+  fortschrittText.textContent = '–';
+  fortschrittFuell.style.width = '0';
+  zeigeNeutral();
+  rahmeSchulter();
 });
 
 beendenKnopf.addEventListener('click', () => {
@@ -457,10 +496,12 @@ try {
 
   status(null);
   starteSchleife();
-  startLauf(faelle);
-  await zeigeFrage();
+  zeigeNeutral();
+  rahmeSchulter();
+  startBereich.hidden = false;   // erst die Umfangswahl, dann die Fragen
 
-  console.log(`Schulter-Pilot: ${faelle.length} Situationen geladen.`);
+  const klar = faelle.filter((f) => f.schwierigkeit === 'klar').length;
+  console.log(`Schulter-Pilot: ${klar} klar, ${faelle.length} gesamt.`);
 } catch (fehler) {
   status(`<b>Der Pilot konnte nicht starten.</b><br><br>${fehler.message}`, true);
   console.error(fehler);

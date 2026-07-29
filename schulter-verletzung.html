@@ -108,6 +108,77 @@
     }
 
     #ansicht-zurueck { margin-top: 0; flex-shrink: 0; }
+
+    /* --- Umfangswahl vor der ersten Frage ------------------------------- */
+    #start-bereich {
+      position: fixed;
+      z-index: 3;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: min(520px, calc(100% - 32px));
+      padding: 32px;
+      background: var(--panel-hell);
+      border: 1px solid var(--rand);
+      border-radius: 22px 18px 20px 16px;
+      box-shadow: var(--schatten-fern);
+      text-align: center;
+    }
+    #start-bereich[hidden] { display: none; }
+
+    #start-bereich h2 {
+      margin: 0 0 6px;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 26px;
+      font-weight: 600;
+      color: var(--olive-dunkel);
+    }
+
+    .start-einleitung {
+      margin: 0 0 24px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--text-leise);
+    }
+
+    .start-wahl { display: flex; flex-direction: column; gap: 12px; }
+
+    .start-knopf {
+      padding: 16px 20px;
+      background: var(--papier-hell);
+      border: 1px solid var(--rand);
+      border-radius: 14px;
+      font-family: inherit;
+      cursor: pointer;
+      text-align: left;
+      transition: transform 0.12s ease, border-color 0.15s ease;
+    }
+    .start-knopf:hover { transform: translateY(-2px); border-color: var(--olive); }
+    .start-knopf:focus-visible { outline: 2px solid var(--olive); outline-offset: 2px; }
+
+    .start-knopf b {
+      display: block;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--olive-dunkel);
+    }
+    .start-knopf span {
+      display: block;
+      margin-top: 3px;
+      font-size: 12.5px;
+      color: var(--text-leise);
+    }
+
+    /* .text-knopf ist in quiz.css für Links gedacht – als Knopf braucht es
+       den Button-Grundzustand zurück. */
+    button.text-knopf {
+      background: none;
+      border: none;
+      padding: 0;
+      font-family: inherit;
+      cursor: pointer;
+    }
   </style>
 
   <script type="importmap">
@@ -129,7 +200,7 @@
     <a class="zurueck" href="index.html">← Startseite</a>
     <div class="kopf-mitte">
       <span class="kopf-titel">Verletzungsmechanismus</span>
-      <span class="kopf-untertitel">Schulter · Pilot</span>
+      <span class="kopf-untertitel" id="kopf-umfang">Schulter · Pilot</span>
     </div>
     <div class="fortschritt">
       <span id="fortschritt-text">–</span>
@@ -138,12 +209,30 @@
     <button type="button" class="beenden-knopf" id="beenden-knopf">Beenden</button>
   </header>
 
+  <!-- Umfangswahl: echte Trennung statt eines Etiketts an der einzelnen Frage -->
+  <section id="start-bereich" hidden>
+    <h2>Verletzungsmechanismus</h2>
+    <p class="start-einleitung">
+      Eine Situation wird beschrieben – welche Struktur ist am ehesten betroffen?
+    </p>
+    <div class="start-wahl">
+      <button type="button" class="start-knopf" id="einstieg-knopf">
+        <b>Einstieg</b>
+        <span>Die vier eindeutigen Verletzungsmechanismen.</span>
+      </button>
+      <button type="button" class="start-knopf" id="vertiefung-knopf">
+        <b>Vertiefung</b>
+        <span>Alle neun Situationen, auch die feineren.</span>
+      </button>
+    </div>
+  </section>
+
   <!-- Situation mit Antwortmöglichkeiten. Wie in Bone-Prep bewusst ohne
        Rückmeldung: ob die Antwort stimmt, steht erst in der Auswertung.
        Die 3D-Szene zeigt währenddessen nur die Schulterregion, nie die Lösung. -->
   <section id="frage-bereich" hidden>
     <p class="situation" id="situation">
-      <span class="situation-marke" id="situation-marke">Situation</span>
+      <span class="situation-marke">Situation</span>
       <span id="situation-text"></span>
     </p>
     <div class="antworten" id="antworten"></div>
@@ -156,6 +245,7 @@
     <div id="ergebnis-fehler"></div>
     <div class="ergebnis-knoepfe">
       <button type="button" class="weiter-knopf" id="nochmal-knopf">Noch eine Runde</button>
+      <button type="button" class="text-knopf" id="umfang-knopf">Anderer Umfang</button>
       <a class="text-knopf" href="index.html">Zurück zur Startseite</a>
     </div>
   </section>
@@ -169,6 +259,6 @@
 
   <div id="ladehinweis">Schulter-Pilot startet …</div>
 
-  <script type="module" src="js/schulter-verletzung.js?v=6"></script>
+  <script type="module" src="js/schulter-verletzung.js?v=7"></script>
 </body>
 </html>
