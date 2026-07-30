@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Physico</title>
+  <title>Physico – Regionen</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
@@ -12,14 +12,7 @@
 </head>
 <body>
 
-<!--
-  Dekorative Hintergrundgrafik – rein schmückend, ohne Bedeutung.
-  Zwei fließende, organische Formen (angelehnt an weiche Gewebekonturen) plus
-  zwei dünne, geschwungene Linien (angelehnt an Nerven-/Gefäßverläufe), dazu
-  ein paar kleine Knotenpunkte für einen leisen, "technischen" Akzent.
-  Die Farben kommen als CSS-Variablen aus start.css – ändert sich dort die
-  Palette, zieht die Grafik automatisch mit.
--->
+<!-- Dekorative Hintergrundgrafik – siehe index.html für die Erklärung -->
 <svg class="hintergrund-deko" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
   <defs>
     <linearGradient id="deko-blob-a" x1="0" y1="0" x2="1" y2="1">
@@ -47,7 +40,6 @@
     </filter>
   </defs>
 
-  <!-- weiche, fließende Flächen -->
   <g filter="url(#deko-weich)">
     <path fill="url(#deko-blob-a)" d="M1010,90 C1080,-30 1260,-60 1400,20
       C1540,100 1580,260 1490,360 C1400,460 1220,470 1100,400
@@ -60,13 +52,11 @@
       C1185,820 1210,785 1250,760 Z" />
   </g>
 
-  <!-- dünne, geschwungene Linien – wie ferne Nerven- oder Gefäßverläufe -->
   <path fill="none" stroke="url(#deko-linie)" stroke-width="2.5" stroke-linecap="round"
     d="M-40,340 C260,260 420,420 700,360 C980,300 1140,420 1660,300" />
   <path fill="none" stroke="url(#deko-linie)" stroke-width="1.75" stroke-linecap="round"
     d="M-40,880 C300,760 560,900 860,800 C1160,700 1360,820 1660,760" />
 
-  <!-- kleine Knotenpunkte auf den Linien – ein leiser, technischer Akzent -->
   <circle class="deko-knoten" cx="700" cy="360" r="4" />
   <circle class="deko-knoten" cx="1140" cy="420" r="3" />
   <circle class="deko-knoten" cx="860" cy="800" r="4" />
@@ -75,34 +65,64 @@
 
 <main class="start">
 
+  <a class="zurueck" href="index.html">← Startseite</a>
+
   <header class="kopf">
-    <h1>Physico</h1>
-    <p class="untertitel">interactive anatomy</p>
+    <h1>Regionen</h1>
+    <p class="untertitel">gezielt nach körperregion üben</p>
   </header>
 
   <nav class="auswahl">
 
-    <!-- 1. Freies Erkunden des Modells -->
-    <a class="wahl" href="modell.html">
-      <span class="nummer">1</span>
-      <span class="wahl-titel">Modell ansehen</span>
-      <span class="wahl-text">Das 3D-Modell frei erkunden: drehen und zoomen, Systeme
-        ein- und ausblenden, Körperbereiche wählen, Weichteile durchsichtig schalten,
-        Strukturen anklicken und suchen.</span>
-    </a>
-
-    <!-- 2. Regionen -->
-    <a class="wahl" href="regionen.html">
-      <span class="nummer">2</span>
-      <span class="wahl-titel">Regionen</span>
-      <span class="wahl-text">Gezielt nach Körperregion üben – Schritt für Schritt vom
-        Erkennen bis zur Anwendung.</span>
-    </a>
-
-    <!-- 3. Noch nicht eingerichtet -->
+    <!-- Reihenfolge von oben nach unten am Körper. Bisher ist nur die Schulter
+         aufgebaut; die übrigen Regionen stehen schon hier, damit der Weg
+         sichtbar ist, sind aber noch nicht übbar – gleiche Darstellung wie
+         „Prüfungen" auf der Startseite. -->
     <div class="wahl bald" role="button" aria-disabled="true" tabindex="-1">
+      <span class="nummer">1</span>
+      <span class="wahl-titel">Kopf</span>
+      <span class="wahl-text">wird später eingerichtet</span>
+      <span class="marke">folgt</span>
+    </div>
+
+    <div class="wahl bald" role="button" aria-disabled="true" tabindex="-1">
+      <span class="nummer">2</span>
+      <span class="wahl-titel">Hals</span>
+      <span class="wahl-text">wird später eingerichtet</span>
+      <span class="marke">folgt</span>
+    </div>
+
+    <a class="wahl" href="schulter.html">
       <span class="nummer">3</span>
-      <span class="wahl-titel">Prüfungen</span>
+      <span class="wahl-titel">Schultern</span>
+      <span class="wahl-text">Strukturen, Bewegungen und Verletzungsmechanismen der
+        Schulter – vom Erkennen bis zur Anwendung.</span>
+    </a>
+
+    <div class="wahl bald" role="button" aria-disabled="true" tabindex="-1">
+      <span class="nummer">4</span>
+      <span class="wahl-titel">Arme</span>
+      <span class="wahl-text">wird später eingerichtet</span>
+      <span class="marke">folgt</span>
+    </div>
+
+    <div class="wahl bald" role="button" aria-disabled="true" tabindex="-1">
+      <span class="nummer">5</span>
+      <span class="wahl-titel">Rumpf</span>
+      <span class="wahl-text">wird später eingerichtet</span>
+      <span class="marke">folgt</span>
+    </div>
+
+    <div class="wahl bald" role="button" aria-disabled="true" tabindex="-1">
+      <span class="nummer">6</span>
+      <span class="wahl-titel">Becken</span>
+      <span class="wahl-text">wird später eingerichtet</span>
+      <span class="marke">folgt</span>
+    </div>
+
+    <div class="wahl bald" role="button" aria-disabled="true" tabindex="-1">
+      <span class="nummer">7</span>
+      <span class="wahl-titel">Beine</span>
       <span class="wahl-text">wird später eingerichtet</span>
       <span class="marke">folgt</span>
     </div>
