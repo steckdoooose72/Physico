@@ -26,7 +26,14 @@ ZIEL = os.path.join(BASIS, 'daten', 'eigene_ebenen.json')
 SYSTEME_NEU = [
     {'id': 'nervenbahnen', 'name': 'Periphere Nerven'},
     {'id': 'gelenkpunkte', 'name': 'Gelenke (klinisch)'},
+    {'id': 'baender', 'name': 'Bänder und Menisken (schematisch)'},
 ]
+
+# Steht in jeder notiz dieser Ebene. Diese Strukturen fehlen in BodyParts3D
+# vollständig (geprüft: kein „meniscus", „cruciate ligament", „collateral
+# ligament" in parts_list_e.txt) – sie sind hier nachgebaut, nicht gemessen.
+SCHEMA_HINWEIS = ('Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten '
+                  'nicht als Geometrie enthalten.')
 
 
 def lade_knochen():
@@ -64,6 +71,17 @@ class Anker:
         """Der am weitesten von der Körpermitte entfernte Punkt."""
         e = self._hole(name)
         x = e['bis'][0] if self.seite == 'left' else e['von'][0]
+        return [x, e['mitte'][1], e['mitte'][2]]
+
+    def innen(self, name):
+        """Der der Körpermitte am nächsten liegende Punkt – Spiegelbild zu aussen().
+
+        Achtung: y und z sind wie bei aussen() die Bauteilmitte des ganzen
+        Knochens. Für Punkte auf einer bestimmten Höhe (z. B. am Knie) taugt
+        davon nur die x-Kante; die Höhe muss von oben()/unten() kommen.
+        """
+        e = self._hole(name)
+        x = e['von'][0] if self.seite == 'left' else e['bis'][0]
         return [x, e['mitte'][1], e['mitte'][2]]
 
     @property
@@ -206,6 +224,105 @@ def kopfgelenk(knochen):
         'achsen': [{'name': 'Flexion/Extension', 'richtung': [1, 0, 0], 'farbe': '#ff8a5b'},
                    {'name': 'Seitneigung', 'richtung': [0, 0, 1], 'farbe': '#6bb8ff'}],
     }
+
+
+# ---------------------------------------------------------------------------
+# Bänder und Menisken des Knies
+# ---------------------------------------------------------------------------
+
+def kniebaender_bauen(a, seite_de):
+    """Die sechs Kniestrukturen, die BodyParts3D nicht mitbringt.
+
+    Alle Punkte hängen an echten Knochenwerten: die Gelenkmitte `knie` ist
+    dieselbe Rechnung wie beim Gelenkpunkt (Mitte zwischen Femurunterkante und
+    Tibiaplateau), die seitliche Ausdehnung kommt aus den tatsächlichen
+    Knochenkanten über innen()/aussen(). Nur die kleinen Verschiebungen in
+    `v()` sind gesetzt – deshalb „schematisch".
+
+    Bewusst NICHT über aussen('femur')/innen('femur') gelöst: diese Methoden
+    liefern als Höhe die Mitte des ganzen Knochens, beim Femur also die
+    Oberschenkelmitte. Am Knie ist davon nur die x-Kante der kniennahen
+    Knochen (Tibia, Fibula) brauchbar.
+    """
+    s = a.vorzeichen
+
+    # Gelenkmitte – identische Rechnung wie beim Kniegelenk-Punkt in gelenke_bauen
+    knie = [a.mitte('tibia')[0], round((a.unten('femur')[1] + a.oben('tibia')[1]) / 2, 4),
+            round((a.mitte('femur')[2] + a.mitte('tibia')[2]) / 2, 4)]
+    # Wadenbeinköpfchen – wie in nerven_bauen: x/z aus der Mitte, y von oben
+    fibula_kopf = [a.mitte('fibula')[0], a._hole('fibula')['bis'][1], a.mitte('fibula')[2]]
+
+    # Halbe Breite des Tibiaplateaus, aus den echten Knochenkanten
+    halb_innen = round(abs(knie[0] - a.innen('tibia')[0]), 4)
+    halb_aussen = round(abs(a.aussen('tibia')[0] - knie[0]), 4)
+
+    def b(kennung, name, latein, punkte, radius, notiz, **rest):
+        return dict(
+            id=f'PT-B-{kennung}-{seite_de}',
+            name=f'{name} ({seite_de})',
+            latein=latein, system='baender', region='bein', seite=seite_de,
+            form={'typ': 'pfad', 'radius': radius, 'punkte': punkte},
+            notiz=f'{notiz} {SCHEMA_HINWEIS}', **rest)
+
+    return [
+        # Die Kreuzbänder laufen im Inneren des Gelenks gegenläufig übereinander:
+        # das vordere von hinten-oben nach vorne-unten, das hintere umgekehrt.
+        b('vkb', 'Vorderes Kreuzband', 'Lig. cruciatum anterius', [
+            v(knie, 0.008, 0.020, -0.018, s),      # Femur, hinten im Interkondylarraum
+            v(knie, 0.002, 0.008, -0.006, s),
+            v(knie, -0.004, -0.008, 0.012, s),     # Tibiaplateau, vorne
+        ], 0.0045,
+          'Verhindert das Vorgleiten des Schienbeins gegen den Oberschenkel und begrenzt die '
+          'Innenrotation. Am häufigsten gerissenes Band des Knies, typisch bei '
+          'Valgus-Rotations-Trauma.'),
+
+        b('hkb', 'Hinteres Kreuzband', 'Lig. cruciatum posterius', [
+            v(knie, -0.006, 0.020, -0.002, s),     # Femur, vorne im Interkondylarraum
+            v(knie, -0.002, 0.008, -0.014, s),
+            v(knie, 0.002, -0.008, -0.026, s),     # Tibiaplateau, hinten
+        ], 0.0050,
+          'Verhindert das Zurückgleiten des Schienbeins. Reißt deutlich seltener als das vordere '
+          'Kreuzband, typisch beim Anpralltrauma auf das gebeugte Knie.'),
+
+        # Die Seitenbänder liegen außen auf der Kapsel, weitgehend senkrecht.
+        b('innenband', 'Innenband', 'Lig. collaterale mediale (tibiale)', [
+            [round(knie[0] - 0.86 * halb_innen * s, 4), round(knie[1] + 0.026, 4), round(knie[2] - 0.004, 4)],
+            [round(knie[0] - 0.92 * halb_innen * s, 4), round(knie[1], 4), round(knie[2] - 0.004, 4)],
+            [round(knie[0] - 0.82 * halb_innen * s, 4), round(knie[1] - 0.034, 4), round(knie[2] - 0.002, 4)],
+        ], 0.0040,
+          'Sichert das Knie gegen Valgusstress (X-Bein-Belastung). Verwächst mit dem Innenmeniskus '
+          'und der Kapsel – zusammen mit vorderem Kreuzband und Innenmeniskus die „unhappy triad".'),
+
+        b('aussenband', 'Außenband', 'Lig. collaterale laterale (fibulare)', [
+            [round(knie[0] + 0.90 * halb_aussen * s, 4), round(knie[1] + 0.026, 4), round(knie[2] - 0.008, 4)],
+            v(fibula_kopf, 0.004, 0.014, 0.0, s),
+            v(fibula_kopf, 0.002, -0.004, 0.002, s),
+        ], 0.0040,
+          'Sichert das Knie gegen Varusstress (O-Bein-Belastung). Zieht vom äußeren '
+          'Oberschenkelknorren zum Wadenbeinköpfchen und ist seltener verletzt als das Innenband.'),
+
+        # Die Menisken liegen als Keile auf dem Tibiaplateau – hier als C-Bogen
+        # von Hinterhorn über den Rand zum Vorderhorn, mit größerem Radius.
+        b('innenmeniskus', 'Innenmeniskus', 'Meniscus medialis', [
+            v(knie, -0.008, 0.0, -0.026, s),       # Hinterhorn
+            v(knie, -0.022, 0.0, -0.018, s),
+            v(knie, -0.028, 0.0, -0.002, s),       # medialer Rand
+            v(knie, -0.022, 0.0, 0.012, s),
+            v(knie, -0.008, 0.0, 0.018, s),        # Vorderhorn
+        ], 0.0110,
+          'Fest mit Innenband und Kapsel verwachsen und dadurch weniger beweglich – deshalb '
+          'deutlich häufiger verletzt als der Außenmeniskus.'),
+
+        b('aussenmeniskus', 'Außenmeniskus', 'Meniscus lateralis', [
+            v(knie, 0.010, 0.0, -0.024, s),        # Hinterhorn
+            v(knie, 0.024, 0.0, -0.016, s),
+            v(knie, 0.029, 0.0, -0.002, s),        # lateraler Rand
+            v(knie, 0.024, 0.0, 0.010, s),
+            v(knie, 0.010, 0.0, 0.016, s),         # Vorderhorn
+        ], 0.0110,
+          'Beweglicher als der Innenmeniskus und dadurch seltener verletzt. Beide Menisken '
+          'vergrößern die Kontaktfläche und dämpfen Stöße beim Gehen.'),
+    ]
 
 
 # ---------------------------------------------------------------------------
@@ -384,7 +501,9 @@ def main():
     strukturen = []
     for seite in ('left', 'right'):
         a = Anker(knochen, seite)
-        strukturen += gelenke_bauen(a, 'links' if seite == 'left' else 'rechts')
+        seite_de = 'links' if seite == 'left' else 'rechts'
+        strukturen += gelenke_bauen(a, seite_de)
+        strukturen += kniebaender_bauen(a, seite_de)
         strukturen += nerven_bauen(a, knochen)
     strukturen.append(kopfgelenk(knochen))
 
@@ -412,7 +531,9 @@ def main():
 
     gelenke = sum(1 for s in strukturen if s['system'] == 'gelenkpunkte')
     nerven = sum(1 for s in strukturen if s['system'] == 'nervenbahnen')
-    print(f'{gelenke} Gelenke und {nerven} Nervenbahnen an den echten Knochen ausgerichtet.')
+    baender = sum(1 for s in strukturen if s['system'] == 'baender')
+    print(f'{gelenke} Gelenke, {nerven} Nervenbahnen und {baender} Bänder/Menisken '
+          f'an den echten Knochen ausgerichtet.')
     print(f'geschrieben: {ZIEL} und {INDEX}')
 
 

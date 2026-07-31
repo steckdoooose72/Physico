@@ -39,6 +39,26 @@
 "notiz": "Zieht zwischen den Skalenusmuskeln und unter dem Schlüsselbein hindurch zur Achselhöhle. Engstellen dort können bei Überkopfarbeit Kribbeln auslösen (Thoracic-Outlet-Syndrom).",
 "de": "Armgeflecht (rechts)"
 },
+"PT-B-aussenband-links": {
+"latein": "Lig. collaterale laterale (fibulare)",
+"notiz": "Sichert das Knie gegen Varusstress (O-Bein-Belastung). Zieht vom äußeren Oberschenkelknorren zum Wadenbeinköpfchen und ist seltener verletzt als das Innenband. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Außenband (links)"
+},
+"PT-B-aussenband-rechts": {
+"latein": "Lig. collaterale laterale (fibulare)",
+"notiz": "Sichert das Knie gegen Varusstress (O-Bein-Belastung). Zieht vom äußeren Oberschenkelknorren zum Wadenbeinköpfchen und ist seltener verletzt als das Innenband. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Außenband (rechts)"
+},
+"PT-B-aussenmeniskus-links": {
+"latein": "Meniscus lateralis",
+"notiz": "Beweglicher als der Innenmeniskus und dadurch seltener verletzt. Beide Menisken vergrößern die Kontaktfläche und dämpfen Stöße beim Gehen. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Außenmeniskus (links)"
+},
+"PT-B-aussenmeniskus-rechts": {
+"latein": "Meniscus lateralis",
+"notiz": "Beweglicher als der Innenmeniskus und dadurch seltener verletzt. Beide Menisken vergrößern die Kontaktfläche und dämpfen Stöße beim Gehen. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Außenmeniskus (rechts)"
+},
 "PT-G-ellenbogen-links": {
 "latein": "Articulatio cubiti",
 "gelenktyp": "Zusammengesetztes Gelenk aus drei Teilgelenken",
@@ -149,6 +169,16 @@
 "notiz": "Die Elle hat keinen direkten Kontakt zur Handwurzel – dazwischen liegt der Discus. Deshalb bricht bei Stürzen fast immer die Speiche.",
 "de": "Handgelenk (rechts)"
 },
+"PT-B-hkb-links": {
+"latein": "Lig. cruciatum posterius",
+"notiz": "Verhindert das Zurückgleiten des Schienbeins. Reißt deutlich seltener als das vordere Kreuzband, typisch beim Anpralltrauma auf das gebeugte Knie. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Hinteres Kreuzband (links)"
+},
+"PT-B-hkb-rechts": {
+"latein": "Lig. cruciatum posterius",
+"notiz": "Verhindert das Zurückgleiten des Schienbeins. Reißt deutlich seltener als das vordere Kreuzband, typisch beim Anpralltrauma auf das gebeugte Knie. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Hinteres Kreuzband (rechts)"
+},
 "PT-G-huefte-links": {
 "latein": "Articulatio coxae",
 "gelenktyp": "Nussgelenk (Kugelgelenk mit tiefer Pfanne)",
@@ -210,6 +240,26 @@
 "normwerte": "Bewegungsausmaß nur wenige Grad bzw. Millimeter",
 "notiz": "Überträgt die gesamte Rumpflast auf die Beine. Häufige Quelle tiefsitzender Kreuzschmerzen; in der Schwangerschaft hormonell gelockert.",
 "de": "Iliosakralgelenk (ISG) (rechts)"
+},
+"PT-B-innenband-links": {
+"latein": "Lig. collaterale mediale (tibiale)",
+"notiz": "Sichert das Knie gegen Valgusstress (X-Bein-Belastung). Verwächst mit dem Innenmeniskus und der Kapsel – zusammen mit vorderem Kreuzband und Innenmeniskus die „unhappy triad\". Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Innenband (links)"
+},
+"PT-B-innenband-rechts": {
+"latein": "Lig. collaterale mediale (tibiale)",
+"notiz": "Sichert das Knie gegen Valgusstress (X-Bein-Belastung). Verwächst mit dem Innenmeniskus und der Kapsel – zusammen mit vorderem Kreuzband und Innenmeniskus die „unhappy triad\". Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Innenband (rechts)"
+},
+"PT-B-innenmeniskus-links": {
+"latein": "Meniscus medialis",
+"notiz": "Fest mit Innenband und Kapsel verwachsen und dadurch weniger beweglich – deshalb deutlich häufiger verletzt als der Außenmeniskus. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Innenmeniskus (links)"
+},
+"PT-B-innenmeniskus-rechts": {
+"latein": "Meniscus medialis",
+"notiz": "Fest mit Innenband und Kapsel verwachsen und dadurch weniger beweglich – deshalb deutlich häufiger verletzt als der Außenmeniskus. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Innenmeniskus (rechts)"
 },
 "PT-N-ischiadicus-links": {
 "latein": "N. ischiadicus",
@@ -523,6 +573,16 @@
 "normwerte": "Supination/Pronation ca. 60–0–30°",
 "notiz": "Hier passieren die klassischen Supinationstraumen mit Riss des Lig. fibulotalare anterius. Das USG passt den Fuß an unebenen Boden an.",
 "de": "Unteres Sprunggelenk (USG) (rechts)"
+},
+"PT-B-vkb-links": {
+"latein": "Lig. cruciatum anterius",
+"notiz": "Verhindert das Vorgleiten des Schienbeins gegen den Oberschenkel und begrenzt die Innenrotation. Am häufigsten gerissenes Band des Knies, typisch bei Valgus-Rotations-Trauma. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Vorderes Kreuzband (links)"
+},
+"PT-B-vkb-rechts": {
+"latein": "Lig. cruciatum anterius",
+"notiz": "Verhindert das Vorgleiten des Schienbeins gegen den Oberschenkel und begrenzt die Innenrotation. Am häufigsten gerissenes Band des Knies, typisch bei Valgus-Rotations-Trauma. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Vorderes Kreuzband (rechts)"
 },
 "FMA45875": {
 "de": "Großer Brustmuskel, Pars abdominalis (links)",

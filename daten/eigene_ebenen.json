@@ -447,6 +447,206 @@
    ]
   },
   {
+   "id": "PT-B-vkb-links",
+   "name": "Vorderes Kreuzband (links)",
+   "latein": "Lig. cruciatum anterius",
+   "system": "baender",
+   "region": "bein",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      0.0829,
+      0.4381,
+      -0.0485
+     ],
+     [
+      0.0769,
+      0.4261,
+      -0.0365
+     ],
+     [
+      0.0709,
+      0.4101,
+      -0.0185
+     ]
+    ]
+   },
+   "notiz": "Verhindert das Vorgleiten des Schienbeins gegen den Oberschenkel und begrenzt die Innenrotation. Am häufigsten gerissenes Band des Knies, typisch bei Valgus-Rotations-Trauma. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-hkb-links",
+   "name": "Hinteres Kreuzband (links)",
+   "latein": "Lig. cruciatum posterius",
+   "system": "baender",
+   "region": "bein",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.005,
+    "punkte": [
+     [
+      0.0689,
+      0.4381,
+      -0.0325
+     ],
+     [
+      0.0729,
+      0.4261,
+      -0.0445
+     ],
+     [
+      0.0769,
+      0.4101,
+      -0.0565
+     ]
+    ]
+   },
+   "notiz": "Verhindert das Zurückgleiten des Schienbeins. Reißt deutlich seltener als das vordere Kreuzband, typisch beim Anpralltrauma auf das gebeugte Knie. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-innenband-links",
+   "name": "Innenband (links)",
+   "latein": "Lig. collaterale mediale (tibiale)",
+   "system": "baender",
+   "region": "bein",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.004,
+    "punkte": [
+     [
+      0.0426,
+      0.4441,
+      -0.0345
+     ],
+     [
+      0.0404,
+      0.4181,
+      -0.0345
+     ],
+     [
+      0.0441,
+      0.3841,
+      -0.0325
+     ]
+    ]
+   },
+   "notiz": "Sichert das Knie gegen Valgusstress (X-Bein-Belastung). Verwächst mit dem Innenmeniskus und der Kapsel – zusammen mit vorderem Kreuzband und Innenmeniskus die „unhappy triad\". Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-aussenband-links",
+   "name": "Außenband (links)",
+   "latein": "Lig. collaterale laterale (fibulare)",
+   "system": "baender",
+   "region": "bein",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.004,
+    "punkte": [
+     [
+      0.1095,
+      0.4441,
+      -0.0385
+     ],
+     [
+      0.1102,
+      0.4189,
+      -0.0494
+     ],
+     [
+      0.1082,
+      0.4009,
+      -0.0474
+     ]
+    ]
+   },
+   "notiz": "Sichert das Knie gegen Varusstress (O-Bein-Belastung). Zieht vom äußeren Oberschenkelknorren zum Wadenbeinköpfchen und ist seltener verletzt als das Innenband. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-innenmeniskus-links",
+   "name": "Innenmeniskus (links)",
+   "latein": "Meniscus medialis",
+   "system": "baender",
+   "region": "bein",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.011,
+    "punkte": [
+     [
+      0.0669,
+      0.4181,
+      -0.0565
+     ],
+     [
+      0.0529,
+      0.4181,
+      -0.0485
+     ],
+     [
+      0.0469,
+      0.4181,
+      -0.0325
+     ],
+     [
+      0.0529,
+      0.4181,
+      -0.0185
+     ],
+     [
+      0.0669,
+      0.4181,
+      -0.0125
+     ]
+    ]
+   },
+   "notiz": "Fest mit Innenband und Kapsel verwachsen und dadurch weniger beweglich – deshalb deutlich häufiger verletzt als der Außenmeniskus. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-aussenmeniskus-links",
+   "name": "Außenmeniskus (links)",
+   "latein": "Meniscus lateralis",
+   "system": "baender",
+   "region": "bein",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.011,
+    "punkte": [
+     [
+      0.0849,
+      0.4181,
+      -0.0545
+     ],
+     [
+      0.0989,
+      0.4181,
+      -0.0465
+     ],
+     [
+      0.1039,
+      0.4181,
+      -0.0325
+     ],
+     [
+      0.0989,
+      0.4181,
+      -0.0205
+     ],
+     [
+      0.0849,
+      0.4181,
+      -0.0145
+     ]
+    ]
+   },
+   "notiz": "Beweglicher als der Innenmeniskus und dadurch seltener verletzt. Beide Menisken vergrößern die Kontaktfläche und dämpfen Stöße beim Gehen. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
    "id": "PT-N-plexus-brachialis-links",
    "name": "Armgeflecht (links)",
    "latein": "Plexus brachialis",
@@ -1311,6 +1511,206 @@
      "farbe": "#ff8a5b"
     }
    ]
+  },
+  {
+   "id": "PT-B-vkb-rechts",
+   "name": "Vorderes Kreuzband (rechts)",
+   "latein": "Lig. cruciatum anterius",
+   "system": "baender",
+   "region": "bein",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0045,
+    "punkte": [
+     [
+      -0.0847,
+      0.4381,
+      -0.0479
+     ],
+     [
+      -0.0787,
+      0.4261,
+      -0.0359
+     ],
+     [
+      -0.0727,
+      0.4101,
+      -0.0179
+     ]
+    ]
+   },
+   "notiz": "Verhindert das Vorgleiten des Schienbeins gegen den Oberschenkel und begrenzt die Innenrotation. Am häufigsten gerissenes Band des Knies, typisch bei Valgus-Rotations-Trauma. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-hkb-rechts",
+   "name": "Hinteres Kreuzband (rechts)",
+   "latein": "Lig. cruciatum posterius",
+   "system": "baender",
+   "region": "bein",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.005,
+    "punkte": [
+     [
+      -0.0707,
+      0.4381,
+      -0.0319
+     ],
+     [
+      -0.0747,
+      0.4261,
+      -0.0439
+     ],
+     [
+      -0.0787,
+      0.4101,
+      -0.0559
+     ]
+    ]
+   },
+   "notiz": "Verhindert das Zurückgleiten des Schienbeins. Reißt deutlich seltener als das vordere Kreuzband, typisch beim Anpralltrauma auf das gebeugte Knie. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-innenband-rechts",
+   "name": "Innenband (rechts)",
+   "latein": "Lig. collaterale mediale (tibiale)",
+   "system": "baender",
+   "region": "bein",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.004,
+    "punkte": [
+     [
+      -0.0445,
+      0.4441,
+      -0.0339
+     ],
+     [
+      -0.0422,
+      0.4181,
+      -0.0339
+     ],
+     [
+      -0.046,
+      0.3841,
+      -0.0319
+     ]
+    ]
+   },
+   "notiz": "Sichert das Knie gegen Valgusstress (X-Bein-Belastung). Verwächst mit dem Innenmeniskus und der Kapsel – zusammen mit vorderem Kreuzband und Innenmeniskus die „unhappy triad\". Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-aussenband-rechts",
+   "name": "Außenband (rechts)",
+   "latein": "Lig. collaterale laterale (fibulare)",
+   "system": "baender",
+   "region": "bein",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.004,
+    "punkte": [
+     [
+      -0.1114,
+      0.4441,
+      -0.0379
+     ],
+     [
+      -0.1119,
+      0.4189,
+      -0.0493
+     ],
+     [
+      -0.1099,
+      0.4009,
+      -0.0473
+     ]
+    ]
+   },
+   "notiz": "Sichert das Knie gegen Varusstress (O-Bein-Belastung). Zieht vom äußeren Oberschenkelknorren zum Wadenbeinköpfchen und ist seltener verletzt als das Innenband. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-innenmeniskus-rechts",
+   "name": "Innenmeniskus (rechts)",
+   "latein": "Meniscus medialis",
+   "system": "baender",
+   "region": "bein",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.011,
+    "punkte": [
+     [
+      -0.0687,
+      0.4181,
+      -0.0559
+     ],
+     [
+      -0.0547,
+      0.4181,
+      -0.0479
+     ],
+     [
+      -0.0487,
+      0.4181,
+      -0.0319
+     ],
+     [
+      -0.0547,
+      0.4181,
+      -0.0179
+     ],
+     [
+      -0.0687,
+      0.4181,
+      -0.0119
+     ]
+    ]
+   },
+   "notiz": "Fest mit Innenband und Kapsel verwachsen und dadurch weniger beweglich – deshalb deutlich häufiger verletzt als der Außenmeniskus. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-aussenmeniskus-rechts",
+   "name": "Außenmeniskus (rechts)",
+   "latein": "Meniscus lateralis",
+   "system": "baender",
+   "region": "bein",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.011,
+    "punkte": [
+     [
+      -0.0867,
+      0.4181,
+      -0.0539
+     ],
+     [
+      -0.1007,
+      0.4181,
+      -0.0459
+     ],
+     [
+      -0.1057,
+      0.4181,
+      -0.0319
+     ],
+     [
+      -0.1007,
+      0.4181,
+      -0.0199
+     ],
+     [
+      -0.0867,
+      0.4181,
+      -0.0139
+     ]
+    ]
+   },
+   "notiz": "Beweglicher als der Innenmeniskus und dadurch seltener verletzt. Beide Menisken vergrößern die Kontaktfläche und dämpfen Stöße beim Gehen. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
   },
   {
    "id": "PT-N-plexus-brachialis-rechts",
