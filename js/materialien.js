@@ -28,6 +28,7 @@ export const GEWEBE = {
   // Unsere eigenen Ebenen – nicht Teil von BodyParts3D, selbst an den Knochen ausgerichtet
   nervenbahnen: { farbe: '#f2e08a', rauheit: 0.45, glanzschicht: 0.35, name: 'Periphere Nerven' },
   gelenkpunkte: { farbe: '#f2c14e', rauheit: 0.30, glanzschicht: 0.60, name: 'Gelenke (klinisch)' },
+  baender:    { farbe: '#9fc0d4', rauheit: 0.40, glanzschicht: 0.45, name: 'Bänder und Menisken (schematisch)' },
   sonstiges:  { farbe: '#b8b0a4', rauheit: 0.60, glanzschicht: 0.15, name: 'Sonstiges' },
 };
 

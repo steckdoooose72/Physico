@@ -64,7 +64,7 @@ export class Katalog {
   /** Alle Bündel, die zu System und Region passen. */
   buendelFuer(system, region = 'alle') {
     // Unsere eigenen Ebenen liegen nicht als Modelldatei vor
-    if (system === 'nervenbahnen' || system === 'gelenkpunkte') return ['eigene'];
+    if (system === 'nervenbahnen' || system === 'gelenkpunkte' || system === 'baender') return ['eigene'];
     return this.verzeichnis.buendel
       .filter((b) => b.buendel.startsWith(`${system}_`))
       .filter((b) => region === 'alle' || b.buendel === `${system}_${region}`)
