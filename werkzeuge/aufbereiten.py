@@ -225,8 +225,61 @@ def schreibe_glb(pfad, strukturen):
 
 # ---------------------------------------------------------------------------
 
-def region_bestimmen(mitte, system):
-    """Grobe Körperregion aus der Lage des Schwerpunkts."""
+# Knoten der Teil-von-Hierarchie, an denen eine Struktur eindeutig zur oberen
+# bzw. unteren Extremität gehört. Wird nur gebraucht, wo die Geometrie allein
+# nicht reicht – siehe extremitaet_bestimmen().
+OBERE_EXTREMITAET = {
+    'upper limb', 'skeleton of upper limb', 'skeletal system of free upper limb',
+    'skeleton of hand', 'segment of hand', 'hand',
+}
+UNTERE_EXTREMITAET = {
+    'lower limb', 'skeleton of lower limb', 'skeletal system of free lower limb',
+    'skeleton of foot', 'segment of foot', 'foot',
+}
+
+
+def extremitaet_bestimmen(kennung, eltern, namen):
+    """'arm', 'bein' oder None – aus der Teil-von-Hierarchie von BodyParts3D.
+
+    Es gewinnt der **nächstgelegene** Vorfahre: Ebene für Ebene nach oben, und
+    sobald auf einer Ebene nur Marker einer Seite stehen, ist entschieden.
+    Das ist nötig, weil weiter oben Sammelknoten wie „set of phalanges" hängen,
+    die Finger und Zehen gemeinsam führen – von ganz oben betrachtet wäre also
+    auch eine Zehe „obere Extremität". Bleibt es mehrdeutig, kommt None zurück
+    und die Geometrie entscheidet wie bisher.
+    """
+    stapel = [kennung]
+    gesehen = {kennung}
+    for _ in range(8):
+        naechste = []
+        for k in stapel:
+            for e in eltern.get(k, []):
+                if e not in gesehen:
+                    gesehen.add(e)
+                    naechste.append(e)
+        if not naechste:
+            return None
+        beschriftung = {namen.get(k, '') for k in naechste}
+        oben = bool(beschriftung & OBERE_EXTREMITAET)
+        unten = bool(beschriftung & UNTERE_EXTREMITAET)
+        if oben != unten:
+            return 'arm' if oben else 'bein'
+        if oben and unten:
+            return None
+        stapel = naechste
+    return None
+
+
+def region_bestimmen(mitte, system, extremitaet=None):
+    """Grobe Körperregion aus der Lage des Schwerpunkts.
+
+    `extremitaet` kommt aus extremitaet_bestimmen() und korrigiert nur die
+    Auffangregel am Ende: Bei hängenden Armen reichen die Finger bis auf
+    Oberschenkelhöhe herunter und fielen sonst als „bein" durch. Weiter oben
+    greift die Hierarchie bewusst nicht – Brust- und Rückenmuskeln (Pectoralis,
+    Trapezius) hängen dort ebenfalls unter „upper limb", gehören für den Filter
+    aber zum Rumpf.
+    """
     x, y, z = mitte
     if y >= 1.45:
         return 'kopf'
@@ -239,6 +292,8 @@ def region_bestimmen(mitte, system):
     if y >= 0.78 and abs(x) < 0.13:
         return 'becken'
     if abs(x) > 0.13 and y > 0.75:
+        return 'arm'
+    if extremitaet == 'arm':
         return 'arm'
     return 'bein'
 
@@ -319,7 +374,7 @@ def main():
         mitte = [float(mittelwert[0] - mitte_x) / 1000.0,
                  float(mittelwert[2] - min_z) / 1000.0,
                  float(-(mittelwert[1] - mitte_z)) / 1000.0]
-        region = region_bestimmen(mitte, system)
+        region = region_bestimmen(mitte, system, extremitaet_bestimmen(kennung, eltern, namen))
         if kennung in vorgabe:                      # beide Detailstufen gleich aufteilen
             system, region = vorgabe[kennung]
         zuordnung[f'{system}_{region}'].append((kennung, mitte, system, region))

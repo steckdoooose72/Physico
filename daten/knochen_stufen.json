@@ -58,7 +58,7 @@
 ]
 },
 "FMA23953": {
-"region": "bein",
+"region": "arm",
 "einordnungen": [
 {
 "stufe": 2,
@@ -103,7 +103,7 @@
 ]
 },
 "FMA23955": {
-"region": "bein",
+"region": "arm",
 "einordnungen": [
 {
 "stufe": 2,
@@ -118,7 +118,7 @@
 ]
 },
 "FMA23957": {
-"region": "bein",
+"region": "arm",
 "einordnungen": [
 {
 "stufe": 2,
@@ -208,7 +208,7 @@
 ]
 },
 "FMA24460": {
-"region": "bein",
+"region": "arm",
 "einordnungen": [
 {
 "stufe": 2,
@@ -253,7 +253,7 @@
 ]
 },
 "FMA24461": {
-"region": "bein",
+"region": "arm",
 "einordnungen": [
 {
 "stufe": 2,
@@ -268,7 +268,7 @@
 ]
 },
 "FMA24462": {
-"region": "bein",
+"region": "arm",
 "einordnungen": [
 {
 "stufe": 2,
@@ -1538,7 +1538,7 @@
 ]
 },
 "FMA23940": {
-"region": "bein",
+"region": "arm",
 "einordnungen": [
 {
 "stufe": 2,
