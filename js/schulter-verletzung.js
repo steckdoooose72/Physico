@@ -46,6 +46,10 @@ const SICHT_HOEHE = 0.75;
  * „Humeruskopf" kommt nur als Ablenker vor – das Modell kennt den Kopf nicht
  * einzeln, nur den ganzen Oberarmknochen; für die Hervorhebung reicht das,
  * weil ein Ablenker nie hervorgehoben wird.
+ * „Labrum glenoidale" ist seit werkzeuge/eigene_ebenen.py (system: baender)
+ * ein echtes, wenn auch schematisches Pfad-Mesh und lässt sich genauso
+ * hervorheben wie Clavicula oder Rotatorenmanschette – vorher war die Liste
+ * hier leer und die Frage blieb rein textbasiert.
  */
 const STRUKTUR_KENNUNGEN = {
   'AC-Gelenk':           ['PT-G-ac-links'],
@@ -53,7 +57,7 @@ const STRUKTUR_KENNUNGEN = {
   'Clavicula':           ['FMA13323'],
   'Rotatorenmanschette': ['FMA32545', 'FMA32548', 'FMA13415', 'FMA32554'],
   'Humeruskopf':         ['FMA23131'],
-  'Labrum glenoidale':   [],   // im Modell nicht enthalten – nur Text
+  'Labrum glenoidale':   ['PT-B-labrum-links'],
 };
 
 // Knöcherner Rahmen um die Schulter: reicht als ruhiger Hintergrund und lädt
@@ -312,8 +316,9 @@ async function nimmAntwort(frage, gewaehlt, knopf) {
 
 /**
  * Hebt eine Struktur im Modell hervor – erst in der Auswertung, nie vorher.
- * Fehlt sie im Modell (Labrum), bleibt es beim Text; die zugehörigen Knöpfe
- * sind dann gar nicht erst anklickbar.
+ * Fehlt eine Struktur im Modell (leere Liste in STRUKTUR_KENNUNGEN), bleibt
+ * es beim Text; die zugehörigen Knöpfe sind dann gar nicht erst anklickbar.
+ * Aktuell betrifft das keine der neun Situationen mehr.
  */
 async function hebeHervor(name, knopf) {
   const kennungen = STRUKTUR_KENNUNGEN[name] ?? [];
