@@ -1,0 +1,42 @@
+[
+  {
+    "situation": "Ein 19-jähriger Fußballer wechselt abrupt die Richtung, das Knie sackt dabei nach innen weg, der Fuß bleibt am Boden fixiert. Er hört einen Knall und kann nicht weiterspielen.",
+    "teilfragen": [
+      {
+        "frage": "Welches Band ist am ehesten gerissen?",
+        "richtig": "Vorderes Kreuzband",
+        "ablenker": ["Hinteres Kreuzband", "Außenband"]
+      },
+      {
+        "frage": "Welche Begleitstruktur ist bei diesem Mechanismus ('Unhappy Triad') zusätzlich häufig betroffen?",
+        "richtig": "Innenband",
+        "ablenker": ["Außenband", "Außenmeniskus"]
+      },
+      {
+        "frage": "Welche dritte Struktur gehört zur 'Unhappy Triad' neben VKB und Innenband?",
+        "richtig": "Innenmeniskus",
+        "ablenker": ["Außenmeniskus", "Hinteres Kreuzband"]
+      }
+    ]
+  },
+  {
+    "situation": "Eine 30-Jährige stürzt beim Skifahren direkt auf die Kniescheibe, das Knie war dabei leicht verdreht.",
+    "teilfragen": [
+      {
+        "frage": "Welche Struktur ist direkt vom Sturz betroffen?",
+        "richtig": "Kniescheibe",
+        "ablenker": ["Vorderes Kreuzband", "Innenband"]
+      },
+      {
+        "frage": "Welcher Muskel ermöglicht über die Kniescheibe die Streckung des Knies?",
+        "richtig": "Quadrizeps",
+        "ablenker": ["Ischiocrurale Muskulatur"]
+      },
+      {
+        "frage": "Welche zusätzliche Struktur sollte wegen der Verdrehung geprüft werden?",
+        "richtig": "Innenmeniskus",
+        "ablenker": ["Außenmeniskus", "Hinteres Kreuzband"]
+      }
+    ]
+  }
+]

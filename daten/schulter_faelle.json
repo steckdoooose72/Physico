@@ -1,0 +1,42 @@
+[
+  {
+    "situation": "Ein 22-jähriger Handballer stürzt beim Sprungwurf und landet auf dem ausgestreckten, nach hinten abgespreizten und außenrotierten Arm. Danach kann er den Arm kaum bewegen, die Schulter wirkt 'leer'.",
+    "teilfragen": [
+      {
+        "frage": "Welches Gelenk ist am ehesten betroffen?",
+        "richtig": "Glenohumeralgelenk",
+        "ablenker": ["AC-Gelenk", "Clavicula"]
+      },
+      {
+        "frage": "Welche Begleitstruktur reißt bei jungen Sportlern in diesem Fall am ehesten zusätzlich mit?",
+        "richtig": "Labrum glenoidale",
+        "ablenker": ["Rotatorenmanschette", "AC-Gelenk"]
+      },
+      {
+        "frage": "Welcher einzelne Muskel würde bei einer zusätzlichen Rotatorenmanschetten-Prüfung die Außenrotation testen?",
+        "richtig": "M. infraspinatus",
+        "ablenker": ["M. subscapularis", "M. teres major"]
+      }
+    ]
+  },
+  {
+    "situation": "Eine 45-jährige Handballerin klagt seit Wochen über Schulterschmerzen beim Überkopf-Wurf, ohne akutes Sturzereignis. Beim Testen zeigt sich eine Kraftminderung bei der Außenrotation.",
+    "teilfragen": [
+      {
+        "frage": "Welche Struktur ist hier am ehesten betroffen – Überlastung statt akutes Trauma?",
+        "richtig": "Rotatorenmanschette",
+        "ablenker": ["Labrum glenoidale", "AC-Gelenk"]
+      },
+      {
+        "frage": "Welcher einzelne Muskel zeigt durch den Kraftverlust bei Außenrotation die stärkste Auffälligkeit?",
+        "richtig": "M. infraspinatus",
+        "ablenker": ["M. supraspinatus", "M. subscapularis"]
+      },
+      {
+        "frage": "Welcher Muskel würde bei eingeschränkter Innenrotation am ehesten geprüft?",
+        "richtig": "M. subscapularis",
+        "ablenker": ["M. teres major", "M. infraspinatus"]
+      }
+    ]
+  }
+]
