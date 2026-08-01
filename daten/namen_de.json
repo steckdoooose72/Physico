@@ -345,6 +345,56 @@
 "notiz": "Beim Strecken dreht das Schienbein leicht nach außen (Schlussrotation) und verriegelt das Gelenk. Die Menisken vergrößern die Kontaktfläche und dämpfen Stöße.",
 "de": "Kniegelenk (rechts)"
 },
+"PT-B-labrum-links": {
+"latein": "Labrum glenoidale",
+"notiz": "Knorpelring, der die flache Gelenkpfanne vertieft und die Kontaktfläche zum Humeruskopf vergrößert. Bei vorderen Schulterluxationen häufig mitverletzt (Bankart-Läsion). Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Labrum glenoidale (links)"
+},
+"PT-B-labrum-rechts": {
+"latein": "Labrum glenoidale",
+"notiz": "Knorpelring, der die flache Gelenkpfanne vertieft und die Kontaktfläche zum Humeruskopf vergrößert. Bei vorderen Schulterluxationen häufig mitverletzt (Bankart-Läsion). Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Labrum glenoidale (rechts)"
+},
+"PT-B-lig-acromioclaviculare-links": {
+"latein": "Lig. acromioclaviculare",
+"notiz": "Kurzes, straffes Kapselband direkt über dem Schultereckgelenk – hält Clavicula und Acromion in der Fläche zusammen; Riss zeigt sich als Stufenbildung. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Lig. acromioclaviculare (links)"
+},
+"PT-B-lig-acromioclaviculare-rechts": {
+"latein": "Lig. acromioclaviculare",
+"notiz": "Kurzes, straffes Kapselband direkt über dem Schultereckgelenk – hält Clavicula und Acromion in der Fläche zusammen; Riss zeigt sich als Stufenbildung. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten.",
+"de": "Lig. acromioclaviculare (rechts)"
+},
+"PT-B-lig-coracoacromiale-links": {
+"latein": "Lig. coracoacromiale",
+"notiz": "Spannt als „schützendes Dach\" zwischen Coracoid und Acromion über dem Humeruskopf und der Rotatorenmanschette – wichtig beim Impingement-Syndrom. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten. Ansatzpunkt zusätzlich aus der Form des Schulterblatts angenähert, nicht aus einem eigenen Knochenpunkt – ungenauer als die Kniebänder.",
+"de": "Lig. coracoacromiale (links)"
+},
+"PT-B-lig-coracoacromiale-rechts": {
+"latein": "Lig. coracoacromiale",
+"notiz": "Spannt als „schützendes Dach\" zwischen Coracoid und Acromion über dem Humeruskopf und der Rotatorenmanschette – wichtig beim Impingement-Syndrom. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten. Ansatzpunkt zusätzlich aus der Form des Schulterblatts angenähert, nicht aus einem eigenen Knochenpunkt – ungenauer als die Kniebänder.",
+"de": "Lig. coracoacromiale (rechts)"
+},
+"PT-B-lig-coracoclaviculare-links": {
+"latein": "Lig. coracoclaviculare",
+"notiz": "Hält die Clavicula am Coracoid und sichert das Schultereckgelenk zusätzlich zu dessen eigener Kapsel – reißt bei höhergradiger AC-Gelenk-Sprengung mit. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten. Ansatzpunkt zusätzlich aus der Form des Schulterblatts angenähert, nicht aus einem eigenen Knochenpunkt – ungenauer als die Kniebänder.",
+"de": "Lig. coracoclaviculare (links)"
+},
+"PT-B-lig-coracoclaviculare-rechts": {
+"latein": "Lig. coracoclaviculare",
+"notiz": "Hält die Clavicula am Coracoid und sichert das Schultereckgelenk zusätzlich zu dessen eigener Kapsel – reißt bei höhergradiger AC-Gelenk-Sprengung mit. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten. Ansatzpunkt zusätzlich aus der Form des Schulterblatts angenähert, nicht aus einem eigenen Knochenpunkt – ungenauer als die Kniebänder.",
+"de": "Lig. coracoclaviculare (rechts)"
+},
+"PT-B-ligg-glenohumeralia-links": {
+"latein": "Ligg. glenohumeralia",
+"notiz": "Drei Kapselbänder (oberes, mittleres, unteres) zusammengefasst als eine Struktur – sie verstärken die Gelenkkapsel vorne und sind die wichtigste passive Sicherung gegen die vordere Luxation. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten. Ansatzpunkt zusätzlich aus der Form des Schulterblatts angenähert, nicht aus einem eigenen Knochenpunkt – ungenauer als die Kniebänder.",
+"de": "Ligg. glenohumeralia (links)"
+},
+"PT-B-ligg-glenohumeralia-rechts": {
+"latein": "Ligg. glenohumeralia",
+"notiz": "Drei Kapselbänder (oberes, mittleres, unteres) zusammengefasst als eine Struktur – sie verstärken die Gelenkkapsel vorne und sind die wichtigste passive Sicherung gegen die vordere Luxation. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten. Ansatzpunkt zusätzlich aus der Form des Schulterblatts angenähert, nicht aus einem eigenen Knochenpunkt – ungenauer als die Kniebänder.",
+"de": "Ligg. glenohumeralia (rechts)"
+},
 "PT-N-medianus-links": {
 "latein": "N. medianus",
 "segmente": "C6–Th1",

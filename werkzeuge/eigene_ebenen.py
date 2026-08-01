@@ -17,6 +17,7 @@ Aufruf:  .venv/bin/python werkzeuge/eigene_ebenen.py
 """
 
 import json
+import math
 import os
 
 BASIS = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -326,6 +327,123 @@ def kniebaender_bauen(a, seite_de):
 
 
 # ---------------------------------------------------------------------------
+# Bänder der Schulter
+# ---------------------------------------------------------------------------
+
+def schulterbaender_bauen(a, seite_de):
+    """Fünf Schulterstrukturen, die BodyParts3D nicht mitbringt.
+
+    Labrum, Ligg. glenohumeralia und Lig. acromioclaviculare hängen an den
+    bewährten Gelenkpunkten aus gelenke_bauen() (hier lokal noch einmal
+    berechnet, dieselbe Formel). Acromion und Coracoid sind dagegen KEINE
+    eigenen Knochen im Verzeichnis, sondern nur Teile der Scapula als Ganzes
+    – ihre Position wird deshalb aus der Scapula-Bounding-Box geschätzt
+    (siehe acromion_grob/coracoid_grob unten). Das ist eine gröbere Näherung
+    als bei den Kniebändern, wo jeder Ansatzpunkt ein eigener, klar
+    abgrenzbarer Knochen war – deshalb der zusätzliche Hinweis in der notiz
+    der drei betroffenen Strukturen.
+    """
+    s = a.vorzeichen
+    sca = a._hole('scapula')
+    cla = a._hole('clavicle')
+
+    # Dieselben Punkte wie in gelenke_bauen() – dort nicht wiederverwendbar,
+    # weil sie lokale Variablen einer anderen Funktion sind.
+    schulter = v(a.oben('humerus'), -0.004, -0.012, 0.004, s)
+    ac = v(a.aussen('clavicle'), -0.006, 0.002, 0.0, s)
+
+    # Acromion: höchster, seitlichster Punkt der Scapula-Hüllbox, ein Stück
+    # nach vorne verschoben (die Scapula ist flach und liegt hinten, das
+    # Schulterdach kragt darüber nach vorne aus).
+    lateral_x = a.aussen('scapula')[0]
+    acromion_grob = [
+        round(lateral_x - 0.006 * s, 4),
+        round(sca['bis'][1] - 0.006, 4),
+        round(sca['bis'][2] + 0.010, 4),
+    ]
+    # Coracoid: auf halbem Weg zwischen Scapula-Mitte und Außenkante, spürbar
+    # unterhalb der Clavicula-Unterkante und noch weiter vorne als das
+    # Acromion – der Rabenschnabelfortsatz hakt nach vorne-unten ein.
+    coracoid_grob = [
+        round(sca['mitte'][0] + 0.55 * (lateral_x - sca['mitte'][0]), 4),
+        round(cla['von'][1] - 0.006, 4),
+        round(sca['bis'][2] + 0.014, 4),
+    ]
+    # Unterseite der Clavicula, spürbar medial und unterhalb des AC-Punkts –
+    # dort setzt das Lig. coracoclaviculare an, nicht am Gelenk selbst.
+    clavicula_unterseite = v(a.aussen('clavicle'), -0.024, -0.010, 0.0, s)
+
+    zusatz_scapula = ('Ansatzpunkt zusätzlich aus der Form des Schulterblatts angenähert, nicht '
+                       'aus einem eigenen Knochenpunkt – ungenauer als die Kniebänder.')
+
+    def b(kennung, name, latein, punkte, radius, notiz, ungenauer=False, **rest):
+        hinweis = f'{SCHEMA_HINWEIS} {zusatz_scapula}' if ungenauer else SCHEMA_HINWEIS
+        return dict(
+            id=f'PT-B-{kennung}-{seite_de}',
+            name=f'{name} ({seite_de})',
+            latein=latein, system='baender', region='arm', seite=seite_de,
+            form={'typ': 'pfad', 'radius': radius, 'punkte': punkte},
+            notiz=f'{notiz} {hinweis}', **rest)
+
+    # Labrum: ein Ring aus sechs Punkten um den Gelenkpunkt, leicht medial
+    # davon (die Gelenkpfanne liegt hinter dem Humeruskopf-Mittelpunkt). Der
+    # erste Punkt wird am Ende wiederholt, damit der offene Pfad optisch zum
+    # geschlossenen Ring wird.
+    ring_radius = 0.017
+    labrum_punkte = []
+    for i in range(7):
+        winkel = 2 * math.pi * (i % 6) / 6
+        labrum_punkte.append(v(schulter, -0.008, ring_radius * math.cos(winkel),
+                                ring_radius * math.sin(winkel), s))
+
+    humerus_vorne_oben = v(a.oben('humerus'), 0.014, -0.010, 0.014, s)
+
+    return [
+        b('labrum', 'Labrum glenoidale', 'Labrum glenoidale', labrum_punkte, 0.0035,
+          'Knorpelring, der die flache Gelenkpfanne vertieft und die Kontaktfläche zum '
+          'Humeruskopf vergrößert. Bei vorderen Schulterluxationen häufig mitverletzt '
+          '(Bankart-Läsion).'),
+
+        b('ligg-glenohumeralia', 'Ligg. glenohumeralia', 'Ligg. glenohumeralia', [
+            schulter,
+            v(a.oben('humerus'), 0.005, -0.014, 0.009, s),
+            humerus_vorne_oben,
+        ], 0.0040,
+          'Drei Kapselbänder (oberes, mittleres, unteres) zusammengefasst als eine Struktur – '
+          'sie verstärken die Gelenkkapsel vorne und sind die wichtigste passive Sicherung '
+          'gegen die vordere Luxation.',
+          ungenauer=True),
+
+        b('lig-coracoacromiale', 'Lig. coracoacromiale', 'Lig. coracoacromiale', [
+            coracoid_grob,
+            v([(coracoid_grob[0] + acromion_grob[0]) / 2, (coracoid_grob[1] + acromion_grob[1]) / 2 + 0.006,
+               (coracoid_grob[2] + acromion_grob[2]) / 2], 0, 0, 0, s),
+            acromion_grob,
+        ], 0.0035,
+          'Spannt als „schützendes Dach" zwischen Coracoid und Acromion über dem Humeruskopf '
+          'und der Rotatorenmanschette – wichtig beim Impingement-Syndrom.',
+          ungenauer=True),
+
+        b('lig-coracoclaviculare', 'Lig. coracoclaviculare', 'Lig. coracoclaviculare', [
+            coracoid_grob,
+            v([(coracoid_grob[0] + clavicula_unterseite[0]) / 2,
+               (coracoid_grob[1] + clavicula_unterseite[1]) / 2,
+               (coracoid_grob[2] + clavicula_unterseite[2]) / 2 + 0.006], 0, 0, 0, s),
+            clavicula_unterseite,
+        ], 0.0040,
+          'Hält die Clavicula am Coracoid und sichert das Schultereckgelenk zusätzlich zu '
+          'dessen eigener Kapsel – reißt bei höhergradiger AC-Gelenk-Sprengung mit.',
+          ungenauer=True),
+
+        b('lig-acromioclaviculare', 'Lig. acromioclaviculare', 'Lig. acromioclaviculare', [
+            acromion_grob, ac,
+        ], 0.0035,
+          'Kurzes, straffes Kapselband direkt über dem Schultereckgelenk – hält Clavicula und '
+          'Acromion in der Fläche zusammen; Riss zeigt sich als Stufenbildung.'),
+    ]
+
+
+# ---------------------------------------------------------------------------
 # Periphere Nerven
 # ---------------------------------------------------------------------------
 
@@ -504,6 +622,7 @@ def main():
         seite_de = 'links' if seite == 'left' else 'rechts'
         strukturen += gelenke_bauen(a, seite_de)
         strukturen += kniebaender_bauen(a, seite_de)
+        strukturen += schulterbaender_bauen(a, seite_de)
         strukturen += nerven_bauen(a, knochen)
     strukturen.append(kopfgelenk(knochen))
 
