@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Physico – Strukturen des Knies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/farben.css?v=2">
+  <link rel="stylesheet" href="css/quiz.css?v=5">
+
+  <!-- Pilotseite: das Aussehen kommt aus quiz.css, hier steht nur die
+       Funktionszeile, die es dort noch nicht gibt. Bewusst inline, damit der
+       Pilot nichts Bestehendes anfasst. Identisch zu schulter-struktur.html. -->
+  <style>
+    /* Antworten sind hier einzelne Begriffe, keine zwei Namen übereinander */
+    #antworten .antwort-knopf { flex-direction: row; justify-content: center; }
+
+    /* Erscheint erst nach der Antwort – währenddessen bleibt die Struktur im
+       Modell hervorgehoben, damit Text und Bild zusammen ankommen. */
+    #funktion {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--rand);
+      text-align: left;
+    }
+    #funktion[hidden] { display: none; }
+
+    .funktion-marke {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 10.5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.1px;
+      color: var(--graugruen-dunkel);
+    }
+
+    .funktion-text {
+      margin: 0;
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 15.5px;
+      line-height: 1.5;
+      color: var(--olive-dunkel);
+    }
+  </style>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.169.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.169.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Die 3D-Bühne füllt das Fenster, alles andere liegt darüber -->
+  <div id="buehne"></div>
+
+  <!-- Kopfzeile: Rückweg, Titel, Fortschritt -->
+  <header id="quiz-kopf">
+    <a class="zurueck" href="index.html">← Startseite</a>
+    <div class="kopf-mitte">
+      <span class="kopf-titel">Strukturen des Knies</span>
+      <span class="kopf-untertitel">Grundlagen · Pilot</span>
+    </div>
+    <div class="fortschritt">
+      <span id="fortschritt-text">–</span>
+      <div class="fortschritt-balken"><div id="fortschritt-fuell"></div></div>
+    </div>
+    <button type="button" class="beenden-knopf" id="beenden-knopf">Beenden</button>
+  </header>
+
+  <!-- Frage mit Antwortmöglichkeiten. Wie in Bone-Prep ohne Rückmeldung: ob
+       die Antwort stimmt, steht erst in der Auswertung. Nach der Antwort
+       erscheint hier die Funktionszeile – die Struktur bleibt so lange im
+       Modell hervorgehoben. -->
+  <section id="frage-bereich" hidden>
+    <p class="frage-text">Welche Struktur ist hervorgehoben?</p>
+    <div class="antworten" id="antworten"></div>
+
+    <div id="funktion" hidden>
+      <span class="funktion-marke">Funktion</span>
+      <p class="funktion-text" id="funktion-text"></p>
+    </div>
+
+    <button type="button" class="weiter-knopf" id="weiter-knopf" hidden>Weiter</button>
+  </section>
+
+  <!-- Auswertung am Ende -->
+  <section id="ergebnis" hidden>
+    <h2 id="ergebnis-titel"></h2>
+    <p class="ergebnis-zahl" id="ergebnis-zahl"></p>
+    <div id="ergebnis-fehler"></div>
+    <div class="ergebnis-knoepfe">
+      <button type="button" class="weiter-knopf" id="nochmal-knopf">Noch eine Runde</button>
+      <a class="text-knopf" href="index.html">Zurück zur Startseite</a>
+    </div>
+  </section>
+
+  <div id="ladehinweis">Knie-Grundlagen starten …</div>
+
+  <script type="module" src="js/knie-struktur.js?v=4"></script>
+</body>
+</html>
