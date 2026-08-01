@@ -1,0 +1,48 @@
+[
+  {
+    "schwierigkeit": "klar",
+    "situation": "Plötzlicher Richtungswechsel im Sport, das Knie sackt dabei nach innen weg (Valgus), der Fuß ist am Boden fixiert.",
+    "richtig": ["Vorderes Kreuzband"],
+    "ablenker": ["Hinteres Kreuzband", "Außenband", "Innenmeniskus"],
+    "hinweis": "häufigster Verletzungsmechanismus, oft zusätzlich Innenband und Innenmeniskus betroffen ('Unhappy Triad')"
+  },
+  {
+    "schwierigkeit": "klar",
+    "situation": "Direkter Tritt oder Schlag von außen gegen das Knie.",
+    "richtig": ["Innenband"],
+    "ablenker": ["Außenband", "Vorderes Kreuzband", "Innenmeniskus"]
+  },
+  {
+    "schwierigkeit": "klar",
+    "situation": "Kraft von innen gegen das Knie, das Knie wird nach außen gedrückt.",
+    "richtig": ["Außenband"],
+    "ablenker": ["Innenband", "Hinteres Kreuzband", "Außenmeniskus"]
+  },
+  {
+    "schwierigkeit": "klar",
+    "situation": "Verdrehung des gebeugten Knies bei fixiertem Fuß, unter Last – z. B. beim Fußball.",
+    "richtig": ["Innenmeniskus"],
+    "ablenker": ["Außenmeniskus", "Vorderes Kreuzband", "Innenband"],
+    "hinweis": "der Innenmeniskus ist bei diesem Mechanismus deutlich häufiger betroffen als der Außenmeniskus"
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Direkte Krafteinwirkung auf den Unterschenkel von vorne, z. B. bei einem Autounfall gegen das Armaturenbrett.",
+    "richtig": ["Hinteres Kreuzband"],
+    "ablenker": ["Vorderes Kreuzband", "Innenband", "Außenband"]
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Direkter Sturz auf die Kniescheibe, oder eine Verdrehung des Knies in leichter Beugung.",
+    "richtig": ["Kniescheibe"],
+    "ablenker": ["Innenband", "Vorderes Kreuzband", "Innenmeniskus"],
+    "hinweis": "Patellaluxation; das dabei ebenfalls reißende Band zur Kniescheibe existiert im Modell nicht separat"
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Übermäßige Streck- oder Beugebewegung des Knies (Hyperextension/-flexion).",
+    "richtig": ["Vorderes Kreuzband", "Hinteres Kreuzband"],
+    "ablenker": ["Innenband", "Außenband"],
+    "hinweis": "beide Kreuzbänder gelten hier als richtig, je nach Richtung der Überbewegung"
+  }
+]
