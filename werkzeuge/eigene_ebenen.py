@@ -489,6 +489,43 @@ def kieferbaender_bauen(a, seite_de):
 
 
 # ---------------------------------------------------------------------------
+# Dens-Stabilisierungsbänder der HWS
+# ---------------------------------------------------------------------------
+
+def halsbaender_bauen(a):
+    """Lig. cruciforme atlantis (Lig. transversum atlantis + Ligg. alaria)
+    zusammengefasst, das BodyParts3D nicht mitbringt.
+
+    Atlas und Axis sind unpaarige, mittige Knochen – anders als bei Knie,
+    Schulter und Kiefer entsteht hier deshalb nur EINE Struktur, nicht eine
+    pro Seite. `a` kann mit einer beliebigen Seite gebaut sein: die Anker-
+    Methoden fallen für unpaarige Knochen ohnehin auf den seitenlosen
+    Verzeichniseintrag zurück (siehe Anker._hole()).
+
+    Die Punkte hängen an echten Knochenwerten: die Denspitze über
+    oben('axis'), die Atlasring-Mitte über mitte('atlas') als Stützpunkt für
+    das querverlaufende Lig. transversum, der vordere Atlasbogen über
+    unten('atlas') leicht nach vorne verschoben – zusammen ergibt der Pfad
+    eine grob kreuzförmige Fläche um den Dens.
+    """
+    dens_spitze = a.oben('axis')
+    atlas_mitte = a.mitte('atlas')
+    atlas_vorne = v(a.unten('atlas'), 0, 0.006, 0.014)
+
+    punkte = [dens_spitze, atlas_mitte, atlas_vorne, dens_spitze]
+
+    return [dict(
+        id='PT-B-dens-stabilisierung',
+        name='Dens-Stabilisierungsbänder',
+        latein='Lig. cruciforme atlantis',
+        system='baender', region='hals', seite='mitte',
+        form={'typ': 'pfad', 'radius': 0.0035, 'punkte': punkte},
+        notiz='Hält den Zahnfortsatz des Axis in Position; wird vor Manipulationen der oberen '
+              f'Halswirbelsäule auf Stabilität geprüft. {SCHEMA_HINWEIS}',
+    )]
+
+
+# ---------------------------------------------------------------------------
 # Periphere Nerven
 # ---------------------------------------------------------------------------
 
@@ -671,6 +708,7 @@ def main():
         strukturen += kieferbaender_bauen(a, seite_de)
         strukturen += nerven_bauen(a, knochen)
     strukturen.append(kopfgelenk(knochen))
+    strukturen += halsbaender_bauen(Anker(knochen, 'left'))
 
     with open(ZIEL, 'w', encoding='utf-8') as f:
         json.dump({'strukturen': strukturen}, f, ensure_ascii=False, indent=1)

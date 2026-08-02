@@ -2610,6 +2610,41 @@
      "farbe": "#6bb8ff"
     }
    ]
+  },
+  {
+   "id": "PT-B-dens-stabilisierung",
+   "name": "Dens-Stabilisierungsbänder",
+   "latein": "Lig. cruciforme atlantis",
+   "system": "baender",
+   "region": "hals",
+   "seite": "mitte",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0035,
+    "punkte": [
+     [
+      -0.0004,
+      1.4959,
+      -0.024
+     ],
+     [
+      -0.0016,
+      1.4865,
+      -0.0216
+     ],
+     [
+      -0.0016,
+      1.4838,
+      -0.0076
+     ],
+     [
+      -0.0004,
+      1.4959,
+      -0.024
+     ]
+    ]
+   },
+   "notiz": "Hält den Zahnfortsatz des Axis in Position; wird vor Manipulationen der oberen Halswirbelsäule auf Stabilität geprüft. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
   }
  ]
 }
