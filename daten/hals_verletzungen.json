@@ -1,0 +1,29 @@
+[
+  {
+    "schwierigkeit": "klar",
+    "situation": "Auffahrunfall, der Kopf wird ruckartig nach hinten und dann nach vorn geschleudert.",
+    "richtig": ["M. sternocleidomastoideus"],
+    "ablenker": ["Mm. splenius capitis/cervicis", "Dens-Stabilisierungsbänder"],
+    "hinweis": "Schleudertrauma (HWS-Distorsion) – betrifft vor allem Muskeln und Bänder der HWS"
+  },
+  {
+    "schwierigkeit": "klar",
+    "situation": "Dauerhafte Vorneigung des Kopfes bei Bildschirmarbeit, über Monate.",
+    "richtig": ["Mm. splenius capitis/cervicis"],
+    "ablenker": ["M. sternocleidomastoideus", "Dens-Stabilisierungsbänder"],
+    "hinweis": "der Hebelarm des Kopfgewichts steigt bei 45° Vorneigung auf über das 4-Fache"
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Einseitig verkürzter, verspannter Halsmuskel, der Kopf ist zur Seite geneigt und leicht gedreht (Schiefhals).",
+    "richtig": ["M. sternocleidomastoideus"],
+    "ablenker": ["Mm. splenius capitis/cervicis", "Dens-Stabilisierungsbänder"],
+    "hinweis": "Torticollis, meist einseitig betroffen"
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Überstreckung der oberen Halswirbelsäule bei einer Manipulation – ein Warnzeichen, das vor der Behandlung geprüft werden muss.",
+    "richtig": ["Dens-Stabilisierungsbänder"],
+    "ablenker": ["M. sternocleidomastoideus", "Mm. splenius capitis/cervicis"]
+  }
+]
