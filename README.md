@@ -1,4 +1,4 @@
-# Physico
+# Membra
 
 Ein interaktives 3D-Anatomiemodell des Menschen zum Lernen – gebaut für die Vorbereitung
 auf die Physiotherapie-Ausbildung.

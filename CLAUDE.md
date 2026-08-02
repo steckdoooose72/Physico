@@ -1,4 +1,4 @@
-# Physico – Projektkontext für Claude Code
+# Membra – Projektkontext für Claude Code
 
 Interaktives 3D-Anatomiemodell zum Lernen (Vorbereitung Physiotherapie-Ausbildung).
 Der Nutzer hat **keine Programmiererfahrung** und baut das Projekt langfristig selbst weiter.
