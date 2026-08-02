@@ -1,0 +1,42 @@
+[
+  {
+    "situation": "Ein 40-Jähriger war vor drei Tagen in einen Auffahrunfall verwickelt, sein Auto wurde von hinten angestoßen. Seither Nackenschmerzen und eingeschränkte Kopfdrehung.",
+    "teilfragen": [
+      {
+        "frage": "Welche Struktur ist am ehesten überlastet?",
+        "richtig": "M. sternocleidomastoideus",
+        "ablenker": ["Mm. splenius capitis/cervicis", "Dens-Stabilisierungsbänder"]
+      },
+      {
+        "frage": "Welche Struktur wäre bei zusätzlicher Rückneigung des Kopfes am ehesten beteiligt?",
+        "richtig": "Mm. splenius capitis/cervicis",
+        "ablenker": ["Prävertebrale Muskulatur", "M. trapezius"]
+      },
+      {
+        "frage": "Welche Struktur sollte vor einer Manipulation der oberen Halswirbelsäule sicherheitshalber geprüft werden?",
+        "richtig": "Dens-Stabilisierungsbänder",
+        "ablenker": ["Bandscheibe (HWS)", "Oberes Kopfgelenk"]
+      }
+    ]
+  },
+  {
+    "situation": "Eine Bildschirmarbeiterin klagt seit Monaten über Nackenverspannungen, besonders am Ende des Arbeitstags, ohne akutes Ereignis.",
+    "teilfragen": [
+      {
+        "frage": "Welche Struktur ist am ehesten überlastet?",
+        "richtig": "Mm. splenius capitis/cervicis",
+        "ablenker": ["M. sternocleidomastoideus", "Prävertebrale Muskulatur"]
+      },
+      {
+        "frage": "Welcher Halswirbel trägt zusammen mit dem Atlas die Hauptlast der Kopfdrehung?",
+        "richtig": "Axis",
+        "ablenker": ["Atlas", "Oberes Kopfgelenk"]
+      },
+      {
+        "frage": "Welche Struktur wäre bei chronischer Überlastung zusätzlich betroffen?",
+        "richtig": "Bandscheibe (HWS)",
+        "ablenker": ["Dens-Stabilisierungsbänder", "M. trapezius"]
+      }
+    ]
+  }
+]
