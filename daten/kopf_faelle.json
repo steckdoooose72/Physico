@@ -1,0 +1,42 @@
+[
+  {
+    "situation": "Eine 28-jährige Studentin bemerkt seit einigen Wochen morgens einen verspannten Kiefer und Kopfschmerzen. Ihr Partner berichtet von nächtlichem Zähneknirschen.",
+    "teilfragen": [
+      {
+        "frage": "Welche Struktur ist durch das Zähneknirschen am ehesten überlastet?",
+        "richtig": "M. masseter",
+        "ablenker": ["Discus articularis", "Kiefergelenk"]
+      },
+      {
+        "frage": "Welcher Muskel wäre zusätzlich betroffen, wenn auch beim Rückschub des Unterkiefers Beschwerden bestehen?",
+        "richtig": "M. temporalis",
+        "ablenker": ["M. pterygoideus medialis", "M. pterygoideus lateralis"]
+      },
+      {
+        "frage": "Welche Struktur könnte durch die anhaltende Überlastung zusätzlich verlagert werden?",
+        "richtig": "Discus articularis",
+        "ablenker": ["Kiefergelenk", "M. pterygoideus lateralis"]
+      }
+    ]
+  },
+  {
+    "situation": "Ein 35-jähriger Mann berichtet über ein Knacken beim Mundöffnen seit Monaten. Seit einer Woche kann er den Mund nicht mehr vollständig öffnen, das Knacken ist dabei verschwunden.",
+    "teilfragen": [
+      {
+        "frage": "Welche Struktur war ursprünglich für das Knacken verantwortlich?",
+        "richtig": "Discus articularis",
+        "ablenker": ["M. masseter", "Kiefergelenk"]
+      },
+      {
+        "frage": "Welcher Muskel würde bei einer Kompensation der eingeschränkten Öffnung vermehrt beansprucht?",
+        "richtig": "M. pterygoideus lateralis",
+        "ablenker": ["M. temporalis", "M. masseter"]
+      },
+      {
+        "frage": "Welche Struktur sollte zusätzlich untersucht werden, da beide Kiefergelenke immer gemeinsam arbeiten?",
+        "richtig": "Kiefergelenk",
+        "ablenker": ["Discus articularis", "M. masseter"]
+      }
+    ]
+  }
+]
