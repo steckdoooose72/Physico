@@ -444,6 +444,51 @@ def schulterbaender_bauen(a, seite_de):
 
 
 # ---------------------------------------------------------------------------
+# Discus articularis des Kiefergelenks
+# ---------------------------------------------------------------------------
+
+def kieferbaender_bauen(a, seite_de):
+    """Discus articularis, den BodyParts3D nicht mitbringt.
+
+    Hängt am selben `kiefer`-Punkt wie das Kiefergelenk aus gelenke_bauen()
+    (hier lokal noch einmal berechnet, dieselbe Formel – siehe Kommentar
+    dort). Wie beim Labrum glenoidale in schulterbaender_bauen() ist der
+    Diskus ein kleiner Ring-Pfad um den Gelenkpunkt, hier aber deutlich
+    kleiner: das Kiefergelenk selbst hat schon nur 0.013 Radius, der Diskus
+    liegt als dünne Scheibe direkt im Gelenkspalt.
+    """
+    s = a.vorzeichen
+    kiefer = [round(0.049 * s, 4), round(a.oben('mandible')[1] - 0.004, 4),
+              round(a.mitte('mandible')[2] - 0.046, 4)]
+
+    def b(kennung, name, latein, punkte, radius, notiz, **rest):
+        return dict(
+            id=f'PT-B-{kennung}-{seite_de}',
+            name=f'{name} ({seite_de})',
+            latein=latein, system='baender', region='kopf', seite=seite_de,
+            form={'typ': 'pfad', 'radius': radius, 'punkte': punkte},
+            notiz=f'{notiz} {SCHEMA_HINWEIS}', **rest)
+
+    # Ring aus sechs Punkten um den Kiefergelenk-Punkt, grob halb so groß
+    # wie dessen eigener Radius (0.013). Erster Punkt am Ende wiederholt,
+    # damit der offene Pfad optisch zum geschlossenen Ring wird – gleiches
+    # Muster wie beim Labrum.
+    ring_radius = 0.007
+    discus_punkte = []
+    for i in range(7):
+        winkel = 2 * math.pi * (i % 6) / 6
+        discus_punkte.append(v(kiefer, 0, ring_radius * math.cos(winkel),
+                                ring_radius * math.sin(winkel), s))
+
+    return [
+        b('discus', 'Discus articularis', 'Discus articularis', discus_punkte, 0.0035,
+          'Faserknorpelscheibe zwischen Kondylus und Gelenkpfanne, wirkt als Stoßdämpfer '
+          'zwischen beiden; häufigste Ursache für Kiefergelenkknacken ist eine Verlagerung '
+          'dieser Struktur.'),
+    ]
+
+
+# ---------------------------------------------------------------------------
 # Periphere Nerven
 # ---------------------------------------------------------------------------
 
@@ -623,6 +668,7 @@ def main():
         strukturen += gelenke_bauen(a, seite_de)
         strukturen += kniebaender_bauen(a, seite_de)
         strukturen += schulterbaender_bauen(a, seite_de)
+        strukturen += kieferbaender_bauen(a, seite_de)
         strukturen += nerven_bauen(a, knochen)
     strukturen.append(kopfgelenk(knochen))
 
