@@ -1,0 +1,30 @@
+[
+  {
+    "schwierigkeit": "klar",
+    "situation": "Nächtliches Zähneknirschen, morgens ein verspannter, schmerzender Kiefer.",
+    "richtig": ["M. masseter"],
+    "ablenker": ["Discus articularis", "Kiefergelenk"],
+    "hinweis": "Bruxismus kann Druck bis zum 10-Fachen der normalen Kaukraft erzeugen"
+  },
+  {
+    "schwierigkeit": "klar",
+    "situation": "Ein Knacken beim Öffnen des Mundes, danach lässt sich der Mund normal weiter öffnen.",
+    "richtig": ["Discus articularis"],
+    "ablenker": ["M. masseter", "Kiefergelenk"],
+    "hinweis": "Diskusverlagerung mit Reposition – die häufigste strukturelle Störung des Kiefergelenks"
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Der Mund lässt sich nicht mehr vollständig öffnen, ein früheres Knacken ist jetzt verschwunden.",
+    "richtig": ["Discus articularis"],
+    "ablenker": ["M. masseter", "Kiefergelenk"],
+    "hinweis": "Diskusverlagerung ohne Reposition – fortgeschrittenere Form als das Knacken bei #2"
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Schmerz beim Kauen harter Nahrung, ohne Knacken oder Bewegungseinschränkung.",
+    "richtig": ["Kiefergelenk"],
+    "ablenker": ["Discus articularis", "M. masseter"],
+    "hinweis": "Arthralgie des Kiefergelenks selbst, nicht Discus oder Muskulatur"
+  }
+]
