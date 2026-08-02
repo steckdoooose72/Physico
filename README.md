@@ -19,6 +19,7 @@ ebenso Hormondrüsen, Milz/Thymus, das äußere Ohr, Zähne und Haare (Begründu
 | Atemwege | 8 (Lunge, Luftröhre, Bronchien, Schildknorpel) |
 | **Periphere Nerven** (eigene Ebene) | 18 – Ischias, Medianus, Radialis, Ulnaris u. a. |
 | **Gelenke klinisch** (eigene Ebene) | 21 – mit Gelenktyp, Normwerten und Bewegungsachsen |
+| **Bänder/Menisken** (eigene Ebene, schematisch) | 25 – u. a. Kreuz-/Seitenbänder und Menisken des Knies, Labrum glenoidale, Discus articularis, Dens-Stabilisierungsbänder |
 
 ---
 
@@ -31,10 +32,35 @@ Beenden mit `Strg + C` oder Fenster schließen.
 Die Startseite (`index.html`) hat drei Einstiege:
 
 1. **Modell ansehen** – das 3D-Modell zum freien Erkunden (`modell.html`)
-2. **Vorbereitung** – noch nicht eingerichtet
+2. **Regionen** – gezielt nach Körperregion üben (`regionen.html`, siehe unten)
 3. **Prüfungen** – noch nicht eingerichtet
 
 Im Modell führt oben links „← Startseite" zurück.
+
+### Regionen
+
+**Regionen** (`regionen.html`) listet die groben Körperregionen von oben nach unten:
+Kopf, Hals, Schultern, Arme, Rumpf, Becken, Beine. Fertig ausgebaut sind bisher
+**Kopf** (Fokus: Kiefergelenk/TMJ), **Schultern** und – als Unterpunkt von **Beine**,
+da der Rest des Beins noch nicht steht – **Knie**. Alle anderen Regionen sind als
+„folgt" markiert, klicken lässt sich nur, was fertig ist.
+
+Jede fertige Region hat eine eigene Übersichtsseite (`schulter.html`, `knie.html`,
+`kopf.html`) mit genau fünf Kacheln, immer in derselben Reihenfolge – ein Situationstyp
+baut fachlich auf dem vorherigen auf:
+
+1. **Struktur erkennen** – Struktur leuchtet im Modell auf, Name aus vier Antworten wählen
+2. **Bewegung** – eine Bewegung wird beschrieben (Fachbegriff), welcher Muskel führt sie aus?
+3. **Verletzungsmechanismus** bzw. **Dysfunktion** (Kopf) – aus einer kurzen klinischen
+   Situation ableiten, welche Struktur am ehesten betroffen ist
+4. **Alltagsbewegung** – dieselben Muskelfragen wie unter „Bewegung", aber in
+   Alltagssprache statt Fachbegriffen formuliert
+5. **Fallvignette** – ein Fall mit mehreren Teilfragen, die gemeinsam beantwortet und
+   gemeinsam ausgewertet werden – die anspruchsvollste Stufe
+
+Alle fünf Situationstypen einer fertigen Region folgen demselben Ablaufprinzip wie
+Bone-Prep (siehe unten): kein Sofort-Feedback, falsch Beantwortetes kommt im selben
+Durchlauf automatisch noch einmal dran, bis alles sitzt.
 
 > Kommt eine Änderung an HTML oder CSS im Browser nicht an, hat er die alte Fassung noch
 > im Zwischenspeicher: mit **Cmd + Shift + R** hart neu laden.
@@ -69,11 +95,16 @@ Dann `http://localhost:8000` aufrufen.
 Bei einem Gelenk erscheinen zusätzlich die **Bewegungsachsen** als farbige Linien:
 orange = Flexion/Extension, blau = Ab-/Adduktion, violett = Rotation.
 
-### Vorbereitung: Bone-Prep
+### Älterer Übungsmodus: Bone-Prep
 
-Über **Vorbereitung → Bone-Prep** übst du Knochennamen. Auf der Karte wählst du
-**Stufe** und **Modus**; beides lässt sich frei kombinieren und wird für das nächste Mal
-gemerkt.
+Bevor es die Regionen gab, war **Bone-Prep** der erste Übungsmodus – reines Knochennamen-
+Lernen über den ganzen Körper, ohne Regionsgliederung. Die Dateien (`vorbereitung.html`,
+`bone-prep.html`) existieren weiterhin und funktionieren unverändert, sind aber **nicht
+mehr von der Startseite aus verlinkt** – „Regionen" hat sie als Haupt-Lernweg abgelöst.
+Direkt aufrufbar bleibt Bone-Prep trotzdem, z. B. `bone-prep.html?stufe=2&modus=erkennen`.
+
+Auf der Karte in `vorbereitung.html` wählst du **Stufe** und **Modus**; beides lässt sich
+frei kombinieren und wird für das nächste Mal gemerkt.
 
 In allen drei Stufen leuchtet der gesuchte Knochen im ganzen Skelett auf – nie isoliert,
 die Lage im Körper gehört mit zum Erkennen.
@@ -135,6 +166,16 @@ Diese fehlen im freien Datensatz vollständig. Ihre Punkte sind **an den echten 
 ausgerichtet** (berechnet aus den tatsächlichen Koordinaten von Femur, Humerus & Co.),
 der Verlauf dazwischen ist aber **schematisch** – gut zum Verstehen von Verlauf und
 Engstellen, nicht als anatomischer Beleg.
+
+Im selben Sinn ergänzt, aber als eigenes System `baender` (Kennung `PT-B-…`):
+schematische Näherungen für Bänder und Menisken, die BodyParts3D ebenfalls nicht als
+Geometrie enthält. Bisher ergänzt: die sechs Kniestrukturen (vorderes/hinteres Kreuzband,
+Innen-/Außenband, Innen-/Außenmeniskus), fünf Schulterstrukturen (Labrum glenoidale,
+Ligg. glenohumeralia, Lig. coracoacromiale, Lig. coracoclaviculare, Lig.
+acromioclaviculare), der Discus articularis des Kiefergelenks und die Dens-
+Stabilisierungsbänder der oberen Halswirbelsäule (Lig. cruciforme atlantis). Gleiche
+Einordnung wie bei Nerven/Gelenken: an echten Knochenpunkten ausgerichtet, aber
+schematisch – keine anatomisch exakte Form.
 
 **Die Texte** (Ursprung, Ansatz, Funktion, Innervation, Palpation, Normwerte) sind
 Lernnotizen zur Prüfungsvorbereitung. Prüfe sie gegen dein Lehrbuch und korrigiere
@@ -236,13 +277,18 @@ und lass das Skript neu laufen.
 ```
 index.html         Startseite (drei Einstiege, sonst nichts)
 modell.html        das 3D-Modell
-vorbereitung.html  Übungsauswahl (Bone-Prep, Muscle-Prep, Joint-Prep)
-bone-prep.html     die Knochenübung
+regionen.html      Übersicht der Körperregionen – Haupt-Lernweg
+schulter.html      Übersicht Region Schultern (5 Situationstyp-Kacheln)
+knie.html          Übersicht Region Knie (5 Situationstyp-Kacheln)
+kopf.html          Übersicht Region Kopf (5 Situationstyp-Kacheln)
+beine.html         Übersicht Region Beine – bisher nur Knie fertig, Rest „folgt"
+vorbereitung.html  Übungsauswahl für Bone-Prep (älterer Modus, nicht mehr verlinkt)
+bone-prep.html     die Knochenübung (älterer Modus, nicht mehr verlinkt)
 start.command      Startknopf
 css/farben.css     die Farbpalette – von allen Seiten geladen
-css/start.css      Aussehen von Startseite und Vorbereitung
+css/start.css      Aussehen von Startseite, Regionen und Vorbereitung
 css/style.css      Aussehen des Modells
-css/quiz.css       Aussehen der Übungsseiten
+css/quiz.css       Aussehen der Übungsseiten (Bone-Prep und alle Regionen-Situationstypen)
 js/buehne.js       Szene, Licht, Kamera, Kameraflug – von allen 3D-Seiten geteilt
 js/main.js         setzt den Modell-Viewer zusammen
 js/bone-prep.js    die Knochenübung: Runde, Fragen, Auswertung
@@ -253,11 +299,24 @@ js/auswahl.js      Anklicken und Hervorheben
 js/panel.js        Info-Panel rechts
 js/formen.js       Grundformen für die eigene Ebene (Kugel, Pfad …)
 
+Pro fertiger Region (schulter/knie/kopf) je fünf HTML- + fünf JS-Dateien nach dem
+Muster `<region>-<situationstyp>.html`/`.js`, z. B.:
+js/schulter-struktur.js    js/knie-struktur.js    js/kopf-struktur.js
+js/schulter-bewegung.js    js/knie-bewegung.js    js/kopf-bewegung.js
+js/schulter-verletzung.js  js/knie-verletzung.js  js/kopf-verletzung.js
+js/schulter-alltag.js      js/knie-alltag.js      js/kopf-alltag.js
+js/schulter-fall.js        js/knie-fall.js        js/kopf-fall.js
+
 daten/strukturen.json     Verzeichnis aller Strukturen (Lage, System, Region)
 daten/namen_de.json       deutsche Namen + Lerninhalte  ← erzeugt
 daten/knochen_stufen.json Übungsstufen für Bone-Prep    ← erzeugt
 daten/eigene_inhalte.json deine Lerninhalte             ← hier schreibst du
-daten/eigene_ebenen.json  Nerven und Gelenke            ← erzeugt
+daten/eigene_ebenen.json  Nerven, Gelenke und Bänder/Menisken (System baender)  ← erzeugt
+
+daten/schulter_verletzungen.json  daten/knie_verletzungen.json  daten/kopf_verletzungen.json
+daten/schulter_faelle.json        daten/knie_faelle.json        daten/kopf_faelle.json
+   Fallmaterial für die Situationstypen „Verletzungsmechanismus/Dysfunktion" und
+   „Fallvignette" je Region – von Hand gepflegte JSON-Dateien, kein Skript erzeugt sie.
 
 modelle/           feine Modellbündel (.glb, 610 MB)
 modelle_grob/      Übersichtsbündel (.glb, 147 MB)
@@ -271,13 +330,13 @@ erzeugen.
 
 ## 6. Nächste Ausbaustufen
 
-1. Weitere Bone-Prep-Modi (z. B. „Klicke auf den Kalkaneus", Tastfragen)
-2. Muscle-Prep und Joint-Prep nach demselben Muster
-3. Lernstatistik über mehrere Runden hinweg
-4. Eigene Notizen im Browser speichern
-5. Bewegungen animieren (Flexion im Knie durchspielen)
-6. Muskelgruppen als Ganzes auswählen (alle Anteile des Deltoideus zusammen)
-7. Weitere Nerven ergänzen (N. obturatorius, N. suralis, Interkostalnerven)
+1. Restliche Regionen ausbauen: **Hals**, **Rumpf**, **Arme**, **Becken** sowie der Rest
+   von **Bein** (Oberschenkel, Unterschenkel, Fuß – bisher ist dort nur Knie fertig)
+2. Lernstatistik über mehrere Runden und Situationstypen hinweg
+3. Eigene Notizen im Browser speichern
+4. Bewegungen animieren (Flexion im Knie durchspielen)
+5. Muskelgruppen als Ganzes auswählen (alle Anteile des Deltoideus zusammen)
+6. Weitere Nerven ergänzen (N. obturatorius, N. suralis, Interkostalnerven)
 
 ## Quellen und Lizenz
 

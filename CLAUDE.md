@@ -140,16 +140,31 @@ Extra durch, statt als eigenes Stichwort in `PRAXIS_STUFE` zu stehen.
 
 ## Architektur (JavaScript)
 
-Vier Seiten: `index.html` ist die **Startseite** (reines HTML/CSS ohne Skript,
-`css/start.css`), `modell.html` das **3D-Modell** (bildschirmfüllend, `css/style.css`,
-`js/main.js`), `vorbereitung.html` die **Übungsauswahl** (nutzt ebenfalls `css/start.css`)
-und `bone-prep.html` die **erste Übung** (`css/quiz.css`, `js/bone-prep.js`).
+`index.html` ist die **Startseite** (reines HTML/CSS ohne Skript, `css/start.css`),
+`modell.html` das **3D-Modell** (bildschirmfüllend, `css/style.css`, `js/main.js`).
 
 Die Startseite hat bewusst nur drei Einstiege: **Modell ansehen** (führt nach
-`modell.html`), **Vorbereitung** (führt nach `vorbereitung.html`) und **Prüfungen**.
+`modell.html`), **Regionen** (führt nach `regionen.html`, siehe unten) und **Prüfungen**.
 Der letzte ist noch nicht ausgearbeitet und als `.wahl.bald` markiert (gestrichelter Rand,
 Marke „folgt", kein Link). Nichts anderes gehört auf diese Seite – Zahlen, Statistiken und
 Erklärtexte wurden bewusst entfernt.
+
+**Regionen ist inzwischen der Haupt-Lernweg**, nicht mehr Bone-Prep: `regionen.html`
+listet die Körperregionen, fertige Regionen (bisher Kopf, Schultern, Knie – Letzteres als
+Unterpunkt von `beine.html`) haben je eine Übersichtsseite (`schulter.html`, `knie.html`,
+`kopf.html`) mit fünf Kacheln – Struktur erkennen, Bewegung, Verletzungsmechanismus/
+Dysfunktion, Alltagsbewegung, Fallvignette. Jeder Situationstyp ist `<region>-
+<typ>.html`/`.js`, technisch eng an das jeweils erste fertige Vorbild angelehnt
+(`schulter-struktur.js` war das allererste). Verletzungsmechanismus/Dysfunktion und
+Fallvignette lesen ihre Fälle aus `daten/<region>_verletzungen.json` bzw.
+`daten/<region>_faelle.json` – von Hand gepflegt, kein Skript erzeugt sie. Details und
+der aktuelle Ausbaustand stehen in `README.md`, hier nur der Hinweis, damit die alte
+„Vorbereitung ist der Haupteinstieg"-Annahme unten in diesem Dokument nicht in die Irre
+führt: `vorbereitung.html`/`bone-prep.html` existieren weiter und funktionieren, sind aber
+**nicht mehr von der Startseite aus verlinkt** – die „Übungen (Vorbereitung)"-Regeln weiter
+unten gelten nur noch für diesen älteren Modus, nicht für die neuen Regionen-Situationstypen
+(die haben ihr eigenes, ähnliches, aber nicht identisches Ablaufprinzip – siehe die
+jeweiligen `<region>-<typ>.js`-Dateien selbst).
 
 | Datei | Aufgabe |
 |---|---|
