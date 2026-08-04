@@ -1,0 +1,30 @@
+[
+  {
+    "schwierigkeit": "klar",
+    "situation": "Sturz auf die ausgestreckte, nach innen gedrehte Hand – die Kraft wird über Handgelenk und Unterarm zum Ellenbogen weitergeleitet.",
+    "richtig": ["Radius"],
+    "ablenker": ["Kahnbein", "M. triceps brachii"],
+    "hinweis": "Radiusköpfchenfraktur – mit 30% die häufigste Ellenbogenfraktur beim Erwachsenen"
+  },
+  {
+    "schwierigkeit": "klar",
+    "situation": "Sturz auf die ausgestreckte Hand.",
+    "richtig": ["Kahnbein"],
+    "ablenker": ["Radius", "Retinaculum flexorum"],
+    "hinweis": "häufigste Handwurzelfraktur"
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Wiederholte Belastung der Unterarmstrecker, z. B. Tennis oder Gartenarbeit – Schmerz außen am Ellenbogen.",
+    "richtig": ["M. triceps brachii"],
+    "ablenker": ["Radius", "Kahnbein"],
+    "hinweis": "Tennisarm/Epicondylitis radialis – betrifft die Sehnenansätze der Unterarmstrecker"
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Kribbeln und Schmerz in Daumen, Zeige- und Mittelfinger, oft nachts, verstärkt bei Handgelenksbeugung.",
+    "richtig": ["Retinaculum flexorum"],
+    "ablenker": ["Kahnbein", "M. triceps brachii"],
+    "hinweis": "Karpaltunnelsyndrom – Druck auf den N. medianus unter diesem Band"
+  }
+]
