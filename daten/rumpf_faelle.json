@@ -1,0 +1,42 @@
+[
+  {
+    "situation": "Ein 35-Jähriger hebt beim Umzug eine schwere Kiste mit rundem Rücken, spürt einen plötzlichen stechenden Schmerz im unteren Rücken und kann sich kaum noch bewegen.",
+    "teilfragen": [
+      {
+        "frage": "Welche Struktur ist am ehesten betroffen?",
+        "richtig": "M. multifidus",
+        "ablenker": ["Bandscheibe (BWS/LWS)", "Lendenwirbel"]
+      },
+      {
+        "frage": "Welche Struktur wäre bei einer echten strukturellen Schädigung statt einer bloßen Blockade betroffen?",
+        "richtig": "Bandscheibe (BWS/LWS)",
+        "ablenker": ["M. rectus abdominis", "Kreuzbein"]
+      },
+      {
+        "frage": "Welche Struktur trägt zur Rumpfstabilität bei, die hier offenbar überlastet wurde?",
+        "richtig": "M. rectus abdominis",
+        "ablenker": ["M. quadratus lumborum", "Beckenboden"]
+      }
+    ]
+  },
+  {
+    "situation": "Eine 50-Jährige stürzt beim Treppensteigen und schlägt seitlich auf den Brustkorb auf. Atmen und Husten sind seither schmerzhaft.",
+    "teilfragen": [
+      {
+        "frage": "Welche Struktur ist direkt betroffen?",
+        "richtig": "Rippe",
+        "ablenker": ["Brustwirbel", "Brustbein"]
+      },
+      {
+        "frage": "Welche Struktur bildet vorn zusammen mit den Rippen den Brustkorb?",
+        "richtig": "Brustbein",
+        "ablenker": ["Lendenwirbel", "Hüftbein"]
+      },
+      {
+        "frage": "Welche Struktur könnte durch die schmerzbedingt flachere Atmung zusätzlich beeinträchtigt sein?",
+        "richtig": "Diaphragma",
+        "ablenker": ["M. rectus abdominis", "Mm. obliqui abdominis"]
+      }
+    ]
+  }
+]
