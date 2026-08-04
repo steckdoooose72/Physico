@@ -812,6 +812,206 @@
    "notiz": "Kurzes, straffes Kapselband direkt über dem Schultereckgelenk – hält Clavicula und Acromion in der Fläche zusammen; Riss zeigt sich als Stufenbildung. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
   },
   {
+   "id": "PT-B-innenband-ellenbogen-links",
+   "name": "Innenband (links)",
+   "latein": "Lig. collaterale ulnare",
+   "system": "baender",
+   "region": "arm",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0035,
+    "punkte": [
+     [
+      0.1391,
+      1.0461,
+      -0.0336
+     ],
+     [
+      0.1674,
+      1.0578,
+      -0.0302
+     ],
+     [
+      0.1957,
+      1.0695,
+      -0.0268
+     ]
+    ]
+   },
+   "notiz": "Sichert den Ellenbogen gegen Valgusstress (Aufklappen nach innen). Zieht vom medialen Humerusepikondylus zur Ulna; bei Wurfsportarten durch wiederholte Valgusbelastung besonders gefährdet. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-aussenband-ellenbogen-links",
+   "name": "Außenband (links)",
+   "latein": "Lig. collaterale radiale",
+   "system": "baender",
+   "region": "arm",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0035,
+    "punkte": [
+     [
+      0.24,
+      1.0461,
+      -0.0336
+     ],
+     [
+      0.2593,
+      1.0491,
+      -0.0228
+     ],
+     [
+      0.2786,
+      1.052,
+      -0.012
+     ]
+    ]
+   },
+   "notiz": "Sichert den Ellenbogen gegen Varusstress (Aufklappen nach außen) und strahlt in das Ringband ein. Zieht vom lateralen Humerusepikondylus zum Radius. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-ringband-links",
+   "name": "Ringband (links)",
+   "latein": "Lig. anulare radii",
+   "system": "baender",
+   "region": "arm",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.003,
+    "punkte": [
+     [
+      0.2567,
+      1.052,
+      -0.012
+     ],
+     [
+      0.2517,
+      1.052,
+      -0.0033
+     ],
+     [
+      0.2417,
+      1.052,
+      -0.0033
+     ],
+     [
+      0.2367,
+      1.052,
+      -0.012
+     ],
+     [
+      0.2417,
+      1.052,
+      -0.0207
+     ],
+     [
+      0.2517,
+      1.052,
+      -0.0207
+     ],
+     [
+      0.2567,
+      1.052,
+      -0.012
+     ]
+    ]
+   },
+   "notiz": "Umschließt das Speichenköpfchen und hält es am Ellenbogen in Position, ohne die Dreh­bewegung (Pro-/Supination) zu behindern – reißt typischerweise bei der kindlichen „Radiusköpfchen-Subluxation\" (Chassaignac-Lähmung) durch Achsenzug am Arm. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-retinaculum-flexorum-links",
+   "name": "Retinaculum flexorum (links)",
+   "latein": "Retinaculum musculorum flexorum",
+   "system": "baender",
+   "region": "arm",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.003,
+    "punkte": [
+     [
+      0.2662,
+      0.8176,
+      0.0222
+     ],
+     [
+      0.2529,
+      0.8165,
+      0.024
+     ],
+     [
+      0.2395,
+      0.8094,
+      0.0258
+     ]
+    ]
+   },
+   "notiz": "Straffes Band quer über die Handinnenseite, spannt von Kahnbein/großem Vieleckbein zu Erbsenbein/Hakenbein und bildet das Dach des Karpaltunnels. Unter diesem Band verläuft der N. medianus – bei Druck entsteht das Karpaltunnelsyndrom. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-retinaculum-extensorum-links",
+   "name": "Retinaculum extensorum (links)",
+   "latein": "Retinaculum musculorum extensorum",
+   "system": "baender",
+   "region": "arm",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.003,
+    "punkte": [
+     [
+      0.2662,
+      0.8176,
+      0.0102
+     ],
+     [
+      0.2529,
+      0.8165,
+      0.012
+     ],
+     [
+      0.2395,
+      0.8094,
+      0.0138
+     ]
+    ]
+   },
+   "notiz": "Straffes Band quer über den Handrücken, hält die Strecksehnen in ihren Fächern nah am Knochen, damit sie beim Strecken der Hand nicht wie eine Bogensehne abheben. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-ligg-intercarpalia-links",
+   "name": "Ligg. intercarpalia (links)",
+   "latein": "Ligg. intercarpalia",
+   "system": "baender",
+   "region": "arm",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0025,
+    "punkte": [
+     [
+      0.2603,
+      0.8213,
+      0.0116
+     ],
+     [
+      0.2449,
+      0.8202,
+      0.0117
+     ],
+     [
+      0.2356,
+      0.812,
+      0.0161
+     ]
+    ]
+   },
+   "notiz": "Kurze Bänder zwischen den Handwurzelknochen der körpernahen Reihe, hier als eine zusammenfassende Struktur statt einzelner Bänder pro Knochenpaar. Halten die Handwurzel als funktionelle Einheit zusammen und sichern die komplexe Bewegungskopplung beim Greifen. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
    "id": "PT-B-discus-links",
    "name": "Discus articularis (links)",
    "latein": "Discus articularis",
@@ -2091,6 +2291,206 @@
     ]
    },
    "notiz": "Kurzes, straffes Kapselband direkt über dem Schultereckgelenk – hält Clavicula und Acromion in der Fläche zusammen; Riss zeigt sich als Stufenbildung. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-innenband-ellenbogen-rechts",
+   "name": "Innenband (rechts)",
+   "latein": "Lig. collaterale ulnare",
+   "system": "baender",
+   "region": "arm",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0035,
+    "punkte": [
+     [
+      -0.1409,
+      1.0461,
+      -0.0332
+     ],
+     [
+      -0.1692,
+      1.0578,
+      -0.0297
+     ],
+     [
+      -0.1975,
+      1.0695,
+      -0.0262
+     ]
+    ]
+   },
+   "notiz": "Sichert den Ellenbogen gegen Valgusstress (Aufklappen nach innen). Zieht vom medialen Humerusepikondylus zur Ulna; bei Wurfsportarten durch wiederholte Valgusbelastung besonders gefährdet. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-aussenband-ellenbogen-rechts",
+   "name": "Außenband (rechts)",
+   "latein": "Lig. collaterale radiale",
+   "system": "baender",
+   "region": "arm",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0035,
+    "punkte": [
+     [
+      -0.2418,
+      1.0461,
+      -0.0332
+     ],
+     [
+      -0.2611,
+      1.0491,
+      -0.0226
+     ],
+     [
+      -0.2805,
+      1.0521,
+      -0.0121
+     ]
+    ]
+   },
+   "notiz": "Sichert den Ellenbogen gegen Varusstress (Aufklappen nach außen) und strahlt in das Ringband ein. Zieht vom lateralen Humerusepikondylus zum Radius. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-ringband-rechts",
+   "name": "Ringband (rechts)",
+   "latein": "Lig. anulare radii",
+   "system": "baender",
+   "region": "arm",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.003,
+    "punkte": [
+     [
+      -0.2588,
+      1.0521,
+      -0.0121
+     ],
+     [
+      -0.2538,
+      1.0521,
+      -0.0034
+     ],
+     [
+      -0.2438,
+      1.0521,
+      -0.0034
+     ],
+     [
+      -0.2388,
+      1.0521,
+      -0.0121
+     ],
+     [
+      -0.2438,
+      1.0521,
+      -0.0208
+     ],
+     [
+      -0.2538,
+      1.0521,
+      -0.0208
+     ],
+     [
+      -0.2588,
+      1.0521,
+      -0.0121
+     ]
+    ]
+   },
+   "notiz": "Umschließt das Speichenköpfchen und hält es am Ellenbogen in Position, ohne die Dreh­bewegung (Pro-/Supination) zu behindern – reißt typischerweise bei der kindlichen „Radiusköpfchen-Subluxation\" (Chassaignac-Lähmung) durch Achsenzug am Arm. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-retinaculum-flexorum-rechts",
+   "name": "Retinaculum flexorum (rechts)",
+   "latein": "Retinaculum musculorum flexorum",
+   "system": "baender",
+   "region": "arm",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.003,
+    "punkte": [
+     [
+      -0.2681,
+      0.8175,
+      0.022
+     ],
+     [
+      -0.2548,
+      0.8165,
+      0.0239
+     ],
+     [
+      -0.2414,
+      0.8094,
+      0.0259
+     ]
+    ]
+   },
+   "notiz": "Straffes Band quer über die Handinnenseite, spannt von Kahnbein/großem Vieleckbein zu Erbsenbein/Hakenbein und bildet das Dach des Karpaltunnels. Unter diesem Band verläuft der N. medianus – bei Druck entsteht das Karpaltunnelsyndrom. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-retinaculum-extensorum-rechts",
+   "name": "Retinaculum extensorum (rechts)",
+   "latein": "Retinaculum musculorum extensorum",
+   "system": "baender",
+   "region": "arm",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.003,
+    "punkte": [
+     [
+      -0.2681,
+      0.8175,
+      0.01
+     ],
+     [
+      -0.2548,
+      0.8165,
+      0.0119
+     ],
+     [
+      -0.2414,
+      0.8094,
+      0.0139
+     ]
+    ]
+   },
+   "notiz": "Straffes Band quer über den Handrücken, hält die Strecksehnen in ihren Fächern nah am Knochen, damit sie beim Strecken der Hand nicht wie eine Bogensehne abheben. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-ligg-intercarpalia-rechts",
+   "name": "Ligg. intercarpalia (rechts)",
+   "latein": "Ligg. intercarpalia",
+   "system": "baender",
+   "region": "arm",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0025,
+    "punkte": [
+     [
+      -0.2623,
+      0.8213,
+      0.0117
+     ],
+     [
+      -0.2466,
+      0.8201,
+      0.0114
+     ],
+     [
+      -0.2377,
+      0.8124,
+      0.0166
+     ]
+    ]
+   },
+   "notiz": "Kurze Bänder zwischen den Handwurzelknochen der körpernahen Reihe, hier als eine zusammenfassende Struktur statt einzelner Bänder pro Knochenpaar. Halten die Handwurzel als funktionelle Einheit zusammen und sichern die komplexe Bewegungskopplung beim Greifen. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
   },
   {
    "id": "PT-B-discus-rechts",

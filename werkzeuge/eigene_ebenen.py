@@ -444,6 +444,164 @@ def schulterbaender_bauen(a, seite_de):
 
 
 # ---------------------------------------------------------------------------
+# Bänder des Ellenbogens
+# ---------------------------------------------------------------------------
+
+def ellenbogenbaender_bauen(a, seite_de):
+    """Innenband, Außenband und Ringband des Ellenbogens, die BodyParts3D
+    nicht mitbringt (geprüft: kein „collateral ligament", kein „annular
+    ligament" in parts_list_e.txt).
+
+    Gleiche Technik wie bei den Kniebändern: aussen()/innen() liefern nur
+    eine brauchbare x-Kante (Körpermitte-Richtung), die Höhe (y) und die
+    Tiefe (z) müssen von oben()/unten() der jeweiligen Knochenmitte kommen
+    – deshalb werden die Epikondylen-Punkte aus beiden Anker-Methoden
+    zusammengesetzt statt direkt aussen()/innen() zu verwenden.
+
+    Ulna ist der körpernahe (mediale), Radius der körperferne (laterale)
+    Unterarmknochen – bestätigt an den echten Koordinaten (Radius-Mitte
+    liegt weiter außen als Ulna-Mitte). Das Innenband zieht deshalb vom
+    medialen Humerusepikondylus zur Ulna, das Außenband vom lateralen
+    Epikondylus zum Radius – anatomisch korrekt (Lig. collaterale ulnare
+    bzw. radiale).
+    """
+    s = a.vorzeichen
+    humerus_unten = a.unten('humerus')
+    ulna_oben = a.oben('ulna')
+    radius_oben = a.oben('radius')
+
+    epi_medial = [a.innen('humerus')[0], humerus_unten[1], humerus_unten[2]]
+    epi_lateral = [a.aussen('humerus')[0], humerus_unten[1], humerus_unten[2]]
+    ulna_medial = [a.innen('ulna')[0], ulna_oben[1], ulna_oben[2]]
+    radius_lateral = [a.aussen('radius')[0], radius_oben[1], radius_oben[2]]
+
+    def mitte_zwei(p1, p2):
+        return [round((p1[i] + p2[i]) / 2, 4) for i in range(3)]
+
+    def b(kennung, name, latein, punkte, radius, notiz, **rest):
+        return dict(
+            id=f'PT-B-{kennung}-{seite_de}',
+            name=f'{name} ({seite_de})',
+            latein=latein, system='baender', region='arm', seite=seite_de,
+            form={'typ': 'pfad', 'radius': radius, 'punkte': punkte},
+            notiz=f'{notiz} {SCHEMA_HINWEIS}', **rest)
+
+    # Kleiner Ring aus sechs Punkten um den Radiusköpfchen-Punkt, gleiche
+    # Technik wie das Labrum glenoidale bei der Schulter bzw. der Discus
+    # articularis am Kiefer – nur um die y-Achse statt um die x-Achse
+    # (der Radiusschaft verläuft senkrecht, das Ringband umschließt ihn
+    # quer dazu).
+    ring_radius = 0.010
+    ringband_punkte = []
+    for i in range(7):
+        winkel = 2 * math.pi * (i % 6) / 6
+        ringband_punkte.append(v(radius_oben, ring_radius * math.cos(winkel), 0,
+                                  ring_radius * math.sin(winkel), s))
+
+    return [
+        b('innenband-ellenbogen', 'Innenband', 'Lig. collaterale ulnare', [
+            epi_medial, mitte_zwei(epi_medial, ulna_medial), ulna_medial,
+        ], 0.0035,
+          'Sichert den Ellenbogen gegen Valgusstress (Aufklappen nach innen). Zieht vom medialen '
+          'Humerusepikondylus zur Ulna; bei Wurfsportarten durch wiederholte Valgusbelastung '
+          'besonders gefährdet.'),
+
+        b('aussenband-ellenbogen', 'Außenband', 'Lig. collaterale radiale', [
+            epi_lateral, mitte_zwei(epi_lateral, radius_lateral), radius_lateral,
+        ], 0.0035,
+          'Sichert den Ellenbogen gegen Varusstress (Aufklappen nach außen) und strahlt in das '
+          'Ringband ein. Zieht vom lateralen Humerusepikondylus zum Radius.'),
+
+        b('ringband', 'Ringband', 'Lig. anulare radii', ringband_punkte, 0.0030,
+          'Umschließt das Speichenköpfchen und hält es am Ellenbogen in Position, ohne die '
+          'Dreh­bewegung (Pro-/Supination) zu behindern – reißt typischerweise bei der '
+          'kindlichen „Radiusköpfchen-Subluxation" (Chassaignac-Lähmung) durch Achsenzug am Arm.'),
+    ]
+
+
+# ---------------------------------------------------------------------------
+# Bänder des Handgelenks
+# ---------------------------------------------------------------------------
+
+def handgelenkbaender_bauen(a, seite_de):
+    """Retinaculum flexorum, Retinaculum extensorum und Ligg. intercarpalia,
+    die BodyParts3D nicht mitbringt (geprüft: kein „retinaculum", kein
+    „intercarpal ligament" in parts_list_e.txt).
+
+    Die Handwurzelknochen sind im Verzeichnis einzeln benannt (englische
+    Bezeichner, siehe unten) – anders als bei den übrigen `baender`-
+    Strukturen braucht es hier keine aussen()/innen()-Konstruktion, weil
+    schon die echten Knochenmitten radial (Kahnbein/großes Vieleckbein)
+    bzw. ulnar (Erbsenbein/Hakenbein) liegen. Bestätigt an den echten
+    Koordinaten: Kahnbein/Vieleckbein-x liegt weiter außen (radial), Erbsen-
+    /Hakenbein-x weiter innen (ulnar) – passend zur Vorgabe.
+
+    Tatsächliche Bezeichner im Verzeichnis (abweichend von der Vermutung
+    nur beim Dreiecksbein): 'scaphoid', 'trapezium', 'pisiform', 'hamate',
+    'lunate', 'triquetral' (nicht „triquetrum").
+
+    Flexor- und Extensor-Retinaculum unterscheiden sich nur durch die
+    Vorne-Hinten-Verschiebung (dz) – gleiche Achsen-Konvention wie in
+    wirbelsaeulenbaender_bauen() begründet: +z vorne (palmar), −z hinten
+    (dorsal).
+    """
+    scaphoid = a.mitte('scaphoid')
+    trapezium = a.mitte('trapezium')
+    pisiform = a.mitte('pisiform')
+    hamate = a.mitte('hamate')
+    lunate = a.mitte('lunate')
+    triquetral = a.mitte('triquetral')
+
+    def mitte_zwei(p1, p2):
+        return [round((p1[i] + p2[i]) / 2, 4) for i in range(3)]
+
+    radial_punkt = mitte_zwei(scaphoid, trapezium)
+    ulnar_punkt = mitte_zwei(pisiform, hamate)
+
+    vorne_versatz = 0.006    # palmar – unter dem Retinaculum flexorum liegt der Karpaltunnel
+    hinten_versatz = -0.006  # dorsal
+
+    def b(kennung, name, latein, punkte, radius, notiz, **rest):
+        return dict(
+            id=f'PT-B-{kennung}-{seite_de}',
+            name=f'{name} ({seite_de})',
+            latein=latein, system='baender', region='arm', seite=seite_de,
+            form={'typ': 'pfad', 'radius': radius, 'punkte': punkte},
+            notiz=f'{notiz} {SCHEMA_HINWEIS}', **rest)
+
+    flexor_radial = v(radial_punkt, 0, 0, vorne_versatz)
+    flexor_ulnar = v(ulnar_punkt, 0, 0, vorne_versatz)
+    flexor_mitte = v(mitte_zwei(flexor_radial, flexor_ulnar), 0, 0.003, 0)
+
+    extensor_radial = v(radial_punkt, 0, 0, hinten_versatz)
+    extensor_ulnar = v(ulnar_punkt, 0, 0, hinten_versatz)
+    extensor_mitte = v(mitte_zwei(extensor_radial, extensor_ulnar), 0, 0.003, 0)
+
+    return [
+        b('retinaculum-flexorum', 'Retinaculum flexorum', 'Retinaculum musculorum flexorum', [
+            flexor_radial, flexor_mitte, flexor_ulnar,
+        ], 0.0030,
+          'Straffes Band quer über die Handinnenseite, spannt von Kahnbein/großem Vieleckbein zu '
+          'Erbsenbein/Hakenbein und bildet das Dach des Karpaltunnels. Unter diesem Band verläuft '
+          'der N. medianus – bei Druck entsteht das Karpaltunnelsyndrom.'),
+
+        b('retinaculum-extensorum', 'Retinaculum extensorum', 'Retinaculum musculorum extensorum', [
+            extensor_radial, extensor_mitte, extensor_ulnar,
+        ], 0.0030,
+          'Straffes Band quer über den Handrücken, hält die Strecksehnen in ihren Fächern nah am '
+          'Knochen, damit sie beim Strecken der Hand nicht wie eine Bogensehne abheben.'),
+
+        b('ligg-intercarpalia', 'Ligg. intercarpalia', 'Ligg. intercarpalia', [
+            scaphoid, lunate, triquetral,
+        ], 0.0025,
+          'Kurze Bänder zwischen den Handwurzelknochen der körpernahen Reihe, hier als eine '
+          'zusammenfassende Struktur statt einzelner Bänder pro Knochenpaar. Halten die Handwurzel '
+          'als funktionelle Einheit zusammen und sichern die komplexe Bewegungskopplung beim '
+          'Greifen.'),
+    ]
+
+
+# ---------------------------------------------------------------------------
 # Discus articularis des Kiefergelenks
 # ---------------------------------------------------------------------------
 
@@ -766,6 +924,8 @@ def main():
         strukturen += gelenke_bauen(a, seite_de)
         strukturen += kniebaender_bauen(a, seite_de)
         strukturen += schulterbaender_bauen(a, seite_de)
+        strukturen += ellenbogenbaender_bauen(a, seite_de)
+        strukturen += handgelenkbaender_bauen(a, seite_de)
         strukturen += kieferbaender_bauen(a, seite_de)
         strukturen += nerven_bauen(a, knochen)
     strukturen.append(kopfgelenk(knochen))
