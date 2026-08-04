@@ -745,6 +745,66 @@ def wirbelsaeulenbaender_bauen(a):
 
 
 # ---------------------------------------------------------------------------
+# Steißbein und Symphyse (reine Positions-Näherung)
+# ---------------------------------------------------------------------------
+
+def beckenmarker_bauen(a, knochen):
+    """Steißbein und Symphyse, die BodyParts3D nicht mitbringt (geprüft: kein
+    „coccyx", kein „pubic symphysis" in parts_list_e.txt).
+
+    Anders als die übrigen `baender`-Strukturen sind das keine Bänder,
+    sondern echte, aber fehlende Knochen bzw. eine echte Knochenverbindung –
+    dafür passt kein sinnvoller Pfad zwischen zwei Punkten. Stattdessen die
+    `'kugel'`-Form wie bei den Gelenkpunkten (`'position'` statt
+    `'punkte'`), aber weiterhin unter system „baender", weil hier nur eine
+    grobe Positions-Näherung vorliegt, keine echte Form wie bei den Knochen
+    selbst.
+
+    Beide Strukturen sind unpaarig und liegen auf der Körpermitte – wie bei
+    Atlas/Axis in halsbaender_bauen() spielt die Anker-Seite von `a` daher
+    für unten('sacrum') keine Rolle. Für die Hüftbein-Mittelposition der
+    Symphyse braucht es dagegen BEIDE Seiten explizit, deshalb zusätzlich
+    `knochen` als Parameter (gleiches Muster wie in nerven_bauen()).
+
+    Steißbein: knapp unterhalb des unteren Kreuzbeinendes, ein Stück nach
+    hinten versetzt (−z = hinten, siehe Achsen-Konvention in
+    wirbelsaeulenbaender_bauen()).
+
+    Symphyse: x=0 (Körpermitte) sowie y/z aus dem Mittelwert der unteren
+    Vorderkante beider Hüftbein-Hälften (`von`-y bzw. `bis`-z) – dort liegt
+    anatomisch der vordere, untere Rand des Schambeins.
+    """
+    steissbein = v(a.unten('sacrum'), 0, -0.018, -0.010)
+
+    hip_links = knochen['left hip bone']
+    hip_rechts = knochen['right hip bone']
+    symphyse = [
+        0.0,
+        round((hip_links['von'][1] + hip_rechts['von'][1]) / 2, 4),
+        round((hip_links['bis'][2] + hip_rechts['bis'][2]) / 2, 4),
+    ]
+
+    def m(kennung, name, latein, position, radius, notiz, **rest):
+        return dict(
+            id=f'PT-B-{kennung}',
+            name=name,
+            latein=latein, system='baender', region='becken', seite='mitte',
+            form={'typ': 'kugel', 'radius': radius}, position=position,
+            notiz=f'{notiz} {SCHEMA_HINWEIS}', **rest)
+
+    return [
+        m('steissbein', 'Steißbein', 'Os coccygis', steissbein, 0.014,
+          'Verschmolzene Restwirbel am unteren Ende der Wirbelsäule; Schmerzen dort '
+          '(Coccygodynie) entstehen oft nach einem Sturz auf das Gesäß oder nach einer Geburt. '
+          'Reine Positions-Näherung, keine tatsächliche Form.'),
+        m('symphyse', 'Symphyse', 'Symphysis pubica', symphyse, 0.014,
+          'Knorpelige Verbindung zwischen den beiden Schambein-Ästen; Symphysenlockerung/'
+          '-schmerzen sind ein häufiges Thema in der Schwangerschaft und im Sport (verwandt mit '
+          'der sogenannten „Sportlerleiste"). Reine Positions-Näherung, keine tatsächliche Form.'),
+    ]
+
+
+# ---------------------------------------------------------------------------
 # Periphere Nerven
 # ---------------------------------------------------------------------------
 
@@ -931,6 +991,7 @@ def main():
     strukturen.append(kopfgelenk(knochen))
     strukturen += halsbaender_bauen(Anker(knochen, 'left'))
     strukturen += wirbelsaeulenbaender_bauen(Anker(knochen, 'left'))
+    strukturen += beckenmarker_bauen(Anker(knochen, 'left'), knochen)
 
     with open(ZIEL, 'w', encoding='utf-8') as f:
         json.dump({'strukturen': strukturen}, f, ensure_ascii=False, indent=1)

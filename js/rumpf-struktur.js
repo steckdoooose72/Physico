@@ -124,6 +124,12 @@ const STRUKTUREN = [
     funktion: 'Verbindet Kreuzbein und Hüftbein, nur wenig beweglich, aber häufige Schmerzquelle.',
   },
   {
+    name: 'Hüftgelenk',
+    ids: ['PT-G-huefte-links'],
+    marker: true,
+    funktion: 'Kugelgelenk zwischen Hüftbein und Oberschenkelknochen, trägt einen Großteil des Körpergewichts beim Stehen und Gehen.',
+  },
+  {
     name: 'Beckenboden',
     ids: ['FMA45855', 'FMA45859', 'FMA46444'],
     funktion: 'Muskelgruppe, die den Beckenausgang verschließt und Organe trägt; arbeitet eng mit der tiefen Bauchmuskulatur zusammen.',

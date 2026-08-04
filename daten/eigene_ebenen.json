@@ -3115,6 +3115,42 @@
     ]
    },
    "notiz": "Verläuft über die Rückseite der Wirbelkörper, verhindert übermäßige Beugung; ein Bandscheibenvorfall drückt häufig gegen dieses Band bzw. die dahinterliegenden Nervenstrukturen. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-steissbein",
+   "name": "Steißbein",
+   "latein": "Os coccygis",
+   "system": "baender",
+   "region": "becken",
+   "seite": "mitte",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.014
+   },
+   "position": [
+    0.0009,
+    0.7793,
+    -0.0701
+   ],
+   "notiz": "Verschmolzene Restwirbel am unteren Ende der Wirbelsäule; Schmerzen dort (Coccygodynie) entstehen oft nach einem Sturz auf das Gesäß oder nach einer Geburt. Reine Positions-Näherung, keine tatsächliche Form. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-symphyse",
+   "name": "Symphyse",
+   "latein": "Symphysis pubica",
+   "system": "baender",
+   "region": "becken",
+   "seite": "mitte",
+   "form": {
+    "typ": "kugel",
+    "radius": 0.014
+   },
+   "position": [
+    0.0,
+    0.7657,
+    0.0493
+   ],
+   "notiz": "Knorpelige Verbindung zwischen den beiden Schambein-Ästen; Symphysenlockerung/-schmerzen sind ein häufiges Thema in der Schwangerschaft und im Sport (verwandt mit der sogenannten „Sportlerleiste\"). Reine Positions-Näherung, keine tatsächliche Form. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
   }
  ]
 }
