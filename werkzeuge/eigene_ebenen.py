@@ -526,6 +526,67 @@ def halsbaender_bauen(a):
 
 
 # ---------------------------------------------------------------------------
+# Längsbänder der Brust- und Lendenwirbelsäule
+# ---------------------------------------------------------------------------
+
+def wirbelsaeulenbaender_bauen(a):
+    """Lig. longitudinale anterius/posterius, die BodyParts3D nicht mitbringt.
+
+    Anders als die bisherigen `baender`-Strukturen (Ring/kurzer Pfad an
+    einem einzelnen Gelenk) ziehen sich diese beiden Bänder über die ganze
+    Brust- und Lendenwirbelsäule (Th1 bis L5). Vier Stützpunkte genügen,
+    weil `formen.js` den Pfad ohnehin über CatmullRomCurve3 weich
+    interpoliert – mehr Zwischenpunkte würden hier keinen sichtbaren
+    Unterschied machen.
+
+    Th1/Th12/L1/L5 sind wie Atlas/Axis unpaarige, mittige Wirbel – auch
+    hier deshalb nur je EINE Struktur, nicht eine pro Seite (siehe
+    halsbaender_bauen() für die Begründung zur Anker-Seite).
+
+    Die Anker-Klasse kennt nur mitte/oben/unten/aussen/innen (Kopf-Fuß-
+    bzw. Links-Rechts-Achse), keine Vorne-Hinten-Unterscheidung – die
+    liefert v()s dritter Versatz-Parameter (dz). Verbindliche Achsen aus
+    CLAUDE.md, hier am bestehenden `atlas_vorne`-Punkt in
+    halsbaender_bauen() bestätigt (dz=+0.014 dort als „nach vorne
+    verschoben" kommentiert): **+z = vorne (anterior), −z = hinten
+    (posterior)**. Der vordere Wirbelkörperrand bekommt deshalb ein
+    positives dz, der hintere (zum Wirbelkanal hin) ein negatives – mit
+    unterschiedlichem Betrag, weil die Wirbelkörper-Vorderkante weiter von
+    der Wirbelmitte entfernt liegt als die Hinterkante zum Wirbelkanal.
+    """
+    th1 = a.mitte('first thoracic vertebra')
+    th12 = a.mitte('twelfth thoracic vertebra')
+    l1 = a.mitte('first lumbar vertebra')
+    l5 = a.mitte('fifth lumbar vertebra')
+
+    vorne_versatz = 0.016
+    hinten_versatz = -0.012
+
+    def b(kennung, name, latein, punkte, notiz, **rest):
+        return dict(
+            id=f'PT-B-{kennung}',
+            name=name,
+            latein=latein, system='baender', region='rumpf', seite='mitte',
+            form={'typ': 'pfad', 'radius': 0.002, 'punkte': punkte},
+            notiz=f'{notiz} {SCHEMA_HINWEIS}', **rest)
+
+    vorne_punkte = [v(p, 0, 0, vorne_versatz) for p in (th1, th12, l1, l5)]
+    hinten_punkte = [v(p, 0, 0, hinten_versatz) for p in (th1, th12, l1, l5)]
+
+    return [
+        b('laengsband-vorne', 'Lig. longitudinale anterius', 'Lig. longitudinale anterius',
+          vorne_punkte,
+          'Verläuft über die Vorderseite der Wirbelkörper von der Halswirbelsäule bis zum '
+          'Kreuzbein, verhindert übermäßige Streckung.'),
+        b('laengsband-hinten', 'Lig. longitudinale posterius', 'Lig. longitudinale posterius',
+          hinten_punkte,
+          'Verläuft über die Rückseite der Wirbelkörper, verhindert übermäßige Beugung; ein '
+          'Bandscheibenvorfall drückt häufig gegen dieses Band bzw. die dahinterliegenden '
+          'Nervenstrukturen.'),
+    ]
+
+
+# ---------------------------------------------------------------------------
 # Periphere Nerven
 # ---------------------------------------------------------------------------
 
@@ -709,6 +770,7 @@ def main():
         strukturen += nerven_bauen(a, knochen)
     strukturen.append(kopfgelenk(knochen))
     strukturen += halsbaender_bauen(Anker(knochen, 'left'))
+    strukturen += wirbelsaeulenbaender_bauen(Anker(knochen, 'left'))
 
     with open(ZIEL, 'w', encoding='utf-8') as f:
         json.dump({'strukturen': strukturen}, f, ensure_ascii=False, indent=1)

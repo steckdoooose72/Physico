@@ -2645,6 +2645,76 @@
     ]
    },
    "notiz": "Hält den Zahnfortsatz des Axis in Position; wird vor Manipulationen der oberen Halswirbelsäule auf Stabilität geprüft. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-laengsband-vorne",
+   "name": "Lig. longitudinale anterius",
+   "latein": "Lig. longitudinale anterius",
+   "system": "baender",
+   "region": "rumpf",
+   "seite": "mitte",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.002,
+    "punkte": [
+     [
+      -0.0025,
+      1.3857,
+      -0.0253
+     ],
+     [
+      -0.0011,
+      1.0996,
+      -0.0298
+     ],
+     [
+      -0.0014,
+      1.0662,
+      -0.0223
+     ],
+     [
+      -0.0001,
+      0.9485,
+      -0.0204
+     ]
+    ]
+   },
+   "notiz": "Verläuft über die Vorderseite der Wirbelkörper von der Halswirbelsäule bis zum Kreuzbein, verhindert übermäßige Streckung. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-laengsband-hinten",
+   "name": "Lig. longitudinale posterius",
+   "latein": "Lig. longitudinale posterius",
+   "system": "baender",
+   "region": "rumpf",
+   "seite": "mitte",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.002,
+    "punkte": [
+     [
+      -0.0025,
+      1.3857,
+      -0.0533
+     ],
+     [
+      -0.0011,
+      1.0996,
+      -0.0578
+     ],
+     [
+      -0.0014,
+      1.0662,
+      -0.0503
+     ],
+     [
+      -0.0001,
+      0.9485,
+      -0.0484
+     ]
+    ]
+   },
+   "notiz": "Verläuft über die Rückseite der Wirbelkörper, verhindert übermäßige Beugung; ein Bandscheibenvorfall drückt häufig gegen dieses Band bzw. die dahinterliegenden Nervenstrukturen. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
   }
  ]
 }
