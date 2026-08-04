@@ -130,6 +130,18 @@ const STRUKTUREN = [
     funktion: 'Kugelgelenk zwischen Hüftbein und Oberschenkelknochen, trägt einen Großteil des Körpergewichts beim Stehen und Gehen.',
   },
   {
+    name: 'Steißbein',
+    ids: ['PT-B-steissbein'],
+    marker: true,
+    funktion: 'Verschmolzene Restwirbel am unteren Ende der Wirbelsäule; Schmerzen dort (Coccygodynie) entstehen oft nach einem Sturz auf das Gesäß oder nach einer Geburt.',
+  },
+  {
+    name: 'Symphyse',
+    ids: ['PT-B-symphyse'],
+    marker: true,
+    funktion: 'Knorpelige Verbindung zwischen den beiden Schambein-Ästen; Symphysenlockerung/-schmerzen sind ein häufiges Thema in der Schwangerschaft und im Sport.',
+  },
+  {
     name: 'Beckenboden',
     ids: ['FMA45855', 'FMA45859', 'FMA46444'],
     funktion: 'Muskelgruppe, die den Beckenausgang verschließt und Organe trägt; arbeitet eng mit der tiefen Bauchmuskulatur zusammen.',
