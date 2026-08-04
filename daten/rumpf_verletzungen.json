@@ -1,0 +1,28 @@
+[
+  {
+    "schwierigkeit": "klar",
+    "situation": "Eine ruckartige, ungünstige Bewegung beim Bücken oder Heben – plötzlicher stechender Schmerz, danach fühlt sich der Rücken 'blockiert' an.",
+    "richtig": ["M. multifidus"],
+    "ablenker": ["Rippe", "Bandscheibe (BWS/LWS)"],
+    "hinweis": "Hexenschuss (Lumbago) – akute Muskel-/Gelenkblockade, kein struktureller Schaden"
+  },
+  {
+    "schwierigkeit": "klar",
+    "situation": "Ein direkter Sturz oder Schlag auf den Brustkorb, der Schmerz verstärkt sich bei Atmung oder Husten.",
+    "richtig": ["Rippe"],
+    "ablenker": ["M. multifidus", "Bandscheibe (BWS/LWS)"]
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Ein langsam aufbauender, tiefziehender Schmerz mit Ausstrahlung ins Bein, dazu Kribbeln oder Kraftverlust.",
+    "richtig": ["Bandscheibe (BWS/LWS)"],
+    "ablenker": ["M. multifidus", "M. transversus abdominis"],
+    "hinweis": "Bandscheibenvorfall – ca. 90% im Bereich der Lendenwirbelsäule; im Unterschied zu #1 eine echte strukturelle Schädigung"
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Dauerhaft schlechte Haltung, geschwächte tiefe Bauchmuskulatur, wiederkehrende Rückenschmerzen ohne akutes Ereignis.",
+    "richtig": ["M. transversus abdominis"],
+    "ablenker": ["M. multifidus", "Rippe"]
+  }
+]
