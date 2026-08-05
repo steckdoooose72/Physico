@@ -1,0 +1,42 @@
+[
+  {
+    "situation": "Eine 78-jährige Frau stürzt zu Hause, kann danach nicht mehr aufstehen, das Bein liegt nach außen gedreht und wirkt verkürzt.",
+    "teilfragen": [
+      {
+        "frage": "Welche Struktur ist am ehesten betroffen?",
+        "richtig": "Femur",
+        "ablenker": ["Außenband (Sprunggelenk)", "Achillessehne"]
+      },
+      {
+        "frage": "Welches Gelenk ist an dieser Verletzung direkt beteiligt?",
+        "richtig": "Hüftgelenk",
+        "ablenker": ["Oberes Sprunggelenk", "Unteres Sprunggelenk"]
+      },
+      {
+        "frage": "Welche Struktur muss bei der operativen Versorgung oft mitversorgt werden, weil sie direkt am Oberschenkelknochen ansetzt?",
+        "richtig": "Mm. glutei",
+        "ablenker": ["M. iliopsoas", "Mm. adductores"]
+      }
+    ]
+  },
+  {
+    "situation": "Ein 35-jähriger Freizeitfußballer knickt beim Sprint abrupt um, der Fuß dreht sich nach innen unter dem Körper.",
+    "teilfragen": [
+      {
+        "frage": "Welche Struktur ist am ehesten betroffen?",
+        "richtig": "Außenband (Sprunggelenk)",
+        "ablenker": ["Achillessehne", "Plantarfaszie"]
+      },
+      {
+        "frage": "Welches Gelenk ist direkt betroffen?",
+        "richtig": "Oberes Sprunggelenk",
+        "ablenker": ["Unteres Sprunggelenk", "Hüftgelenk"]
+      },
+      {
+        "frage": "Welche Struktur könnte bei wiederholten Umknick-Ereignissen zusätzlich geschwächt werden?",
+        "richtig": "M. tibialis posterior",
+        "ablenker": ["M. tibialis anterior", "Mm. fibulares"]
+      }
+    ]
+  }
+]
