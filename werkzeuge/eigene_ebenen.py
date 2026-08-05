@@ -327,6 +327,87 @@ def kniebaender_bauen(a, seite_de):
 
 
 # ---------------------------------------------------------------------------
+# Bänder und Sehnen des Fußes
+# ---------------------------------------------------------------------------
+
+def fussbaender_bauen(a, seite_de):
+    """Außenband des Sprunggelenks, Achillessehne und Plantarfaszie, die
+    BodyParts3D nicht mitbringt (geprüft: kein „talofibular", kein
+    „calcaneofibular", kein „achilles"/„calcaneal tendon", kein „plantar
+    fascia" in parts_list_e.txt).
+
+    Gleiche Technik wie bei den Knie-/Ellenbogenbändern: aussen()/unten()/
+    oben() liefern jeweils nur eine brauchbare Koordinate (x-Kante bzw.
+    Höhe), der Rest kommt aus der Bauteilmitte des jeweiligen Knochens –
+    deshalb werden die Ansatzpunkte aus mehreren Anker-Methoden
+    zusammengesetzt statt eine einzelne direkt zu verwenden.
+
+    `zwischen()` interpoliert linear zwischen zwei Punkten (optional mit
+    kleinem y-Versatz für eine leichte Wölbung) – einfacher als für jeden
+    Zwischenpunkt einzeln `v()` mit von Hand geschätzten Verschiebungen zu
+    schreiben, weil hier (anders als bei den Knie-/Ellenbogenbändern) die
+    Start- und Endpunkte schon selbst aus mehreren Knochen zusammengesetzt
+    sind.
+    """
+    def zwischen(p1, p2, t, dy=0.0):
+        return [round(p1[i] + (p2[i] - p1[i]) * t, 4) for i in range(3)]
+
+    # Lateraler Knöchel – gemeinsamer Ursprung aller drei Außenbänder
+    fibula_aussen_unten = [a.aussen('fibula')[0], a.unten('fibula')[1], a.unten('fibula')[2]]
+    # Talus/Calcaneus jeweils an ihrer lateralen Kante, auf Höhe der eigenen
+    # Bauteilmitte – reicht für eine schematische Ansatzstelle.
+    talus_aussen = [a.aussen('talus')[0], a.mitte('talus')[1], a.mitte('talus')[2]]
+    calcaneus_aussen = [a.aussen('calcaneus')[0], a.mitte('calcaneus')[1], a.mitte('calcaneus')[2]]
+
+    # Achillessehne: Ansatz an der Rückseite des oberen Calcaneus (−z =
+    # hinten, siehe Achsen-Konvention in wirbelsaeulenbaender_bauen()),
+    # Ursprung ein Stück darüber als Näherung des Wadenmuskel-Sehnen-
+    # Übergangs.
+    achilles_ansatz = v(a.oben('calcaneus'), 0, 0.010, -0.012)
+    achilles_ursprung = v(a.oben('calcaneus'), 0, 0.090, -0.020)
+
+    # Plantarfaszie: vom Fersenbein unten bis zu einem Punkt zwischen den
+    # Köpfchen des 1. und 5. Mittelfußknochens – als EINE Struktur statt
+    # eines Fächers aus Einzelsträngen (vereinfachend, wie bei den anderen
+    # Sammelgruppen dieser Datei).
+    calcaneus_plantar = a.unten('calcaneus')
+    ersten_mittelfuss_unten = a.unten('first metatarsal bone')
+    fuenften_mittelfuss_unten = a.unten('fifth metatarsal bone')
+    vorfuss_mitte = zwischen(ersten_mittelfuss_unten, fuenften_mittelfuss_unten, 0.5)
+
+    def b(kennung, name, latein, punkte, radius, notiz, **rest):
+        return dict(
+            id=f'PT-B-{kennung}-{seite_de}',
+            name=f'{name} ({seite_de})',
+            latein=latein, system='baender', region='bein', seite=seite_de,
+            form={'typ': 'pfad', 'radius': radius, 'punkte': punkte},
+            notiz=f'{notiz} {SCHEMA_HINWEIS}', **rest)
+
+    return [
+        b('aussenband-sprunggelenk', 'Außenband (Sprunggelenk)', 'Ligg. talofibulare anterius/posterius et calcaneofibulare', [
+            fibula_aussen_unten, talus_aussen, calcaneus_aussen,
+        ], 0.0035,
+          'Fasst die drei häufig gemeinsam verletzten Außenbänder zusammen (u. a. Lig. '
+          'talofibulare anterius); häufigste Sportverletzung überhaupt beim Umknicken nach außen.'),
+
+        b('achillessehne', 'Achillessehne', 'Tendo calcaneus', [
+            achilles_ursprung, zwischen(achilles_ursprung, achilles_ansatz, 0.5), achilles_ansatz,
+        ], 0.0060,
+          'Verbindet die Wadenmuskulatur (M. triceps surae) mit dem Fersenbein; reißt meist bei '
+          'vorgeschädigter Sehne und explosiver Belastung.'),
+
+        b('plantarfaszie', 'Plantarfaszie', 'Fascia plantaris', [
+            calcaneus_plantar,
+            zwischen(calcaneus_plantar, vorfuss_mitte, 0.35),
+            zwischen(calcaneus_plantar, vorfuss_mitte, 0.7),
+            vorfuss_mitte,
+        ], 0.0035,
+          'Stabilisiert das Fußlängsgewölbe; Reizung an ihrem Ansatz am Fersenbein '
+          '(Plantarfasziitis) ist eine der häufigsten Ursachen für Fersenschmerz.'),
+    ]
+
+
+# ---------------------------------------------------------------------------
 # Bänder der Schulter
 # ---------------------------------------------------------------------------
 
@@ -983,6 +1064,7 @@ def main():
         seite_de = 'links' if seite == 'left' else 'rechts'
         strukturen += gelenke_bauen(a, seite_de)
         strukturen += kniebaender_bauen(a, seite_de)
+        strukturen += fussbaender_bauen(a, seite_de)
         strukturen += schulterbaender_bauen(a, seite_de)
         strukturen += ellenbogenbaender_bauen(a, seite_de)
         strukturen += handgelenkbaender_bauen(a, seite_de)

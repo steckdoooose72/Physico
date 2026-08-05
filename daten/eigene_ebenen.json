@@ -647,6 +647,101 @@
    "notiz": "Beweglicher als der Innenmeniskus und dadurch seltener verletzt. Beide Menisken vergrößern die Kontaktfläche und dämpfen Stöße beim Gehen. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
   },
   {
+   "id": "PT-B-aussenband-sprunggelenk-links",
+   "name": "Außenband (Sprunggelenk) (links)",
+   "latein": "Ligg. talofibulare anterius/posterius et calcaneofibulare",
+   "system": "baender",
+   "region": "bein",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0035,
+    "punkte": [
+     [
+      0.1249,
+      0.047,
+      -0.0494
+     ],
+     [
+      0.0955,
+      0.058,
+      -0.0365
+     ],
+     [
+      0.1017,
+      0.0339,
+      -0.0529
+     ]
+    ]
+   },
+   "notiz": "Fasst die drei häufig gemeinsam verletzten Außenbänder zusammen (u. a. Lig. talofibulare anterius); häufigste Sportverletzung überhaupt beim Umknicken nach außen. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-achillessehne-links",
+   "name": "Achillessehne (links)",
+   "latein": "Tendo calcaneus",
+   "system": "baender",
+   "region": "bein",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.006,
+    "punkte": [
+     [
+      0.0801,
+      0.1441,
+      -0.0729
+     ],
+     [
+      0.0801,
+      0.1041,
+      -0.0689
+     ],
+     [
+      0.0801,
+      0.0641,
+      -0.0649
+     ]
+    ]
+   },
+   "notiz": "Verbindet die Wadenmuskulatur (M. triceps surae) mit dem Fersenbein; reißt meist bei vorgeschädigter Sehne und explosiver Belastung. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-plantarfaszie-links",
+   "name": "Plantarfaszie (links)",
+   "latein": "Fascia plantaris",
+   "system": "baender",
+   "region": "bein",
+   "seite": "links",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0035,
+    "punkte": [
+     [
+      0.0801,
+      0.0044,
+      -0.0529
+     ],
+     [
+      0.0855,
+      0.0047,
+      -0.0232
+     ],
+     [
+      0.0909,
+      0.005,
+      0.0065
+     ],
+     [
+      0.0955,
+      0.0053,
+      0.0319
+     ]
+    ]
+   },
+   "notiz": "Stabilisiert das Fußlängsgewölbe; Reizung an ihrem Ansatz am Fersenbein (Plantarfasziitis) ist eine der häufigsten Ursachen für Fersenschmerz. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
    "id": "PT-B-labrum-links",
    "name": "Labrum glenoidale (links)",
    "latein": "Labrum glenoidale",
@@ -2126,6 +2221,101 @@
     ]
    },
    "notiz": "Beweglicher als der Innenmeniskus und dadurch seltener verletzt. Beide Menisken vergrößern die Kontaktfläche und dämpfen Stöße beim Gehen. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-aussenband-sprunggelenk-rechts",
+   "name": "Außenband (Sprunggelenk) (rechts)",
+   "latein": "Ligg. talofibulare anterius/posterius et calcaneofibulare",
+   "system": "baender",
+   "region": "bein",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0035,
+    "punkte": [
+     [
+      -0.1268,
+      0.047,
+      -0.0494
+     ],
+     [
+      -0.0974,
+      0.058,
+      -0.0353
+     ],
+     [
+      -0.1037,
+      0.0335,
+      -0.0529
+     ]
+    ]
+   },
+   "notiz": "Fasst die drei häufig gemeinsam verletzten Außenbänder zusammen (u. a. Lig. talofibulare anterius); häufigste Sportverletzung überhaupt beim Umknicken nach außen. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-achillessehne-rechts",
+   "name": "Achillessehne (rechts)",
+   "latein": "Tendo calcaneus",
+   "system": "baender",
+   "region": "bein",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.006,
+    "punkte": [
+     [
+      -0.0824,
+      0.1441,
+      -0.0729
+     ],
+     [
+      -0.0824,
+      0.1041,
+      -0.0689
+     ],
+     [
+      -0.0824,
+      0.0641,
+      -0.0649
+     ]
+    ]
+   },
+   "notiz": "Verbindet die Wadenmuskulatur (M. triceps surae) mit dem Fersenbein; reißt meist bei vorgeschädigter Sehne und explosiver Belastung. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
+  },
+  {
+   "id": "PT-B-plantarfaszie-rechts",
+   "name": "Plantarfaszie (rechts)",
+   "latein": "Fascia plantaris",
+   "system": "baender",
+   "region": "bein",
+   "seite": "rechts",
+   "form": {
+    "typ": "pfad",
+    "radius": 0.0035,
+    "punkte": [
+     [
+      -0.0824,
+      0.0044,
+      -0.0529
+     ],
+     [
+      -0.0877,
+      0.0047,
+      -0.0232
+     ],
+     [
+      -0.0929,
+      0.005,
+      0.0065
+     ],
+     [
+      -0.0974,
+      0.0053,
+      0.0319
+     ]
+    ]
+   },
+   "notiz": "Stabilisiert das Fußlängsgewölbe; Reizung an ihrem Ansatz am Fersenbein (Plantarfasziitis) ist eine der häufigsten Ursachen für Fersenschmerz. Schematische Näherung, keine anatomisch exakte Form – in den Rohdaten nicht als Geometrie enthalten."
   },
   {
    "id": "PT-B-labrum-rechts",
