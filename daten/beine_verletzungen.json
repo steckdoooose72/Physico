@@ -1,0 +1,29 @@
+[
+  {
+    "schwierigkeit": "klar",
+    "situation": "Sturz bei einer älteren Person, das Bein liegt danach nach außen gedreht und wirkt verkürzt.",
+    "richtig": ["Femur"],
+    "ablenker": ["Außenband (Sprunggelenk)", "Achillessehne"],
+    "hinweis": "Schenkelhalsfraktur, oft bei bestehender Osteoporose"
+  },
+  {
+    "schwierigkeit": "klar",
+    "situation": "Umknicken nach außen, der Fuß dreht sich unter dem Körper nach innen.",
+    "richtig": ["Außenband (Sprunggelenk)"],
+    "ablenker": ["Femur", "Plantarfaszie"],
+    "hinweis": "häufigste Sportverletzung überhaupt"
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Plötzliche, explosive Bewegung mit Richtungswechsel, ein 'Peitschenknall'-Geräusch, Schmerz über der Ferse.",
+    "richtig": ["Achillessehne"],
+    "ablenker": ["Außenband (Sprunggelenk)", "Plantarfaszie"],
+    "hinweis": "meist bei vorgeschädigter Sehne"
+  },
+  {
+    "schwierigkeit": "fein",
+    "situation": "Wiederholte Überlastung der Fußsohle durch Laufen oder langes Stehen, morgendlicher Anlaufschmerz an der Ferse.",
+    "richtig": ["Plantarfaszie"],
+    "ablenker": ["Achillessehne", "Femur"]
+  }
+]
