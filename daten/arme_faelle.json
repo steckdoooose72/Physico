@@ -1,0 +1,42 @@
+[
+  {
+    "situation": "Ein 60-jähriger Mann stürzt beim Spazierengehen auf die ausgestreckte Hand und spürt sofort starke Schmerzen im Ellenbogen, kann ihn kaum noch bewegen.",
+    "teilfragen": [
+      {
+        "frage": "Welche Struktur ist am ehesten betroffen?",
+        "richtig": "Radius",
+        "ablenker": ["Ulna", "Kahnbein"]
+      },
+      {
+        "frage": "Welches Gelenk ist an dieser Fraktur direkt beteiligt?",
+        "richtig": "Ellenbogengelenk",
+        "ablenker": ["Ringband", "Retinaculum flexorum"]
+      },
+      {
+        "frage": "Welche Struktur könnte begleitend überdehnt sein, wenn der Sturz mit einer Abknickung nach außen erfolgte?",
+        "richtig": "Innenband (Ellenbogen)",
+        "ablenker": ["Außenband (Ellenbogen)", "Ligg. intercarpalia"]
+      }
+    ]
+  },
+  {
+    "situation": "Ein 45-jähriger Büroangestellter klagt seit Wochen über nächtliches Kribbeln in Daumen, Zeige- und Mittelfinger, das beim Schütteln der Hand kurz besser wird.",
+    "teilfragen": [
+      {
+        "frage": "Welche Struktur übt den Druck aus?",
+        "richtig": "Retinaculum flexorum",
+        "ablenker": ["Retinaculum extensorum", "Ligg. intercarpalia"]
+      },
+      {
+        "frage": "Welche Knochen bilden den Boden dieser Struktur?",
+        "richtig": "Handwurzelknochen (übrige)",
+        "ablenker": ["Kahnbein", "Radius"]
+      },
+      {
+        "frage": "Welche Struktur ist zusätzlich betroffen, wenn auch das Handgelenk selbst schmerzt?",
+        "richtig": "Handgelenk-Beuger",
+        "ablenker": ["Handgelenk-Strecker", "M. brachioradialis"]
+      }
+    ]
+  }
+]
