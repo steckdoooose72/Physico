@@ -25,6 +25,7 @@ import * as THREE from 'three';
 import { erzeugeBuehne } from './buehne.js?v=6';
 import { Katalog } from './katalog.js?v=3';
 import { hervorhebungsMaterial } from './materialien.js?v=2';
+import { ladeLernstand, speichereLernstand, aktualisiereItem, faelligeItems } from './lernstand.js?v=1';
 
 const ANTWORTEN_PRO_FRAGE = 4;
 
@@ -39,38 +40,45 @@ const ANTWORTEN_PRO_FRAGE = 4;
  */
 const STRUKTUREN = [
   {
+    id: 'schulter-struktur-001',
     name: 'Schlüsselbein',
     ids: ['FMA13323'],
     funktion: 'Verbindet Brustbein und Schulterblatt – die einzige Knochenverbindung zwischen Rumpf und Arm.',
   },
   {
+    id: 'schulter-struktur-002',
     name: 'Schulterblatt',
     ids: ['FMA13396'],
     funktion: 'Bildet mit dem Oberarmkopf die Schulterpfanne und ist Ansatzpunkt vieler Schultermuskeln.',
   },
   {
+    id: 'schulter-struktur-003',
     name: 'Oberarmknochen',
     ids: ['FMA23131'],
     funktion: 'Sein Kopf sitzt in der Schulterpfanne und ermöglicht die Bewegung des Arms.',
   },
   {
+    id: 'schulter-struktur-004',
     name: 'AC-Gelenk',
     ids: ['PT-G-ac-links'],
     marker: true,
     funktion: 'Verbindet Schlüsselbein und Schulterdach, stabilisiert durch Bänder zwischen Schulterblatt und Schlüsselbein.',
   },
   {
+    id: 'schulter-struktur-005',
     name: 'Schultergelenk',
     ids: ['PT-G-schulter-links'],
     marker: true,
     funktion: 'Das eigentliche Schulterhauptgelenk – Kugelgelenk zwischen Oberarmkopf und Schulterpfanne, das beweglichste Gelenk des Körpers.',
   },
   {
+    id: 'schulter-struktur-006',
     name: 'Rotatorenmanschette',
     ids: ['FMA32545', 'FMA32548', 'FMA13415', 'FMA32554'],
     funktion: 'Vier Muskeln, die den Oberarmkopf in der Schulterpfanne halten und stabilisieren.',
   },
   {
+    id: 'schulter-struktur-007',
     name: 'Deltamuskel',
     ids: ['FMA34681', 'FMA34683', 'FMA34685'],
     funktion: 'Hauptmuskel für das Abspreizen des Arms, mit vorderem, mittlerem und hinterem Anteil.',
@@ -157,6 +165,13 @@ let stand = new Map();       // Name -> { struktur, gewaehlt, richtig }
 let jeFalsch = new Set();    // Namen, die irgendwann falsch waren
 let beendet = false;         // nach „Beenden" oder vollständigem Abschluss
 let laeuft = false;          // sperrt Doppelklicks während des Wechsels
+
+// --- Lernstand --------------------------------------------------------------
+// Wird einmal beim Start geladen und bei jeder Antwort aktualisiert/gespeichert
+// (siehe lernstand.js). `poolAktuell` sind die Strukturen dieser Runde – bei
+// fälligen Items nur die Teilmenge, sonst (Fallback) alle sieben.
+let lernstand = ladeLernstand();
+let poolAktuell = STRUKTUREN;
 
 /** Mischt eine Liste (Fisher-Yates). */
 function mischen(liste) {
@@ -337,6 +352,11 @@ function nimmAntwort(frage, gewaehlt, knopf) {
     laufFehler.push(frage.struktur);   // kommt in diesem Durchlauf noch einmal dran
   }
 
+  // Lernstand sofort persistieren – auch bei Wiederholungen innerhalb
+  // desselben Laufs, damit ein Abbruch zwischendurch nichts verliert.
+  lernstand = aktualisiereItem(lernstand, frage.struktur.id, richtig);
+  speichereLernstand(lernstand);
+
   for (const k of antwortenFeld.querySelectorAll('.antwort-knopf')) {
     k.disabled = true;
     k.classList.add(k === knopf ? 'gewaehlt' : 'blass');
@@ -387,17 +407,45 @@ function zeigeErgebnis(vorzeitig) {
       : '<p class="ergebnis-leer">Bisher alles richtig.</p>';
   } else {
     fortschrittText.textContent = 'fertig';
-    titelEl.textContent = 'Alles gelernt.';
     const aufAnhieb = eintraege.length - jeFalsch.size;
+    // „Alles gelernt." nur, wenn wirklich jede fällige Struktur schon beim
+    // ersten Versuch saß – sonst ehrlich benennen, wie viele es am Ende waren.
+    titelEl.textContent = aufAnhieb === eintraege.length
+      ? 'Alles gelernt.'
+      : `Runde beendet — ${aufAnhieb} von ${eintraege.length} richtig`;
     zahlEl.textContent =
       `${eintraege.length} Strukturen, ${aufAnhieb} davon auf Anhieb richtig`;
     listeFeld.innerHTML = '';
   }
 }
 
-document.getElementById('nochmal-knopf').addEventListener('click', async () => {
-  startLauf(STRUKTUREN);
+/**
+ * Ermittelt den Pool für einen neuen Durchlauf: nur die laut Lernstand
+ * fälligen Strukturen. Ist gerade nichts fällig (z. B. direkt nach einer
+ * gerade erst richtig beantworteten Runde), fällt sie auf ALLE Strukturen
+ * zurück, damit die Seite nie leer dasteht – mit kurzem Hinweis dazu, damit
+ * klar ist, dass das freies Wiederholen ist und keine „echte" Fälligkeit.
+ */
+async function starteRunde() {
+  const alleIds = STRUKTUREN.map((s) => s.id);
+  const faelligeIds = new Set(faelligeItems(lernstand, alleIds));
+  const faellig = STRUKTUREN.filter((s) => faelligeIds.has(s.id));
+
+  if (faellig.length > 0) {
+    poolAktuell = faellig;
+  } else {
+    poolAktuell = STRUKTUREN;
+    status('Nichts fällig — freies Wiederholen');
+    await new Promise((r) => setTimeout(r, 900));
+    status(null);
+  }
+
+  startLauf(poolAktuell);
   await zeigeFrage();
+}
+
+document.getElementById('nochmal-knopf').addEventListener('click', async () => {
+  await starteRunde();
 });
 
 beendenKnopf.addEventListener('click', () => {
@@ -418,10 +466,10 @@ try {
 
   status(null);
   starteSchleife();
-  startLauf(STRUKTUREN);
-  await zeigeFrage();
+  await starteRunde();
 
-  console.log(`Schulter-Struktur: ${STRUKTUREN.length} Strukturen im Pool.`);
+  console.log(`Schulter-Struktur: ${STRUKTUREN.length} Strukturen im Pool, `
+    + `${poolAktuell.length} davon in dieser Runde fällig.`);
 } catch (fehler) {
   status(`<b>Der Pilot konnte nicht starten.</b><br><br>${fehler.message}`, true);
   console.error(fehler);
@@ -434,4 +482,6 @@ window.schulterStruktur = {
   get position() { return position; },
   get phase() { return phase; },
   get stand() { return stand; },
+  get lernstand() { return lernstand; },
+  get poolAktuell() { return poolAktuell; },
 };
