@@ -26,7 +26,10 @@ class OhneZwischenspeicher(SimpleHTTPRequestHandler):
 
     def log_message(self, format, *args):
         # Etwas ruhiger als die Standardausgabe, aber Fehler weiterhin zeigen.
-        if '" 200' not in (args[0] if args else ''):
+        # args[0] ist bei normalen Request-Zeilen ein String, bei log_error()
+        # (z. B. 404) aber z. B. ein HTTPStatus-Objekt oder eine Zahl – erst
+        # in einen String umwandeln, sonst schlägt der 'in'-Vergleich fehl.
+        if '" 200' not in str(args[0] if args else ''):
             super().log_message(format, *args)
 
 
